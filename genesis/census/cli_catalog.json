@@ -1,0 +1,235 @@
+[
+  {
+    "id": "0f5f92b802b08212:cli:genesis.cli",
+    "type": "cli",
+    "name": "genesis.cli",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.cli"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.__main__",
+      "genesis.platform",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.35,
+    "risk": 0.37,
+    "health": 0.43,
+    "role": "cli",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/cli/__init__.py",
+      "package": "genesis.cli"
+    }
+  },
+  {
+    "id": "1b5c9d6760f4326a:cli:genesis.cli.commands",
+    "type": "cli",
+    "name": "genesis.cli.commands",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.cli.commands"
+    ],
+    "dependencies": [
+      "genesis.api.router.APIRouter",
+      "genesis.capability.registry.CapabilityDefinition",
+      "genesis.capability.registry.CapabilityRegistry",
+      "genesis.compiler.compiler.Compiler",
+      "genesis.core.types.type_registry",
+      "genesis.diagnostics.diagnostics.Diagnostics",
+      "genesis.graph.engine.KnowledgeGraphEngine",
+      "genesis.indexer.indexer.RepositoryIndexer",
+      "genesis.runtime.executor.ExecutionEngine",
+      "genesis.runtime.executor.Task",
+      "genesis.runtime.executor.Workflow",
+      "genesis.validation.engine.ValidationEngine"
+    ],
+    "consumers": [
+      "genesis.__main__",
+      "genesis.platform",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.7,
+    "risk": 0.42,
+    "health": 0.66,
+    "role": "cli",
+    "metadata": {
+      "classes": [
+        "CLI"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "cmd_compile",
+        "cmd_validate",
+        "cmd_graph",
+        "cmd_search",
+        "cmd_index",
+        "cmd_run",
+        "cmd_info",
+        "cmd_install",
+        "cmd_remove",
+        "cmd_update",
+        "cmd_certify",
+        "cmd_package",
+        "cmd_publish",
+        "cmd_deploy",
+        "cmd_diagnose",
+        "_get_api_routes"
+      ],
+      "path": "genesis/cli/commands.py",
+      "package": "genesis.cli"
+    }
+  },
+  {
+    "id": "2d9bcfe847cb065d:cli:genesis.intelligence.cli",
+    "type": "cli",
+    "name": "genesis.intelligence.cli",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.9,
+    "evidence": [
+      "module:genesis.intelligence.cli"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.analyzers.CouplingAnalyzer",
+      "genesis.digital_twin.analyzers.DriftAnalyzer",
+      "genesis.digital_twin.analyzers.EvolutionAnalyzer",
+      "genesis.digital_twin.analyzers.SmellAnalyzer",
+      "genesis.digital_twin.builder.DigitalTwinBuilder",
+      "genesis.digital_twin.discovery.InitiativeDiscovery",
+      "genesis.digital_twin.evolution.EvolutionEngine",
+      "genesis.digital_twin.hypothesis.HypothesisEngine",
+      "genesis.digital_twin.metrics.RepositoryMetrics",
+      "genesis.digital_twin.predict.PredictionEngine",
+      "genesis.digital_twin.reasoning.ReasoningEngine",
+      "genesis.digital_twin.ris.RIScore",
+      "genesis.digital_twin.self_analysis.SelfAnalyzer",
+      "genesis.digital_twin.validation.EquilibriumDetector",
+      "genesis.digital_twin.validation.ScientificValidator",
+      "genesis.intelligence.census.RepositoryCensus",
+      "genesis.intelligence.engine.RepositoryIntelligence",
+      "genesis.intelligence.kgraph.KnowledgeGraph",
+      "genesis.intelligence.report.build_standard_report",
+      "genesis.intelligence.report.detect_languages",
+      "genesis.intelligence.report.format_report_text",
+      "genesis.laboratory.cli.register_subcommands",
+      "genesis.laboratory.cli.run_lab",
+      "genesis.observatory.cli.register_subcommands",
+      "genesis.observatory.cli.run_observe"
+    ],
+    "consumers": [],
+    "maturity": 0.9,
+    "risk": 0.42,
+    "health": 0.8,
+    "role": "cli",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "analyze_repository",
+        "_is_venus_repo",
+        "_enrich_venus",
+        "_run_evolution",
+        "_run_omega",
+        "main"
+      ],
+      "path": "genesis/intelligence/cli.py",
+      "package": "genesis.intelligence"
+    }
+  },
+  {
+    "id": "7b0e78b4d280ed11:cli:genesis.laboratory.cli",
+    "type": "cli",
+    "name": "genesis.laboratory.cli",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.9,
+    "evidence": [
+      "module:genesis.laboratory.cli"
+    ],
+    "dependencies": [
+      "genesis.laboratory.experiment.ExperimentDesign",
+      "genesis.laboratory.experiment.ExperimentPlatform",
+      "genesis.laboratory.extraction.pipeline.ExtractionPipeline",
+      "genesis.laboratory.genome.builder.GenomeBuilder",
+      "genesis.laboratory.genome.comparison.GenomeComparator",
+      "genesis.laboratory.genome.model.FitnessScore",
+      "genesis.laboratory.genome.model.SoftwareGenome",
+      "genesis.laboratory.mining.subgraph.FrequentSubgraphMiner",
+      "genesis.laboratory.mining.subgraph.MotifDetector",
+      "genesis.laboratory.mining.subgraph.PatternCluster",
+      "genesis.laboratory.scheduler.RepositoryScheduler",
+      "genesis.laboratory.world_graph.WorldGraph",
+      "genesis.observatory.miner.RepositoryMiner",
+      "genesis.usir.compiler.MultiLanguageCompiler"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 0.9,
+    "risk": 0.33,
+    "health": 0.83,
+    "role": "cli",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "register_subcommands",
+        "run_lab",
+        "_analyze",
+        "_genome",
+        "_compare",
+        "_mine",
+        "_schedule",
+        "_run_schedule",
+        "_world",
+        "_experiment"
+      ],
+      "path": "genesis/laboratory/cli.py",
+      "package": "genesis.laboratory"
+    }
+  },
+  {
+    "id": "1b055ef501a5f06d:cli:genesis.observatory.cli",
+    "type": "cli",
+    "name": "genesis.observatory.cli",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.9,
+    "evidence": [
+      "module:genesis.observatory.cli"
+    ],
+    "dependencies": [
+      "genesis.observatory.ObservatoryGraph",
+      "genesis.observatory.RepositoryMiner",
+      "genesis.observatory.RepositoryRegistry",
+      "genesis.usir.compiler.MultiLanguageCompiler"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 0.9,
+    "risk": 0.16,
+    "health": 0.88,
+    "role": "cli",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "register_subcommands",
+        "run_observe",
+        "_ingest",
+        "_status",
+        "_graph_cmd",
+        "_list_repos",
+        "_analyze"
+      ],
+      "path": "genesis/observatory/cli.py",
+      "package": "genesis.observatory"
+    }
+  }
+]

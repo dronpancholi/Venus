@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://schemas/adr/v1",
+  "title": "ArchitectureDecisionRecord",
+  "description": "Canonical Architecture Decision Record. Consolidates ADR definitions from V0.4 (Module 12), V0.5 (USTAIE templates), and V0.9 (USEDPOS templates).",
+  "type": "object",
+  "allOf": [
+    { "$ref": "venus://schemas/decision/record/v1" }
+  ],
+  "properties": {
+    "adr_id": {
+      "type": "string",
+      "pattern": "^ADR-[0-9]{3,5}$",
+      "description": "Sequential ADR identifier."
+    },
+    "title": {
+      "type": "string",
+      "description": "Short title summarizing the architectural decision."
+    },
+    "architectural_scope": {
+      "type": "string",
+      "enum": ["system", "container", "component", "code", "infrastructure", "data", "integration"],
+      "description": "C4 model scope of the ADR."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "accepted", "deprecated", "superseded"],
+      "description": "ADR lifecycle status per standard ADR practice."
+    },
+    "deciders": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of architects or engineers who approved the ADR."
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the ADR was accepted."
+    },
+    "decision": {
+      "type": "string",
+      "description": "The chosen architectural direction."
+    },
+    "alternatives_considered": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "rejection_reason": { "type": "string" }
+        },
+        "required": ["name", "rejection_reason"]
+      }
+    },
+    "consequences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string", "enum": ["positive", "negative", "neutral"] },
+          "description": { "type": "string" }
+        },
+        "required": ["type", "description"]
+      }
+    },
+    "compliance_tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "References to V0.10 security constitution rules and V0.11 governance policies."
+    }
+  },
+  "required": ["adr_id", "title", "architectural_scope", "status", "decision", "deciders", "date"]
+}

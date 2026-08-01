@@ -1,0 +1,169 @@
+// Sample Venus DSL — Universal Security OS Definition
+// This demonstrates the complete DSL capability.
+
+operatingsystem "UniversalSecurityOS" {
+  version = "0.10"
+  layer = 2
+  description = "Universal Security, Privacy, Trust & Cyber Resilience OS"
+  inherits = ["USEDPOS"]
+
+  capabilities = [
+    "threat_modeling",
+    "zero_trust_enforcement",
+    "vulnerability_scanning",
+    "compliance_auditing",
+    "incident_response",
+    "cryptographic_identity"
+  ]
+
+  constraints = [
+    "all_communication_must_use_mtls",
+    "no_plaintext_secrets",
+    "hermetic_build_required"
+  ]
+
+  part "ThreatModeling" {
+    description = "Threat modeling methodology and frameworks"
+
+    concepts = [
+      { name: "STRIDE", type: "taxonomy" },
+      { name: "PASTA", type: "taxonomy" },
+      { name: "AttackTree", type: "pattern" },
+      { name: "TrustBoundary", type: "concept" }
+    ]
+  }
+
+  part "ZeroTrust" {
+    description = "Zero Trust architecture enforcement"
+
+    concepts = [
+      { name: "IdentityFirst", type: "principle" },
+      { name: "LeastPrivilege", type: "principle" },
+      { name: "Microsegmentation", type: "pattern" }
+    ]
+  }
+
+  engine "ThreatModelingEngine" {
+    description = "Automated threat modeling across system architecture"
+
+    inputs = [
+      { name: "architecture_blueprint", type: "ArchitectureDocument" },
+      { name: "trust_boundaries", type: "TrustBoundary[]" },
+      { name: "compliance_requirements", type: "Requirement[]" }
+    ]
+
+    outputs = [
+      { name: "threat_model", type: "ThreatModelReport" },
+      { name: "risk_register", type: "RiskRegister" },
+      { name: "mitigation_plan", type: "MitigationPlan" }
+    ]
+
+    validation = [
+      { rule: "all_components_covered", severity: "critical" },
+      { rule: "trust_boundaries_defined", severity: "critical" },
+      { rule: "mitigations_exist_for_critical", severity: "high" }
+    ]
+
+    produces = ["THREAT_MODEL_REPORT", "RISK_REGISTER_REPORT"]
+    certifies = ["SECURITY_CERTIFICATE"]
+
+    metrics = [
+      { name: "coverage_pct", description: "Percentage of components analyzed" },
+      { name: "risk_reduction", description: "Risk score reduction after mitigation" }
+    ]
+  }
+
+  engine "ZeroTrustValidator" {
+    description = "Validates zero trust boundaries across all system interfaces"
+
+    inputs = [
+      { name: "network_topology", type: "NetworkMap" },
+      { name: "identity_providers", type: "IdentityProvider[]" }
+    ]
+
+    outputs = [
+      { name: "trust_report", type: "ZeroTrustReport" },
+      { name: "violations", type: "PolicyViolation[]" }
+    ]
+
+    validation = [
+      { rule: "no_implicit_trust", severity: "critical" },
+      { rule: "all_traffic_encrypted", severity: "critical" }
+    ]
+
+    produces = ["ZERO_TRUST_REPORT"]
+  }
+
+  template "ThreatModelReport" {
+    description = "Standard threat model output report"
+    schema = "venus://schemas/certificate/v1"
+
+    sections = [
+      { name: "Executive Summary", required: true },
+      { name: "System Architecture Overview", required: true },
+      { name: "Component Inventory", required: true },
+      { name: "Trust Boundary Analysis", required: true },
+      { name: "Threat Table", required: true },
+      { name: "Risk Assessment", required: true },
+      { name: "Mitigation Plan", required: true },
+      { name: "Residual Risk", required: true },
+      { name: "Appendices", required: false }
+    ]
+
+    generators = ["markdown", "pdf", "json"]
+
+    validation = [
+      { rule: "all_threats_have_mitigations", severity: "high" },
+      { rule: "trust_boundaries_mapped", severity: "critical" }
+    ]
+  }
+
+  template "ZeroTrustReport" {
+    description = "Zero trust enforcement verification report"
+    schema = "venus://schemas/certificate/v1"
+
+    sections = [
+      { name: "Executive Summary", required: true },
+      { name: "Identity Verification", required: true },
+      { name: "Traffic Encryption Status", required: true },
+      { name: "Policy Violations", required: true },
+      { name: "Remediation Plan", required: true }
+    ]
+
+    generators = ["markdown", "json"]
+  }
+
+  policy "SecurityConstitutionRules" {
+    description = "Seven immutable security constitution rules"
+    policy_type = "security"
+    severity = "critical"
+    enforcement = "block"
+
+    rules = [
+      { rule: "zero_trust_boundary_enforcement", expression: "all_interfaces_require_mtls" },
+      { rule: "dynamic_secrets_ingestion", expression: "no_plaintext_secrets_in_config" },
+      { rule: "hermetic_build_verification", expression: "build_reproducibility_verified" },
+      { rule: "least_privilege_authorization", expression: "abac_or_rbac_enforced" },
+      { rule: "ai_agent_tool_isolation", expression: "agents_run_in_sandbox" },
+      { rule: "privacy_by_construction", expression: "pii_classified_and_masked" },
+      { rule: "automated_resiliency_failover", expression: "active_active_replication_verified" }
+    ]
+
+    applies_to = ["Artifact", "Engine", "Agent", "Execution"]
+  }
+
+  certificate "SecurityLaunchCertificate" {
+    description = "Final security gate certification for production launch"
+    target_tier = "tier_1_critical"
+    urqs_score = 0.95
+
+    gates_passed = [
+      { name: "Threat Model Complete", passed_at: "${timestamp}" },
+      { name: "Zero Trust Enforced", passed_at: "${timestamp}" },
+      { name: "Penetration Test Passed", passed_at: "${timestamp}" },
+      { name: "Compliance Audit Passed", passed_at: "${timestamp}" }
+    ]
+
+    validity_period = "90d"
+    signed_by = "${authorizing_entity}"
+  }

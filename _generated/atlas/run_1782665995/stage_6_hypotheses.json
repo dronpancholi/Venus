@@ -1,0 +1,61 @@
+{
+  "stage": 6,
+  "hypotheses": [
+    {
+      "problem_id": "P1",
+      "hypothesis": "Implementing Extract dispatch logic into a lightweight PluginRegistry will reduce Changes to any subsystem require OmegaLoop modifications",
+      "prediction": "High severity problem will be resolved",
+      "test": "After implementation, verify that OmegaLoop imports from 11 subsystem groups directly no longer applies",
+      "experiment_design": "Before/after comparison of coupling metrics",
+      "success_criteria": "Measurable reduction in high-severity impact indicators"
+    },
+    {
+      "problem_id": "P2",
+      "hypothesis": "Implementing Deprecate v2 and v3, make digital_civilization the canonical implementation will reduce Knowledge flow is split across 3 incompatible models",
+      "prediction": "High severity problem will be resolved",
+      "test": "After implementation, verify that civilization_v2.py, civilization_v3.py, and digital_civilization.py all exist no longer applies",
+      "experiment_design": "Before/after comparison of coupling metrics",
+      "success_criteria": "Measurable reduction in high-severity impact indicators"
+    },
+    {
+      "problem_id": "P3",
+      "hypothesis": "Implementing Merge into single canonical Platform module will reduce Platform services are inconsistently available",
+      "prediction": "Medium severity problem will be resolved",
+      "test": "After implementation, verify that Two platform modules with different API surfaces no longer applies",
+      "experiment_design": "Before/after comparison of coupling metrics",
+      "success_criteria": "Measurable reduction in medium-severity impact indicators"
+    },
+    {
+      "problem_id": "P4",
+      "hypothesis": "Implementing Consolidate into one EvolutionEngine with pluggable simulation backends will reduce Evolution logic duplicated across 5 modules",
+      "prediction": "Medium severity problem will be resolved",
+      "test": "After implementation, verify that evolution.py, evolution_v4.py, simulator.py, simulator_v2.py, brain_v4.py no longer applies",
+      "experiment_design": "Before/after comparison of coupling metrics",
+      "success_criteria": "Measurable reduction in medium-severity impact indicators"
+    },
+    {
+      "problem_id": "P5",
+      "hypothesis": "Implementing Audit all imports, add deprecation warnings, archive unused modules will reduce genesis_viii.py and mathematics_v2.py may have undocumented consumers",
+      "prediction": "Medium severity problem will be resolved",
+      "test": "After implementation, verify that These modules exist but their consumers are unclear no longer applies",
+      "experiment_design": "Before/after comparison of coupling metrics",
+      "success_criteria": "Measurable reduction in medium-severity impact indicators"
+    },
+    {
+      "problem_id": "P6",
+      "hypothesis": "Implementing Adopt strict Architecture Review Board for all new abstractions will reduce 97K+ lines across 415 files \u2014 conceptual complexity grows faster than capability",
+      "prediction": "Low severity problem will be resolved",
+      "test": "After implementation, verify that 99752 lines, 3623 files with overlapping subsystem boundaries no longer applies",
+      "experiment_design": "Before/after comparison of coupling metrics",
+      "success_criteria": "Measurable reduction in low-severity impact indicators"
+    },
+    {
+      "problem_id": "META",
+      "hypothesis": "Following the strict 15-stage Atlas protocol produces higher-quality engineering outcomes than direct implementation",
+      "prediction": "Atlas runs will identify more problems and produce better-justified solutions than OmegaLoop iterations",
+      "test": "Compare problem discovery rate and solution quality between Atlas and OmegaLoop modes",
+      "experiment_design": "Run both on the same repository, measure problems found and solution completeness",
+      "success_criteria": "Atlas identifies >= 2x more problems with >= 50% better solution justification"
+    }
+  ]
+}

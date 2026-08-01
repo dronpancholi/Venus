@@ -1,0 +1,68 @@
+{
+  "iteration": 1,
+  "evidence_library": {
+    "experiments_total": 0,
+    "experiments_proposed": 3,
+    "controlled_experiments": [
+      {
+        "experiment_id": "orion_exp_1_canonicaliza",
+        "approach": "Canonicalization First",
+        "hypothesis": "Canonicalization First reduces technical debt faster",
+        "control_group": "No intervention",
+        "treatment_group": "Canonicalization First",
+        "expected_effect_size": 0.8,
+        "risk": 0.1,
+        "duration_iterations": 3,
+        "replication_count": 0,
+        "status": "proposed"
+      },
+      {
+        "experiment_id": "orion_exp_1_parallel_rew",
+        "approach": "Parallel Rewrite",
+        "hypothesis": "Parallel Rewrite reduces technical debt faster",
+        "control_group": "No intervention",
+        "treatment_group": "Parallel Rewrite",
+        "expected_effect_size": 0.6,
+        "risk": 0.4,
+        "duration_iterations": 3,
+        "replication_count": 0,
+        "status": "proposed"
+      },
+      {
+        "experiment_id": "orion_exp_1_incremental_",
+        "approach": "Incremental Refactor",
+        "hypothesis": "Incremental Refactor reduces technical debt faster",
+        "control_group": "No intervention",
+        "treatment_group": "Incremental Refactor",
+        "expected_effect_size": 0.7,
+        "risk": 0.2,
+        "duration_iterations": 3,
+        "replication_count": 0,
+        "status": "proposed"
+      }
+    ],
+    "replicated_experiments": 0,
+    "rejected_hypotheses": 0,
+    "accepted_techniques": [
+      "canonicalization",
+      "pattern_discovery"
+    ],
+    "effect_size_estimate": 0.178,
+    "confidence_interval": [
+      0.078,
+      0.278
+    ]
+  },
+  "recommended_experiment": {
+    "experiment_id": "orion_exp_1_canonicaliza",
+    "approach": "Canonicalization First",
+    "hypothesis": "Canonicalization First reduces technical debt faster",
+    "control_group": "No intervention",
+    "treatment_group": "Canonicalization First",
+    "expected_effect_size": 0.8,
+    "risk": 0.1,
+    "duration_iterations": 3,
+    "replication_count": 0,
+    "status": "proposed"
+  }
+}

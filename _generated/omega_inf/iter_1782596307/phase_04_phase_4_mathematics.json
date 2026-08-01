@@ -1,0 +1,107 @@
+{
+  "entropy": {
+    "architecture": 0.7484,
+    "complexity": 0.5882,
+    "planner": 1.0
+  },
+  "stability": {
+    "average_module": 0.1221,
+    "architecture": 0.4489,
+    "sample": {
+      "Layer_1_Foundations._compiler.venus_compiler": 0.0,
+      "Layer_1_Foundations._evolution.evolution_agent": 0.0,
+      "Layer_1_Foundations._graph.semantic_graph": 0.0,
+      "Layer_1_Foundations._rule_engine.rule_engine": 0.0,
+      "Layer_1_Foundations._validation.check_naming": 0.0,
+      "Layer_1_Foundations._validation.check_references": 0.0,
+      "Layer_1_Foundations._validation.check_templates": 0.0,
+      "Layer_1_Foundations._validation.generate_catalog": 0.0,
+      "Layer_1_Foundations._validation.validate_schemas": 0.0,
+      "generate_usptcros_templates": 0.0,
+      "genesis": 0.5,
+      "genesis.__main__": 0.0,
+      "genesis.acquisition": 0.7308,
+      "genesis.acquisition.orchestrator": 0.1111,
+      "genesis.acquisition.sources": 0.1053,
+      "genesis.acquisition.sources.adr": 0.2,
+      "genesis.acquisition.sources.cargo": 0.1667,
+      "genesis.acquisition.sources.cncf": 0.125,
+      "genesis.acquisition.sources.cve": 0.1667,
+      "genesis.acquisition.sources.docker": 0.1667,
+      "genesis.acquisition.sources.github": 0.1,
+      "genesis.acquisition.sources.gitlab": 0.125,
+      "genesis.acquisition.sources.go": 0.1667,
+      "genesis.acquisition.sources.ietf": 0.1667,
+      "genesis.acquisition.sources.maven": 0.1667,
+      "genesis.acquisition.sources.nist": 0.1667,
+      "genesis.acquisition.sources.npm": 0.1667,
+      "genesis.acquisition.sources.nuget": 0.1667,
+      "genesis.acquisition.sources.owasp": 0.1667,
+      "genesis.acquisition.sourcespi": 0.0
+    }
+  },
+  "diffusion": {
+    "coefficient": 0.0022,
+    "knowledge_velocity": 5e-06,
+    "innovation_potential": 0.0023
+  },
+  "momentum": {
+    "momentum": 3320,
+    "inertia": 364.3119,
+    "architectural_force": 34.1221
+  },
+  "energy": {
+    "potential": 6475.0
+  },
+  "gravity": {
+    "forces_sample": [
+      {
+        "from": "genesis.reverse_engineer",
+        "to": "genesis.census",
+        "force": 35.25
+      },
+      {
+        "from": "genesis.reverse_engineer",
+        "to": "genesis.tests.test_brain",
+        "force": 6.637
+      },
+      {
+        "from": "genesis.reverse_engineer",
+        "to": "genesis.tests.test_kernel",
+        "force": 6.6074
+      },
+      {
+        "from": "genesis.reverse_engineer",
+        "to": "genesis.tests.test_meta",
+        "force": 5.6296
+      },
+      {
+        "from": "genesis.census",
+        "to": "genesis.tests.test_brain",
+        "force": 3.6556
+      }
+    ]
+  },
+  "debt": {
+    "tensor": {
+      "complexity_debt": 10.54,
+      "documentation_debt": 0.18,
+      "test_debt": 0.12,
+      "duplication_debt": 11.7,
+      "stability_debt": 0.18
+    },
+    "total": 22.72,
+    "density": 0.000243
+  },
+  "curvature": -0.1444,
+  "models_available": [
+    "RepositoryEntropy",
+    "RepositoryStability",
+    "KnowledgeDiffusion",
+    "ArchitectureMomentum",
+    "DependencyEnergy",
+    "EngineeringGravity",
+    "TechnicalDebtTensor",
+    "RepositoryCurvature"
+  ]
+}

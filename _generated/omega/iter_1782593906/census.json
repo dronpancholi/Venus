@@ -1,0 +1,38 @@
+{
+  "files": {
+    "metric": "files",
+    "value": 415,
+    "previous": 0,
+    "delta": 415
+  },
+  "lines": {
+    "metric": "lines",
+    "value": 92529,
+    "previous": 0,
+    "delta": 92529
+  },
+  "classes": {
+    "metric": "classes",
+    "value": 1364,
+    "previous": 0,
+    "delta": 1364
+  },
+  "functions": {
+    "metric": "functions",
+    "value": 7117,
+    "previous": 0,
+    "delta": 7117
+  },
+  "entities": {
+    "metric": "entities",
+    "value": 8960,
+    "previous": 0,
+    "delta": 8960
+  },
+  "relationships": {
+    "metric": "relationships",
+    "value": 7881,
+    "previous": 0,
+    "delta": 7881
+  }
+}

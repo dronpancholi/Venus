@@ -1,0 +1,29 @@
+{
+  "experiments": [
+    {
+      "id": "932471ad8509",
+      "name": "canonicalization_audit",
+      "status": "completed"
+    },
+    {
+      "id": "38c64386dc58",
+      "name": "dependency_analysis",
+      "status": "completed"
+    },
+    {
+      "id": "8301d5da18af",
+      "name": "risk_assessment",
+      "status": "completed"
+    },
+    {
+      "id": "3adae8669450",
+      "name": "health_check",
+      "status": "completed"
+    },
+    {
+      "id": "a7854216f9c3",
+      "name": "type_inventory",
+      "status": "completed"
+    }
+  ]
+}

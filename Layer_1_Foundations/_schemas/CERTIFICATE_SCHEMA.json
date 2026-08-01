@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://schemas/certificate/v1",
+  "title": "VenusCertificate",
+  "description": "Canonical Certificate and Attestation schema. Consolidates certification templates across all OS layers including V0.5 Architecture Certification, V0.6 Commercial Certification, V0.7 Product UX Certification, V0.8 AI Certification, V0.9 Production Certification, V0.10 Security Certification, and V0.11 Governance Certification.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "venus://schemas/base/entity/v1" }
+  ],
+  "properties": {
+    "certificate_id": {
+      "type": "string",
+      "pattern": "^CERT-[0-9]{6}$",
+      "description": "Unique certificate identifier."
+    },
+    "certificate_type": {
+      "type": "string",
+      "enum": ["architecture", "commercial", "product_ux", "ai_launch", "production", "security_launch", "governance", "compliance"],
+      "description": "Domain of certification."
+    },
+    "target_entity": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "type": { "type": "string", "enum": ["system", "service", "release", "configuration", "agent", "model"] }
+      },
+      "required": ["name", "type"]
+    },
+    "target_tier": {
+      "type": "string",
+      "enum": ["tier_1_critical", "tier_2_enterprise", "tier_3_standard"],
+      "description": "Deployment tier the certification is for."
+    },
+    "urqs_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Universal Risk & Quality Score."
+    },
+    "verification_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check_name": { "type": "string" },
+          "status": { "type": "string", "enum": ["pass", "fail", "warning", "skipped"] },
+          "score": { "type": "number" },
+          "evidence_ref": { "type": "string" }
+        },
+        "required": ["check_name", "status"]
+      }
+    },
+    "gates_passed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gate_id": { "type": "string" },
+          "name": { "type": "string" },
+          "passed_at": { "type": "string", "format": "date-time" },
+          "signed_by": { "type": "string" }
+        },
+        "required": ["gate_id", "name", "passed_at"]
+      }
+    },
+    "validity": {
+      "type": "object",
+      "properties": {
+        "issued_at": { "type": "string", "format": "date-time" },
+        "expires_at": { "type": "string", "format": "date-time" },
+        "revoked_at": { "type": "string", "format": "date-time" },
+        "revocation_reason": { "type": "string" }
+      },
+      "required": ["issued_at"]
+    },
+    "signature": {
+      "type": "object",
+      "properties": {
+        "signed_by": { "type": "string" },
+        "method": { "type": "string", "enum": ["manual", "automated", "multi_sig"] },
+        "hash": { "type": "string" }
+      },
+      "required": ["signed_by", "method"]
+    }
+  },
+  "required": ["certificate_id", "certificate_type", "target_entity", "target_tier", "verification_results", "validity", "signature"]
+}

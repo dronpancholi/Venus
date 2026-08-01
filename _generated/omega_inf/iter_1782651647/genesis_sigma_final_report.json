@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "program": "GENESIS 2.0 \u2014 UEICL",
+    "iteration": 3,
+    "total_duration_ms": 26254.47,
+    "significance": 2.23,
+    "missions_completed": 10
+  },
+  "scorecard": {
+    "repository_intelligence_score": 1.047,
+    "repository_health_score": 0.592,
+    "engineering_maturity_index": 1.0,
+    "autonomous_evolution_index": 2.4,
+    "innovation_index": 0.472,
+    "knowledge_reuse_index": 0.5,
+    "scientific_output_index": 1.0,
+    "economic_efficiency_index": 2.478,
+    "architectural_quality_index": 0.687,
+    "canonicalization_progress_index": 0.5
+  },
+  "deliverables": {
+    "repository_census": 415,
+    "canonicalization": 0,
+    "platform_unification": 30,
+    "data_platform": 7,
+    "service_orientation": 82,
+    "scientific_report": {
+      "accepted": 15,
+      "total": 15
+    },
+    "economics_report": {},
+    "improvement_backlog": [],
+    "dashboard": {
+      "total_institutes": 17,
+      "by_type": {
+        "university": 1,
+        "laboratory": 1,
+        "company": 1,
+        "standards_body": 0,
+        "market": 1,
+        "foundation": 1,
+        "review_board": 1,
+        "architecture_council": 1,
+        "certification_authority": 1,
+        "research_journal": 1,
+        "innovation_center": 1,
+        "economics_council": 1,
+        "knowledge_exchange": 1,
+        "open_source_foundation": 1,
+        "government": 1,
+        "patent_office": 1,
+        "engineering_economy": 1,
+        "scientific_community": 1
+      },
+      "by_status": {
+        "proposed": 0,
+        "chartered": 0,
+        "active": 17,
+        "dormant": 0,
+        "dissolved": 0
+      },
+      "total_contracts": 2,
+      "total_reputation_events": 0,
+      "total_relationships": 6222,
+      "contracts": [
+        {
+          "name": "Research Grant",
+          "producer": "fb9fdd94dfc2",
+          "consumer": "b5ea0a91f318",
+          "value": 100.0
+        },
+        {
+          "name": "Standards Compliance",
+          "producer": "926b0002b35b",
+          "consumer": "1948181a9ea8",
+          "value": 50.0
+        }
+      ]
+    },
+    "convergence": {
+      "entropy_change": 0.0,
+      "duplication_reduction": 0.0,
+      "coupling_reduction": 0.0,
+      "cohesion_increase": 0.0,
+      "health_improvement": 0.592,
+      "intelligence_improvement": 2.23,
+      "economic_improvement": 1.4,
+      "converged": false,
+      "iteration": 3
+    }
+  },
+  "mission_summaries": {
+    "mission_1": {
+      "name": "Complete Repository Audit",
+      "deliverable_count": 1,
+      "keys": [
+        "manifest_version",
+        "package_inventory",
+        "packages",
+        "module_inventory",
+        "symbol_inventory",
+        "api_inventory",
+        "dependency_inventory",
+        "graph_entity_count"
+      ]
+    },
+    "mission_4": {
+      "name": "Engineering Data Platform",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_entities",
+        "engine_relationships",
+        "entity_type_diversity",
+        "id_pattern_usage",
+        "id_pattern_modules"
+      ]
+    },
+    "mission_3": {
+      "name": "Platform Unification",
+      "deliverable_count": 1,
+      "keys": [
+        "subsystems_found",
+        "subsystem_list",
+        "subsystem_module_counts",
+        "conflicting_representations",
+        "conflicts",
+        "canonical_entities_registered"
+      ]
+    },
+    "mission_5": {
+      "name": "Service Orientation",
+      "deliverable_count": 1,
+      "keys": [
+        "services_mapped",
+        "services"
+      ]
+    },
+    "mission_6": {
+      "name": "Repository Science",
+      "deliverable_count": 1,
+      "keys": [
+        "experiments_conducted",
+        "experiment_details",
+        "findings",
+        "hypotheses",
+        "unknowns_identified",
+        "unknown_examples",
+        "evidence_collected"
+      ]
+    },
+    "mission_9": {
+      "name": "Engineering Dashboard",
+      "deliverable_count": 1,
+      "keys": [
+        "total_institutes",
+        "by_type",
+        "by_status",
+        "total_contracts",
+        "total_reputation_events",
+        "total_relationships",
+        "contracts"
+      ]
+    },
+    "mission_10": {
+      "name": "Convergence",
+      "deliverable_count": 1,
+      "keys": [
+        "entropy_change",
+        "duplication_reduction",
+        "coupling_reduction",
+        "cohesion_increase",
+        "health_improvement",
+        "intelligence_improvement",
+        "economic_improvement",
+        "converged",
+        "iteration"
+      ]
+    },
+    "mission_8": {
+      "name": "Self-Improvement",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "mission_11": {
+      "name": "Mission 11",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "mission_12": {
+      "name": "Mission 12",
+      "deliverable_count": 1,
+      "keys": [
+        "checks",
+        "all_passed"
+      ]
+    },
+    "mission_13": {
+      "name": "Mission 13",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "mission_14": {
+      "name": "Mission 14",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "V0.9",
+  "name": "V0.9 V0.9_USEDPOS",
+  "path": "Layer_2_Core_OS/V0.9_USEDPOS",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.9-USEDPOS"
+  ],
+  "dependencies": [
+    "V0.8"
+  ]
+}

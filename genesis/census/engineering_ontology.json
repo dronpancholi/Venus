@@ -1,0 +1,1618 @@
+{
+  "Repository": {
+    "category": "repository",
+    "description": "A version-controlled code repository",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Repository name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Remote URL",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Primary language",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "default_branch",
+        "type": "string",
+        "required": false,
+        "description": "Default branch",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "file_count",
+        "type": "integer",
+        "required": false,
+        "description": "Total files",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "module_count",
+        "type": "integer",
+        "required": false,
+        "description": "Total modules",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "healthy",
+        "type": "boolean",
+        "required": false,
+        "description": "Health status",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "contains",
+        "target": "Package",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "depends_on",
+        "target": "Repository",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "provides",
+        "target": "Capability",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "discovered",
+        "cloned",
+        "indexed",
+        "active",
+        "archived"
+      ],
+      "transitions": [
+        [
+          "discovered",
+          "cloned"
+        ],
+        [
+          "cloned",
+          "indexed"
+        ],
+        [
+          "indexed",
+          "active"
+        ]
+      ]
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Package": {
+    "category": "package",
+    "description": "A named package containing modules",
+    "parent": "Repository",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Package name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "path",
+        "type": "string",
+        "required": true,
+        "description": "Filesystem path",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "module_count",
+        "type": "integer",
+        "required": false,
+        "description": "Number of modules",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "lines",
+        "type": "integer",
+        "required": false,
+        "description": "Total lines",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "tests",
+        "type": "integer",
+        "required": false,
+        "description": "Test count",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "maturity",
+        "type": "float",
+        "required": false,
+        "description": "Average maturity score",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "contains",
+        "target": "Module",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "imports",
+        "target": "Package",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Module": {
+    "category": "module",
+    "description": "A single Python module file",
+    "parent": "Package",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Module name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "path",
+        "type": "string",
+        "required": true,
+        "description": "File path",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "lines",
+        "type": "integer",
+        "required": false,
+        "description": "Total lines",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "code_lines",
+        "type": "integer",
+        "required": false,
+        "description": "Code lines",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "classes",
+        "type": "list",
+        "required": false,
+        "description": "Defined classes",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "functions",
+        "type": "list",
+        "required": false,
+        "description": "Defined functions",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "maturity",
+        "type": "float",
+        "required": false,
+        "description": "Maturity score 0-1",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "has_docstring",
+        "type": "boolean",
+        "required": false,
+        "description": "Has module docstring",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "has_type_hints",
+        "type": "boolean",
+        "required": false,
+        "description": "Has type annotations",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "test_count",
+        "type": "integer",
+        "required": false,
+        "description": "Associated test count",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "imports",
+        "target": "Module",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "imported_by",
+        "target": "Module",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": true
+      },
+      {
+        "name": "contains",
+        "target": "Class",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "contains",
+        "target": "Function",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "tested_by",
+        "target": "TestSuite",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "exports",
+        "target": "Capability",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "stable",
+        "deprecated",
+        "removed"
+      ],
+      "transitions": [
+        [
+          "created",
+          "stable"
+        ],
+        [
+          "stable",
+          "deprecated"
+        ]
+      ]
+    },
+    "validation_rules": [
+      "name must be unique within package",
+      "path must be under package directory"
+    ],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Class": {
+    "category": "code",
+    "description": "A Python class definition",
+    "parent": "Module",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Class name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "module",
+        "type": "string",
+        "required": true,
+        "description": "Containing module",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "bases",
+        "type": "list",
+        "required": false,
+        "description": "Base classes",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "defined_in",
+        "target": "Module",
+        "cardinality": "one",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Function": {
+    "category": "code",
+    "description": "A Python function or method",
+    "parent": "Module",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Function name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "module",
+        "type": "string",
+        "required": true,
+        "description": "Containing module",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "has_return_type",
+        "type": "boolean",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "defined_in",
+        "target": "Module",
+        "cardinality": "one",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "TestSuite": {
+    "category": "test",
+    "description": "A collection of tests for a target module",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Test suite name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "path",
+        "type": "string",
+        "required": true,
+        "description": "Test file path",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "test_count",
+        "type": "integer",
+        "required": false,
+        "description": "Number of tests",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "test_classes",
+        "type": "list",
+        "required": false,
+        "description": "Test class names",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "test_functions",
+        "type": "list",
+        "required": false,
+        "description": "Test function names",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "tests",
+        "target": "Module",
+        "cardinality": "one",
+        "description": "The module under test",
+        "bidirectional": false
+      },
+      {
+        "name": "validates",
+        "target": "Capability",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "TestCase": {
+    "category": "test",
+    "description": "An individual test case",
+    "parent": "TestSuite",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Test name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "suite",
+        "type": "string",
+        "required": true,
+        "description": "Parent suite",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "KnowledgeArtifact": {
+    "category": "knowledge",
+    "description": "Any piece of persistent engineering knowledge",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "id",
+        "type": "string",
+        "required": true,
+        "description": "Unique identifier",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Artifact type",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "content",
+        "type": "string",
+        "required": false,
+        "description": "Content or reference",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "confidence",
+        "type": "float",
+        "required": false,
+        "description": "Confidence score 0-1",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "source",
+        "type": "string",
+        "required": false,
+        "description": "Source of knowledge",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "derives_from",
+        "target": "KnowledgeArtifact",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "evidences",
+        "target": "Hypothesis",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "supports",
+        "target": "Decision",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Hypothesis": {
+    "category": "knowledge",
+    "description": "A testable engineering hypothesis",
+    "parent": "KnowledgeArtifact",
+    "attributes": [
+      {
+        "name": "statement",
+        "type": "string",
+        "required": true,
+        "description": "Hypothesis statement",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "confidence",
+        "type": "float",
+        "required": false,
+        "description": "Current confidence",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "proposed|testing|accepted|rejected",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "tested_by",
+        "target": "Experiment",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "evidenced_by",
+        "target": "Evidence",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "proposed",
+        "testing",
+        "accepted",
+        "rejected",
+        "archived"
+      ],
+      "transitions": [
+        [
+          "proposed",
+          "testing"
+        ],
+        [
+          "testing",
+          "accepted"
+        ],
+        [
+          "testing",
+          "rejected"
+        ]
+      ]
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Evidence": {
+    "category": "knowledge",
+    "description": "Evidence supporting or refuting a hypothesis",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Evidence type",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "required": true,
+        "description": "Evidence value",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "confidence",
+        "type": "float",
+        "required": false,
+        "description": "Confidence 0-1",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Experiment": {
+    "category": "knowledge",
+    "description": "A controlled engineering experiment",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Experiment name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "hypothesis",
+        "type": "string",
+        "required": false,
+        "description": "Linked hypothesis",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "planned|running|completed|failed",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "metrics",
+        "type": "dict",
+        "required": false,
+        "description": "Experiment metrics",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "produces",
+        "target": "Evidence",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "GraphLayer": {
+    "category": "graph",
+    "description": "A typed layer within the unified engineering graph",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Layer name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Layer type",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "node_count",
+        "type": "integer",
+        "required": false,
+        "description": "Number of nodes",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "edge_count",
+        "type": "integer",
+        "required": false,
+        "description": "Number of edges",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "GraphNode": {
+    "category": "graph",
+    "description": "A node within a graph layer",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "id",
+        "type": "string",
+        "required": true,
+        "description": "Node identifier",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "Node name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "node_type",
+        "type": "string",
+        "required": false,
+        "description": "Node type",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "weight",
+        "type": "float",
+        "required": false,
+        "description": "Node weight",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Service": {
+    "category": "runtime",
+    "description": "A registered platform service",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Service name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": false,
+        "description": "Service version",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "Service status",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "capabilities",
+        "type": "list",
+        "required": false,
+        "description": "Provided capabilities",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "registers_with",
+        "target": "Fabric",
+        "cardinality": "one",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Fabric": {
+    "category": "runtime",
+    "description": "The engineering fabric kernel",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "state",
+        "type": "string",
+        "required": false,
+        "description": "Kernel state",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "uptime",
+        "type": "float",
+        "required": false,
+        "description": "Uptime seconds",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Workflow": {
+    "category": "execution",
+    "description": "A workflow DAG for engineering execution",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Workflow name",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "nodes",
+        "type": "integer",
+        "required": false,
+        "description": "Number of nodes",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "contains",
+        "target": "WorkflowNode",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "WorkflowNode": {
+    "category": "execution",
+    "description": "A node in a workflow DAG",
+    "parent": "Workflow",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "depends_on",
+        "target": "WorkflowNode",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Task": {
+    "category": "execution",
+    "description": "An executable task",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "priority",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Pipeline": {
+    "category": "execution",
+    "description": "A sequential execution pipeline",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "stages",
+        "type": "integer",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Database": {
+    "category": "persistence",
+    "description": "A database instance",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Database type",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "collections",
+        "type": "integer",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Collection": {
+    "category": "persistence",
+    "description": "A typed collection within a database",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Collection type",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Memory": {
+    "category": "memory",
+    "description": "A memory store (episodic, semantic, procedural, etc.)",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Memory type",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "entries",
+        "type": "integer",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Agent": {
+    "category": "agent",
+    "description": "An autonomous engineering agent",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "role",
+        "type": "string",
+        "required": true,
+        "description": "Agent role",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "capabilities",
+        "type": "list",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "belongs_to",
+        "target": "Institute",
+        "cardinality": "one",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "executes",
+        "target": "Workflow",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "produces",
+        "target": "KnowledgeArtifact",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Institute": {
+    "category": "civilization",
+    "description": "An organized institute within the software civilization",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "capabilities",
+        "type": "list",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "contains",
+        "target": "Agent",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "CycleStage": {
+    "category": "cycle",
+    "description": "A stage in the autonomous engineering cycle",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "order",
+        "type": "integer",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "handler",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [
+      {
+        "name": "produces",
+        "target": "KnowledgeArtifact",
+        "cardinality": "many",
+        "description": "",
+        "bidirectional": false
+      },
+      {
+        "name": "feeds",
+        "target": "CycleStage",
+        "cardinality": "one",
+        "description": "Next stage in cycle",
+        "bidirectional": false
+      }
+    ],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Policy": {
+    "category": "governance",
+    "description": "An engineering governance policy",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "effect",
+        "type": "string",
+        "required": true,
+        "description": "allow|deny|warn|audit",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "service",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "action",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Contract": {
+    "category": "governance",
+    "description": "A typed event or service contract",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "topic",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "producer",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "consumers",
+        "type": "list",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  },
+  "Metric": {
+    "category": "economics",
+    "description": "A measurable engineering metric",
+    "parent": "",
+    "attributes": [
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "value",
+        "type": "float",
+        "required": true,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "unit",
+        "type": "string",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      },
+      {
+        "name": "tags",
+        "type": "dict",
+        "required": false,
+        "description": "",
+        "constraints": [],
+        "example": null
+      }
+    ],
+    "relations": [],
+    "lifecycle": {
+      "stages": [
+        "created",
+        "active",
+        "archived"
+      ],
+      "transitions": []
+    },
+    "validation_rules": [],
+    "examples": [],
+    "confidence": 1.0
+  }
+}

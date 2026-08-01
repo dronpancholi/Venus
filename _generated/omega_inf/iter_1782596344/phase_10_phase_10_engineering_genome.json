@@ -1,0 +1,11 @@
+{
+  "species": "Python Monorepo",
+  "genes": 415,
+  "chromosomes": 1369,
+  "coding_sequences": 7150,
+  "genome_length": 93614,
+  "phenotype_expression": {
+    "module_density": 3.299,
+    "function_density": 17.229
+  }
+}

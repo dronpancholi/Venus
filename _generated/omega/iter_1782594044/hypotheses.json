@@ -1,0 +1,203 @@
+[
+  {
+    "name": "canonicalize_AgentMemory",
+    "target": "AgentMemory",
+    "locations": [
+      "genesis.civilization.agents.base",
+      "genesis.memory.types"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_ArchitectureAlgebra",
+    "target": "ArchitectureAlgebra",
+    "locations": [
+      "genesis.mathematics",
+      "genesis.mathematics_v2"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_AttentionFocus",
+    "target": "AttentionFocus",
+    "locations": [
+      "genesis.brain.cognition.attention",
+      "genesis.brain_v4"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_Belief",
+    "target": "Belief",
+    "locations": [
+      "genesis.brain.cognition.belief",
+      "genesis.brain_v4"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_Capability",
+    "target": "Capability",
+    "locations": [
+      "genesis.brain.entity",
+      "genesis.ucos.capability"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_CapabilityDefinition",
+    "target": "CapabilityDefinition",
+    "locations": [
+      "genesis.capability.registry",
+      "genesis.ucos.capability"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_CapabilityGraph",
+    "target": "CapabilityGraph",
+    "locations": [
+      "genesis.core.uir",
+      "genesis.graph_v2.layers"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_CapabilityRegistry",
+    "target": "CapabilityRegistry",
+    "locations": [
+      "genesis.capability.registry",
+      "genesis.ucos.registry"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_CapabilityVector",
+    "target": "CapabilityVector",
+    "locations": [
+      "genesis.mathematics",
+      "genesis.mathematics_v2"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_CategoryTheory",
+    "target": "CategoryTheory",
+    "locations": [
+      "genesis.mathematics",
+      "genesis.mathematics_v2"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_CausalLink",
+    "target": "CausalLink",
+    "locations": [
+      "genesis.brain.cognition.reasoning",
+      "genesis.brain_v4"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_Checkpoint",
+    "target": "Checkpoint",
+    "locations": [
+      "genesis.kernel.types",
+      "genesis.os.checkpoint"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_CheckpointManager",
+    "target": "CheckpointManager",
+    "locations": [
+      "genesis.engineering_os",
+      "genesis.kernel.checkpoint_manager",
+      "genesis.os.checkpoint"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 30
+  },
+  {
+    "name": "canonicalize_CostSimulator",
+    "target": "CostSimulator",
+    "locations": [
+      "genesis.simulator",
+      "genesis.simulator_v2"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_DependencyGraph",
+    "target": "DependencyGraph",
+    "locations": [
+      "genesis.core.uir",
+      "genesis.graph_v2.layers"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_Edge",
+    "target": "Edge",
+    "locations": [
+      "genesis.graphdb",
+      "genesis.metamodel.graph"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_EdgeType",
+    "target": "EdgeType",
+    "locations": [
+      "genesis.execution_graph",
+      "genesis.hypergraph"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_EntityRelation",
+    "target": "EntityRelation",
+    "locations": [
+      "genesis.metamodel.entity",
+      "genesis.ontology"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_EpisodicMemory",
+    "target": "EpisodicMemory",
+    "locations": [
+      "genesis.brain.cognition.memory",
+      "genesis.memory.types"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  },
+  {
+    "name": "canonicalize_EventBus",
+    "target": "EventBus",
+    "locations": [
+      "genesis.di.interfaces",
+      "genesis.events.bus"
+    ],
+    "type": "canonicalization",
+    "expected_benefit": 20
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "improvements_proposed": 5,
+  "improvements": [
+    {
+      "target": "canonicalization_audit",
+      "confidence": 0.95,
+      "priority": "high"
+    },
+    {
+      "target": "dependency_analysis",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "risk_assessment",
+      "confidence": 0.85,
+      "priority": "high"
+    },
+    {
+      "target": "health_check",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "type_inventory",
+      "confidence": 1.0,
+      "priority": "high"
+    }
+  ],
+  "ranked_roadmap": [
+    {
+      "target": "type_inventory",
+      "confidence": 1.0,
+      "priority": "high"
+    },
+    {
+      "target": "canonicalization_audit",
+      "confidence": 0.95,
+      "priority": "high"
+    },
+    {
+      "target": "dependency_analysis",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "health_check",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "risk_assessment",
+      "confidence": 0.85,
+      "priority": "high"
+    }
+  ]
+}

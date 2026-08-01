@@ -1,0 +1,57 @@
+{
+  "improvements_proposed": 5,
+  "improvements": [
+    {
+      "target": "unknown",
+      "confidence": 0.95,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 0.85,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 1.0,
+      "priority": "high"
+    }
+  ],
+  "ranked_roadmap": [
+    {
+      "target": "unknown",
+      "confidence": 1.0,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 0.95,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 0.9,
+      "priority": "high"
+    },
+    {
+      "target": "unknown",
+      "confidence": 0.85,
+      "priority": "high"
+    }
+  ]
+}

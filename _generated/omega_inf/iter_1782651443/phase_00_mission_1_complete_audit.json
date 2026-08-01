@@ -1,0 +1,29 @@
+{
+  "manifest_version": "2.0",
+  "package_inventory": 3,
+  "packages": {
+    "Layer_1_Foundations": {
+      "classes": 11,
+      "functions": 83,
+      "lines": 2156
+    },
+    "generate_usptcros_templates": {
+      "classes": 0,
+      "functions": 0,
+      "lines": 3309
+    },
+    "genesis": {
+      "classes": 1358,
+      "functions": 7077,
+      "lines": 88714
+    }
+  },
+  "module_inventory": 415,
+  "symbol_inventory": {
+    "classes": 1369,
+    "functions": 7160
+  },
+  "api_inventory": 5879,
+  "dependency_inventory": 415,
+  "graph_entity_count": 6204
+}

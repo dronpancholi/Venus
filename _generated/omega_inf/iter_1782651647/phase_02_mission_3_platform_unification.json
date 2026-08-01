@@ -1,0 +1,195 @@
+{
+  "subsystems_found": 82,
+  "subsystem_list": [
+    "__main__",
+    "acquisition",
+    "api",
+    "autonomous",
+    "brain",
+    "brain_v4",
+    "capability",
+    "census",
+    "certification",
+    "civilization",
+    "civilization_v2",
+    "civilization_v3",
+    "cli",
+    "compiler",
+    "config",
+    "core",
+    "datalake",
+    "di",
+    "diagnostics",
+    "digital_civilization"
+  ],
+  "subsystem_module_counts": {
+    "__main__": 1,
+    "acquisition": 20,
+    "api": 2,
+    "autonomous": 3,
+    "brain": 16,
+    "brain_v4": 1,
+    "capability": 2,
+    "census": 1,
+    "certification": 2,
+    "civilization": 14,
+    "civilization_v2": 1,
+    "civilization_v3": 1,
+    "cli": 2,
+    "compiler": 13,
+    "config": 1,
+    "core": 6,
+    "datalake": 1,
+    "di": 4,
+    "diagnostics": 2,
+    "digital_civilization": 1,
+    "digital_twin": 29,
+    "discovery": 1,
+    "economics": 1,
+    "engineering_os": 1,
+    "events": 2,
+    "evolution": 1,
+    "evolution_v4": 1,
+    "execution": 8,
+    "execution_graph": 1,
+    "fabric": 11,
+    "genesis_viii": 1,
+    "graph": 2,
+    "graph_v2": 9,
+    "graphdb": 1,
+    "hypergraph": 1,
+    "indexer": 2,
+    "integration": 2,
+    "intelligence": 14,
+    "kernel": 18,
+    "knowledge_graph": 1,
+    "laboratory": 10,
+    "marketplace": 1,
+    "mathematics": 1,
+    "mathematics_v2": 1,
+    "memory": 4,
+    "memory_system": 1,
+    "meta": 10,
+    "meta_model": 1,
+    "metamodel": 5,
+    "observatory": 7,
+    "omega_loop": 1,
+    "ontology": 1,
+    "os": 14,
+    "package": 2,
+    "persistence": 3,
+    "physics": 1,
+    "planetary_knowledge": 1,
+    "planner": 1,
+    "planning": 1,
+    "platform": 1,
+    "platform_v2": 1,
+    "plugin": 3,
+    "project": 2,
+    "reasoning": 1,
+    "repository_economics": 1,
+    "repository_engineer": 1,
+    "repository_graph": 1,
+    "repository_scientist": 1,
+    "reverse_engineer": 1,
+    "runtime": 2,
+    "scientist": 1,
+    "security": 2,
+    "simulator": 1,
+    "simulator_v2": 1,
+    "studio": 2,
+    "temporal": 1,
+    "tests": 72,
+    "ucos": 13,
+    "ued": 13,
+    "usir": 5,
+    "utils": 4,
+    "validation": 7
+  },
+  "conflicting_representations": 30,
+  "conflicts": [
+    {
+      "subsystem_a": "acquisition",
+      "subsystem_b": "observatory",
+      "shared_classes": [
+        "GitHubSource"
+      ],
+      "count": 1
+    },
+    {
+      "subsystem_a": "brain",
+      "subsystem_b": "digital_twin",
+      "shared_classes": [
+        "ReasoningEngine",
+        "Evidence"
+      ],
+      "count": 2
+    },
+    {
+      "subsystem_a": "brain",
+      "subsystem_b": "execution",
+      "shared_classes": [
+        "TaskStatus"
+      ],
+      "count": 1
+    },
+    {
+      "subsystem_a": "brain",
+      "subsystem_b": "memory",
+      "shared_classes": [
+        "EpisodicMemory"
+      ],
+      "count": 1
+    },
+    {
+      "subsystem_a": "brain",
+      "subsystem_b": "runtime",
+      "shared_classes": [
+        "TaskStatus"
+      ],
+      "count": 1
+    },
+    {
+      "subsystem_a": "brain",
+      "subsystem_b": "ucos",
+      "shared_classes": [
+        "Capability"
+      ],
+      "count": 1
+    },
+    {
+      "subsystem_a": "capability",
+      "subsystem_b": "ucos",
+      "shared_classes": [
+        "CapabilityDefinition",
+        "CapabilityRegistry"
+      ],
+      "count": 2
+    },
+    {
+      "subsystem_a": "civilization",
+      "subsystem_b": "digital_twin",
+      "shared_classes": [
+        "Prediction"
+      ],
+      "count": 1
+    },
+    {
+      "subsystem_a": "civilization",
+      "subsystem_b": "memory",
+      "shared_classes": [
+        "AgentMemory"
+      ],
+      "count": 1
+    },
+    {
+      "subsystem_a": "civilization",
+      "subsystem_b": "os",
+      "shared_classes": [
+        "Observation"
+      ],
+      "count": 1
+    }
+  ],
+  "canonical_entities_registered": 0
+}

@@ -1,0 +1,31 @@
+{
+  "reasoning_applied": [
+    "deduction",
+    "induction",
+    "abduction",
+    "causal",
+    "counterfactual"
+  ],
+  "evidence_sources": 6,
+  "recommendations": [
+    {
+      "reasoning": "induction",
+      "conclusion": "5 modules show import-complexity correlation",
+      "evidence": "modules with >5 imports and >10 complexity: ['Layer_1_Foundations._compiler.venus_compiler', 'Layer_1_Foundations._evolution.evolution_agent', 'Layer_1_Foundations._validation.generate_catalog', 'genesis.acquisition', 'genesis.acquisition.orchestrator']",
+      "recommendation": "Refactor high-import modules into smaller focused units"
+    },
+    {
+      "reasoning": "causal",
+      "conclusion": "10 high-complexity modules drive maintenance cost",
+      "evidence": "Modules with >15 cyclomatic complexity: ['Layer_1_Foundations._compiler.venus_compiler', 'Layer_1_Foundations._evolution.evolution_agent', 'Layer_1_Foundations._graph.semantic_graph', 'Layer_1_Foundations._rule_engine.rule_engine', 'Layer_1_Foundations._validation.check_naming']",
+      "recommendation": "Reduce complexity in high-complexity modules"
+    },
+    {
+      "reasoning": "counterfactual",
+      "conclusion": "Removing duplicates could reduce complexity by ~0 points",
+      "evidence": "0 modules involved in duplication, each ~2 complexity points",
+      "recommendation": "Prioritize canonicalization for highest-ROI complexity reduction"
+    }
+  ],
+  "recommendation_count": 3
+}

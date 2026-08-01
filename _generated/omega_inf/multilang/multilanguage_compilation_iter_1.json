@@ -1,0 +1,226 @@
+{
+  "iteration": 1,
+  "total_languages": 20,
+  "languages_supported": [
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "Go",
+    "Rust",
+    "Java",
+    "C#",
+    "C",
+    "C++",
+    "Kotlin",
+    "Swift",
+    "PHP",
+    "Ruby",
+    "Scala",
+    "Dart",
+    "Haskell",
+    "Lua",
+    "Elixir",
+    "Zig",
+    "OCaml"
+  ],
+  "detected_languages": {
+    "Python": {
+      "files": 415,
+      "lines": 98279,
+      "extensions": ".py"
+    }
+  },
+  "present_count": 1,
+  "usir_coverage": {
+    "Python": {
+      "present": true,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 66.7
+    },
+    "TypeScript": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "JavaScript": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 66.7
+    },
+    "Go": {
+      "present": false,
+      "usir_class_support": false,
+      "usir_interface_support": true,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 33.3
+    },
+    "Rust": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "Java": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "C#": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "C": {
+      "present": false,
+      "usir_class_support": false,
+      "usir_interface_support": false,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 0.0
+    },
+    "C++": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "Kotlin": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "Swift": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "PHP": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": false,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 33.3
+    },
+    "Ruby": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": false,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 33.3
+    },
+    "Scala": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "Dart": {
+      "present": false,
+      "usir_class_support": true,
+      "usir_interface_support": true,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 100.0
+    },
+    "Haskell": {
+      "present": false,
+      "usir_class_support": false,
+      "usir_interface_support": false,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 0.0
+    },
+    "Lua": {
+      "present": false,
+      "usir_class_support": false,
+      "usir_interface_support": false,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 0.0
+    },
+    "Elixir": {
+      "present": false,
+      "usir_class_support": false,
+      "usir_interface_support": false,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 0.0
+    },
+    "Zig": {
+      "present": false,
+      "usir_class_support": false,
+      "usir_interface_support": false,
+      "usir_generics_support": true,
+      "usir_compatibility_pct": 33.3
+    },
+    "OCaml": {
+      "present": false,
+      "usir_class_support": false,
+      "usir_interface_support": false,
+      "usir_generics_support": false,
+      "usir_compatibility_pct": 0.0
+    }
+  },
+  "language_families": {
+    "statically_typed": [
+      "TypeScript",
+      "Go",
+      "Rust",
+      "Java",
+      "C#",
+      "C",
+      "C++",
+      "Kotlin",
+      "Swift",
+      "Scala",
+      "Dart",
+      "Haskell",
+      "Elixir",
+      "Zig",
+      "OCaml"
+    ],
+    "dynamically_typed": [
+      "Python",
+      "JavaScript",
+      "PHP",
+      "Ruby",
+      "Lua"
+    ],
+    "compiled": [
+      "Go",
+      "Rust",
+      "Java",
+      "C#",
+      "C",
+      "C++",
+      "Kotlin",
+      "Swift",
+      "Scala",
+      "Dart",
+      "Haskell",
+      "Elixir",
+      "Zig",
+      "OCaml"
+    ],
+    "interpreted": [
+      "Python",
+      "JavaScript",
+      "PHP",
+      "Ruby",
+      "Lua"
+    ]
+  },
+  "recommendation": "Expand USIR parser"
+}

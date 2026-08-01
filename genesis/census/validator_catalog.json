@@ -1,0 +1,512 @@
+[
+  {
+    "id": "378d563fd17ba6ef:validator:genesis.digital_twin.validation",
+    "type": "validator",
+    "name": "genesis.digital_twin.validation",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.validation"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.evolution.EvolutionEngine",
+      "genesis.digital_twin.hypothesis.Hypothesis",
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.11,
+    "health": 0.97,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "EquilibriumSignal",
+        "EquilibriumDetector",
+        "ValidatorGate",
+        "ValidationResult",
+        "ScientificValidator"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__init__",
+        "analyze",
+        "_check_hypothesis_stagnation",
+        "_check_metric_plateau",
+        "_challenge_assumptions",
+        "__init__",
+        "to_dict",
+        "__init__",
+        "to_dict",
+        "__init__",
+        "validate",
+        "_gate_mathematical",
+        "_gate_simulation",
+        "_gate_empirical",
+        "_gate_architectural",
+        "_gate_repository",
+        "_gate_historical"
+      ],
+      "path": "genesis/digital_twin/validation.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "4801cf1b29491d8b:validator:genesis.kernel.checkpoint_manager",
+    "type": "validator",
+    "name": "genesis.kernel.checkpoint_manager",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.99,
+    "evidence": [
+      "module:genesis.kernel.checkpoint_manager"
+    ],
+    "dependencies": [
+      "genesis.kernel.types.Checkpoint"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ],
+    "maturity": 0.99,
+    "risk": 0.08,
+    "health": 0.97,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "CheckpointManager"
+      ],
+      "functions": [
+        "__init__",
+        "create",
+        "get",
+        "latest",
+        "list_for",
+        "restore",
+        "delete",
+        "delete_all",
+        "verify",
+        "summary"
+      ],
+      "path": "genesis/kernel/checkpoint_manager.py",
+      "package": "genesis.kernel"
+    }
+  },
+  {
+    "id": "10f4e332464637c6:validator:genesis.os.checkpoint",
+    "type": "validator",
+    "name": "genesis.os.checkpoint",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.os.checkpoint"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.os",
+      "genesis.os.runtime",
+      "genesis.tests.test_os"
+    ],
+    "maturity": 1.0,
+    "risk": 0.08,
+    "health": 0.98,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "Checkpoint",
+        "CheckpointManager"
+      ],
+      "functions": [
+        "__init__",
+        "register_hook",
+        "create",
+        "restore",
+        "latest",
+        "list_checkpoints",
+        "summary",
+        "_save_checkpoint",
+        "_index_path",
+        "_save_index",
+        "_load"
+      ],
+      "path": "genesis/os/checkpoint.py",
+      "package": "genesis.os"
+    }
+  },
+  {
+    "id": "593bec8fd4fbf0f9:validator:genesis.security.validator",
+    "type": "validator",
+    "name": "genesis.security.validator",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.65,
+    "evidence": [
+      "module:genesis.security.validator"
+    ],
+    "dependencies": [
+      "genesis.events.bus.EventBus",
+      "genesis.persistence.MemoryStore"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.test_stubs"
+    ],
+    "maturity": 0.65,
+    "risk": 0.25,
+    "health": 0.68,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "SecurityValidator"
+      ],
+      "functions": [
+        "__init__",
+        "_emit",
+        "add_policy",
+        "validate",
+        "audit_log"
+      ],
+      "path": "genesis/security/validator.py",
+      "package": "genesis.security"
+    }
+  },
+  {
+    "id": "814f50e62f3cdf47:validator:genesis.tests.test_ucos_validator",
+    "type": "validator",
+    "name": "genesis.tests.test_ucos_validator",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.36,
+    "evidence": [
+      "module:genesis.tests.test_ucos_validator"
+    ],
+    "dependencies": [
+      "genesis.ucos.capability.Capability",
+      "genesis.ucos.capability.CapabilityDefinition",
+      "genesis.ucos.capability.CapabilityHealth",
+      "genesis.ucos.registry.CapabilityRegistry",
+      "genesis.ucos.validator.CapabilityValidator"
+    ],
+    "consumers": [],
+    "maturity": 0.36,
+    "risk": 0.41,
+    "health": 0.43,
+    "role": "validator",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "validator",
+        "test_validate_healthy",
+        "test_validate_missing",
+        "test_validate_missing_dependency",
+        "test_validate_high_failure_count",
+        "test_custom_rule",
+        "test_validate_all",
+        "test_healthy_and_unhealthy",
+        "test_get_result",
+        "rule"
+      ],
+      "path": "genesis/tests/test_ucos_validator.py",
+      "package": "genesis.tests"
+    }
+  },
+  {
+    "id": "d31c42791c976a9b:validator:genesis.ucos.validator",
+    "type": "validator",
+    "name": "genesis.ucos.validator",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.ucos.validator"
+    ],
+    "dependencies": [
+      "genesis.ucos.capability.Capability",
+      "genesis.ucos.capability.CapabilityDefinition",
+      "genesis.ucos.capability.CapabilityState",
+      "genesis.ucos.capability.MaturityLevel"
+    ],
+    "consumers": [
+      "genesis.tests.test_ucos_validator",
+      "genesis.ucos",
+      "genesis.ucos.ucos"
+    ],
+    "maturity": 0.7,
+    "risk": 0.28,
+    "health": 0.71,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "ValidationResult",
+        "CapabilityValidator"
+      ],
+      "functions": [
+        "__post_init__",
+        "__init__",
+        "add_rule",
+        "validate",
+        "validate_all",
+        "get_result",
+        "healthy_capabilities",
+        "unhealthy_capabilities"
+      ],
+      "path": "genesis/ucos/validator.py",
+      "package": "genesis.ucos"
+    }
+  },
+  {
+    "id": "5a03bb654a15bd59:validator:genesis.validation",
+    "type": "validator",
+    "name": "genesis.validation",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.validation"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.cli.commands",
+      "genesis.integration.project31a",
+      "genesis.studio.backend",
+      "genesis.tests.test_platform",
+      "genesis.validation.engine",
+      "genesis.validation.validators.naming",
+      "genesis.validation.validators.schema",
+      "genesis.validation.validators.structural"
+    ],
+    "maturity": 0.35,
+    "risk": 0.45,
+    "health": 0.41,
+    "role": "validator",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/validation/__init__.py",
+      "package": "genesis.validation"
+    }
+  },
+  {
+    "id": "033fdf49461fbddb:validator:genesis.validation.base",
+    "type": "validator",
+    "name": "genesis.validation.base",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.66,
+    "evidence": [
+      "module:genesis.validation.base"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.integration.project31a",
+      "genesis.tests.test_platform",
+      "genesis.validation.engine",
+      "genesis.validation.validators.naming",
+      "genesis.validation.validators.schema",
+      "genesis.validation.validators.structural"
+    ],
+    "maturity": 0.66,
+    "risk": 0.27,
+    "health": 0.68,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "ValidationResult",
+        "BaseValidator"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__repr__",
+        "__init__",
+        "validate",
+        "result"
+      ],
+      "path": "genesis/validation/base.py",
+      "package": "genesis.validation"
+    }
+  },
+  {
+    "id": "12dfe728c341c560:validator:genesis.validation.engine",
+    "type": "validator",
+    "name": "genesis.validation.engine",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.68,
+    "evidence": [
+      "module:genesis.validation.engine"
+    ],
+    "dependencies": [
+      "genesis.validation.base.BaseValidator",
+      "genesis.validation.base.ValidationResult",
+      "genesis.validation.validators.naming.NamingValidator",
+      "genesis.validation.validators.schema.SchemaValidator",
+      "genesis.validation.validators.structural.StructuralValidator"
+    ],
+    "consumers": [
+      "genesis.cli.commands",
+      "genesis.integration.project31a",
+      "genesis.studio.backend",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.68,
+    "risk": 0.31,
+    "health": 0.68,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "ValidationEngine",
+        "FuncValidator"
+      ],
+      "functions": [
+        "__init__",
+        "_register_builtins",
+        "register",
+        "register_func",
+        "get",
+        "validate",
+        "validate_path",
+        "validate_all",
+        "summary",
+        "all_validators",
+        "__init__",
+        "validate"
+      ],
+      "path": "genesis/validation/engine.py",
+      "package": "genesis.validation"
+    }
+  },
+  {
+    "id": "7cbb84db4b149738:validator:genesis.validation.validators",
+    "type": "validator",
+    "name": "genesis.validation.validators",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.validation.validators"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.validation.engine"
+    ],
+    "maturity": 0.35,
+    "risk": 0.34,
+    "health": 0.44,
+    "role": "validator",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/validation/validators/__init__.py",
+      "package": "genesis.validation.validators"
+    }
+  },
+  {
+    "id": "3f3476f02326b79a:validator:genesis.validation.validators.naming",
+    "type": "validator",
+    "name": "genesis.validation.validators.naming",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.64,
+    "evidence": [
+      "module:genesis.validation.validators.naming"
+    ],
+    "dependencies": [
+      "genesis.validation.base.BaseValidator",
+      "genesis.validation.base.ValidationResult"
+    ],
+    "consumers": [
+      "genesis.validation.engine"
+    ],
+    "maturity": 0.64,
+    "risk": 0.23,
+    "health": 0.68,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "NamingValidator"
+      ],
+      "functions": [
+        "__init__",
+        "validate"
+      ],
+      "path": "genesis/validation/validators/naming.py",
+      "package": "genesis.validation.validators"
+    }
+  },
+  {
+    "id": "0b7625405f45acc0:validator:genesis.validation.validators.schema",
+    "type": "validator",
+    "name": "genesis.validation.validators.schema",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.6,
+    "evidence": [
+      "module:genesis.validation.validators.schema"
+    ],
+    "dependencies": [
+      "genesis.validation.base.BaseValidator",
+      "genesis.validation.base.ValidationResult"
+    ],
+    "consumers": [
+      "genesis.validation.engine"
+    ],
+    "maturity": 0.6,
+    "risk": 0.25,
+    "health": 0.65,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "SchemaValidator"
+      ],
+      "functions": [
+        "__init__",
+        "validate"
+      ],
+      "path": "genesis/validation/validators/schema.py",
+      "package": "genesis.validation.validators"
+    }
+  },
+  {
+    "id": "d2be5982fe86b639:validator:genesis.validation.validators.structural",
+    "type": "validator",
+    "name": "genesis.validation.validators.structural",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.66,
+    "evidence": [
+      "module:genesis.validation.validators.structural"
+    ],
+    "dependencies": [
+      "genesis.validation.base.BaseValidator",
+      "genesis.validation.base.ValidationResult"
+    ],
+    "consumers": [
+      "genesis.validation.engine"
+    ],
+    "maturity": 0.66,
+    "risk": 0.23,
+    "health": 0.69,
+    "role": "validator",
+    "metadata": {
+      "classes": [
+        "StructuralValidator"
+      ],
+      "functions": [
+        "__init__",
+        "validate",
+        "_validate_json",
+        "_validate_markdown"
+      ],
+      "path": "genesis/validation/validators/structural.py",
+      "package": "genesis.validation.validators"
+    }
+  }
+]

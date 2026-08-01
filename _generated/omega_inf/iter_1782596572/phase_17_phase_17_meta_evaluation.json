@@ -1,0 +1,8 @@
+{
+  "phases_executed": 20,
+  "indices_computed": 8,
+  "metrics_available": 14,
+  "weak_metrics": [],
+  "calibration": "self-consistent",
+  "recommendation": "all metrics within expected ranges"
+}

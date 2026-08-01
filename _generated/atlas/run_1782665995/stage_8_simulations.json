@@ -1,0 +1,50 @@
+{
+  "stage": 8,
+  "simulations": [
+    {
+      "problem_id": "P1",
+      "design": "PluginRegistry pattern for OmegaLoop decoupling",
+      "simulated_outcome": "Reduced coupling, eliminated 1 duplicate modules",
+      "estimated_lines_removed": 0,
+      "estimated_complexity_reduction_pct": 15,
+      "risk_of_regression": "Registration order dependencies",
+      "test_coverage_impact": "Existing tests should continue passing after refactoring"
+    },
+    {
+      "problem_id": "P2",
+      "design": "Civilization consolidation to digital_civilization canonical",
+      "simulated_outcome": "Reduced coupling, eliminated 1 duplicate modules",
+      "estimated_lines_removed": 800,
+      "estimated_complexity_reduction_pct": 10,
+      "risk_of_regression": "Missed caller during migration audit",
+      "test_coverage_impact": "Existing tests should continue passing after refactoring"
+    },
+    {
+      "problem_id": "P3",
+      "design": "Platform unification",
+      "simulated_outcome": "Reduced coupling, eliminated 1 duplicate modules",
+      "estimated_lines_removed": 400,
+      "estimated_complexity_reduction_pct": 5,
+      "risk_of_regression": "External consumers depending on specific_v2 API",
+      "test_coverage_impact": "Existing tests should continue passing after refactoring"
+    },
+    {
+      "problem_id": "P4",
+      "design": "Evolution Engine consolidation",
+      "simulated_outcome": "Reduced coupling, eliminated 2 duplicate modules",
+      "estimated_lines_removed": 1500,
+      "estimated_complexity_reduction_pct": 20,
+      "risk_of_regression": "Evolution_v4 may not cover all evolution.py use cases",
+      "test_coverage_impact": "Existing tests should continue passing after refactoring"
+    },
+    {
+      "problem_id": "P6",
+      "design": "Architecture Review Board protocol",
+      "simulated_outcome": "Reduced coupling, eliminated 1 duplicate modules",
+      "estimated_lines_removed": 0,
+      "estimated_complexity_reduction_pct": 25,
+      "risk_of_regression": "Process friction discourages legitimate new abstractions",
+      "test_coverage_impact": "Existing tests should continue passing after refactoring"
+    }
+  ]
+}

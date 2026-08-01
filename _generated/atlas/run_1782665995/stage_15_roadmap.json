@@ -1,0 +1,60 @@
+{
+  "stage": 15,
+  "roadmap": [
+    {
+      "priority": 1,
+      "initiative": "OmegaLoop PluginRegistry Decoupling",
+      "estimated_effort": "3-5 days",
+      "expected_roi": 0.85,
+      "rationale": "Reduces coupling from 9 direct imports to 1 registry lookup \u2014 highest architectural leverage",
+      "depends_on": [],
+      "verification": "Verify OmegaLoop no longer directly imports all 9 genesis modules"
+    },
+    {
+      "priority": 2,
+      "initiative": "Civilization Consolidation",
+      "estimated_effort": "2-3 days",
+      "expected_roi": 0.75,
+      "rationale": "Eliminates 2 duplicate civilization implementations, reduces complexity by ~800 lines",
+      "depends_on": [
+        "P1"
+      ],
+      "verification": "All civilization_v2/v3 callers migrated to digital_civilization"
+    },
+    {
+      "priority": 3,
+      "initiative": "Platform Unification",
+      "estimated_effort": "1-2 days",
+      "expected_roi": 0.65,
+      "rationale": "Merges platform.py and platform_v2.py into single canonical module",
+      "depends_on": [
+        "P1"
+      ],
+      "verification": "Single Platform module exports all previously public APIs"
+    },
+    {
+      "priority": 4,
+      "initiative": "Evolution Engine Consolidation",
+      "estimated_effort": "4-5 days",
+      "expected_roi": 0.7,
+      "rationale": "Consolidates 5 evolution/simulation modules into 1 canonical engine with backends",
+      "depends_on": [
+        "P1",
+        "P2"
+      ],
+      "verification": "All evolution functionality available through evolution_v4 canonical API"
+    },
+    {
+      "priority": 5,
+      "initiative": "Architecture Review Board Protocol",
+      "estimated_effort": "1 day",
+      "expected_roi": 0.9,
+      "rationale": "Prevents future architectural entropy growth \u2014 highest long-term ROI",
+      "depends_on": [],
+      "verification": "New abstractions require mandatory review with written justification"
+    }
+  ],
+  "estimated_total_effort": "11-16 days",
+  "average_roi": 0.77,
+  "governing_principle": "Every change must make the repository easier to understand than it was before"
+}

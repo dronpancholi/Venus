@@ -1,0 +1,29 @@
+{
+  "iteration": 1,
+  "domains_observed": 7,
+  "total_domains": 21,
+  "coverage": 0.3333,
+  "domain_breakdown": {
+    "repositories": 1,
+    "organizations": 0,
+    "products": 0,
+    "services": 0,
+    "infrastructure": 4,
+    "languages": 1,
+    "frameworks": 12,
+    "libraries": 0,
+    "cloud_systems": 0,
+    "databases": 3,
+    "operating_systems": 0,
+    "protocols": 0,
+    "standards": 0,
+    "security_advisories": 0,
+    "research_papers": 0,
+    "commits": 0,
+    "issues": 0,
+    "pull_requests": 0,
+    "benchmarks": 0,
+    "telemetry": 6,
+    "runtime_traces": 6
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://generated/certificate/securitylaunchcertificate/v1",
+  "title": "SecurityLaunchCertificate",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "target_tier": {
+      "type": "string"
+    },
+    "urqs_score": {
+      "type": "number"
+    },
+    "gates_passed": {
+      "type": "array"
+    },
+    "validity_period": {
+      "type": "string"
+    },
+    "signed_by": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "description",
+    "target_tier",
+    "urqs_score",
+    "gates_passed",
+    "validity_period",
+    "signed_by"
+  ]
+}

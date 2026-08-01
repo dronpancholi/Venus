@@ -1,0 +1,194 @@
+{
+  "total_work_items": 244,
+  "queue_breakdown": {
+    "architecture_review": 62,
+    "dependency_review": 2,
+    "documentation_review": 13,
+    "complexity_review": 167
+  },
+  "high_priority": 87,
+  "medium_priority": 106,
+  "low_priority": 51,
+  "work_items": [
+    {
+      "queue": "complexity_review",
+      "target": "Layer_1_Foundations._compiler.venus_compiler",
+      "issue": "High cyclomatic complexity (101)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "Layer_1_Foundations._validation.generate_catalog",
+      "issue": "High cyclomatic complexity (65)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.brain.cognition.belief",
+      "issue": "High cyclomatic complexity (66)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.brain_v4",
+      "issue": "High cyclomatic complexity (87)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.census",
+      "issue": "High cyclomatic complexity (235)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.civilization.agents",
+      "issue": "High cyclomatic complexity (150)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.civilization.formal",
+      "issue": "High cyclomatic complexity (54)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.civilization.institute",
+      "issue": "High cyclomatic complexity (55)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.civilization.knowledge",
+      "issue": "High cyclomatic complexity (90)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.civilization.review",
+      "issue": "High cyclomatic complexity (67)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.digital_twin.evolution",
+      "issue": "High cyclomatic complexity (61)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.digital_twin.hypothesis",
+      "issue": "High cyclomatic complexity (55)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.digital_twin.metrics",
+      "issue": "High cyclomatic complexity (63)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.digital_twin.reasoning",
+      "issue": "High cyclomatic complexity (107)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.digital_twin.ris",
+      "issue": "High cyclomatic complexity (78)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.discovery",
+      "issue": "High cyclomatic complexity (60)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.graph.engine",
+      "issue": "High cyclomatic complexity (51)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.graph_v2.core",
+      "issue": "High cyclomatic complexity (52)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.graphdb",
+      "issue": "High cyclomatic complexity (80)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.hypergraph",
+      "issue": "High cyclomatic complexity (179)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.indexer.indexer",
+      "issue": "High cyclomatic complexity (53)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.knowledge_graph",
+      "issue": "High cyclomatic complexity (53)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.laboratory.extraction.pipeline",
+      "issue": "High cyclomatic complexity (70)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.laboratory.mining.subgraph",
+      "issue": "High cyclomatic complexity (61)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.marketplace",
+      "issue": "High cyclomatic complexity (57)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.mathematics",
+      "issue": "High cyclomatic complexity (144)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.mathematics_v2",
+      "issue": "High cyclomatic complexity (86)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.memory_system",
+      "issue": "High cyclomatic complexity (89)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.meta.graph",
+      "issue": "High cyclomatic complexity (51)",
+      "priority": "high"
+    },
+    {
+      "queue": "complexity_review",
+      "target": "genesis.meta_model",
+      "issue": "High cyclomatic complexity (85)",
+      "priority": "high"
+    }
+  ]
+}

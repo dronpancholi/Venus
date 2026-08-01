@@ -1,0 +1,62 @@
+{
+  "iteration": 1,
+  "total_hypotheses": 3,
+  "accepted_hypotheses": 1,
+  "rejection_rate": 0.6667,
+  "hypotheses": [
+    {
+      "observation": "624/7125 functions have docstrings (0.0876)",
+      "question": "Does documentation coverage correlate with lower defect density?",
+      "hypothesis": "Modules with >50% documentation coverage have fewer defects",
+      "prediction": "Documented modules will show higher test coverage",
+      "experiment": "Compare test counts between documented and undocumented modules",
+      "measurement": {
+        "doc_ratio": 0.0876
+      },
+      "replication_count": 1,
+      "meta_analysis": "Aggregating across all iterations for statistical power",
+      "accepted": false,
+      "significance": 0.188
+    },
+    {
+      "observation": "2813 total imports, avg 6.9457/file",
+      "question": "Does import density predict cyclomatic complexity?",
+      "hypothesis": "Files with >10 imports have proportionally higher complexity",
+      "prediction": "High-import files will have more conditionals and loops",
+      "experiment": "Correlate import count with if/for/while node counts",
+      "measurement": {
+        "avg_imports": 6.9457
+      },
+      "replication_count": 1,
+      "meta_analysis": "Tracking cross-iteration correlation stability",
+      "accepted": true,
+      "significance": 0.695
+    },
+    {
+      "observation": "6/405 files use async (0.0148)",
+      "question": "Do async files have fewer lines on average?",
+      "hypothesis": "Async usage enables more concise concurrent code",
+      "prediction": "Async files will be smaller than synchronous equivalents",
+      "experiment": "Compare line counts of async vs non-async files",
+      "measurement": {
+        "async_ratio": 0.0148
+      },
+      "replication_count": 1,
+      "meta_analysis": "Tracking async adoption trend across iterations",
+      "accepted": false,
+      "significance": 0.215
+    }
+  ],
+  "pipeline_stages": [
+    "observation",
+    "question",
+    "hypothesis",
+    "prediction",
+    "experiment",
+    "measurement",
+    "replication",
+    "meta_analysis",
+    "publication",
+    "archive"
+  ]
+}

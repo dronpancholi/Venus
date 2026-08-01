@@ -1,0 +1,38 @@
+{
+  "iteration": 1,
+  "novel_patterns": 405,
+  "architectural_patterns": [
+    "event-driven",
+    "planning-based",
+    "runtime abstraction",
+    "ontology-driven",
+    "memory-backed",
+    "engine-based"
+  ],
+  "arch_pattern_count": 6,
+  "optimization_opportunities": [
+    "nested loop in adr.py:50",
+    "nested loop in github.py:33",
+    "nested loop in gitlab.py:30",
+    "nested loop in nuget.py:44",
+    "nested loop in router.py:141",
+    "nested loop in __init__.py:218",
+    "nested loop in belief.py:273",
+    "nested loop in belief.py:311",
+    "nested loop in belief.py:313",
+    "nested loop in decision.py:126",
+    "nested loop in decision.py:191",
+    "nested loop in memory.py:258",
+    "nested loop in reasoning.py:203",
+    "nested loop in reasoning.py:224",
+    "nested loop in reflection.py:121",
+    "nested loop in strategy.py:141",
+    "nested loop in strategy.py:181",
+    "nested loop in embeddings.py:46",
+    "nested loop in graph.py:137",
+    "nested loop in sync.py:255"
+  ],
+  "optimization_count": 349,
+  "total_files_scanned": 405,
+  "new_discoveries": 760
+}

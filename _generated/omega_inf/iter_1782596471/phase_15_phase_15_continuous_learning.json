@@ -1,0 +1,12 @@
+{
+  "saved": true,
+  "path": "/Users/dronpancholi/Developer/01_Strategic/Venus/_generated/omega_inf/history/iteration_050.json",
+  "summary": {
+    "iteration": 50,
+    "duration_ms": 0.0,
+    "deliverable_count": 15,
+    "experiments": 250,
+    "rewrites": 8925,
+    "tests_passed": 0
+  }
+}

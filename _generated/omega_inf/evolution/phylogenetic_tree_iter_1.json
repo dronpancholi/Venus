@@ -1,0 +1,1012 @@
+{
+  "iteration": 1,
+  "directories": 72,
+  "ancestry_edges": 394,
+  "lineage_edges": 47458,
+  "ancestry": [
+    {
+      "parent": "acquisition",
+      "child": "acquisition/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition",
+      "child": "acquisition/orchestrator.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition",
+      "child": "acquisition/sources",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/adr.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/cargo.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/cncf.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/cve.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/docker.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/github.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/gitlab.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/go.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/ietf.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/maven.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/nist.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/npm.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/nuget.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/owasp.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/pypi.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/rfc.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "acquisition/sources",
+      "child": "acquisition/sources/w3c.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "api",
+      "child": "api/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "api",
+      "child": "api/router.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "autonomous",
+      "child": "autonomous/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "autonomous",
+      "child": "autonomous/cycle.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "autonomous",
+      "child": "autonomous/orchestrator.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain",
+      "child": "brain/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain",
+      "child": "brain/cognition",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain",
+      "child": "brain/embeddings.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain",
+      "child": "brain/entity.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain",
+      "child": "brain/graph.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain",
+      "child": "brain/integration.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain",
+      "child": "brain/sync.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/attention.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/belief.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/decision.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/goals.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/memory.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/orchestration.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/reasoning.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/reflection.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "brain/cognition",
+      "child": "brain/cognition/strategy.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "capability",
+      "child": "capability/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "capability",
+      "child": "capability/registry.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "certification",
+      "child": "certification/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "certification",
+      "child": "certification/engine.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/agents",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/formal",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/institute",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/knowledge",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/learning",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/overseer.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/physics",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/publications",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/research",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/review",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/search",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization",
+      "child": "civilization/world_model",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/agents",
+      "child": "civilization/agents/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/agents",
+      "child": "civilization/agents/base.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/formal",
+      "child": "civilization/formal/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/institute",
+      "child": "civilization/institute/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/knowledge",
+      "child": "civilization/knowledge/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/learning",
+      "child": "civilization/learning/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/physics",
+      "child": "civilization/physics/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/publications",
+      "child": "civilization/publications/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/research",
+      "child": "civilization/research/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/review",
+      "child": "civilization/review/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/search",
+      "child": "civilization/search/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "civilization/world_model",
+      "child": "civilization/world_model/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "cli",
+      "child": "cli/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "cli",
+      "child": "cli/commands.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler",
+      "child": "compiler/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler",
+      "child": "compiler/ast.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler",
+      "child": "compiler/codegen",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler",
+      "child": "compiler/compiler.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler",
+      "child": "compiler/parser.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler",
+      "child": "compiler/passes",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler",
+      "child": "compiler/uir_builder.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/codegen",
+      "child": "compiler/codegen/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/codegen",
+      "child": "compiler/codegen/base.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/codegen",
+      "child": "compiler/codegen/graph_gen.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/codegen",
+      "child": "compiler/codegen/markdown_gen.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/codegen",
+      "child": "compiler/codegen/schema_gen.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/passes",
+      "child": "compiler/passes/__init__.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/passes",
+      "child": "compiler/passes/base.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "compiler/passes",
+      "child": "compiler/passes/optimization.py",
+      "parent_depth": 1,
+      "child_depth": 2,
+      "generation_gap": 1
+    },
+    {
+      "parent": "config",
+      "child": "config/settings.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "core",
+      "child": "core/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "core",
+      "child": "core/base.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "core",
+      "child": "core/exceptions.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "core",
+      "child": "core/metadata.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "core",
+      "child": "core/types.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "core",
+      "child": "core/uir.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "datalake",
+      "child": "datalake/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "di",
+      "child": "di/__init__.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "di",
+      "child": "di/bootstrap.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    },
+    {
+      "parent": "di",
+      "child": "di/container.py",
+      "parent_depth": 0,
+      "child_depth": 1,
+      "generation_gap": 1
+    }
+  ],
+  "lineages": [
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/cncf.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/cve.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/docker.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/gitlab.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/go.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/ietf.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/maven.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/nist.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/npm.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/nuget.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/owasp.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/pypi.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cargo.py",
+      "module_b": "genesis/acquisition/sources/rfc.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/cve.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/docker.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/gitlab.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/go.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/ietf.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/maven.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/nist.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/npm.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/nuget.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/owasp.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/pypi.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cncf.py",
+      "module_b": "genesis/acquisition/sources/rfc.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/docker.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/gitlab.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/go.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/ietf.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/maven.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/nist.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/npm.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/nuget.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/owasp.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/pypi.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/cve.py",
+      "module_b": "genesis/acquisition/sources/rfc.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/gitlab.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/go.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/ietf.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/maven.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/nist.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/npm.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/nuget.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/owasp.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/pypi.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/docker.py",
+      "module_b": "genesis/acquisition/sources/rfc.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/gitlab.py",
+      "module_b": "genesis/acquisition/sources/go.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/gitlab.py",
+      "module_b": "genesis/acquisition/sources/ietf.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/gitlab.py",
+      "module_b": "genesis/acquisition/sources/maven.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    },
+    {
+      "module_a": "genesis/acquisition/sources/gitlab.py",
+      "module_b": "genesis/acquisition/sources/nist.py",
+      "shared_imports": 6,
+      "similarity": 1.0
+    }
+  ],
+  "family_count": 72,
+  "evolution_depth": 2
+}

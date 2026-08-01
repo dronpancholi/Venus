@@ -1,0 +1,14 @@
+{
+  "version": "V0.3",
+  "name": "V0.3 V0.3_PDE",
+  "path": "Layer_2_Core_OS/V0.3_PDE",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.3-PDE"
+  ],
+  "dependencies": [
+    "V0.2"
+  ]
+}

@@ -1,0 +1,320 @@
+[
+  {
+    "id": "828bc3029bded94b:capability:genesis.capability",
+    "type": "capability",
+    "name": "genesis.capability",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.capability"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.cli.commands",
+      "genesis.diagnostics.diagnostics",
+      "genesis.integration.project31a",
+      "genesis.intelligence.analysis",
+      "genesis.intelligence.capability",
+      "genesis.intelligence.gaps",
+      "genesis.intelligence.metrics",
+      "genesis.platform",
+      "genesis.studio.backend",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.35,
+    "risk": 0.48,
+    "health": 0.4,
+    "role": "capability",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/capability/__init__.py",
+      "package": "genesis.capability"
+    }
+  },
+  {
+    "id": "378e3f61bc554559:capability:genesis.capability.registry",
+    "type": "capability",
+    "name": "genesis.capability.registry",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.capability.registry"
+    ],
+    "dependencies": [
+      "genesis.events.bus.EventBus",
+      "genesis.utils.graph_algorithms.find_cycles",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.cli.commands",
+      "genesis.diagnostics.diagnostics",
+      "genesis.integration.project31a",
+      "genesis.intelligence.analysis",
+      "genesis.intelligence.capability",
+      "genesis.intelligence.gaps",
+      "genesis.intelligence.metrics",
+      "genesis.platform",
+      "genesis.studio.backend",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.7,
+    "risk": 0.39,
+    "health": 0.67,
+    "role": "capability",
+    "metadata": {
+      "classes": [
+        "CapabilityDefinition",
+        "CapabilityRegistry"
+      ],
+      "functions": [
+        "__init__",
+        "add_interface",
+        "add_contract",
+        "add_dependency",
+        "to_dict",
+        "to_json",
+        "__init__",
+        "_register_core_capabilities",
+        "_emit",
+        "register",
+        "get",
+        "all",
+        "find_by_interface",
+        "dependency_chain",
+        "clear",
+        "validate_all",
+        "to_dict",
+        "to_json",
+        "resolve"
+      ],
+      "path": "genesis/capability/registry.py",
+      "package": "genesis.capability"
+    }
+  },
+  {
+    "id": "3494a55c7510d9ce:capability:genesis.intelligence.capability",
+    "type": "capability",
+    "name": "genesis.intelligence.capability",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "evidence": [
+      "module:genesis.intelligence.capability"
+    ],
+    "dependencies": [
+      "genesis.capability.registry.capability_registry"
+    ],
+    "consumers": [],
+    "maturity": 0.96,
+    "risk": 0.05,
+    "health": 0.96,
+    "role": "capability",
+    "metadata": {
+      "classes": [
+        "CapabilityIntelligence"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_analyze"
+      ],
+      "path": "genesis/intelligence/capability.py",
+      "package": "genesis.intelligence"
+    }
+  },
+  {
+    "id": "642ab26cc946f5d4:capability:genesis.kernel.capability_loader",
+    "type": "capability",
+    "name": "genesis.kernel.capability_loader",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.98,
+    "evidence": [
+      "module:genesis.kernel.capability_loader"
+    ],
+    "dependencies": [
+      "genesis.kernel.di_kernel.DIKernel",
+      "genesis.kernel.types.DiServiceRegistration",
+      "genesis.ucos.capability.Capability",
+      "genesis.ucos.capability.CapabilityDefinition",
+      "genesis.ucos.capability.CapabilityState",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ],
+    "maturity": 0.98,
+    "risk": 0.16,
+    "health": 0.94,
+    "role": "capability",
+    "metadata": {
+      "classes": [
+        "CapabilityLoader"
+      ],
+      "functions": [
+        "__init__",
+        "di",
+        "load",
+        "get",
+        "unload",
+        "load_order",
+        "wire_dependencies",
+        "all_loaded",
+        "summary"
+      ],
+      "path": "genesis/kernel/capability_loader.py",
+      "package": "genesis.kernel"
+    }
+  },
+  {
+    "id": "81a46df25a3218d8:capability:genesis.tests.test_ucos_capability",
+    "type": "capability",
+    "name": "genesis.tests.test_ucos_capability",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.4,
+    "evidence": [
+      "module:genesis.tests.test_ucos_capability"
+    ],
+    "dependencies": [
+      "genesis.ucos.capability.Capability",
+      "genesis.ucos.capability.CapabilityCategory",
+      "genesis.ucos.capability.CapabilityContract",
+      "genesis.ucos.capability.CapabilityDefinition",
+      "genesis.ucos.capability.CapabilityHealth",
+      "genesis.ucos.capability.CapabilityPermission",
+      "genesis.ucos.capability.CapabilityState",
+      "genesis.ucos.capability.CapabilityVersion",
+      "genesis.ucos.capability.MaturityLevel"
+    ],
+    "consumers": [],
+    "maturity": 0.4,
+    "risk": 0.46,
+    "health": 0.44,
+    "role": "capability",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "test_capability_construct_with_id_name",
+        "test_capability_construct_with_definition",
+        "test_capability_with_definition_kwargs",
+        "test_state_property",
+        "test_is_running_is_ready",
+        "test_capability_categories",
+        "test_maturity_levels",
+        "test_capability_contract",
+        "test_capability_version",
+        "test_capability_version_comparison",
+        "test_capability_health_default",
+        "test_capability_health_unhealthy",
+        "test_capability_permission",
+        "test_capability_execute_no_impl",
+        "test_capability_execute_with_impl",
+        "test_capability_execution_count",
+        "test_capability_avg_execution_time",
+        "test_capability_start_stop",
+        "test_capability_definition_defaults",
+        "test_capability_definition_to_dict",
+        "test_capability_definition_register_consumer",
+        "test_capability_definition_has_permission"
+      ],
+      "path": "genesis/tests/test_ucos_capability.py",
+      "package": "genesis.tests"
+    }
+  },
+  {
+    "id": "41a027cd3040aa88:capability:genesis.ucos.capability",
+    "type": "capability",
+    "name": "genesis.ucos.capability",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.ucos.capability"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.kernel.capability_loader",
+      "genesis.tests.test_kernel",
+      "genesis.tests.test_ucos_capability",
+      "genesis.tests.test_ucos_facade",
+      "genesis.tests.test_ucos_graph",
+      "genesis.tests.test_ucos_lifecycle",
+      "genesis.tests.test_ucos_marketplace",
+      "genesis.tests.test_ucos_metrics",
+      "genesis.tests.test_ucos_negotiator",
+      "genesis.tests.test_ucos_planner",
+      "genesis.tests.test_ucos_registry",
+      "genesis.tests.test_ucos_resolver",
+      "genesis.tests.test_ucos_runtime",
+      "genesis.tests.test_ucos_validator",
+      "genesis.ucos",
+      "genesis.ucos.graph",
+      "genesis.ucos.lifecycle",
+      "genesis.ucos.marketplace",
+      "genesis.ucos.metrics",
+      "genesis.ucos.negotiator",
+      "genesis.ucos.planner",
+      "genesis.ucos.registry",
+      "genesis.ucos.resolver",
+      "genesis.ucos.runtime",
+      "genesis.ucos.ucos",
+      "genesis.ucos.validator"
+    ],
+    "maturity": 0.7,
+    "risk": 0.51,
+    "health": 0.64,
+    "role": "capability",
+    "metadata": {
+      "classes": [
+        "CapabilityCategory",
+        "CapabilityState",
+        "MaturityLevel",
+        "CapabilityContract",
+        "CapabilityVersion",
+        "CapabilityHealth",
+        "CapabilityPermission",
+        "CapabilityDefinition",
+        "Capability"
+      ],
+      "functions": [
+        "validate_input",
+        "validate_output",
+        "semver",
+        "bump_major",
+        "bump_minor",
+        "bump_patch",
+        "__post_init__",
+        "touch",
+        "register_consumer",
+        "register_provider",
+        "has_permission",
+        "to_dict",
+        "clone",
+        "__init__",
+        "id",
+        "name",
+        "definition",
+        "state",
+        "state",
+        "is_running",
+        "is_ready",
+        "execution_count",
+        "avg_execution_time",
+        "start",
+        "stop",
+        "execute",
+        "summary"
+      ],
+      "path": "genesis/ucos/capability.py",
+      "package": "genesis.ucos"
+    }
+  }
+]

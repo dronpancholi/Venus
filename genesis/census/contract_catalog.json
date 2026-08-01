@@ -1,0 +1,1980 @@
+{
+  "genesis.acquisition": {
+    "path": "genesis/acquisition/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 69
+  },
+  "genesis.acquisition.orchestrator": {
+    "path": "genesis/acquisition/orchestrator.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 69
+  },
+  "genesis.acquisition.sources.adr": {
+    "path": "genesis/acquisition/sources/adr.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.cargo": {
+    "path": "genesis/acquisition/sources/cargo.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.cncf": {
+    "path": "genesis/acquisition/sources/cncf.py",
+    "exports": [],
+    "maturity": 0.67,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.cve": {
+    "path": "genesis/acquisition/sources/cve.py",
+    "exports": [],
+    "maturity": 0.67,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.docker": {
+    "path": "genesis/acquisition/sources/docker.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.github": {
+    "path": "genesis/acquisition/sources/github.py",
+    "exports": [],
+    "maturity": 0.69,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.gitlab": {
+    "path": "genesis/acquisition/sources/gitlab.py",
+    "exports": [],
+    "maturity": 0.67,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.go": {
+    "path": "genesis/acquisition/sources/go.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.ietf": {
+    "path": "genesis/acquisition/sources/ietf.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.maven": {
+    "path": "genesis/acquisition/sources/maven.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.nist": {
+    "path": "genesis/acquisition/sources/nist.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.npm": {
+    "path": "genesis/acquisition/sources/npm.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.nuget": {
+    "path": "genesis/acquisition/sources/nuget.py",
+    "exports": [],
+    "maturity": 0.67,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.owasp": {
+    "path": "genesis/acquisition/sources/owasp.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.pypi": {
+    "path": "genesis/acquisition/sources/pypi.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.rfc": {
+    "path": "genesis/acquisition/sources/rfc.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.acquisition.sources.w3c": {
+    "path": "genesis/acquisition/sources/w3c.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.api.router": {
+    "path": "genesis/api/router.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.brain": {
+    "path": "genesis/brain/__init__.py",
+    "exports": [
+      "EngineeringBrain",
+      "BrainEntity",
+      "BrainEntityType",
+      "Relationship",
+      "Confidence",
+      "Lineage",
+      "Capability",
+      "Evidence",
+      "RuntimeState",
+      "ResearchState",
+      "EntityEmbedding",
+      "ChangeRecord",
+      "BrainGraph",
+      "EmbeddingStore",
+      "BrainIntegration",
+      "DigitalTwinAdapter",
+      "UIRAdapter",
+      "KnowledgeArtifactAdapter",
+      "FindingAdapter",
+      "VRIPAdapter",
+      "GraphDBAdapter",
+      "get_adapter",
+      "register_adapter",
+      "CognitiveArchitecture",
+      "BeliefSystem",
+      "Belief",
+      "BeliefEvidence",
+      "BeliefStatus",
+      "EvidenceKind",
+      "GoalHierarchy",
+      "Goal",
+      "GoalStatus",
+      "GoalPriority",
+      "ReasoningEngine",
+      "CausalLink",
+      "Inference",
+      "ReasoningMode",
+      "WorkingMemory",
+      "EpisodicMemory",
+      "AttentionMechanism",
+      "AttentionFocus",
+      "ReflectionEngine",
+      "Reflection",
+      "StrategyEngine",
+      "Tool",
+      "Strategy",
+      "DecisionEngine",
+      "Alternative",
+      "Decision",
+      "Criterion",
+      "DecisionMode",
+      "Orchestrator",
+      "CognitiveAgent",
+      "AgentTask"
+    ],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.cognition": {
+    "path": "genesis/brain/cognition/__init__.py",
+    "exports": [
+      "CognitiveArchitecture",
+      "BeliefSystem",
+      "Belief",
+      "BeliefEvidence",
+      "BeliefStatus",
+      "EvidenceKind",
+      "GoalHierarchy",
+      "Goal",
+      "GoalStatus",
+      "GoalPriority",
+      "ReasoningEngine",
+      "CausalLink",
+      "Inference",
+      "ReasoningMode",
+      "WorkingMemory",
+      "EpisodicMemory",
+      "WorkingMemorySlot",
+      "EpisodicMemoryEntry",
+      "AttentionMechanism",
+      "AttentionFocus",
+      "ReflectionEngine",
+      "Reflection",
+      "StrategyEngine",
+      "Tool",
+      "Strategy",
+      "DecisionEngine",
+      "Alternative",
+      "Decision",
+      "Criterion",
+      "DecisionMode",
+      "Orchestrator",
+      "CognitiveAgent",
+      "AgentTask",
+      "AgentStatus",
+      "TaskStatus"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.attention": {
+    "path": "genesis/brain/cognition/attention.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.belief": {
+    "path": "genesis/brain/cognition/belief.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.decision": {
+    "path": "genesis/brain/cognition/decision.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.goals": {
+    "path": "genesis/brain/cognition/goals.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.memory": {
+    "path": "genesis/brain/cognition/memory.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.orchestration": {
+    "path": "genesis/brain/cognition/orchestration.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.reasoning": {
+    "path": "genesis/brain/cognition/reasoning.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.reflection": {
+    "path": "genesis/brain/cognition/reflection.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.strategy": {
+    "path": "genesis/brain/cognition/strategy.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.embeddings": {
+    "path": "genesis/brain/embeddings.py",
+    "exports": [],
+    "maturity": 0.99,
+    "test_count": 77
+  },
+  "genesis.brain.entity": {
+    "path": "genesis/brain/entity.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.graph": {
+    "path": "genesis/brain/graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.integration": {
+    "path": "genesis/brain/integration.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.sync": {
+    "path": "genesis/brain/sync.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain_v4": {
+    "path": "genesis/brain_v4.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.capability.registry": {
+    "path": "genesis/capability/registry.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.census": {
+    "path": "genesis/census.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.certification.engine": {
+    "path": "genesis/certification/engine.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.civilization": {
+    "path": "genesis/civilization/__init__.py",
+    "exports": [],
+    "maturity": 0.59,
+    "test_count": 60
+  },
+  "genesis.civilization.agents": {
+    "path": "genesis/civilization/agents/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.agents.base": {
+    "path": "genesis/civilization/agents/base.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.formal": {
+    "path": "genesis/civilization/formal/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.institute": {
+    "path": "genesis/civilization/institute/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.knowledge": {
+    "path": "genesis/civilization/knowledge/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.learning": {
+    "path": "genesis/civilization/learning/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.overseer": {
+    "path": "genesis/civilization/overseer.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 60
+  },
+  "genesis.civilization.physics": {
+    "path": "genesis/civilization/physics/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.publications": {
+    "path": "genesis/civilization/publications/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.research": {
+    "path": "genesis/civilization/research/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.review": {
+    "path": "genesis/civilization/review/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.search": {
+    "path": "genesis/civilization/search/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.world_model": {
+    "path": "genesis/civilization/world_model/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 38
+  },
+  "genesis.civilization_v2": {
+    "path": "genesis/civilization_v2.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization_v3": {
+    "path": "genesis/civilization_v3.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.cli.commands": {
+    "path": "genesis/cli/commands.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.compiler.ast": {
+    "path": "genesis/compiler/ast.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.compiler.codegen.base": {
+    "path": "genesis/compiler/codegen/base.py",
+    "exports": [],
+    "maturity": 0.6,
+    "test_count": 0
+  },
+  "genesis.compiler.codegen.graph_gen": {
+    "path": "genesis/compiler/codegen/graph_gen.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.compiler.codegen.markdown_gen": {
+    "path": "genesis/compiler/codegen/markdown_gen.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.compiler.codegen.schema_gen": {
+    "path": "genesis/compiler/codegen/schema_gen.py",
+    "exports": [],
+    "maturity": 0.64,
+    "test_count": 0
+  },
+  "genesis.compiler.compiler": {
+    "path": "genesis/compiler/compiler.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.compiler.parser": {
+    "path": "genesis/compiler/parser.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.compiler.passes.base": {
+    "path": "genesis/compiler/passes/base.py",
+    "exports": [],
+    "maturity": 0.63,
+    "test_count": 0
+  },
+  "genesis.compiler.passes.optimization": {
+    "path": "genesis/compiler/passes/optimization.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.compiler.uir_builder": {
+    "path": "genesis/compiler/uir_builder.py",
+    "exports": [],
+    "maturity": 0.67,
+    "test_count": 0
+  },
+  "genesis.config.settings": {
+    "path": "genesis/config/settings.py",
+    "exports": [],
+    "maturity": 0.64,
+    "test_count": 0
+  },
+  "genesis.core.base": {
+    "path": "genesis/core/base.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.core.exceptions": {
+    "path": "genesis/core/exceptions.py",
+    "exports": [],
+    "maturity": 0.6,
+    "test_count": 0
+  },
+  "genesis.core.metadata": {
+    "path": "genesis/core/metadata.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.core.types": {
+    "path": "genesis/core/types.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.core.uir": {
+    "path": "genesis/core/uir.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.datalake": {
+    "path": "genesis/datalake/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 43
+  },
+  "genesis.di.bootstrap": {
+    "path": "genesis/di/bootstrap.py",
+    "exports": [],
+    "maturity": 0.56,
+    "test_count": 0
+  },
+  "genesis.di.container": {
+    "path": "genesis/di/container.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.di.interfaces": {
+    "path": "genesis/di/interfaces.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.diagnostics.diagnostics": {
+    "path": "genesis/diagnostics/diagnostics.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.digital_twin": {
+    "path": "genesis/digital_twin/__init__.py",
+    "exports": [
+      "PlanetaryDigitalTwin",
+      "DigitalTwin",
+      "TwinNode"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.analyzers.coupling": {
+    "path": "genesis/digital_twin/analyzers/coupling.py",
+    "exports": [],
+    "maturity": 0.68,
+    "test_count": 0
+  },
+  "genesis.digital_twin.analyzers.drift": {
+    "path": "genesis/digital_twin/analyzers/drift.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.digital_twin.analyzers.evolution": {
+    "path": "genesis/digital_twin/analyzers/evolution.py",
+    "exports": [],
+    "maturity": 0.67,
+    "test_count": 0
+  },
+  "genesis.digital_twin.analyzers.smells": {
+    "path": "genesis/digital_twin/analyzers/smells.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.digital_twin.builder": {
+    "path": "genesis/digital_twin/builder.py",
+    "exports": [],
+    "maturity": 0.98,
+    "test_count": 20
+  },
+  "genesis.digital_twin.discovery": {
+    "path": "genesis/digital_twin/discovery.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.evolution": {
+    "path": "genesis/digital_twin/evolution.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.hypothesis": {
+    "path": "genesis/digital_twin/hypothesis.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.metrics": {
+    "path": "genesis/digital_twin/metrics.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.model": {
+    "path": "genesis/digital_twin/model.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.predict": {
+    "path": "genesis/digital_twin/predict.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.reasoning": {
+    "path": "genesis/digital_twin/reasoning.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.ris": {
+    "path": "genesis/digital_twin/ris.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.self_analysis": {
+    "path": "genesis/digital_twin/self_analysis.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.simulator": {
+    "path": "genesis/digital_twin/simulator.py",
+    "exports": [],
+    "maturity": 0.99,
+    "test_count": 20
+  },
+  "genesis.digital_twin.validation": {
+    "path": "genesis/digital_twin/validation.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.discovery": {
+    "path": "genesis/discovery.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.economics": {
+    "path": "genesis/economics.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 35
+  },
+  "genesis.engineering_os": {
+    "path": "genesis/engineering_os.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.events.bus": {
+    "path": "genesis/events/bus.py",
+    "exports": [],
+    "maturity": 0.68,
+    "test_count": 0
+  },
+  "genesis.evolution": {
+    "path": "genesis/evolution.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.evolution_v4": {
+    "path": "genesis/evolution_v4.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.execution_graph": {
+    "path": "genesis/execution_graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 34
+  },
+  "genesis.graph.engine": {
+    "path": "genesis/graph/engine.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.graphdb": {
+    "path": "genesis/graphdb/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 49
+  },
+  "genesis.hypergraph": {
+    "path": "genesis/hypergraph.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.indexer.indexer": {
+    "path": "genesis/indexer/indexer.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.integration.project31a": {
+    "path": "genesis/integration/project31a.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.intelligence": {
+    "path": "genesis/intelligence/__init__.py",
+    "exports": [
+      "IntelligenceService",
+      "RepositoryIntelligence",
+      "KnowledgeGraph",
+      "MetricsCollector",
+      "GapDetector",
+      "StrategicPlanner"
+    ],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.intelligence.analysis": {
+    "path": "genesis/intelligence/analysis.py",
+    "exports": [],
+    "maturity": 0.96,
+    "test_count": 15
+  },
+  "genesis.intelligence.capability": {
+    "path": "genesis/intelligence/capability.py",
+    "exports": [],
+    "maturity": 0.96,
+    "test_count": 15
+  },
+  "genesis.intelligence.census": {
+    "path": "genesis/intelligence/census.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.intelligence.cli": {
+    "path": "genesis/intelligence/cli.py",
+    "exports": [],
+    "maturity": 0.9,
+    "test_count": 15
+  },
+  "genesis.intelligence.engine": {
+    "path": "genesis/intelligence/engine.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.intelligence.extractor": {
+    "path": "genesis/intelligence/extractor.py",
+    "exports": [],
+    "maturity": 0.96,
+    "test_count": 15
+  },
+  "genesis.intelligence.gaps": {
+    "path": "genesis/intelligence/gaps.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.intelligence.kgraph": {
+    "path": "genesis/intelligence/kgraph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.intelligence.metrics": {
+    "path": "genesis/intelligence/metrics.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.intelligence.planning": {
+    "path": "genesis/intelligence/planning.py",
+    "exports": [],
+    "maturity": 0.98,
+    "test_count": 42
+  },
+  "genesis.intelligence.report": {
+    "path": "genesis/intelligence/report.py",
+    "exports": [],
+    "maturity": 0.9,
+    "test_count": 15
+  },
+  "genesis.intelligence.reverse": {
+    "path": "genesis/intelligence/reverse.py",
+    "exports": [],
+    "maturity": 0.97,
+    "test_count": 15
+  },
+  "genesis.intelligence.traceability": {
+    "path": "genesis/intelligence/traceability.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.kernel": {
+    "path": "genesis/kernel/__init__.py",
+    "exports": [
+      "UniversalKernel",
+      "ProcessManager",
+      "TaskScheduler",
+      "MemoryManager",
+      "StorageManager",
+      "CheckpointManager",
+      "RecoveryManager",
+      "EventRouter",
+      "IPC",
+      "PluginLoader",
+      "CapabilityLoader",
+      "DIKernel",
+      "ResourceManager",
+      "ExecutionManager",
+      "HealthManager",
+      "SecurityManager",
+      "ProcessInfo",
+      "ProcessState",
+      "TaskInfo",
+      "TaskPriority",
+      "TaskState",
+      "MemoryBlock",
+      "MemoryScope",
+      "StorageVolume",
+      "StorageClass",
+      "Checkpoint",
+      "RecoveryPlan",
+      "KernelEvent",
+      "IPCMessage",
+      "ResourceReservation",
+      "HealthProbe",
+      "DiServiceRegistration"
+    ],
+    "maturity": 0.69,
+    "test_count": 159
+  },
+  "genesis.kernel.capability_loader": {
+    "path": "genesis/kernel/capability_loader.py",
+    "exports": [],
+    "maturity": 0.98,
+    "test_count": 159
+  },
+  "genesis.kernel.checkpoint_manager": {
+    "path": "genesis/kernel/checkpoint_manager.py",
+    "exports": [],
+    "maturity": 0.99,
+    "test_count": 159
+  },
+  "genesis.kernel.di_kernel": {
+    "path": "genesis/kernel/di_kernel.py",
+    "exports": [],
+    "maturity": 0.98,
+    "test_count": 159
+  },
+  "genesis.kernel.event_router": {
+    "path": "genesis/kernel/event_router.py",
+    "exports": [],
+    "maturity": 0.99,
+    "test_count": 159
+  },
+  "genesis.kernel.execution_manager": {
+    "path": "genesis/kernel/execution_manager.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.kernel.health_manager": {
+    "path": "genesis/kernel/health_manager.py",
+    "exports": [],
+    "maturity": 0.98,
+    "test_count": 159
+  },
+  "genesis.kernel.ipc": {
+    "path": "genesis/kernel/ipc.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.kernel.kernel": {
+    "path": "genesis/kernel/kernel.py",
+    "exports": [],
+    "maturity": 0.97,
+    "test_count": 159
+  },
+  "genesis.kernel.memory_manager": {
+    "path": "genesis/kernel/memory_manager.py",
+    "exports": [],
+    "maturity": 0.99,
+    "test_count": 159
+  },
+  "genesis.kernel.plugin_loader": {
+    "path": "genesis/kernel/plugin_loader.py",
+    "exports": [],
+    "maturity": 0.99,
+    "test_count": 159
+  },
+  "genesis.kernel.process_manager": {
+    "path": "genesis/kernel/process_manager.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.kernel.recovery_manager": {
+    "path": "genesis/kernel/recovery_manager.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.kernel.resource_manager": {
+    "path": "genesis/kernel/resource_manager.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.kernel.security_manager": {
+    "path": "genesis/kernel/security_manager.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.kernel.storage_manager": {
+    "path": "genesis/kernel/storage_manager.py",
+    "exports": [],
+    "maturity": 0.98,
+    "test_count": 159
+  },
+  "genesis.kernel.task_scheduler": {
+    "path": "genesis/kernel/task_scheduler.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.kernel.types": {
+    "path": "genesis/kernel/types.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 159
+  },
+  "genesis.knowledge_graph": {
+    "path": "genesis/knowledge_graph.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory": {
+    "path": "genesis/laboratory/__init__.py",
+    "exports": [],
+    "maturity": 0.55,
+    "test_count": 60
+  },
+  "genesis.laboratory.cli": {
+    "path": "genesis/laboratory/cli.py",
+    "exports": [],
+    "maturity": 0.9,
+    "test_count": 60
+  },
+  "genesis.laboratory.experiment": {
+    "path": "genesis/laboratory/experiment.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 60
+  },
+  "genesis.laboratory.extraction.pipeline": {
+    "path": "genesis/laboratory/extraction/pipeline.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory.genome.builder": {
+    "path": "genesis/laboratory/genome/builder.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory.genome.comparison": {
+    "path": "genesis/laboratory/genome/comparison.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory.genome.model": {
+    "path": "genesis/laboratory/genome/model.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory.mining.subgraph": {
+    "path": "genesis/laboratory/mining/subgraph.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory.scheduler": {
+    "path": "genesis/laboratory/scheduler.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 60
+  },
+  "genesis.laboratory.world_graph": {
+    "path": "genesis/laboratory/world_graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 60
+  },
+  "genesis.marketplace": {
+    "path": "genesis/marketplace/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 50
+  },
+  "genesis.mathematics": {
+    "path": "genesis/mathematics.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.mathematics_v2": {
+    "path": "genesis/mathematics_v2.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.memory.consolidation": {
+    "path": "genesis/memory/consolidation.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.memory.engine": {
+    "path": "genesis/memory/engine.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.memory.types": {
+    "path": "genesis/memory/types.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.memory_system": {
+    "path": "genesis/memory_system.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.meta": {
+    "path": "genesis/meta/__init__.py",
+    "exports": [
+      "MetaCompiler",
+      "Workspace",
+      "Repository",
+      "WorkspaceManifest",
+      "WorkspaceIR",
+      "WorkspaceIRNode",
+      "IRBuilder",
+      "WorkspaceDependencyGraph",
+      "WorkspaceCapabilityMap",
+      "WorkspaceGraph",
+      "SymbolResolver",
+      "CapabilityLinker",
+      "RepositoryFederation",
+      "WorkspaceOptimizer",
+      "BuildGraph",
+      "BuildNode",
+      "WorkspaceTwin"
+    ],
+    "maturity": 0.65,
+    "test_count": 130
+  },
+  "genesis.meta.build_graph": {
+    "path": "genesis/meta/build_graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.federation": {
+    "path": "genesis/meta/federation.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.graph": {
+    "path": "genesis/meta/graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.irep": {
+    "path": "genesis/meta/irep.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.meta_compiler": {
+    "path": "genesis/meta/meta_compiler.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.optimization": {
+    "path": "genesis/meta/optimization.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.resolution": {
+    "path": "genesis/meta/resolution.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.twin": {
+    "path": "genesis/meta/twin.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.workspace": {
+    "path": "genesis/meta/workspace.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta_model": {
+    "path": "genesis/meta_model.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 35
+  },
+  "genesis.metamodel": {
+    "path": "genesis/metamodel/__init__.py",
+    "exports": [
+      "UnifiedEntity",
+      "EntityType",
+      "EntityRelation",
+      "EntityMetadata",
+      "UnifiedGraph",
+      "EntityTypeRegistry",
+      "EntityQuery",
+      "QueryResult"
+    ],
+    "maturity": 0.65,
+    "test_count": 35
+  },
+  "genesis.metamodel.entity": {
+    "path": "genesis/metamodel/entity.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 35
+  },
+  "genesis.metamodel.graph": {
+    "path": "genesis/metamodel/graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 35
+  },
+  "genesis.metamodel.query": {
+    "path": "genesis/metamodel/query.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 35
+  },
+  "genesis.metamodel.registry": {
+    "path": "genesis/metamodel/registry.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 35
+  },
+  "genesis.observatory": {
+    "path": "genesis/observatory/__init__.py",
+    "exports": [],
+    "maturity": 0.55,
+    "test_count": 33
+  },
+  "genesis.observatory.cli": {
+    "path": "genesis/observatory/cli.py",
+    "exports": [],
+    "maturity": 0.9,
+    "test_count": 33
+  },
+  "genesis.observatory.graph": {
+    "path": "genesis/observatory/graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 33
+  },
+  "genesis.observatory.miner": {
+    "path": "genesis/observatory/miner.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 33
+  },
+  "genesis.observatory.registry": {
+    "path": "genesis/observatory/registry.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 33
+  },
+  "genesis.observatory.sources.github": {
+    "path": "genesis/observatory/sources/github.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.observatory.sources.local": {
+    "path": "genesis/observatory/sources/local.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.ontology": {
+    "path": "genesis/ontology.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.os": {
+    "path": "genesis/os/__init__.py",
+    "exports": [
+      "PersistentScheduler",
+      "PersistentPlanner",
+      "PersistentTaskGraph",
+      "DistributedQueue",
+      "AgentRuntime",
+      "ResourceAllocator",
+      "MemoryManager",
+      "CheckpointManager",
+      "RecoveryManager",
+      "ObservationManager",
+      "AutonomousRuntime",
+      "RuntimeStatus",
+      "ComponentStatus",
+      "GitWatcher",
+      "FileWatcher",
+      "ProcessWatcher",
+      "WatcherRegistry",
+      "WatcherEvent",
+      "BaseWatcher"
+    ],
+    "maturity": 0.69,
+    "test_count": 76
+  },
+  "genesis.os.agent_runtime": {
+    "path": "genesis/os/agent_runtime.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.checkpoint": {
+    "path": "genesis/os/checkpoint.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.distributed": {
+    "path": "genesis/os/distributed/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 57
+  },
+  "genesis.os.memory_manager": {
+    "path": "genesis/os/memory_manager.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.observation": {
+    "path": "genesis/os/observation.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.planner": {
+    "path": "genesis/os/planner.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 29
+  },
+  "genesis.os.queue": {
+    "path": "genesis/os/queue.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.recovery": {
+    "path": "genesis/os/recovery.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.resource_allocator": {
+    "path": "genesis/os/resource_allocator.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.runtime": {
+    "path": "genesis/os/runtime.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 43
+  },
+  "genesis.os.scheduler": {
+    "path": "genesis/os/scheduler.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.task_graph": {
+    "path": "genesis/os/task_graph.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.watchers": {
+    "path": "genesis/os/watchers.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.package.manager": {
+    "path": "genesis/package/manager.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.persistence": {
+    "path": "genesis/persistence/__init__.py",
+    "exports": [
+      "Repository",
+      "InMemoryRepository",
+      "SQLiteStore",
+      "MetadataStore",
+      "KnowledgeStore",
+      "HistoryStore",
+      "ArtifactStore",
+      "CheckpointStore",
+      "MemoryStore"
+    ],
+    "maturity": 0.65,
+    "test_count": 46
+  },
+  "genesis.persistence.repository": {
+    "path": "genesis/persistence/repository.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 46
+  },
+  "genesis.persistence.sqlite_store": {
+    "path": "genesis/persistence/sqlite_store.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 46
+  },
+  "genesis.physics": {
+    "path": "genesis/physics.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.planetary_knowledge": {
+    "path": "genesis/planetary_knowledge.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.planner": {
+    "path": "genesis/planner.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 29
+  },
+  "genesis.planning": {
+    "path": "genesis/planning/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 42
+  },
+  "genesis.platform": {
+    "path": "genesis/platform.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 34
+  },
+  "genesis.platform_v2": {
+    "path": "genesis/platform_v2.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.plugin.manager": {
+    "path": "genesis/plugin/manager.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.plugin.manifest": {
+    "path": "genesis/plugin/manifest.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.project.manager": {
+    "path": "genesis/project/manager.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.repository_graph": {
+    "path": "genesis/repository_graph.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.runtime": {
+    "path": "genesis/runtime/__init__.py",
+    "exports": [
+      "ExecutionEngine",
+      "Task",
+      "Workflow"
+    ],
+    "maturity": 0.65,
+    "test_count": 43
+  },
+  "genesis.runtime.executor": {
+    "path": "genesis/runtime/executor.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 43
+  },
+  "genesis.scientist": {
+    "path": "genesis/scientist.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.security.validator": {
+    "path": "genesis/security/validator.py",
+    "exports": [],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.simulator": {
+    "path": "genesis/simulator.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.simulator_v2": {
+    "path": "genesis/simulator_v2.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.studio.backend": {
+    "path": "genesis/studio/backend.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.temporal": {
+    "path": "genesis/temporal/__init__.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 26
+  },
+  "genesis.tests.programs.test_brain_v4": {
+    "path": "genesis/tests/programs/test_brain_v4.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_civilization_v2": {
+    "path": "genesis/tests/programs/test_civilization_v2.py",
+    "exports": [],
+    "maturity": 0.47,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_civilization_v3": {
+    "path": "genesis/tests/programs/test_civilization_v3.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_discovery": {
+    "path": "genesis/tests/programs/test_discovery.py",
+    "exports": [],
+    "maturity": 0.47,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_engineering_os": {
+    "path": "genesis/tests/programs/test_engineering_os.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_evolution": {
+    "path": "genesis/tests/programs/test_evolution.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_evolution_v4": {
+    "path": "genesis/tests/programs/test_evolution_v4.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_hypergraph": {
+    "path": "genesis/tests/programs/test_hypergraph.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_knowledge_graph": {
+    "path": "genesis/tests/programs/test_knowledge_graph.py",
+    "exports": [],
+    "maturity": 0.47,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_mathematics": {
+    "path": "genesis/tests/programs/test_mathematics.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_mathematics_v2": {
+    "path": "genesis/tests/programs/test_mathematics_v2.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_memory": {
+    "path": "genesis/tests/programs/test_memory.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_memory_system": {
+    "path": "genesis/tests/programs/test_memory_system.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_physics": {
+    "path": "genesis/tests/programs/test_physics.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_planetary_knowledge": {
+    "path": "genesis/tests/programs/test_planetary_knowledge.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_platform_v2": {
+    "path": "genesis/tests/programs/test_platform_v2.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_scientist": {
+    "path": "genesis/tests/programs/test_scientist.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_simulator": {
+    "path": "genesis/tests/programs/test_simulator.py",
+    "exports": [],
+    "maturity": 0.47,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_simulator_v2": {
+    "path": "genesis/tests/programs/test_simulator_v2.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_acquisition": {
+    "path": "genesis/tests/test_acquisition.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.tests.test_architecture": {
+    "path": "genesis/tests/test_architecture.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.tests.test_brain": {
+    "path": "genesis/tests/test_brain.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_civilization": {
+    "path": "genesis/tests/test_civilization.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_cognition": {
+    "path": "genesis/tests/test_cognition.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_datalake": {
+    "path": "genesis/tests/test_datalake.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_digital_twin": {
+    "path": "genesis/tests/test_digital_twin.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_distributed": {
+    "path": "genesis/tests/test_distributed.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_economics": {
+    "path": "genesis/tests/test_economics.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_execution_graph": {
+    "path": "genesis/tests/test_execution_graph.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_genesis_xii": {
+    "path": "genesis/tests/test_genesis_xii.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_graphdb": {
+    "path": "genesis/tests/test_graphdb.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_intelligence": {
+    "path": "genesis/tests/test_intelligence.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_kernel": {
+    "path": "genesis/tests/test_kernel.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_laboratory": {
+    "path": "genesis/tests/test_laboratory.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_marketplace": {
+    "path": "genesis/tests/test_marketplace.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_meta": {
+    "path": "genesis/tests/test_meta.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_meta_model": {
+    "path": "genesis/tests/test_meta_model.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_metamodel": {
+    "path": "genesis/tests/test_metamodel.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_observatory": {
+    "path": "genesis/tests/test_observatory.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_os": {
+    "path": "genesis/tests/test_os.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_persistence": {
+    "path": "genesis/tests/test_persistence.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_phase0": {
+    "path": "genesis/tests/test_phase0.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_planner": {
+    "path": "genesis/tests/test_planner.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_planning": {
+    "path": "genesis/tests/test_planning.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_platform": {
+    "path": "genesis/tests/test_platform.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_runtime": {
+    "path": "genesis/tests/test_runtime.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_stubs": {
+    "path": "genesis/tests/test_stubs.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_temporal": {
+    "path": "genesis/tests/test_temporal.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_ucos_capability": {
+    "path": "genesis/tests/test_ucos_capability.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_ucos_facade": {
+    "path": "genesis/tests/test_ucos_facade.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_ucos_lifecycle": {
+    "path": "genesis/tests/test_ucos_lifecycle.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_ucos_registry": {
+    "path": "genesis/tests/test_ucos_registry.py",
+    "exports": [],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.tests.test_ued": {
+    "path": "genesis/tests/test_ued.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_uem": {
+    "path": "genesis/tests/test_uem.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_world_model": {
+    "path": "genesis/tests/test_world_model.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.ucos.capability": {
+    "path": "genesis/ucos/capability.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ucos.graph": {
+    "path": "genesis/ucos/graph.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ucos.lifecycle": {
+    "path": "genesis/ucos/lifecycle.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ucos.marketplace": {
+    "path": "genesis/ucos/marketplace.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 50
+  },
+  "genesis.ucos.metrics": {
+    "path": "genesis/ucos/metrics.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ucos.negotiator": {
+    "path": "genesis/ucos/negotiator.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ucos.planner": {
+    "path": "genesis/ucos/planner.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 29
+  },
+  "genesis.ucos.registry": {
+    "path": "genesis/ucos/registry.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ucos.resolver": {
+    "path": "genesis/ucos/resolver.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ucos.runtime": {
+    "path": "genesis/ucos/runtime.py",
+    "exports": [],
+    "maturity": 1.0,
+    "test_count": 43
+  },
+  "genesis.ucos.ucos": {
+    "path": "genesis/ucos/ucos.py",
+    "exports": [],
+    "maturity": 0.68,
+    "test_count": 0
+  },
+  "genesis.ucos.validator": {
+    "path": "genesis/ucos/validator.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.usir": {
+    "path": "genesis/usir/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.usir.compiler": {
+    "path": "genesis/usir/compiler.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.usir.language": {
+    "path": "genesis/usir/language.py",
+    "exports": [],
+    "maturity": 0.64,
+    "test_count": 0
+  },
+  "genesis.usir.parsers": {
+    "path": "genesis/usir/parsers/__init__.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.usir.parsers.typescript": {
+    "path": "genesis/usir/parsers/typescript.py",
+    "exports": [],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.utils.graph_algorithms": {
+    "path": "genesis/utils/graph_algorithms.py",
+    "exports": [],
+    "maturity": 0.6,
+    "test_count": 0
+  },
+  "genesis.utils.identity": {
+    "path": "genesis/utils/identity.py",
+    "exports": [],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.utils.serialization": {
+    "path": "genesis/utils/serialization.py",
+    "exports": [],
+    "maturity": 0.64,
+    "test_count": 0
+  },
+  "genesis.validation.base": {
+    "path": "genesis/validation/base.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.validation.engine": {
+    "path": "genesis/validation/engine.py",
+    "exports": [],
+    "maturity": 0.68,
+    "test_count": 0
+  },
+  "genesis.validation.validators.naming": {
+    "path": "genesis/validation/validators/naming.py",
+    "exports": [],
+    "maturity": 0.64,
+    "test_count": 0
+  },
+  "genesis.validation.validators.schema": {
+    "path": "genesis/validation/validators/schema.py",
+    "exports": [],
+    "maturity": 0.6,
+    "test_count": 0
+  },
+  "genesis.validation.validators.structural": {
+    "path": "genesis/validation/validators/structural.py",
+    "exports": [],
+    "maturity": 0.66,
+    "test_count": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "total_states": 56,
+  "state_domains": [
+    "execution_states",
+    "runtime_states",
+    "planner_states",
+    "memory_states",
+    "knowledge_states",
+    "economics_states",
+    "agent_states",
+    "simulation_states",
+    "compiler_states",
+    "civilization_states"
+  ],
+  "twin_nodes": 10,
+  "twin_edges": 56
+}

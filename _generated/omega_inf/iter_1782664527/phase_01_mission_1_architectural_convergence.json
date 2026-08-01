@@ -1,0 +1,47 @@
+{
+  "packages_mapped": 3,
+  "dependency_matrix": {
+    "Layer_1_Foundations": [],
+    "generate_usptcros_templates": [],
+    "genesis": [
+      "marketplace",
+      "execution_graph",
+      "utils",
+      "mathematics_v2",
+      "digital_civilization",
+      "physics",
+      "omega_loop",
+      "economics",
+      "platform_v2",
+      "kernel",
+      "planetary_knowledge",
+      "civilization",
+      "ucos",
+      "evolution",
+      "graph_v2"
+    ]
+  },
+  "cyclic_dependencies": 0,
+  "cyclic_pairs": [],
+  "redundant_packages": [
+    "Layer_1_Foundations",
+    "generate_usptcros_templates"
+  ],
+  "overlapping_responsibilities": 1,
+  "overlap_details": {
+    "Layer_1_Foundations": [
+      [
+        "genesis",
+        "SchemaGenerator"
+      ],
+      [
+        "genesis",
+        "MarkdownGenerator"
+      ],
+      [
+        "genesis",
+        "SemanticGraph"
+      ]
+    ]
+  }
+}

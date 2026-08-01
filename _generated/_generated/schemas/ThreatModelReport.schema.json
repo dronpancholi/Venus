@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://generated/template/threatmodelreport/v1",
+  "title": "ThreatModelReport",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "schema": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "array"
+    },
+    "generators": {
+      "type": "array"
+    },
+    "validation": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "description",
+    "schema",
+    "sections",
+    "generators",
+    "validation"
+  ]
+}

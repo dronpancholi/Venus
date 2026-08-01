@@ -1,0 +1,19 @@
+{
+  "reasoning_applied": [
+    "deduction",
+    "induction",
+    "abduction",
+    "causal",
+    "counterfactual"
+  ],
+  "evidence_sources": 10,
+  "recommendations": [
+    {
+      "reasoning": "counterfactual",
+      "conclusion": "Removing duplicates could reduce complexity by ~0 points",
+      "evidence": "0 modules involved in duplication, each ~2 complexity points",
+      "recommendation": "Prioritize canonicalization for highest-ROI complexity reduction"
+    }
+  ],
+  "recommendation_count": 1
+}

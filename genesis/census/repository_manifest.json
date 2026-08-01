@@ -1,0 +1,13 @@
+{
+  "name": "genesis",
+  "root": "/Users/dronpancholi/Developer/01_Strategic/Venus",
+  "total_modules": 390,
+  "total_packages": 73,
+  "total_lines": 81321,
+  "total_code_lines": 66666,
+  "total_tests": 10709,
+  "total_classes": 1285,
+  "total_functions": 6620,
+  "generated_at": 1782591120.417883,
+  "generated_at_iso": "2026-06-27T20:12:00Z"
+}

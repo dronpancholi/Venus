@@ -1,0 +1,54 @@
+{
+  "stage": 5,
+  "problems": [
+    {
+      "id": "P1",
+      "title": "OmegaLoop coupling \u2014 dispatcher imports 9 modules directly",
+      "severity": "high",
+      "impact": "Changes to any subsystem require OmegaLoop modifications",
+      "evidence": "OmegaLoop imports from 11 subsystem groups directly",
+      "recommendation": "Extract dispatch logic into a lightweight PluginRegistry"
+    },
+    {
+      "id": "P2",
+      "title": "Civilization duplication \u2014 3 implementations with overlapping scope",
+      "severity": "high",
+      "impact": "Knowledge flow is split across 3 incompatible models",
+      "evidence": "civilization_v2.py, civilization_v3.py, and digital_civilization.py all exist",
+      "recommendation": "Deprecate v2 and v3, make digital_civilization the canonical implementation"
+    },
+    {
+      "id": "P3",
+      "title": "Platform fragmentation \u2014 platform.py and platform_v2.py",
+      "severity": "medium",
+      "impact": "Platform services are inconsistently available",
+      "evidence": "Two platform modules with different API surfaces",
+      "recommendation": "Merge into single canonical Platform module"
+    },
+    {
+      "id": "P4",
+      "title": "Evolution and Simulation overlap",
+      "severity": "medium",
+      "impact": "Evolution logic duplicated across 5 modules",
+      "evidence": "evolution.py, evolution_v4.py, simulator.py, simulator_v2.py, brain_v4.py",
+      "recommendation": "Consolidate into one EvolutionEngine with pluggable simulation backends"
+    },
+    {
+      "id": "P5",
+      "title": "Legacy modules lack clear deprecation policy",
+      "severity": "medium",
+      "impact": "genesis_viii.py and mathematics_v2.py may have undocumented consumers",
+      "evidence": "These modules exist but their consumers are unclear",
+      "recommendation": "Audit all imports, add deprecation warnings, archive unused modules"
+    },
+    {
+      "id": "P6",
+      "title": "Repository growth without architectural simplification",
+      "severity": "low",
+      "impact": "97K+ lines across 415 files \u2014 conceptual complexity grows faster than capability",
+      "evidence": "99752 lines, 3623 files with overlapping subsystem boundaries",
+      "recommendation": "Adopt strict Architecture Review Board for all new abstractions"
+    }
+  ],
+  "total_problems": 6
+}

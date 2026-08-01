@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "id": "R001",
+      "rule": "valid_ontology_type",
+      "description": "Entity must have a valid ontology type",
+      "targets": ["*"],
+      "severity": "critical",
+      "evaluation": "entity.ontology_type in ontology.types",
+      "message": "Unknown ontology type '{ontology_type}'"
+    },
+    {
+      "id": "R002",
+      "rule": "unique_id",
+      "description": "Entity must have a unique identifier",
+      "targets": ["*"],
+      "severity": "critical",
+      "evaluation": "entity.id is not None",
+      "message": "Entity missing unique id"
+    },
+    {
+      "id": "R003",
+      "rule": "has_name",
+      "description": "Entity must have a name",
+      "targets": ["*"],
+      "severity": "critical",
+      "evaluation": "entity.name is not None and entity.name != ''",
+      "message": "Entity missing name"
+    },
+    {
+      "id": "R004",
+      "rule": "has_description",
+      "description": "Entity should have a description",
+      "targets": ["*"],
+      "severity": "high",
+      "evaluation": "entity.fields.get('description') is not None",
+      "message": "Entity missing description"
+    },
+    {
+      "id": "R010",
+      "rule": "engine_has_inputs",
+      "description": "Every Engine must define inputs",
+      "targets": ["Engine"],
+      "severity": "critical",
+      "evaluation": "'inputs' in entity.fields",
+      "message": "Engine '{name}' missing inputs"
+    },
+    {
+      "id": "R011",
+      "rule": "engine_has_outputs",
+      "description": "Every Engine must define outputs",
+      "targets": ["Engine"],
+      "severity": "critical",
+      "evaluation": "'outputs' in entity.fields",
+      "message": "Engine '{name}' missing outputs"
+    },
+    {
+      "id": "R012",
+      "rule": "engine_has_validation",
+      "description": "Engine should define validation rules",
+      "targets": ["Engine"],
+      "severity": "high",
+      "evaluation": "'validation' in entity.fields",
+      "message": "Engine '{name}' missing validation rules"
+    },
+    {
+      "id": "R020",
+      "rule": "template_has_schema",
+      "description": "Every Template must reference a canonical schema",
+      "targets": ["Template", "Certificate"],
+      "severity": "critical",
+      "evaluation": "'schema' in entity.fields",
+      "message": "Template '{name}' missing schema reference"
+    },
+    {
+      "id": "R021",
+      "rule": "template_has_generators",
+      "description": "Template should define output generators",
+      "targets": ["Template"],
+      "severity": "high",
+      "evaluation": "'generators' in entity.fields",
+      "message": "Template '{name}' missing generators"
+    },
+    {
+      "id": "R030",
+      "rule": "policy_has_rules",
+      "description": "Every Policy must define rules",
+      "targets": ["Policy"],
+      "severity": "critical",
+      "evaluation": "'rules' in entity.fields",
+      "message": "Policy '{name}' missing rules"
+    },
+    {
+      "id": "R031",
+      "rule": "policy_has_severity",
+      "description": "Every Policy must define severity level",
+      "targets": ["Policy"],
+      "severity": "critical",
+      "evaluation": "'severity' in entity.fields",
+      "message": "Policy '{name}' missing severity"
+    },
+    {
+      "id": "R040",
+      "rule": "certificate_has_tier",
+      "description": "Every Certificate must define target tier",
+      "targets": ["Certificate"],
+      "severity": "critical",
+      "evaluation": "'target_tier' in entity.fields",
+      "message": "Certificate '{name}' missing target_tier"
+    },
+    {
+      "id": "R050",
+      "rule": "memory_has_retention",
+      "description": "Memory must define retention policy",
+      "targets": ["Memory"],
+      "severity": "high",
+      "evaluation": "'retention' in entity.fields",
+      "message": "Memory '{name}' missing retention policy"
+    },
+    {
+      "id": "R060",
+      "rule": "agent_has_capabilities",
+      "description": "Every Agent must define capabilities",
+      "targets": ["Agent"],
+      "severity": "critical",
+      "evaluation": "'capabilities' in entity.fields",
+      "message": "Agent '{name}' missing capabilities"
+    },
+    {
+      "id": "R070",
+      "rule": "os_has_version",
+      "description": "Every OS must define a version",
+      "targets": ["OperatingSystem"],
+      "severity": "critical",
+      "evaluation": "'version' in entity.fields",
+      "message": "OS '{name}' missing version"
+    },
+    {
+      "id": "R080",
+      "rule": "references_resolve",
+      "description": "All cross-references must resolve to existing entities",
+      "targets": ["*"],
+      "severity": "high",
+      "evaluation": "all refs resolve in entity registry",
+      "message": "Unresolved reference in '{name}'"
+    },
+    {
+      "id": "R081",
+      "rule": "no_circular_deps",
+      "description": "No circular dependencies in the entity graph",
+      "targets": ["*"],
+      "severity": "critical",
+      "evaluation": "no cycles in dependency graph",
+      "message": "Circular dependency detected involving '{name}'"
+    },
+    {
+      "id": "R100",
+      "rule": "no_placeholders",
+      "description": "No placeholder patterns in generated templates",
+      "targets": ["Template"],
+      "severity": "medium",
+      "evaluation": "no [e.g.] or [insert] patterns",
+      "message": "Template '{name}' contains placeholder patterns"
+    },
+    {
+      "id": "R101",
+      "rule": "naming_convention",
+      "description": "Entity name must match Venus naming conventions",
+      "targets": ["*"],
+      "severity": "medium",
+      "evaluation": "name matches naming pattern",
+      "message": "Entity '{name}' violates naming convention"
+    }
+  ]
+}

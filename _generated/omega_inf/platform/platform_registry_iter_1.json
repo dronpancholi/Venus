@@ -1,0 +1,77 @@
+{
+  "iteration": 1,
+  "services": [
+    {
+      "name": "ObservationService",
+      "type": "persistent",
+      "api": "/v1/observe",
+      "status": "active"
+    },
+    {
+      "name": "ReasoningService",
+      "type": "persistent",
+      "api": "/v1/reason",
+      "status": "active"
+    },
+    {
+      "name": "ScienceService",
+      "type": "persistent",
+      "api": "/v1/experiment",
+      "status": "active"
+    },
+    {
+      "name": "ExecutiveService",
+      "type": "persistent",
+      "api": "/v1/execute",
+      "status": "active"
+    },
+    {
+      "name": "SynthesisService",
+      "type": "persistent",
+      "api": "/v1/synthesize",
+      "status": "active"
+    },
+    {
+      "name": "CivilizationService",
+      "type": "persistent",
+      "api": "/v1/civilization",
+      "status": "active"
+    },
+    {
+      "name": "MemoryService",
+      "type": "persistent",
+      "api": "/v1/memory",
+      "status": "active"
+    },
+    {
+      "name": "EvolutionService",
+      "type": "persistent",
+      "api": "/v1/evolve",
+      "status": "active"
+    },
+    {
+      "name": "FoundationService",
+      "type": "persistent",
+      "api": "/v1/foundation",
+      "status": "active"
+    },
+    {
+      "name": "PlatformService",
+      "type": "persistent",
+      "api": "/v1/platform",
+      "status": "active"
+    }
+  ],
+  "service_count": 10,
+  "capabilities": {
+    "shared_ontology": true,
+    "shared_memory": true,
+    "shared_execution": true,
+    "shared_economics": true,
+    "shared_research": true,
+    "shared_planner": true,
+    "shared_runtime": true,
+    "shared_intelligence": true
+  },
+  "total_active_services": 10
+}

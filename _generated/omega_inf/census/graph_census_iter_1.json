@@ -1,0 +1,21 @@
+{
+  "ast_graph_nodes": 8483,
+  "call_graph_edges": 32779,
+  "import_graph_edges": 2743,
+  "runtime_graph_nodes": 1431,
+  "memory_graph_nodes": 7161,
+  "event_graph_nodes": 62,
+  "dependency_graph_edges": 2743,
+  "capability_graph_nodes": 1358,
+  "economic_graph_edges": 3139,
+  "security_graph_external_imports": 1996,
+  "planner_graph_nodes": 5,
+  "documentation_graph_nodes": 1656,
+  "specification_graph_nodes": 3,
+  "test_graph_nodes": 73,
+  "benchmark_graph_nodes": 0,
+  "knowledge_graph_nodes": 8483,
+  "knowledge_graph_edges": 5459,
+  "evolution_graph_iterations": 1,
+  "temporal_graph_timestamps": 1782664533
+}

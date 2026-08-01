@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "program": "GENESIS 2.0 \u2014 UEICL",
+    "iteration": 3,
+    "total_duration_ms": 24606.94,
+    "significance": 2.23,
+    "missions_completed": 10
+  },
+  "scorecard": {
+    "repository_intelligence_score": 0.76,
+    "repository_health_score": 0.592,
+    "engineering_maturity_index": 1.0,
+    "autonomous_evolution_index": 0.0,
+    "innovation_index": 0.0,
+    "knowledge_reuse_index": 0.5,
+    "scientific_output_index": 1.0,
+    "economic_efficiency_index": 2.478,
+    "architectural_quality_index": 0.687,
+    "canonicalization_progress_index": 0.5
+  },
+  "deliverables": {
+    "repository_census": 415,
+    "canonicalization": 0,
+    "platform_unification": 30,
+    "data_platform": 7,
+    "service_orientation": 82,
+    "scientific_report": {
+      "accepted": 15,
+      "total": 15
+    },
+    "economics_report": {},
+    "improvement_backlog": [],
+    "dashboard": {
+      "repository_health": 0.592,
+      "canonicalization_progress": 1.0,
+      "knowledge_reuse": 0.5,
+      "architecture_quality": 0.592,
+      "specification_coverage": 0.0,
+      "experiment_throughput": 15,
+      "economic_efficiency": 1.696,
+      "scientific_output": 1.0,
+      "autonomous_evolution": 2.5,
+      "iteration": 3,
+      "significance": 2.23
+    },
+    "convergence": {
+      "entropy_change": 0.0,
+      "duplication_reduction": 0.0,
+      "coupling_reduction": 0.0,
+      "cohesion_increase": 0.0,
+      "health_improvement": 0.592,
+      "intelligence_improvement": 2.23,
+      "economic_improvement": 1.4,
+      "converged": false,
+      "iteration": 3
+    }
+  },
+  "mission_summaries": {
+    "mission_1": {
+      "name": "Complete Repository Audit",
+      "deliverable_count": 1,
+      "keys": [
+        "manifest_version",
+        "package_inventory",
+        "packages",
+        "module_inventory",
+        "symbol_inventory",
+        "api_inventory",
+        "dependency_inventory",
+        "graph_entity_count"
+      ]
+    },
+    "mission_4": {
+      "name": "Engineering Data Platform",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_entities",
+        "engine_relationships",
+        "entity_type_diversity",
+        "id_pattern_usage",
+        "id_pattern_modules"
+      ]
+    },
+    "mission_3": {
+      "name": "Platform Unification",
+      "deliverable_count": 1,
+      "keys": [
+        "subsystems_found",
+        "subsystem_list",
+        "subsystem_module_counts",
+        "conflicting_representations",
+        "conflicts",
+        "canonical_entities_registered"
+      ]
+    },
+    "mission_5": {
+      "name": "Service Orientation",
+      "deliverable_count": 1,
+      "keys": [
+        "services_mapped",
+        "services"
+      ]
+    },
+    "mission_6": {
+      "name": "Repository Science",
+      "deliverable_count": 1,
+      "keys": [
+        "experiments_conducted",
+        "experiment_details",
+        "findings",
+        "hypotheses",
+        "unknowns_identified",
+        "unknown_examples",
+        "evidence_collected"
+      ]
+    },
+    "mission_9": {
+      "name": "Engineering Dashboard",
+      "deliverable_count": 1,
+      "keys": [
+        "repository_health",
+        "canonicalization_progress",
+        "knowledge_reuse",
+        "architecture_quality",
+        "specification_coverage",
+        "experiment_throughput",
+        "economic_efficiency",
+        "scientific_output",
+        "autonomous_evolution",
+        "iteration"
+      ]
+    },
+    "mission_10": {
+      "name": "Convergence",
+      "deliverable_count": 1,
+      "keys": [
+        "entropy_change",
+        "duplication_reduction",
+        "coupling_reduction",
+        "cohesion_increase",
+        "health_improvement",
+        "intelligence_improvement",
+        "economic_improvement",
+        "converged",
+        "iteration"
+      ]
+    },
+    "mission_8": {
+      "name": "Self-Improvement",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "mission_11": {
+      "name": "Mission 11",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    }
+  }
+}

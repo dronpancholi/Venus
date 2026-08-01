@@ -1,0 +1,121 @@
+[
+  {
+    "id": "25fcb505141782a2:policy:genesis.fabric.audit",
+    "type": "policy",
+    "name": "genesis.fabric.audit",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.fabric.audit"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.44,
+    "risk": 0.36,
+    "health": 0.5,
+    "role": "policy",
+    "metadata": {
+      "classes": [
+        "AuditEntry",
+        "AuditLog"
+      ],
+      "functions": [
+        "__post_init__",
+        "__init__",
+        "log",
+        "query",
+        "search",
+        "count",
+        "summary"
+      ],
+      "path": "genesis/fabric/audit.py",
+      "package": "genesis.fabric"
+    }
+  },
+  {
+    "id": "92e0fa062529ec7b:policy:genesis.fabric.policy",
+    "type": "policy",
+    "name": "genesis.fabric.policy",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.fabric.policy"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.44,
+    "risk": 0.36,
+    "health": 0.5,
+    "role": "policy",
+    "metadata": {
+      "classes": [
+        "PolicyEffect",
+        "Policy",
+        "PolicyResult",
+        "PolicyEngine"
+      ],
+      "functions": [
+        "__post_init__",
+        "applies_to",
+        "__init__",
+        "add",
+        "remove",
+        "evaluate",
+        "list_policies",
+        "clear",
+        "count",
+        "summary"
+      ],
+      "path": "genesis/fabric/policy.py",
+      "package": "genesis.fabric"
+    }
+  },
+  {
+    "id": "284d22b8438a8451:policy:genesis.tests.test_compliance",
+    "type": "policy",
+    "name": "genesis.tests.test_compliance",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.38,
+    "evidence": [
+      "module:genesis.tests.test_compliance"
+    ],
+    "dependencies": [
+      "genesis.platform.VenusPlatform"
+    ],
+    "consumers": [],
+    "maturity": 0.38,
+    "risk": 0.34,
+    "health": 0.46,
+    "role": "policy",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "test_platform_bootstrap_creates_all_stores",
+        "test_platform_boot_creates_all_services",
+        "test_platform_boot_runs_vrip",
+        "test_platform_boot_emits_event",
+        "test_platform_shutdown_graceful",
+        "test_platform_status_summary",
+        "test_platform_double_boot_is_idempotent",
+        "handler"
+      ],
+      "path": "genesis/tests/test_compliance.py",
+      "package": "genesis.tests"
+    }
+  }
+]

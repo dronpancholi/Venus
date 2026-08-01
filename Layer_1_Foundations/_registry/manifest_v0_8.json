@@ -1,0 +1,14 @@
+{
+  "version": "V0.8",
+  "name": "V0.8 V0.8_UAIEOS",
+  "path": "Layer_2_Core_OS/V0.8_UAIEOS",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.8-UAIEOS"
+  ],
+  "dependencies": [
+    "V0.7"
+  ]
+}

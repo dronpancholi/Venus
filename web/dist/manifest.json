@@ -1,0 +1,12 @@
+{
+  "name": "Genesis",
+  "short_name": "Genesis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0c8ee7",
+  "description": "Genesis — Engineering Computing Platform",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

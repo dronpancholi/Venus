@@ -1,0 +1,942 @@
+{
+  "subsystems_explained": 87,
+  "explanations": {
+    "Layer_1_Foundations._compiler": {
+      "purpose": "_compiler subsystem",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "Ontology",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load",
+            "is_valid_type",
+            "inheritance_chain",
+            "validate_inheritance"
+          ],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 42
+        },
+        {
+          "name": "DSLError",
+          "bases": [
+            "Exception"
+          ],
+          "methods": [
+            "__init__"
+          ],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 76
+        },
+        {
+          "name": "DSLParser",
+          "bases": [],
+          "methods": [
+            "parse",
+            "_parse_blocks",
+            "_balance",
+            "_parse_block",
+            "_parse_value",
+            "_split_array",
+            "_parse_object"
+          ],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 83
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: argparse",
+        "missing dependency: hashlib",
+        "missing dependency: json"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "compiler"
+    },
+    "Layer_1_Foundations._evolution": {
+      "purpose": "_evolution subsystem",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "EvolutionAgent",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load",
+            "review",
+            "dedup",
+            "consolidate",
+            "_find_orphans",
+            "_find_density_clusters",
+            "_find_circular_deps",
+            "run",
+            "_print_findings"
+          ],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 26
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: argparse",
+        "missing dependency: json",
+        "missing dependency: re"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "Layer_1_Foundations._graph": {
+      "purpose": "_graph subsystem",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SemanticGraph",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_types",
+            "add_node",
+            "add_edge",
+            "build_from_catalog",
+            "infer",
+            "_infer_transitive",
+            "_infer_transitive_through",
+            "_map_to_semantic_type",
+            "_map_to_semantic_edge",
+            "write"
+          ],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 24
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: argparse",
+        "missing dependency: json",
+        "missing dependency: collections"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "graph"
+    },
+    "Layer_1_Foundations._rule_engine": {
+      "purpose": "_rule_engine subsystem",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "RuleEngine",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_rules",
+            "_load_ontology",
+            "evaluate",
+            "_evaluate_rule",
+            "validate_all"
+          ],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 22
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: argparse",
+        "missing dependency: json",
+        "missing dependency: sys"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "Layer_1_Foundations._validation": {
+      "purpose": "_validation subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: argparse",
+        "missing dependency: re",
+        "missing dependency: sys"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "compiler"
+    },
+    "genesis.__main__": {
+      "purpose": "__main__ subsystem",
+      "inputs": [
+        "genesis.cli.commands"
+      ],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: sys"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "entrypoint"
+    },
+    "genesis.acquisition": {
+      "purpose": "acquisition subsystem",
+      "inputs": [
+        "genesis.metamodel.entity",
+        "genesis.metamodel.entity",
+        "genesis.utils.identity"
+      ],
+      "outputs": [
+        {
+          "name": "AcquisitionRecord",
+          "bases": [],
+          "methods": [
+            "__post_init__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": true,
+          "line": 19
+        },
+        {
+          "name": "AcquisitionSource",
+          "bases": [],
+          "methods": [
+            "fetch",
+            "fetch_one",
+            "to_entity",
+            "summary"
+          ],
+          "decorators": [],
+          "has_docstring": true,
+          "line": 38
+        },
+        {
+          "name": "AcquisitionPipeline",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "register",
+            "register_many",
+            "acquire_all",
+            "acquire_source",
+            "_acquire_source",
+            "_record_history",
+            "list_sources",
+            "summary"
+          ],
+          "decorators": [],
+          "has_docstring": true,
+          "line": 77
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: time",
+        "missing dependency: dataclasses"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.api": {
+      "purpose": "api subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: router"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "interface"
+    },
+    "genesis.autonomous": {
+      "purpose": "autonomous subsystem",
+      "inputs": [
+        "genesis.autonomous.cycle",
+        "genesis.autonomous.orchestrator"
+      ],
+      "outputs": [],
+      "failure_modes": [],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.brain": {
+      "purpose": "brain subsystem",
+      "inputs": [
+        "genesis.brain.entity",
+        "genesis.brain.graph",
+        "genesis.brain.sync"
+      ],
+      "outputs": [
+        {
+          "name": "EngineeringBrain",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "graph",
+            "embeddings",
+            "integration",
+            "cognition",
+            "entity",
+            "register",
+            "get",
+            "find_by_type",
+            "find_by_label",
+            "find_by_source",
+            "remove",
+            "all_entities",
+            "relate",
+            "neighbors",
+            "relationships",
+            "sync_digital_twin",
+            "sync_uir_graph",
+            "sync_knowledge_base",
+            "sync_vrip_kg",
+            "sync_graphdb",
+            "sync_civilization",
+            "store_embedding",
+            "get_embedding",
+            "start_integration",
+            "stop_integration",
+            "summary"
+          ],
+          "decorators": [],
+          "has_docstring": true,
+          "line": 69
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: time",
+        "missing dependency: typing"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "intelligence"
+    },
+    "genesis.brain_v4": {
+      "purpose": "brain_v4 subsystem",
+      "inputs": [
+        "genesis.utils.identity",
+        "genesis.hypergraph"
+      ],
+      "outputs": [
+        {
+          "name": "GoalLevel",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 26
+        },
+        {
+          "name": "GoalStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 33
+        },
+        {
+          "name": "Goal",
+          "bases": [],
+          "methods": [
+            "__post_init__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 44
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: math",
+        "missing dependency: time"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "intelligence"
+    },
+    "genesis.capability": {
+      "purpose": "capability subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: registry"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.census": {
+      "purpose": "census subsystem",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "ModuleInfo",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 34
+        },
+        {
+          "name": "TestInfo",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 60
+        },
+        {
+          "name": "EntityRecord",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": true,
+          "line": 527
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: ast",
+        "missing dependency: json"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.certification": {
+      "purpose": "certification subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.civilization": {
+      "purpose": "civilization subsystem",
+      "inputs": [
+        "genesis.civilization.overseer",
+        "genesis.civilization.agents.base",
+        "genesis.civilization.research"
+      ],
+      "outputs": [],
+      "failure_modes": [],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "civilization"
+    },
+    "genesis.civilization_v2": {
+      "purpose": "civilization_v2 subsystem",
+      "inputs": [
+        "genesis.utils.identity"
+      ],
+      "outputs": [
+        {
+          "name": "InstituteType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 22
+        },
+        {
+          "name": "WorkProduct",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 41
+        },
+        {
+          "name": "Institute",
+          "bases": [],
+          "methods": [
+            "__post_init__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 57
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: time",
+        "missing dependency: dataclasses"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "civilization"
+    },
+    "genesis.civilization_v3": {
+      "purpose": "civilization_v3 subsystem",
+      "inputs": [
+        "genesis.utils.identity"
+      ],
+      "outputs": [
+        {
+          "name": "InstituteType",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 23
+        },
+        {
+          "name": "ResearchProject",
+          "bases": [],
+          "methods": [
+            "__post_init__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 45
+        },
+        {
+          "name": "Institute",
+          "bases": [],
+          "methods": [
+            "__post_init__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 67
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: time",
+        "missing dependency: collections"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "civilization"
+    },
+    "genesis.cli": {
+      "purpose": "cli subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: commands"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "entrypoint"
+    },
+    "genesis.compiler": {
+      "purpose": "compiler subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: compiler",
+        "missing dependency: ast",
+        "missing dependency: parser"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "compiler"
+    },
+    "genesis.config": {
+      "purpose": "config subsystem",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "PlatformConfig",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load",
+            "to_dict",
+            "to_json"
+          ],
+          "decorators": [],
+          "has_docstring": true,
+          "line": 8
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: json",
+        "missing dependency: pathlib",
+        "missing dependency: typing"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.core": {
+      "purpose": "core subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: base",
+        "missing dependency: uir",
+        "missing dependency: types"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "core"
+    },
+    "genesis.datalake": {
+      "purpose": "datalake subsystem",
+      "inputs": [
+        "genesis.metamodel.entity",
+        "genesis.metamodel.graph",
+        "genesis.utils.identity"
+      ],
+      "outputs": [
+        {
+          "name": "DataLakeEntity",
+          "bases": [],
+          "methods": [
+            "__post_init__",
+            "to_unified_entity",
+            "from_unified_entity",
+            "to_dict",
+            "from_dict",
+            "__repr__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": true,
+          "line": 28
+        },
+        {
+          "name": "VersionRecord",
+          "bases": [],
+          "methods": [
+            "to_dict",
+            "from_dict"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": true,
+          "line": 126
+        },
+        {
+          "name": "VersionedStore",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_setup",
+            "set_graph",
+            "store",
+            "get",
+            "get_latest",
+            "get_versions",
+            "list_entities",
+            "delete",
+            "query",
+            "count",
+            "summary",
+            "_add_version_record",
+            "_append_changelog",
+            "_read_changelog"
+          ],
+          "decorators": [],
+          "has_docstring": true,
+          "line": 157
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: json",
+        "missing dependency: time"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.di": {
+      "purpose": "di subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: bootstrap",
+        "missing dependency: container",
+        "missing dependency: interfaces"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "infrastructure"
+    },
+    "genesis.diagnostics": {
+      "purpose": "diagnostics subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: diagnostics"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "infrastructure"
+    },
+    "genesis.digital_civilization": {
+      "purpose": "digital_civilization subsystem",
+      "inputs": [
+        "genesis.ontology"
+      ],
+      "outputs": [
+        {
+          "name": "InstituteType",
+          "bases": [
+            "str",
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 26
+        },
+        {
+          "name": "InstituteStatus",
+          "bases": [
+            "str",
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 47
+        },
+        {
+          "name": "Institute",
+          "bases": [],
+          "methods": [
+            "__post_init__",
+            "add_member",
+            "add_capability"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 56
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: time",
+        "missing dependency: dataclasses"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "infrastructure"
+    },
+    "genesis.digital_twin": {
+      "purpose": "digital_twin subsystem",
+      "inputs": [
+        "genesis.digital_twin.model",
+        "genesis.brain"
+      ],
+      "outputs": [
+        {
+          "name": "PlanetaryDigitalTwin",
+          "bases": [
+            "DigitalTwin"
+          ],
+          "methods": [
+            "__init__",
+            "brain",
+            "set_brain",
+            "_to_brain_entity",
+            "add_node",
+            "add_edge",
+            "sync_all_to_brain",
+            "summary"
+          ],
+          "decorators": [],
+          "has_docstring": true,
+          "line": 27
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: typing"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "infrastructure"
+    },
+    "genesis.discovery": {
+      "purpose": "discovery subsystem",
+      "inputs": [
+        "genesis.utils.identity"
+      ],
+      "outputs": [
+        {
+          "name": "HypothesisStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 22
+        },
+        {
+          "name": "EvidenceStrength",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 32
+        },
+        {
+          "name": "Observation",
+          "bases": [],
+          "methods": [
+            "__post_init__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 41
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: math",
+        "missing dependency: random"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "infrastructure"
+    },
+    "genesis.economics": {
+      "purpose": "economics subsystem",
+      "inputs": [
+        "genesis.utils.identity"
+      ],
+      "outputs": [
+        {
+          "name": "EconomicMetric",
+          "bases": [],
+          "methods": [
+            "__post_init__"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 22
+        },
+        {
+          "name": "InvestmentScore",
+          "bases": [],
+          "methods": [],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 35
+        },
+        {
+          "name": "EconomicsEngine",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "record",
+            "metrics",
+            "latest_value",
+            "average",
+            "engineering_cost",
+            "maintenance_cost",
+            "technical_debt",
+            "research_roi",
+            "memory_roi",
+            "agent_productivity",
+            "repository_value",
+            "knowledge_growth",
+            "test_value",
+            "performance_value",
+            "prediction_accuracy",
+            "optimization_gain",
+            "score_opportunity",
+            "ranked_opportunities",
+            "best_opportunity",
+            "summary",
+            "save"
+          ],
+          "decorators": [],
+          "has_docstring": true,
+          "line": 47
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: json",
+        "missing dependency: time"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "economics"
+    },
+    "genesis.engineering_os": {
+      "purpose": "engineering_os subsystem",
+      "inputs": [
+        "genesis.utils.identity"
+      ],
+      "outputs": [
+        {
+          "name": "ServiceStatus",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 20
+        },
+        {
+          "name": "ServiceRole",
+          "bases": [
+            "Enum"
+          ],
+          "methods": [],
+          "decorators": [],
+          "has_docstring": false,
+          "line": 29
+        },
+        {
+          "name": "Service",
+          "bases": [],
+          "methods": [
+            "__post_init__",
+            "start",
+            "stop",
+            "heartbeat",
+            "record_error"
+          ],
+          "decorators": [
+            "dataclass"
+          ],
+          "has_docstring": false,
+          "line": 50
+        }
+      ],
+      "failure_modes": [
+        "missing dependency: __future__",
+        "missing dependency: time",
+        "missing dependency: dataclasses"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "unknown"
+    },
+    "genesis.events": {
+      "purpose": "events subsystem",
+      "inputs": [],
+      "outputs": [],
+      "failure_modes": [
+        "missing dependency: bus"
+      ],
+      "runtime": "synchronous method calls + graph traversal",
+      "architectural_role": "infrastructure"
+    }
+  }
+}

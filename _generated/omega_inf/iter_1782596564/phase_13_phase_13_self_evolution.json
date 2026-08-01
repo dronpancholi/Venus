@@ -1,0 +1,17 @@
+{
+  "health_index": 0.344,
+  "maturity_index": 0.688,
+  "innovation_index": 0.672,
+  "autonomy_index": 1.0,
+  "significance": 767.33,
+  "total_experiments": 365,
+  "total_rewrites": 18907,
+  "total_tests_passed": 0,
+  "next_roadmap": [
+    "Canonicalize high-severity duplicate abstractions",
+    "Run more experiments (current: 365)",
+    "Expand civilization with more contracts",
+    "Expand civilization with more contracts"
+  ],
+  "should_continue": true
+}

@@ -1,0 +1,389 @@
+{
+  "meta": {
+    "program": "GENESIS 3.0 \u2014 UECP",
+    "iteration": 1,
+    "total_duration_ms": 18509.77,
+    "significance": 0.53,
+    "missions_completed": 11
+  },
+  "scorecard": {
+    "repository_intelligence_score": 0.496,
+    "repository_health_score": 0.375,
+    "engineering_maturity_index": 0.75,
+    "autonomous_evolution_index": 0.0,
+    "innovation_index": 0.472,
+    "knowledge_reuse_index": 0.5,
+    "scientific_output_index": 0.733,
+    "economic_efficiency_index": 0.613,
+    "architectural_quality_index": 0.525,
+    "canonicalization_progress_index": 0.5
+  },
+  "deliverables": {
+    "baseline": 415,
+    "architectural_convergence": 0,
+    "entity_convergence": 0.0,
+    "service_consolidation": 0,
+    "knowledge_convergence": 11,
+    "scientific_report": {
+      "accepted": 5,
+      "total": 5
+    },
+    "economics_report": {
+      "total_implementation_cost": 133526.0,
+      "total_maintenance_cost": 26709.0,
+      "total_technical_debt": 512163.0,
+      "total_future_value": 267052.0,
+      "avg_roi": 1.0,
+      "services": {
+        "tests": {
+          "modules": 72,
+          "lines": 22528,
+          "classes": 376,
+          "functions": 2641,
+          "implementation_cost": 33792.0,
+          "maintenance_cost": 6758.0,
+          "technical_debt": 423526.0,
+          "future_value": 67584.0,
+          "expected_roi": 1.0,
+          "risk_factor": 6.267
+        },
+        "civilization": {
+          "modules": 14,
+          "lines": 5226,
+          "classes": 69,
+          "functions": 278,
+          "implementation_cost": 7839.0,
+          "maintenance_cost": 1568.0,
+          "technical_debt": 18030.0,
+          "future_value": 15678.0,
+          "expected_roi": 1.0,
+          "risk_factor": 1.15
+        },
+        "digital_twin": {
+          "modules": 29,
+          "lines": 4606,
+          "classes": 39,
+          "functions": 223,
+          "implementation_cost": 6909.0,
+          "maintenance_cost": 1382.0,
+          "technical_debt": 8982.0,
+          "future_value": 13818.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.65
+        },
+        "brain": {
+          "modules": 16,
+          "lines": 4084,
+          "classes": 57,
+          "functions": 274,
+          "implementation_cost": 6126.0,
+          "maintenance_cost": 1225.0,
+          "technical_debt": 11639.0,
+          "future_value": 12252.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.95
+        },
+        "os": {
+          "modules": 14,
+          "lines": 3120,
+          "classes": 41,
+          "functions": 240,
+          "implementation_cost": 4680.0,
+          "maintenance_cost": 936.0,
+          "technical_debt": 6396.0,
+          "future_value": 9360.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.683
+        },
+        "laboratory": {
+          "modules": 10,
+          "lines": 2687,
+          "classes": 45,
+          "functions": 102,
+          "implementation_cost": 4030.0,
+          "maintenance_cost": 806.0,
+          "technical_debt": 6046.0,
+          "future_value": 8060.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.75
+        },
+        "ued": {
+          "modules": 13,
+          "lines": 2605,
+          "classes": 43,
+          "functions": 274,
+          "implementation_cost": 3908.0,
+          "maintenance_cost": 782.0,
+          "technical_debt": 5601.0,
+          "future_value": 7816.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.717
+        },
+        "omega_loop": {
+          "modules": 1,
+          "lines": 2276,
+          "classes": 2,
+          "functions": 45,
+          "implementation_cost": 3414.0,
+          "maintenance_cost": 683.0,
+          "technical_debt": 228.0,
+          "future_value": 6828.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.033
+        },
+        "kernel": {
+          "modules": 18,
+          "lines": 2126,
+          "classes": 34,
+          "functions": 182,
+          "implementation_cost": 3189.0,
+          "maintenance_cost": 638.0,
+          "technical_debt": 3614.0,
+          "future_value": 6378.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.567
+        },
+        "intelligence": {
+          "modules": 14,
+          "lines": 2111,
+          "classes": 17,
+          "functions": 96,
+          "implementation_cost": 3166.0,
+          "maintenance_cost": 633.0,
+          "technical_debt": 1794.0,
+          "future_value": 6332.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.283
+        },
+        "ucos": {
+          "modules": 13,
+          "lines": 1984,
+          "classes": 32,
+          "functions": 156,
+          "implementation_cost": 2976.0,
+          "maintenance_cost": 595.0,
+          "technical_debt": 3174.0,
+          "future_value": 5952.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.533
+        },
+        "meta": {
+          "modules": 10,
+          "lines": 1805,
+          "classes": 29,
+          "functions": 179,
+          "implementation_cost": 2708.0,
+          "maintenance_cost": 542.0,
+          "technical_debt": 2617.0,
+          "future_value": 5416.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.483
+        },
+        "acquisition": {
+          "modules": 20,
+          "lines": 1526,
+          "classes": 21,
+          "functions": 82,
+          "implementation_cost": 2289.0,
+          "maintenance_cost": 458.0,
+          "technical_debt": 1602.0,
+          "future_value": 4578.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.35
+        },
+        "usir": {
+          "modules": 5,
+          "lines": 1451,
+          "classes": 9,
+          "functions": 56,
+          "implementation_cost": 2176.0,
+          "maintenance_cost": 435.0,
+          "technical_debt": 653.0,
+          "future_value": 4352.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.15
+        },
+        "ontology": {
+          "modules": 1,
+          "lines": 1399,
+          "classes": 20,
+          "functions": 101,
+          "implementation_cost": 2098.0,
+          "maintenance_cost": 420.0,
+          "technical_debt": 1399.0,
+          "future_value": 4196.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.333
+        }
+      }
+    },
+    "improvement_backlog": [],
+    "convergence": {
+      "architectural_entropy": 0.625,
+      "coupling": 1.0,
+      "cohesion": 0.375,
+      "canonicalization_progress": 0.0,
+      "knowledge_reuse": 0.5,
+      "health": 0.375,
+      "intelligence": 0.53,
+      "scientific_output": 1.0,
+      "economic_efficiency": 3.688,
+      "external_generalization": 0.0,
+      "convergence_stalled": false,
+      "baseline_file_drift": -415,
+      "iteration": 1
+    }
+  },
+  "mission_summaries": {
+    "mission_0": {
+      "name": "Baseline",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "test_files",
+        "source_files",
+        "module_names",
+        "dependency_pairs"
+      ]
+    },
+    "mission_1": {
+      "name": "Architectural Convergence",
+      "deliverable_count": 1,
+      "keys": [
+        "packages_mapped",
+        "dependency_matrix",
+        "cyclic_dependencies",
+        "cyclic_pairs",
+        "redundant_packages",
+        "overlapping_responsibilities",
+        "overlap_details"
+      ]
+    },
+    "mission_2": {
+      "name": "Universal Entity Convergence",
+      "deliverable_count": 1,
+      "keys": [
+        "modules_with_entities",
+        "uem_compliant",
+        "uem_non_compliant",
+        "convergence_ratio",
+        "non_compliant_modules",
+        "uem_keywords_checked"
+      ]
+    },
+    "mission_4": {
+      "name": "Knowledge Convergence",
+      "deliverable_count": 1,
+      "keys": [
+        "domains_mapped",
+        "domain_module_lists",
+        "graph_relationship_types",
+        "graph_relationship_list",
+        "convergence_status",
+        "total_domains",
+        "domains_with_coverage"
+      ]
+    },
+    "mission_5": {
+      "name": "Engineering Science",
+      "deliverable_count": 1,
+      "keys": [
+        "experiments_conducted",
+        "experiment_details",
+        "findings",
+        "hypotheses",
+        "unknowns_identified",
+        "unknown_examples",
+        "evidence_collected"
+      ]
+    },
+    "mission_8": {
+      "name": "Engineering Economics",
+      "deliverable_count": 1,
+      "keys": [
+        "total_institutes",
+        "by_type",
+        "by_status",
+        "total_contracts",
+        "total_reputation_events",
+        "total_relationships",
+        "contracts"
+      ]
+    },
+    "mission_7": {
+      "name": "Repository Rewrite",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "mission_3": {
+      "name": "Service Consolidation",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "mission_10": {
+      "name": "Continuous Convergence",
+      "deliverable_count": 1,
+      "keys": [
+        "architectural_entropy",
+        "coupling",
+        "cohesion",
+        "canonicalization_progress",
+        "knowledge_reuse",
+        "health",
+        "intelligence",
+        "scientific_output",
+        "economic_efficiency",
+        "external_generalization"
+      ]
+    },
+    "mission_11": {
+      "name": "Mission 11",
+      "deliverable_count": 1,
+      "keys": [
+        "checks",
+        "all_passed"
+      ]
+    },
+    "mission_12": {
+      "name": "Mission 12",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "mission_13": {
+      "name": "Mission 13",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

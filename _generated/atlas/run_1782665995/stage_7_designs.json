@@ -1,0 +1,102 @@
+{
+  "stage": 7,
+  "designs": [
+    {
+      "problem_id": "P1",
+      "title": "PluginRegistry pattern for OmegaLoop decoupling",
+      "approach": "Extract a lightweight PluginRegistry that modules register into, OmegaLoop iterates registered plugins instead of importing directly",
+      "alternatives_considered": [
+        "Message bus",
+        "Dependency injection container",
+        "Existing pattern preservation"
+      ],
+      "alternatives_rejected": [
+        "Message bus \u2014 overengineered for single-process execution"
+      ],
+      "tradeoffs": [
+        "Slightly more startup complexity for significantly reduced coupling"
+      ],
+      "estimated_effort": "medium",
+      "risks": [
+        "Registration order dependencies",
+        "Plugin discovery performance"
+      ]
+    },
+    {
+      "problem_id": "P2",
+      "title": "Civilization consolidation to digital_civilization canonical",
+      "approach": "Audit all callers of civilization_v2 and civilization_v3, migrate to digital_civilization API, add deprecation warnings, archive after migration complete",
+      "alternatives_considered": [
+        "Keep all three with adapters",
+        "Rewrite from scratch"
+      ],
+      "alternatives_rejected": [
+        "Adapters increase complexity without solving duplication"
+      ],
+      "tradeoffs": [
+        "Migration effort now for reduced maintenance cost forever"
+      ],
+      "estimated_effort": "medium",
+      "risks": [
+        "Missed caller during migration audit"
+      ]
+    },
+    {
+      "problem_id": "P3",
+      "title": "Platform unification",
+      "approach": "Create canonical Platform module by merging platform.py and platform_v2.py interfaces, maintain backward compatibility for one release cycle",
+      "alternatives_considered": [
+        "Keep both with a Facade",
+        "Deprecate both and rebuild"
+      ],
+      "alternatives_rejected": [
+        "Facade adds yet another layer without consolidation"
+      ],
+      "tradeoffs": [
+        "Short-term API breakage for long-term simplification"
+      ],
+      "estimated_effort": "small",
+      "risks": [
+        "External consumers depending on specific_v2 API"
+      ]
+    },
+    {
+      "problem_id": "P4",
+      "title": "Evolution Engine consolidation",
+      "approach": "Retain evolution_v4.py as the canonical evolution implementation, wrap simulator.py functionality as a simulation backend, deprecate evolution.py, simulator_v2.py, brain_v4.py",
+      "alternatives_considered": [
+        "Keep all as plugins",
+        "Rewrite unified engine"
+      ],
+      "alternatives_rejected": [
+        "Plugins maintain the duplication problem"
+      ],
+      "tradeoffs": [
+        "Losing some specialized simulation variants in favor of one well-maintained engine"
+      ],
+      "estimated_effort": "large",
+      "risks": [
+        "Evolution_v4 may not cover all evolution.py use cases"
+      ]
+    },
+    {
+      "problem_id": "P6",
+      "title": "Architecture Review Board protocol",
+      "approach": "Before any new abstraction is created, a mandatory review checks: does an existing abstraction satisfy this requirement? If not, the new abstraction must explicitly justify its existence",
+      "alternatives_considered": [
+        "Voluntary review",
+        "No review \u2014 reactive refactoring"
+      ],
+      "alternatives_rejected": [
+        "Voluntary review is ineffective; reactive refactoring is more expensive"
+      ],
+      "tradeoffs": [
+        "Slightly slower feature velocity for dramatically lower entropy growth"
+      ],
+      "estimated_effort": "small",
+      "risks": [
+        "Process friction discourages legitimate new abstractions"
+      ]
+    }
+  ]
+}

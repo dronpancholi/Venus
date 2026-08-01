@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "total_iterations": 2,
+    "duration_ms": 66136.29269599915,
+    "stages_completed": 25,
+    "edges_added": 4419,
+    "experiments_ran": 10,
+    "improvements_executed": 0,
+    "tests_passed": 5526,
+    "significance_score": 0.0
+  },
+  "deliverables": {
+    "census": {
+      "total_files": 415,
+      "total_lines": 92563,
+      "total_classes": 1364,
+      "total_functions": 7119,
+      "total_entities": 9214,
+      "total_relationships": 15252
+    },
+    "digital_twin_nodes": 9214,
+    "digital_twin_edges": 15252,
+    "knowledge_graph_nodes": 9214,
+    "knowledge_graph_edges": 15252,
+    "ontology_synced": true,
+    "meta_model_count": 0,
+    "execution_graph_count": 0,
+    "dependency_graph_count": 0,
+    "health_index": 0.328,
+    "maturity_index": 0.656,
+    "civilization_index": 0.6
+  },
+  "file_paths": {
+    "economics_report_path": "/Users/dronpancholi/Developer/01_Strategic/Venus/_generated/omega/iter_1782594077/economics_report.json",
+    "scientific_report_path": "/Users/dronpancholi/Developer/01_Strategic/Venus/_generated/omega/iter_1782594077/scientific_report.json",
+    "architecture_report_path": "/Users/dronpancholi/Developer/01_Strategic/Venus/_generated/omega/iter_1782594077/architecture_report.json",
+    "technical_debt_path": "/Users/dronpancholi/Developer/01_Strategic/Venus/_generated/omega/iter_1782594077/technical_debt.json",
+    "evolution_report_path": "/Users/dronpancholi/Developer/01_Strategic/Venus/_generated/omega/iter_1782594077/evolution_report.json"
+  }
+}

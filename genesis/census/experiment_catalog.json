@@ -1,0 +1,835 @@
+[
+  {
+    "id": "218d0048b2ef01d3:experiment:genesis.civilization.research",
+    "type": "experiment",
+    "name": "genesis.civilization.research",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.civilization.research"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.civilization",
+      "genesis.civilization.overseer",
+      "genesis.civilization.search"
+    ],
+    "maturity": 0.7,
+    "risk": 0.26,
+    "health": 0.71,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "ResearchPaper",
+        "PeerReview",
+        "DebateStatement",
+        "DebateTranscript",
+        "CitationNode",
+        "CitationGraph",
+        "ResearchLibrary"
+      ],
+      "functions": [
+        "average_review_score",
+        "accepted",
+        "to_dict",
+        "to_dict",
+        "add_statement",
+        "to_dict",
+        "__init__",
+        "add_paper",
+        "add_citation",
+        "citation_count",
+        "most_cited",
+        "to_dict",
+        "__init__",
+        "submit_paper",
+        "review_paper",
+        "publish",
+        "record_debate",
+        "search",
+        "summary",
+        "_save",
+        "_load"
+      ],
+      "path": "genesis/civilization/research/__init__.py",
+      "package": "genesis.civilization.research"
+    }
+  },
+  {
+    "id": "dd3547e527ef0586:experiment:genesis.laboratory",
+    "type": "experiment",
+    "name": "genesis.laboratory",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.55,
+    "evidence": [
+      "module:genesis.laboratory"
+    ],
+    "dependencies": [
+      "genesis.laboratory.extraction.pipeline.ExtractionPipeline",
+      "genesis.laboratory.genome.builder.GenomeBuilder",
+      "genesis.laboratory.genome.comparison.GenomeComparator",
+      "genesis.laboratory.genome.model.EvolutionaryLineage",
+      "genesis.laboratory.genome.model.FitnessScore",
+      "genesis.laboratory.genome.model.GenomeChromosome",
+      "genesis.laboratory.genome.model.GenomeGene",
+      "genesis.laboratory.genome.model.SoftwareGenome",
+      "genesis.laboratory.genome.model.Species",
+      "genesis.laboratory.genome.model.TraitCategory",
+      "genesis.laboratory.mining.subgraph.FrequentSubgraphMiner"
+    ],
+    "consumers": [
+      "genesis.civilization.learning",
+      "genesis.civilization.physics",
+      "genesis.civilization.world_model",
+      "genesis.intelligence.cli",
+      "genesis.laboratory.cli",
+      "genesis.laboratory.experiment",
+      "genesis.laboratory.extraction.pipeline",
+      "genesis.laboratory.genome.builder",
+      "genesis.laboratory.genome.comparison",
+      "genesis.laboratory.mining.subgraph",
+      "genesis.laboratory.scheduler",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 0.55,
+    "risk": 0.53,
+    "health": 0.53,
+    "role": "experiment",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/laboratory/__init__.py",
+      "package": "genesis.laboratory"
+    }
+  },
+  {
+    "id": "ebc29453e93f0c26:experiment:genesis.laboratory.cli",
+    "type": "experiment",
+    "name": "genesis.laboratory.cli",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.9,
+    "evidence": [
+      "module:genesis.laboratory.cli"
+    ],
+    "dependencies": [
+      "genesis.laboratory.experiment.ExperimentDesign",
+      "genesis.laboratory.experiment.ExperimentPlatform",
+      "genesis.laboratory.extraction.pipeline.ExtractionPipeline",
+      "genesis.laboratory.genome.builder.GenomeBuilder",
+      "genesis.laboratory.genome.comparison.GenomeComparator",
+      "genesis.laboratory.genome.model.FitnessScore",
+      "genesis.laboratory.genome.model.SoftwareGenome",
+      "genesis.laboratory.mining.subgraph.FrequentSubgraphMiner",
+      "genesis.laboratory.mining.subgraph.MotifDetector",
+      "genesis.laboratory.mining.subgraph.PatternCluster",
+      "genesis.laboratory.scheduler.RepositoryScheduler",
+      "genesis.laboratory.world_graph.WorldGraph",
+      "genesis.observatory.miner.RepositoryMiner",
+      "genesis.usir.compiler.MultiLanguageCompiler"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 0.9,
+    "risk": 0.33,
+    "health": 0.83,
+    "role": "experiment",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "register_subcommands",
+        "run_lab",
+        "_analyze",
+        "_genome",
+        "_compare",
+        "_mine",
+        "_schedule",
+        "_run_schedule",
+        "_world",
+        "_experiment"
+      ],
+      "path": "genesis/laboratory/cli.py",
+      "package": "genesis.laboratory"
+    }
+  },
+  {
+    "id": "3dcde2f4f3c1e914:experiment:genesis.laboratory.experiment",
+    "type": "experiment",
+    "name": "genesis.laboratory.experiment",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.laboratory.experiment"
+    ],
+    "dependencies": [
+      "genesis.laboratory.genome.model.FitnessScore",
+      "genesis.laboratory.genome.model.SoftwareGenome"
+    ],
+    "consumers": [
+      "genesis.civilization.learning",
+      "genesis.laboratory.cli",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 1.0,
+    "risk": 0.1,
+    "health": 0.97,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "ExperimentDesign",
+        "ExperimentResult",
+        "ExperimentHistory",
+        "ExperimentPlatform"
+      ],
+      "functions": [
+        "acceptance_rate",
+        "summary",
+        "__init__",
+        "design_experiment",
+        "run",
+        "_aggregate_fitness",
+        "_compute_effect_size",
+        "_estimate_p_value"
+      ],
+      "path": "genesis/laboratory/experiment.py",
+      "package": "genesis.laboratory"
+    }
+  },
+  {
+    "id": "7403746409f252c8:experiment:genesis.laboratory.extraction.pipeline",
+    "type": "experiment",
+    "name": "genesis.laboratory.extraction.pipeline",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.laboratory.extraction.pipeline"
+    ],
+    "dependencies": [
+      "genesis.laboratory.genome.model.SoftwareGenome"
+    ],
+    "consumers": [
+      "genesis.laboratory",
+      "genesis.laboratory.cli",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.29,
+    "health": 0.7,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "ExtractedKnowledge",
+        "ArchitecturePattern",
+        "KnowledgeExtractionResult",
+        "ExtractionPipeline",
+        "BaseExtractor",
+        "PatternExtractor",
+        "ProtocolExtractor",
+        "DependencyExtractor",
+        "DatabaseExtractor",
+        "SecurityExtractor",
+        "CICDExtractor",
+        "StateMachineExtractor",
+        "BuildSystemExtractor"
+      ],
+      "functions": [
+        "total",
+        "__init__",
+        "extract",
+        "extract_from_source",
+        "extract",
+        "extract_file",
+        "extract",
+        "extract_file",
+        "extract",
+        "extract_file",
+        "extract",
+        "extract",
+        "extract",
+        "extract",
+        "extract",
+        "extract"
+      ],
+      "path": "genesis/laboratory/extraction/pipeline.py",
+      "package": "genesis.laboratory.extraction"
+    }
+  },
+  {
+    "id": "ec416cdffe1b15cf:experiment:genesis.laboratory.genome.builder",
+    "type": "experiment",
+    "name": "genesis.laboratory.genome.builder",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.laboratory.genome.builder"
+    ],
+    "dependencies": [
+      "genesis.laboratory.genome.model.ChromosomeType",
+      "genesis.laboratory.genome.model.EvolutionaryLineage",
+      "genesis.laboratory.genome.model.FitnessScore",
+      "genesis.laboratory.genome.model.GeneType",
+      "genesis.laboratory.genome.model.GenomeChromosome",
+      "genesis.laboratory.genome.model.GenomeGene",
+      "genesis.laboratory.genome.model.MutationRecord",
+      "genesis.laboratory.genome.model.MutationType",
+      "genesis.laboratory.genome.model.SoftwareGenome",
+      "genesis.laboratory.genome.model.Species",
+      "genesis.laboratory.genome.model.TraitCategory",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.civilization.learning",
+      "genesis.laboratory",
+      "genesis.laboratory.cli",
+      "genesis.laboratory.scheduler",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.46,
+    "health": 0.65,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "GenomeBuilder"
+      ],
+      "functions": [
+        "register_trait",
+        "decorator",
+        "__init__",
+        "build_from_twin",
+        "build_from_usir",
+        "_usir_kind_to_gene_type",
+        "_extract_traits",
+        "_compute_fitness",
+        "_classify_species"
+      ],
+      "path": "genesis/laboratory/genome/builder.py",
+      "package": "genesis.laboratory.genome"
+    }
+  },
+  {
+    "id": "5d1e349c4fa6a1b6:experiment:genesis.laboratory.genome.comparison",
+    "type": "experiment",
+    "name": "genesis.laboratory.genome.comparison",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.laboratory.genome.comparison"
+    ],
+    "dependencies": [
+      "genesis.laboratory.genome.model.GenomeGene",
+      "genesis.laboratory.genome.model.SoftwareGenome"
+    ],
+    "consumers": [
+      "genesis.laboratory",
+      "genesis.laboratory.cli",
+      "genesis.laboratory.scheduler",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.27,
+    "health": 0.71,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "GenomeComparator"
+      ],
+      "functions": [
+        "gene_similarity",
+        "find_orthologs",
+        "genome_similarity",
+        "_trait_correlation",
+        "_composition_similarity",
+        "build_distance_matrix",
+        "build_phylogenetic_tree",
+        "extract_conserved_patterns"
+      ],
+      "path": "genesis/laboratory/genome/comparison.py",
+      "package": "genesis.laboratory.genome"
+    }
+  },
+  {
+    "id": "b9cedbdeb38cad1c:experiment:genesis.laboratory.genome.model",
+    "type": "experiment",
+    "name": "genesis.laboratory.genome.model",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.laboratory.genome.model"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.civilization.physics",
+      "genesis.civilization.world_model",
+      "genesis.laboratory",
+      "genesis.laboratory.cli",
+      "genesis.laboratory.experiment",
+      "genesis.laboratory.extraction.pipeline",
+      "genesis.laboratory.genome.builder",
+      "genesis.laboratory.genome.comparison",
+      "genesis.laboratory.mining.subgraph",
+      "genesis.laboratory.scheduler",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.36,
+    "health": 0.68,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "ChromosomeType",
+        "GeneType",
+        "TraitCategory",
+        "MutationType",
+        "GenomeGene",
+        "MutationRecord",
+        "GenomeChromosome",
+        "FitnessScore",
+        "Species",
+        "EvolutionaryLineage",
+        "SoftwareGenome"
+      ],
+      "functions": [
+        "__hash__",
+        "add_gene",
+        "gene_count",
+        "dominant_traits",
+        "to_dict",
+        "population",
+        "add_chromosome",
+        "add_gene",
+        "chromosome_count",
+        "gene_count",
+        "total_dependencies",
+        "all_genes",
+        "conserved_genes",
+        "dominant_traits",
+        "generate_gene_id",
+        "summary",
+        "to_dict"
+      ],
+      "path": "genesis/laboratory/genome/model.py",
+      "package": "genesis.laboratory.genome"
+    }
+  },
+  {
+    "id": "4b5088e9ff3a5d1e:experiment:genesis.laboratory.mining.subgraph",
+    "type": "experiment",
+    "name": "genesis.laboratory.mining.subgraph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.laboratory.mining.subgraph"
+    ],
+    "dependencies": [
+      "genesis.laboratory.genome.model.GenomeGene",
+      "genesis.laboratory.genome.model.SoftwareGenome"
+    ],
+    "consumers": [
+      "genesis.laboratory",
+      "genesis.laboratory.cli",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.28,
+    "health": 0.71,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "MinedPattern",
+        "ArchitecturalMotif",
+        "PatternCluster",
+        "FrequentSubgraphMiner",
+        "MotifDetector",
+        "PatternCluster",
+        "PatternEvolution",
+        "PatternEvolutionTracker"
+      ],
+      "functions": [
+        "mine",
+        "_find_gene",
+        "detect",
+        "_is_subsequence",
+        "cross_repo_motifs",
+        "cluster_patterns",
+        "_pattern_similarity",
+        "track"
+      ],
+      "path": "genesis/laboratory/mining/subgraph.py",
+      "package": "genesis.laboratory.mining"
+    }
+  },
+  {
+    "id": "a83762e3ef8eb16f:experiment:genesis.laboratory.scheduler",
+    "type": "experiment",
+    "name": "genesis.laboratory.scheduler",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.laboratory.scheduler"
+    ],
+    "dependencies": [
+      "genesis.laboratory.genome.builder.GenomeBuilder",
+      "genesis.laboratory.genome.comparison.GenomeComparator",
+      "genesis.laboratory.genome.model.SoftwareGenome",
+      "genesis.observatory.miner.RepositoryMiner",
+      "genesis.observatory.registry.RepositoryRegistry"
+    ],
+    "consumers": [
+      "genesis.laboratory.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.12,
+    "health": 0.96,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "ScheduleConfig",
+        "IngestionTask",
+        "SyncResult",
+        "RepositoryScheduler"
+      ],
+      "functions": [
+        "__init__",
+        "add_task",
+        "add_trending_repos",
+        "register_known_repos",
+        "pending_tasks",
+        "run_scheduled",
+        "run_continuous",
+        "_execute_task",
+        "track_fork_lineage",
+        "summary"
+      ],
+      "path": "genesis/laboratory/scheduler.py",
+      "package": "genesis.laboratory"
+    }
+  },
+  {
+    "id": "718425a96e6b6427:experiment:genesis.laboratory.world_graph",
+    "type": "experiment",
+    "name": "genesis.laboratory.world_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.laboratory.world_graph"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.laboratory.cli",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 1.0,
+    "risk": 0.06,
+    "health": 0.98,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "WorldNode",
+        "WorldEdge",
+        "WorldGraph"
+      ],
+      "functions": [
+        "to_dict",
+        "to_dict",
+        "__init__",
+        "add_node",
+        "add_edge",
+        "add_repository_graph",
+        "add_architecture_node",
+        "add_knowledge_node",
+        "add_genome_node",
+        "find_by_type",
+        "find_edges",
+        "neighbors",
+        "merge_genome",
+        "save",
+        "load",
+        "summary"
+      ],
+      "path": "genesis/laboratory/world_graph.py",
+      "package": "genesis.laboratory"
+    }
+  },
+  {
+    "id": "87f481b12151e98f:experiment:genesis.scientist",
+    "type": "experiment",
+    "name": "genesis.scientist",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.scientist"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.programs.test_scientist"
+    ],
+    "maturity": 0.7,
+    "risk": 0.26,
+    "health": 0.71,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "HypothesisStatus",
+        "Observation",
+        "Hypothesis",
+        "Experiment",
+        "Publication",
+        "HypothesisGenerator",
+        "ExperimentDesigner",
+        "StatisticalAnalyzer",
+        "LiteratureReviewer",
+        "PeerReviewer",
+        "EngineeringScientist"
+      ],
+      "functions": [
+        "__post_init__",
+        "__post_init__",
+        "evidence_ratio",
+        "update_confidence",
+        "__post_init__",
+        "__post_init__",
+        "from_observation",
+        "from_correlation",
+        "_pearson",
+        "design",
+        "t_test",
+        "effect_size",
+        "bayesian_factor",
+        "__init__",
+        "add_study",
+        "review",
+        "review",
+        "__init__",
+        "observe",
+        "hypothesize",
+        "design_experiment",
+        "run_experiment",
+        "publish",
+        "peer_review",
+        "full_cycle",
+        "summary"
+      ],
+      "path": "genesis/scientist.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "fde5c0ecfbe8fa56:experiment:genesis.tests.programs.test_scientist",
+    "type": "experiment",
+    "name": "genesis.tests.programs.test_scientist",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.programs.test_scientist"
+    ],
+    "dependencies": [
+      "genesis.scientist.EngineeringScientist",
+      "genesis.scientist.Experiment",
+      "genesis.scientist.ExperimentDesigner",
+      "genesis.scientist.Hypothesis",
+      "genesis.scientist.HypothesisGenerator",
+      "genesis.scientist.HypothesisStatus",
+      "genesis.scientist.LiteratureReviewer",
+      "genesis.scientist.Observation",
+      "genesis.scientist.PeerReviewer",
+      "genesis.scientist.Publication",
+      "genesis.scientist.StatisticalAnalyzer"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.45,
+    "health": 0.52,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "TestObservation",
+        "TestHypothesis",
+        "TestExperiment",
+        "TestHypothesisGenerator",
+        "TestExperimentDesigner",
+        "TestStatisticalAnalyzer",
+        "TestLiteratureReviewer",
+        "TestPeerReviewer",
+        "TestEngineeringScientist"
+      ],
+      "functions": [
+        "test_create",
+        "test_create",
+        "test_evidence_ratio",
+        "test_evidence_ratio_empty",
+        "test_update_confidence",
+        "test_create",
+        "test_from_observation",
+        "test_from_correlation",
+        "test_from_correlation_weak",
+        "test_from_correlation_insufficient",
+        "test_pearson",
+        "test_pearson_no_correlation",
+        "test_design",
+        "test_t_test_significant",
+        "test_t_test_insufficient",
+        "test_t_test_identical",
+        "test_effect_size",
+        "test_effect_size_empty",
+        "test_bayesian_factor",
+        "setup_method",
+        "test_add_and_review",
+        "test_no_match",
+        "test_review",
+        "setup_method",
+        "test_observe",
+        "test_hypothesize",
+        "test_hypothesize_nonexistent",
+        "test_design_experiment",
+        "test_design_experiment_nonexistent",
+        "test_run_experiment",
+        "test_run_experiment_nonexistent",
+        "test_publish",
+        "test_peer_review",
+        "test_peer_review_nonexistent",
+        "test_full_cycle",
+        "test_summary"
+      ],
+      "path": "genesis/tests/programs/test_scientist.py",
+      "package": "genesis.tests.programs"
+    }
+  },
+  {
+    "id": "8905e681e7f45945:experiment:genesis.tests.test_laboratory",
+    "type": "experiment",
+    "name": "genesis.tests.test_laboratory",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.test_laboratory"
+    ],
+    "dependencies": [
+      "genesis.laboratory.experiment.ExperimentDesign",
+      "genesis.laboratory.experiment.ExperimentPlatform",
+      "genesis.laboratory.extraction.pipeline.BuildSystemExtractor",
+      "genesis.laboratory.extraction.pipeline.CICDExtractor",
+      "genesis.laboratory.extraction.pipeline.DatabaseExtractor",
+      "genesis.laboratory.extraction.pipeline.DependencyExtractor",
+      "genesis.laboratory.extraction.pipeline.ExtractedKnowledge",
+      "genesis.laboratory.extraction.pipeline.ExtractionPipeline",
+      "genesis.laboratory.extraction.pipeline.KnowledgeExtractionResult",
+      "genesis.laboratory.extraction.pipeline.PatternExtractor",
+      "genesis.laboratory.extraction.pipeline.ProtocolExtractor",
+      "genesis.laboratory.extraction.pipeline.SecurityExtractor",
+      "genesis.laboratory.extraction.pipeline.StateMachineExtractor",
+      "genesis.laboratory.genome.builder.GenomeBuilder",
+      "genesis.laboratory.genome.comparison.GenomeComparator",
+      "genesis.laboratory.genome.model.ChromosomeType",
+      "genesis.laboratory.genome.model.FitnessScore",
+      "genesis.laboratory.genome.model.GeneType",
+      "genesis.laboratory.genome.model.GenomeChromosome",
+      "genesis.laboratory.genome.model.GenomeGene",
+      "genesis.laboratory.genome.model.MutationRecord",
+      "genesis.laboratory.genome.model.MutationType",
+      "genesis.laboratory.genome.model.SoftwareGenome",
+      "genesis.laboratory.genome.model.Species",
+      "genesis.laboratory.genome.model.TraitCategory",
+      "genesis.laboratory.mining.subgraph.FrequentSubgraphMiner",
+      "genesis.laboratory.mining.subgraph.MotifDetector",
+      "genesis.laboratory.mining.subgraph.PatternCluster",
+      "genesis.laboratory.mining.subgraph.PatternEvolutionTracker",
+      "genesis.laboratory.world_graph.WorldGraph",
+      "genesis.usir.USIRGraph",
+      "genesis.usir.USIRKind",
+      "genesis.usir.USIRNode"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.64,
+    "health": 0.46,
+    "role": "experiment",
+    "metadata": {
+      "classes": [
+        "TestGenomeModel",
+        "TestGenomeBuilder",
+        "TestGenomeComparator",
+        "TestExtractionPipeline",
+        "TestPatternExtractor",
+        "TestProtocolExtractor",
+        "TestDependencyExtractor",
+        "TestDatabaseExtractor",
+        "TestSecurityExtractor",
+        "TestCICDExtractor",
+        "TestBuildSystemExtractor",
+        "TestFrequentSubgraphMiner",
+        "TestMotifDetector",
+        "TestPatternCluster",
+        "TestPatternEvolutionTracker",
+        "TestWorldGraph",
+        "TestExperimentPlatform"
+      ],
+      "functions": [
+        "test_genome_creation",
+        "test_add_chromosome",
+        "test_add_gene",
+        "test_gene_types",
+        "test_fitness_score",
+        "test_genome_summary",
+        "test_species",
+        "test_conserved_genes",
+        "test_mutations",
+        "test_build_from_usir",
+        "test_species_classification",
+        "test_fitness_computation",
+        "test_gene_similarity_exact",
+        "test_gene_similarity_different",
+        "test_genome_similarity_identical",
+        "test_genome_similarity_different",
+        "test_distance_matrix",
+        "test_conserved_patterns",
+        "test_phylogenetic_tree",
+        "test_pipeline_creation",
+        "test_extract_from_source",
+        "test_extract_on_directory",
+        "test_extract_file",
+        "test_empty_source",
+        "test_extract_protocols",
+        "test_extract",
+        "test_extract_schemas",
+        "test_extract",
+        "test_extract",
+        "test_extract",
+        "test_mine_empty",
+        "test_mine_with_genomes",
+        "test_detect",
+        "test_cluster_empty",
+        "test_track",
+        "test_add_node",
+        "test_add_edge",
+        "test_find_by_type",
+        "test_neighbors",
+        "test_summary",
+        "test_design_experiment",
+        "test_run_experiment",
+        "test_experiment_history"
+      ],
+      "path": "genesis/tests/test_laboratory.py",
+      "package": "genesis.tests"
+    }
+  }
+]

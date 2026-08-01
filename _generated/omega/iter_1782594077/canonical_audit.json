@@ -1,0 +1,291 @@
+{
+  "total_canonical_types": 7,
+  "duplicates_found": 116,
+  "duplicate_records": [
+    {
+      "name": "AgentMemory",
+      "locations": [
+        "genesis.civilization.agents.base",
+        "genesis.memory.types"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "ArchitectureAlgebra",
+      "locations": [
+        "genesis.mathematics",
+        "genesis.mathematics_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "AttentionFocus",
+      "locations": [
+        "genesis.brain.cognition.attention",
+        "genesis.brain_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Belief",
+      "locations": [
+        "genesis.brain.cognition.belief",
+        "genesis.brain_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Capability",
+      "locations": [
+        "genesis.brain.entity",
+        "genesis.ucos.capability"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityDefinition",
+      "locations": [
+        "genesis.capability.registry",
+        "genesis.ucos.capability"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityGraph",
+      "locations": [
+        "genesis.core.uir",
+        "genesis.graph_v2.layers"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityRegistry",
+      "locations": [
+        "genesis.capability.registry",
+        "genesis.ucos.registry"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityVector",
+      "locations": [
+        "genesis.mathematics",
+        "genesis.mathematics_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CategoryTheory",
+      "locations": [
+        "genesis.mathematics",
+        "genesis.mathematics_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CausalLink",
+      "locations": [
+        "genesis.brain.cognition.reasoning",
+        "genesis.brain_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Checkpoint",
+      "locations": [
+        "genesis.kernel.types",
+        "genesis.os.checkpoint"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CheckpointManager",
+      "locations": [
+        "genesis.engineering_os",
+        "genesis.kernel.checkpoint_manager",
+        "genesis.os.checkpoint"
+      ],
+      "count": 3,
+      "severity": "medium"
+    },
+    {
+      "name": "CostSimulator",
+      "locations": [
+        "genesis.simulator",
+        "genesis.simulator_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "DependencyGraph",
+      "locations": [
+        "genesis.core.uir",
+        "genesis.graph_v2.layers"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Edge",
+      "locations": [
+        "genesis.graphdb",
+        "genesis.metamodel.graph"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EdgeType",
+      "locations": [
+        "genesis.execution_graph",
+        "genesis.hypergraph"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EntityRelation",
+      "locations": [
+        "genesis.metamodel.entity",
+        "genesis.ontology"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EpisodicMemory",
+      "locations": [
+        "genesis.brain.cognition.memory",
+        "genesis.memory.types"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EventBus",
+      "locations": [
+        "genesis.di.interfaces",
+        "genesis.events.bus"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EventRouter",
+      "locations": [
+        "genesis.kernel.event_router",
+        "genesis.platform_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Evidence",
+      "locations": [
+        "genesis.brain.entity",
+        "genesis.digital_twin.reasoning"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EvolutionEngine",
+      "locations": [
+        "genesis.digital_twin.evolution",
+        "genesis.evolution"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EvolutionExperiment",
+      "locations": [
+        "genesis.evolution",
+        "genesis.evolution_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "EvolutionHypothesis",
+      "locations": [
+        "genesis.evolution",
+        "genesis.evolution_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "ExecutionEngine",
+      "locations": [
+        "genesis.execution.engine",
+        "genesis.execution_graph",
+        "genesis.runtime.executor"
+      ],
+      "count": 3,
+      "severity": "medium"
+    },
+    {
+      "name": "ExecutionGraph",
+      "locations": [
+        "genesis.core.uir",
+        "genesis.execution_graph"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Experiment",
+      "locations": [
+        "genesis.discovery",
+        "genesis.repository_scientist",
+        "genesis.scientist"
+      ],
+      "count": 3,
+      "severity": "medium"
+    },
+    {
+      "name": "ExperimentDesigner",
+      "locations": [
+        "genesis.discovery",
+        "genesis.scientist"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "FakeExperiment",
+      "locations": [
+        "genesis.tests.test_canonical",
+        "genesis.tests.test_canonical"
+      ],
+      "count": 2,
+      "severity": "low"
+    }
+  ],
+  "hotspot_modules": [
+    "genesis.tests.test_genesis_xii",
+    "genesis.tests.test_ued",
+    "genesis.brain_v4",
+    "genesis.memory.types",
+    "genesis.ontology",
+    "genesis.tests.programs.test_memory",
+    "genesis.kernel.types",
+    "genesis.tests.test_kernel",
+    "genesis.tests.test_laboratory",
+    "genesis.mathematics"
+  ]
+}

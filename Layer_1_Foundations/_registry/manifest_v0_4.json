@@ -1,0 +1,14 @@
+{
+  "version": "V0.4",
+  "name": "V0.4 V0.4_UDIOS",
+  "path": "Layer_2_Core_OS/V0.4_UDIOS",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.4-UDIOS"
+  ],
+  "dependencies": [
+    "V0.3"
+  ]
+}

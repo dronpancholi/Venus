@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://generated/engine/threatmodelingengine/v1",
+  "title": "ThreatModelingEngine",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "array"
+    },
+    "outputs": {
+      "type": "array"
+    },
+    "validation": {
+      "type": "array"
+    },
+    "produces": {
+      "type": "array"
+    },
+    "certifies": {
+      "type": "array"
+    },
+    "metrics": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "description",
+    "inputs",
+    "outputs",
+    "validation",
+    "produces",
+    "certifies",
+    "metrics"
+  ]
+}

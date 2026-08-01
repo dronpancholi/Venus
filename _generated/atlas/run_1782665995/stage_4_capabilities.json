@@ -1,0 +1,116 @@
+{
+  "stage": 4,
+  "capabilities": {
+    "Repository Analysis": {
+      "description": "Statistically measure every aspect of a repository",
+      "subsystems_required": [
+        "Core",
+        "Analysis"
+      ],
+      "maturity": "production",
+      "verified": true
+    },
+    "Engineering Mathematics": {
+      "description": "Discover mathematical models from repository evidence",
+      "subsystems_required": [
+        "Analysis"
+      ],
+      "maturity": "production",
+      "verified": true
+    },
+    "Engineering Physics": {
+      "description": "Infer statistically-derived engineering laws",
+      "subsystems_required": [
+        "Analysis"
+      ],
+      "maturity": "production",
+      "verified": true
+    },
+    "Engineering Biology": {
+      "description": "Model software ecosystems as biological species",
+      "subsystems_required": [
+        "Evolution"
+      ],
+      "maturity": "beta",
+      "verified": true
+    },
+    "Engineering Cognition": {
+      "description": "Activate 15 cognitive functions as measurable subsystems",
+      "subsystems_required": [
+        "Reasoning"
+      ],
+      "maturity": "beta",
+      "verified": true
+    },
+    "Scientific Method": {
+      "description": "Full hypothesis \u2192 experiment \u2192 replication \u2192 archive pipeline",
+      "subsystems_required": [
+        "Reasoning",
+        "Analysis"
+      ],
+      "maturity": "production",
+      "verified": true
+    },
+    "Autonomous Rewrite": {
+      "description": "Observe, analyze, rewrite, verify repository code",
+      "subsystems_required": [
+        "Engineering",
+        "Analysis"
+      ],
+      "maturity": "beta",
+      "verified": true
+    },
+    "Digital Civilization": {
+      "description": "Model autonomous engineering institutions",
+      "subsystems_required": [
+        "Civilization",
+        "Economics"
+      ],
+      "maturity": "beta",
+      "verified": true
+    },
+    "Engineering Economics": {
+      "description": "Compute cost, debt, ROI for engineering decisions",
+      "subsystems_required": [
+        "Economics"
+      ],
+      "maturity": "production",
+      "verified": true
+    },
+    "Multi-Language Support": {
+      "description": "USIR compilation for 20 programming languages",
+      "subsystems_required": [
+        "Core"
+      ],
+      "maturity": "alpha",
+      "verified": false
+    },
+    "Planetary Impact": {
+      "description": "Measure real-world outcomes outside Genesis",
+      "subsystems_required": [
+        "Civilization",
+        "Analysis"
+      ],
+      "maturity": "alpha",
+      "verified": false
+    },
+    "Engineering Marketplace": {
+      "description": "Catalog and trade reusable engineering knowledge assets",
+      "subsystems_required": [
+        "Civilization",
+        "Economics"
+      ],
+      "maturity": "alpha",
+      "verified": false
+    },
+    "Continuous Convergence": {
+      "description": "Track 10 convergence dimensions, detect bottlenecks",
+      "subsystems_required": [
+        "Core",
+        "Analysis"
+      ],
+      "maturity": "production",
+      "verified": true
+    }
+  }
+}

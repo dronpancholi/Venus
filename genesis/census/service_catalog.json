@@ -1,0 +1,1571 @@
+{
+  "genesis.__main__": {
+    "path": "genesis/__main__.py",
+    "classes": [],
+    "entry_points": [
+      "main"
+    ],
+    "maturity": 0.3
+  },
+  "genesis.autonomous.cycle": {
+    "path": "genesis/autonomous/cycle.py",
+    "classes": [
+      "CycleStage",
+      "CycleResult",
+      "CycleRun",
+      "AutonomousEngine"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.45
+  },
+  "genesis.autonomous.orchestrator": {
+    "path": "genesis/autonomous/orchestrator.py",
+    "classes": [
+      "EngineeringOrchestrator"
+    ],
+    "entry_points": [],
+    "maturity": 0.45
+  },
+  "genesis.brain": {
+    "path": "genesis/brain/__init__.py",
+    "classes": [
+      "EngineeringBrain"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.brain.cognition.decision": {
+    "path": "genesis/brain/cognition/decision.py",
+    "classes": [
+      "DecisionMode",
+      "Criterion",
+      "Alternative",
+      "Decision",
+      "DecisionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.brain.cognition.reasoning": {
+    "path": "genesis/brain/cognition/reasoning.py",
+    "classes": [
+      "ReasoningMode",
+      "CausalLink",
+      "Inference",
+      "ReasoningEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.brain.cognition.reflection": {
+    "path": "genesis/brain/cognition/reflection.py",
+    "classes": [
+      "Reflection",
+      "ReflectionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.brain.cognition.strategy": {
+    "path": "genesis/brain/cognition/strategy.py",
+    "classes": [
+      "Tool",
+      "Strategy",
+      "StrategyEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.brain.integration": {
+    "path": "genesis/brain/integration.py",
+    "classes": [
+      "BrainIntegration"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.brain_v4": {
+    "path": "genesis/brain_v4.py",
+    "classes": [
+      "GoalLevel",
+      "GoalStatus",
+      "Goal",
+      "Plan",
+      "ExecutivePlanner",
+      "StrategicPlanner",
+      "TacticalPlanner",
+      "TaskPlanner",
+      "ConstraintSolver",
+      "UtilityOptimizer",
+      "Belief",
+      "BeliefRevision",
+      "UncertaintyReasoning",
+      "ProbabilisticPlanner",
+      "CausalLink",
+      "CausalInference",
+      "AnalogicalReasoning",
+      "Reflection",
+      "ReflectionEngine",
+      "AttentionFocus",
+      "AttentionSystem",
+      "ExecutiveMemory",
+      "WorldModelSync",
+      "EngineeringBrainV4"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.census": {
+    "path": "genesis/census.py",
+    "classes": [
+      "ModuleInfo",
+      "TestInfo",
+      "EntityRecord"
+    ],
+    "entry_points": [
+      "main"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.certification.engine": {
+    "path": "genesis/certification/engine.py",
+    "classes": [
+      "CertificationEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.65
+  },
+  "genesis.civilization.formal": {
+    "path": "genesis/civilization/formal/__init__.py",
+    "classes": [
+      "Invariant",
+      "VerificationResult",
+      "ArchitectureModelChecker",
+      "InvariantDiscoveryEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.civilization.physics": {
+    "path": "genesis/civilization/physics/__init__.py",
+    "classes": [
+      "EngineeringLaw",
+      "LawResult",
+      "DependencyGravity",
+      "ArchitectureEntropy",
+      "ComplexityDiffusion",
+      "APIStability",
+      "MaintenanceMomentum",
+      "LawRegistry"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.civilization.search": {
+    "path": "genesis/civilization/search/__init__.py",
+    "classes": [
+      "SearchResult",
+      "SearchQuery",
+      "SearchEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.cli.commands": {
+    "path": "genesis/cli/commands.py",
+    "classes": [
+      "CLI"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.compiler.passes.base": {
+    "path": "genesis/compiler/passes/base.py",
+    "classes": [
+      "CompilerPass",
+      "PassRegistry"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.63
+  },
+  "genesis.compiler.passes.optimization": {
+    "path": "genesis/compiler/passes/optimization.py",
+    "classes": [
+      "DeadCodeEliminationPass",
+      "DependencyPruningPass",
+      "MetadataNormalizationPass"
+    ],
+    "entry_points": [
+      "run",
+      "run",
+      "run"
+    ],
+    "maturity": 0.65
+  },
+  "genesis.core.metadata": {
+    "path": "genesis/core/metadata.py",
+    "classes": [
+      "EventBusProtocol",
+      "MetadataStoreProtocol",
+      "MetadataStoreProtocol",
+      "MetadataRecord",
+      "MetadataEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.di.container": {
+    "path": "genesis/di/container.py",
+    "classes": [
+      "ServiceDefinition",
+      "ServiceProvider"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.di.interfaces": {
+    "path": "genesis/di/interfaces.py",
+    "classes": [
+      "CompilerService",
+      "ValidationService",
+      "GraphService",
+      "ExecutionService",
+      "PluginService",
+      "CapabilityService",
+      "MetadataService",
+      "DiagnosticsService",
+      "ConfigService",
+      "CheckpointService",
+      "EventBus"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.diagnostics.diagnostics": {
+    "path": "genesis/diagnostics/diagnostics.py",
+    "classes": [
+      "DiagnosticsCheck",
+      "Diagnostics"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.digital_twin.analyzers.coupling": {
+    "path": "genesis/digital_twin/analyzers/coupling.py",
+    "classes": [
+      "CouplingAnalyzer"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.68
+  },
+  "genesis.digital_twin.analyzers.drift": {
+    "path": "genesis/digital_twin/analyzers/drift.py",
+    "classes": [
+      "DriftAnalyzer"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.66
+  },
+  "genesis.digital_twin.analyzers.evolution": {
+    "path": "genesis/digital_twin/analyzers/evolution.py",
+    "classes": [
+      "EvolutionAnalyzer"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.67
+  },
+  "genesis.digital_twin.analyzers.smells": {
+    "path": "genesis/digital_twin/analyzers/smells.py",
+    "classes": [
+      "SmellAnalyzer"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.digital_twin.evolution": {
+    "path": "genesis/digital_twin/evolution.py",
+    "classes": [
+      "SimulatedChange",
+      "EvolutionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.digital_twin.extractors.architecture": {
+    "path": "genesis/digital_twin/extractors/architecture.py",
+    "classes": [
+      "ArchitectureExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.75
+  },
+  "genesis.digital_twin.extractors.contracts": {
+    "path": "genesis/digital_twin/extractors/contracts.py",
+    "classes": [
+      "ContractsExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.4
+  },
+  "genesis.digital_twin.extractors.dependencies": {
+    "path": "genesis/digital_twin/extractors/dependencies.py",
+    "classes": [
+      "DependenciesExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.42
+  },
+  "genesis.digital_twin.extractors.events": {
+    "path": "genesis/digital_twin/extractors/events.py",
+    "classes": [
+      "EventsExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.42
+  },
+  "genesis.digital_twin.extractors.evolution": {
+    "path": "genesis/digital_twin/extractors/evolution.py",
+    "classes": [
+      "EvolutionExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.39
+  },
+  "genesis.digital_twin.extractors.persistence": {
+    "path": "genesis/digital_twin/extractors/persistence.py",
+    "classes": [
+      "PersistenceExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.71
+  },
+  "genesis.digital_twin.extractors.semantics": {
+    "path": "genesis/digital_twin/extractors/semantics.py",
+    "classes": [
+      "SemanticsExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.43
+  },
+  "genesis.digital_twin.extractors.specs": {
+    "path": "genesis/digital_twin/extractors/specs.py",
+    "classes": [
+      "SpecsExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.44
+  },
+  "genesis.digital_twin.extractors.syntax": {
+    "path": "genesis/digital_twin/extractors/syntax.py",
+    "classes": [
+      "SyntaxExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.44
+  },
+  "genesis.digital_twin.extractors.tests": {
+    "path": "genesis/digital_twin/extractors/tests.py",
+    "classes": [
+      "TestsExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.41
+  },
+  "genesis.digital_twin.hypothesis": {
+    "path": "genesis/digital_twin/hypothesis.py",
+    "classes": [
+      "Hypothesis",
+      "HypothesisEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.digital_twin.predict": {
+    "path": "genesis/digital_twin/predict.py",
+    "classes": [
+      "Prediction",
+      "PredictionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.digital_twin.reasoning": {
+    "path": "genesis/digital_twin/reasoning.py",
+    "classes": [
+      "Evidence",
+      "Conclusion",
+      "Rule",
+      "ReasoningEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.discovery": {
+    "path": "genesis/discovery.py",
+    "classes": [
+      "HypothesisStatus",
+      "EvidenceStrength",
+      "Observation",
+      "Hypothesis",
+      "Experiment",
+      "Publication",
+      "HypothesisGenerator",
+      "ExperimentDesigner",
+      "StatisticalValidator",
+      "LiteratureReviewer",
+      "PeerReviewer",
+      "DiscoveryEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.economics": {
+    "path": "genesis/economics.py",
+    "classes": [
+      "EconomicMetric",
+      "InvestmentScore",
+      "EconomicsEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.engineering_os": {
+    "path": "genesis/engineering_os.py",
+    "classes": [
+      "ServiceStatus",
+      "ServiceRole",
+      "Service",
+      "ServiceManifest",
+      "ServiceRegistry",
+      "ServiceScheduler",
+      "TelemetryCollector",
+      "CheckpointManager",
+      "EngineeringOS"
+    ],
+    "entry_points": [
+      "start",
+      "boot"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.evolution": {
+    "path": "genesis/evolution.py",
+    "classes": [
+      "EvolutionStep",
+      "ChangeOutcome",
+      "SelfObservation",
+      "EvolutionHypothesis",
+      "EvolutionExperiment",
+      "SelfObserver",
+      "EvolutionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.evolution_v4": {
+    "path": "genesis/evolution_v4.py",
+    "classes": [
+      "EvolutionStage",
+      "ChangeVerdict",
+      "EvolutionMetric",
+      "EvolutionHypothesis",
+      "EvolutionExperiment",
+      "MetricObserver",
+      "HypothesisGenerator",
+      "EvolutionEngineV4"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.execution.actors": {
+    "path": "genesis/execution/actors.py",
+    "classes": [
+      "ActorState",
+      "Actor",
+      "ActorEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.44
+  },
+  "genesis.execution.engine": {
+    "path": "genesis/execution/engine.py",
+    "classes": [
+      "ExecutionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.44
+  },
+  "genesis.execution.jobs": {
+    "path": "genesis/execution/jobs.py",
+    "classes": [
+      "JobStatus",
+      "LongRunningJob",
+      "JobManager"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 0.45
+  },
+  "genesis.execution.pipeline": {
+    "path": "genesis/execution/pipeline.py",
+    "classes": [
+      "PipelineStage",
+      "PipelineEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.42
+  },
+  "genesis.execution.retry": {
+    "path": "genesis/execution/retry.py",
+    "classes": [
+      "RetryPolicy",
+      "CompensationAction",
+      "CompensationEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.43
+  },
+  "genesis.execution.workflow": {
+    "path": "genesis/execution/workflow.py",
+    "classes": [
+      "WorkflowStatus",
+      "WorkflowNode",
+      "WorkflowDAG",
+      "WorkflowEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.45
+  },
+  "genesis.execution_graph": {
+    "path": "genesis/execution_graph.py",
+    "classes": [
+      "NodeType",
+      "EdgeType",
+      "NodeStatus",
+      "ExecutionNode",
+      "ExecutionEdge",
+      "ExecutionEvent",
+      "ExecutionTrace",
+      "ExecutionGraph",
+      "ExecutionEngine",
+      "ExecutionGraphMonitor"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.fabric.bus": {
+    "path": "genesis/fabric/bus.py",
+    "classes": [
+      "MessagePriority",
+      "Message",
+      "TypedChannel",
+      "MessageBus"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 0.45
+  },
+  "genesis.fabric.discovery": {
+    "path": "genesis/fabric/discovery.py",
+    "classes": [
+      "ServiceHealth",
+      "ServiceInstance",
+      "ServiceRegistry"
+    ],
+    "entry_points": [],
+    "maturity": 0.45
+  },
+  "genesis.fabric.kernel": {
+    "path": "genesis/fabric/kernel.py",
+    "classes": [
+      "KernelState",
+      "KernelStats",
+      "FabricKernel"
+    ],
+    "entry_points": [
+      "boot"
+    ],
+    "maturity": 0.75
+  },
+  "genesis.fabric.policy": {
+    "path": "genesis/fabric/policy.py",
+    "classes": [
+      "PolicyEffect",
+      "Policy",
+      "PolicyResult",
+      "PolicyEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.44
+  },
+  "genesis.fabric.scheduler": {
+    "path": "genesis/fabric/scheduler.py",
+    "classes": [
+      "ScheduledTask",
+      "DistributedScheduler"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 0.45
+  },
+  "genesis.fabric.session": {
+    "path": "genesis/fabric/session.py",
+    "classes": [
+      "SessionStage",
+      "SessionStageResult",
+      "EngineeringSession"
+    ],
+    "entry_points": [],
+    "maturity": 0.45
+  },
+  "genesis.graph.engine": {
+    "path": "genesis/graph/engine.py",
+    "classes": [
+      "KnowledgeGraphEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.intelligence": {
+    "path": "genesis/intelligence/__init__.py",
+    "classes": [
+      "IntelligenceService"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.intelligence.analysis": {
+    "path": "genesis/intelligence/analysis.py",
+    "classes": [
+      "Issue",
+      "IntelligenceAnalyzer"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.96
+  },
+  "genesis.intelligence.capability": {
+    "path": "genesis/intelligence/capability.py",
+    "classes": [
+      "CapabilityIntelligence"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.96
+  },
+  "genesis.intelligence.census": {
+    "path": "genesis/intelligence/census.py",
+    "classes": [
+      "RepositoryCensus"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.intelligence.cli": {
+    "path": "genesis/intelligence/cli.py",
+    "classes": [],
+    "entry_points": [
+      "main"
+    ],
+    "maturity": 0.9
+  },
+  "genesis.intelligence.extractor": {
+    "path": "genesis/intelligence/extractor.py",
+    "classes": [
+      "SemanticExtractor"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.96
+  },
+  "genesis.intelligence.gaps": {
+    "path": "genesis/intelligence/gaps.py",
+    "classes": [
+      "Gap",
+      "GapDetector"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.intelligence.metrics": {
+    "path": "genesis/intelligence/metrics.py",
+    "classes": [
+      "MetricsCollector"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.intelligence.planning": {
+    "path": "genesis/intelligence/planning.py",
+    "classes": [
+      "Initiative",
+      "StrategicPlanner"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.98
+  },
+  "genesis.intelligence.reverse": {
+    "path": "genesis/intelligence/reverse.py",
+    "classes": [
+      "ReverseEngineer"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 0.97
+  },
+  "genesis.intelligence.traceability": {
+    "path": "genesis/intelligence/traceability.py",
+    "classes": [
+      "TraceabilityMatrix"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.kernel.di_kernel": {
+    "path": "genesis/kernel/di_kernel.py",
+    "classes": [
+      "DIKernel"
+    ],
+    "entry_points": [],
+    "maturity": 0.98
+  },
+  "genesis.kernel.execution_manager": {
+    "path": "genesis/kernel/execution_manager.py",
+    "classes": [
+      "ExecutionManager"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.kernel.kernel": {
+    "path": "genesis/kernel/kernel.py",
+    "classes": [
+      "UniversalKernel"
+    ],
+    "entry_points": [
+      "boot"
+    ],
+    "maturity": 0.97
+  },
+  "genesis.kernel.process_manager": {
+    "path": "genesis/kernel/process_manager.py",
+    "classes": [
+      "ProcessManager"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.kernel.types": {
+    "path": "genesis/kernel/types.py",
+    "classes": [
+      "ProcessState",
+      "TaskPriority",
+      "TaskState",
+      "MemoryScope",
+      "StorageClass",
+      "EventPriority",
+      "IPCChannelType",
+      "ProcessInfo",
+      "TaskInfo",
+      "MemoryBlock",
+      "StorageVolume",
+      "Checkpoint",
+      "RecoveryPlan",
+      "KernelEvent",
+      "IPCMessage",
+      "ResourceReservation",
+      "DiServiceRegistration",
+      "HealthProbe"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.laboratory.experiment": {
+    "path": "genesis/laboratory/experiment.py",
+    "classes": [
+      "ExperimentDesign",
+      "ExperimentResult",
+      "ExperimentHistory",
+      "ExperimentPlatform"
+    ],
+    "entry_points": [
+      "run"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.marketplace": {
+    "path": "genesis/marketplace/__init__.py",
+    "classes": [
+      "ResourceType",
+      "EconomyDomain",
+      "ResourceCost",
+      "ResourceAllocation",
+      "Budget",
+      "MarketOrder",
+      "UtilityFunction",
+      "EngineeringMarketplace"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.mathematics_v2": {
+    "path": "genesis/mathematics_v2.py",
+    "classes": [
+      "ArchitectureAlgebra",
+      "CapabilityVector",
+      "DependencyTensor",
+      "EntropyModels",
+      "ResilienceEquations",
+      "OptimizationTheory",
+      "InformationTheory",
+      "NetworkScience",
+      "Obj",
+      "Mor",
+      "CategoryTheory",
+      "GameTheory",
+      "ControlTheory",
+      "EngineeringMathematics"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.memory.engine": {
+    "path": "genesis/memory/engine.py",
+    "classes": [
+      "MemoryEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.65
+  },
+  "genesis.meta_model": {
+    "path": "genesis/meta_model.py",
+    "classes": [
+      "MetaTypeKind",
+      "MetaAttribute",
+      "MetaRelation",
+      "MetaType",
+      "MetaInstance",
+      "MetaModel",
+      "MetaModelRepository",
+      "MetaModelRepositoryScanner",
+      "EvolutionEvent",
+      "EvolutionTracker",
+      "MetaModelEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.ontology": {
+    "path": "genesis/ontology.py",
+    "classes": [
+      "EntityCategory",
+      "EntityAttribute",
+      "EntityRelation",
+      "EntityLifecycle",
+      "EntityDefinition",
+      "EvidenceLink",
+      "TemporalEventType",
+      "TemporalEvent",
+      "EntitySnapshot",
+      "EntityBranch",
+      "Prediction",
+      "UniversalEntity",
+      "EntityRegistry",
+      "EngineeringOntology"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.os.runtime": {
+    "path": "genesis/os/runtime.py",
+    "classes": [
+      "RuntimeStatus",
+      "ComponentStatus",
+      "ComponentHealth",
+      "RuntimeMetrics",
+      "AutonomousRuntime"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.physics": {
+    "path": "genesis/physics.py",
+    "classes": [
+      "PhysicalQuantity",
+      "EngineeringSystem",
+      "SoftwareGravity",
+      "DependencyEnergy",
+      "EngineeringEntropy",
+      "ArchitecturalMomentum",
+      "SystemResilience",
+      "ComplexityTensor",
+      "MaintainabilityDynamics",
+      "EngineeringThermodynamics",
+      "OptimizationSurface",
+      "PhysicsEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.planetary_knowledge": {
+    "path": "genesis/planetary_knowledge.py",
+    "classes": [
+      "SourceDomain",
+      "Artifact",
+      "SourceConnector",
+      "PlanetaryKnowledgeEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.planner": {
+    "path": "genesis/planner.py",
+    "classes": [
+      "PlannerLevel",
+      "PlanNode",
+      "SimulationResult",
+      "EngineeringPlanner"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.platform": {
+    "path": "genesis/platform.py",
+    "classes": [
+      "VenusPlatform"
+    ],
+    "entry_points": [
+      "main",
+      "boot"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.platform_v2": {
+    "path": "genesis/platform_v2.py",
+    "classes": [
+      "ServiceState",
+      "ServiceCategory",
+      "ServiceDefinition",
+      "MetricPoint",
+      "HealthStatus",
+      "ServiceRegistry",
+      "LifecycleManager",
+      "EventRouter",
+      "MetricsManager",
+      "TelemetryManager",
+      "ConfigurationManager",
+      "StateManager",
+      "ResourceScheduler",
+      "RecoveryManager",
+      "PlatformV2"
+    ],
+    "entry_points": [
+      "boot"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.repository_graph": {
+    "path": "genesis/repository_graph.py",
+    "classes": [
+      "EngineeringKnowledgeGraph"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.runtime.executor": {
+    "path": "genesis/runtime/executor.py",
+    "classes": [
+      "TaskStatus",
+      "Task",
+      "Workflow",
+      "ExecutionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.scientist": {
+    "path": "genesis/scientist.py",
+    "classes": [
+      "HypothesisStatus",
+      "Observation",
+      "Hypothesis",
+      "Experiment",
+      "Publication",
+      "HypothesisGenerator",
+      "ExperimentDesigner",
+      "StatisticalAnalyzer",
+      "LiteratureReviewer",
+      "PeerReviewer",
+      "EngineeringScientist"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.simulator": {
+    "path": "genesis/simulator.py",
+    "classes": [
+      "SimulationScope",
+      "SimulationInput",
+      "SimulationResult",
+      "SimulationRun",
+      "ArchitectureSimulator",
+      "MigrationSimulator",
+      "PerformanceSimulator",
+      "TestFailureSimulator",
+      "CostSimulator",
+      "MaintainabilitySimulator",
+      "SecuritySimulator",
+      "SimulatorEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.simulator_v2": {
+    "path": "genesis/simulator_v2.py",
+    "classes": [
+      "SimulationDomain",
+      "SimulationConfig",
+      "SimulationPrediction",
+      "BaseSimulator",
+      "MigrationSimulator",
+      "DecompositionSimulator",
+      "APISimulator",
+      "PerformanceSimulator",
+      "ResilienceSimulator",
+      "SecuritySimulator",
+      "CostSimulator",
+      "MaintainabilitySimulator",
+      "EffortSimulator",
+      "SimulatorEngineV2"
+    ],
+    "entry_points": [],
+    "maturity": 0.7
+  },
+  "genesis.temporal": {
+    "path": "genesis/temporal/__init__.py",
+    "classes": [
+      "TemporalSnapshot",
+      "TimeSeriesPoint",
+      "TimeSeriesStore",
+      "TemporalQueryEngine",
+      "ReplayEngine",
+      "SimulationStep",
+      "SimulationEngine",
+      "TemporalManager"
+    ],
+    "entry_points": [],
+    "maturity": 1.0
+  },
+  "genesis.tests.programs.test_brain_v4": {
+    "path": "genesis/tests/programs/test_brain_v4.py",
+    "classes": [
+      "TestGoal",
+      "TestPlanners",
+      "TestConstraintSolver",
+      "TestUtilityOptimizer",
+      "TestBelief",
+      "TestBeliefRevision",
+      "TestUncertaintyReasoning",
+      "TestProbabilisticPlanner",
+      "TestCausalInference",
+      "TestAnalogicalReasoning",
+      "TestReflectionEngine",
+      "TestAttentionSystem",
+      "TestExecutiveMemory",
+      "TestEngineeringBrainV4"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_discovery": {
+    "path": "genesis/tests/programs/test_discovery.py",
+    "classes": [
+      "TestDiscoveryEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.47
+  },
+  "genesis.tests.programs.test_engineering_os": {
+    "path": "genesis/tests/programs/test_engineering_os.py",
+    "classes": [
+      "TestServiceRegistry",
+      "TestServiceScheduler",
+      "TestTelemetryCollector",
+      "TestCheckpointManager",
+      "TestEngineeringOS"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_evolution": {
+    "path": "genesis/tests/programs/test_evolution.py",
+    "classes": [
+      "TestSelfObserver",
+      "TestEvolutionEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_evolution_v4": {
+    "path": "genesis/tests/programs/test_evolution_v4.py",
+    "classes": [
+      "TestEvolutionMetric",
+      "TestEvolutionHypothesis",
+      "TestEvolutionExperiment",
+      "TestMetricObserver",
+      "TestHypothesisGenerator",
+      "TestEvolutionEngineV4"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_mathematics_v2": {
+    "path": "genesis/tests/programs/test_mathematics_v2.py",
+    "classes": [
+      "TestArchitectureAlgebra",
+      "TestCapabilityVector",
+      "TestDependencyTensor",
+      "TestEntropyModels",
+      "TestResilienceEquations",
+      "TestOptimizationTheory",
+      "TestInformationTheory",
+      "TestNetworkScience",
+      "TestCategoryTheory",
+      "TestGameTheory",
+      "TestControlTheory",
+      "TestEngineeringMathematics"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_physics": {
+    "path": "genesis/tests/programs/test_physics.py",
+    "classes": [
+      "TestSoftwareGravity",
+      "TestDependencyEnergy",
+      "TestEngineeringEntropy",
+      "TestArchitecturalMomentum",
+      "TestSystemResilience",
+      "TestComplexityTensor",
+      "TestMaintainabilityDynamics",
+      "TestEngineeringThermodynamics",
+      "TestOptimizationSurface",
+      "TestPhysicsEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_planetary_knowledge": {
+    "path": "genesis/tests/programs/test_planetary_knowledge.py",
+    "classes": [
+      "TestArtifact",
+      "TestSourceConnector",
+      "TestPlanetaryKnowledgeEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_platform_v2": {
+    "path": "genesis/tests/programs/test_platform_v2.py",
+    "classes": [
+      "TestServiceDefinition",
+      "TestServiceRegistry",
+      "TestLifecycleManager",
+      "TestEventRouter",
+      "TestMetricsManager",
+      "TestTelemetryManager",
+      "TestConfigurationManager",
+      "TestStateManager",
+      "TestResourceScheduler",
+      "TestRecoveryManager",
+      "TestPlatformV2"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_scientist": {
+    "path": "genesis/tests/programs/test_scientist.py",
+    "classes": [
+      "TestObservation",
+      "TestHypothesis",
+      "TestExperiment",
+      "TestHypothesisGenerator",
+      "TestExperimentDesigner",
+      "TestStatisticalAnalyzer",
+      "TestLiteratureReviewer",
+      "TestPeerReviewer",
+      "TestEngineeringScientist"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.programs.test_simulator": {
+    "path": "genesis/tests/programs/test_simulator.py",
+    "classes": [
+      "TestArchitectureSimulator",
+      "TestMigrationSimulator",
+      "TestPerformanceSimulator",
+      "TestTestFailureSimulator",
+      "TestCostSimulator",
+      "TestMaintainabilitySimulator",
+      "TestSecuritySimulator",
+      "TestSimulatorEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.47
+  },
+  "genesis.tests.programs.test_simulator_v2": {
+    "path": "genesis/tests/programs/test_simulator_v2.py",
+    "classes": [
+      "TestSimulationConfig",
+      "TestBaseSimulator",
+      "TestMigrationSimulator",
+      "TestDecompositionSimulator",
+      "TestAPISimulator",
+      "TestPerformanceSimulator",
+      "TestResilienceSimulator",
+      "TestSecuritySimulator",
+      "TestCostSimulator",
+      "TestMaintainabilitySimulator",
+      "TestEffortSimulator",
+      "TestSimulatorEngineV2"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_brain": {
+    "path": "genesis/tests/test_brain.py",
+    "classes": [
+      "TestBrainEntity",
+      "TestBrainGraph",
+      "TestEmbeddingStore",
+      "TestBrainIntegration",
+      "TestEngineeringBrain",
+      "TestSyncAdapters",
+      "TestEdgeCases"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_cognition": {
+    "path": "genesis/tests/test_cognition.py",
+    "classes": [
+      "TestBeliefSystem",
+      "TestGoalHierarchy",
+      "TestReasoningEngine",
+      "TestWorkingMemory",
+      "TestEpisodicMemory",
+      "TestAttentionMechanism",
+      "TestReflectionEngine",
+      "TestStrategyEngine",
+      "TestDecisionEngine",
+      "TestOrchestrator",
+      "TestCognitiveArchitecture",
+      "MockEpisode"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_execution_graph": {
+    "path": "genesis/tests/test_execution_graph.py",
+    "classes": [
+      "TestExecutionNode",
+      "TestExecutionEdge",
+      "TestExecutionGraph",
+      "TestBuildDefaultExecutionGraph",
+      "TestExecutionTrace",
+      "TestExecutionEngine",
+      "TestExecutionGraphMonitor"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_genesis_xii": {
+    "path": "genesis/tests/test_genesis_xii.py",
+    "classes": [
+      "TestFabricKernel",
+      "TestMessageBus",
+      "TestEventContract",
+      "TestContext",
+      "TestServiceRegistry",
+      "TestDistributedScheduler",
+      "TestPolicyEngine",
+      "TestFabricMetrics",
+      "TestAuditLog",
+      "TestEngineeringSession",
+      "TestGraphLayer",
+      "TestUnifiedGraph",
+      "TestAllLayers",
+      "TestGraphVersioning",
+      "TestGraphMerge",
+      "TestGraphAnalytics",
+      "TestGraphIndex",
+      "TestGraphPartition",
+      "TestGraphFederation",
+      "TestGraphCompression",
+      "TestExecutionEngine",
+      "TestWorkflowEngine",
+      "TestTaskExecutor",
+      "TestActorEngine",
+      "TestPipelineEngine",
+      "TestJobManager",
+      "TestRetryPolicy",
+      "TestCompensationEngine",
+      "TestAutonomousEngine",
+      "TestEngineeringOrchestrator"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_intelligence": {
+    "path": "genesis/tests/test_intelligence.py",
+    "classes": [
+      "TestIntelligenceService"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_kernel": {
+    "path": "genesis/tests/test_kernel.py",
+    "classes": [
+      "TestTypes",
+      "TestProcessManager",
+      "TestTaskScheduler",
+      "TestMemoryManager",
+      "TestStorageManager",
+      "TestCheckpointManager",
+      "TestRecoveryManager",
+      "TestEventRouter",
+      "TestIPC",
+      "TestPluginLoader",
+      "TestDIKernel",
+      "TestCapabilityLoader",
+      "TestResourceManager",
+      "TestExecutionManager",
+      "TestHealthManager",
+      "TestSecurityManager",
+      "TestUniversalKernel"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_marketplace": {
+    "path": "genesis/tests/test_marketplace.py",
+    "classes": [
+      "TestMarketplacePrimitives",
+      "TestEngineeringMarketplace"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_meta_model": {
+    "path": "genesis/tests/test_meta_model.py",
+    "classes": [
+      "TestMetaType",
+      "TestMetaInstance",
+      "TestMetaModel",
+      "TestMetaModelRepository",
+      "TestEvolutionTracker",
+      "TestMetaModelEngine",
+      "TestMetaModelRepositoryScanner"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_phase0": {
+    "path": "genesis/tests/test_phase0.py",
+    "classes": [
+      "SerializeableObj",
+      "SimpleService",
+      "TestService",
+      "MockService",
+      "LazyCheck",
+      "IfaceA",
+      "IfaceB",
+      "LazyService"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_planner": {
+    "path": "genesis/tests/test_planner.py",
+    "classes": [
+      "TestPlanNode",
+      "TestEngineeringPlanner",
+      "TestPlannerLevel",
+      "TestSimulationResult"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_ued": {
+    "path": "genesis/tests/test_ued.py",
+    "classes": [
+      "TestStorageConfig",
+      "TestQuery",
+      "TestQueryResult",
+      "TestPageStore",
+      "TestJournal",
+      "TestMVCCStore",
+      "TestTransactionManager",
+      "TestCatalog",
+      "TestStorageEngine",
+      "TestCacheManager",
+      "TestBTreeIndex",
+      "TestHashIndex",
+      "TestInvertedIndex",
+      "TestVectorIndex",
+      "TestDocumentStore",
+      "TestMetadataStore",
+      "TestVersionStore",
+      "TestGraphStore",
+      "TestVectorStore",
+      "TestTimeSeriesStore",
+      "TestEventStore",
+      "TestObjectStore",
+      "TestSnapshotStore",
+      "TestArchiveStore",
+      "TestQueryPlanner",
+      "TestShardManager",
+      "TestDatabase"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.tests.test_uem": {
+    "path": "genesis/tests/test_uem.py",
+    "classes": [
+      "TestUniversalEntity",
+      "TestEntityRegistry",
+      "TestBuildDefaultOntology",
+      "TestEngineeringOntologyCompat",
+      "TestEvidenceLink"
+    ],
+    "entry_points": [],
+    "maturity": 0.5
+  },
+  "genesis.ucos.capability": {
+    "path": "genesis/ucos/capability.py",
+    "classes": [
+      "CapabilityCategory",
+      "CapabilityState",
+      "MaturityLevel",
+      "CapabilityContract",
+      "CapabilityVersion",
+      "CapabilityHealth",
+      "CapabilityPermission",
+      "CapabilityDefinition",
+      "Capability"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.ucos.lifecycle": {
+    "path": "genesis/ucos/lifecycle.py",
+    "classes": [
+      "LifecycleEvent",
+      "CapabilityLifecycleManager"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 0.7
+  },
+  "genesis.ucos.ucos": {
+    "path": "genesis/ucos/ucos.py",
+    "classes": [
+      "UCOS"
+    ],
+    "entry_points": [
+      "start"
+    ],
+    "maturity": 0.68
+  },
+  "genesis.ued.engine": {
+    "path": "genesis/ued/engine.py",
+    "classes": [
+      "PageStore",
+      "Journal",
+      "MVCCStore",
+      "TransactionManager",
+      "Catalog",
+      "StorageEngine"
+    ],
+    "entry_points": [],
+    "maturity": 0.75
+  },
+  "genesis.validation.engine": {
+    "path": "genesis/validation/engine.py",
+    "classes": [
+      "ValidationEngine",
+      "FuncValidator"
+    ],
+    "entry_points": [],
+    "maturity": 0.68
+  }
+}

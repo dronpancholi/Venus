@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "program": "PROJECT PROMETHEUS \u2014 UEDE",
+    "iteration": 1,
+    "total_duration_ms": 29735.65,
+    "significance": 0.53,
+    "pillars_completed": 12
+  },
+  "scorecard": {
+    "repository_intelligence_score": 0.549,
+    "repository_health_score": 0.345,
+    "engineering_maturity_index": 0.69,
+    "autonomous_evolution_index": 0.8,
+    "innovation_index": 0.472,
+    "knowledge_reuse_index": 0.415,
+    "scientific_output_index": 0.733,
+    "economic_efficiency_index": 0.591,
+    "architectural_quality_index": 0.52,
+    "canonicalization_progress_index": 0.415
+  },
+  "deliverables": {
+    "observatory_domains": 7,
+    "universe_canonical_entities": 7725,
+    "universe_temporal_edges": 4410,
+    "physics_laws": 5,
+    "biology_species": 107,
+    "biology_families": 47,
+    "biology_symbioses": 3100510,
+    "scientific_hypotheses": 3,
+    "multirepo_transferable": 0,
+    "multirepo_antipatterns": 0,
+    "foundation_entities": 2153,
+    "foundation_specifications": 720,
+    "foundation_model_instructions": 1254,
+    "digital_scientists": 18,
+    "scientist_debates": 5,
+    "meta_novelty": 0.75,
+    "meta_knowledge_growth": 92.95,
+    "meta_false_positive_rate": 0.6667
+  },
+  "pillar_summaries": {
+    "pillar_1": {
+      "name": "Engineering Observatory",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "test_files",
+        "source_files",
+        "module_names",
+        "dependency_pairs"
+      ]
+    },
+    "pillar_2": {
+      "name": "Engineering Universe",
+      "deliverable_count": 1,
+      "keys": [
+        "packages_mapped",
+        "dependency_matrix",
+        "cyclic_dependencies",
+        "cyclic_pairs",
+        "redundant_packages",
+        "overlapping_responsibilities",
+        "overlap_details"
+      ]
+    },
+    "pillar_3": {
+      "name": "Engineering Physics",
+      "deliverable_count": 1,
+      "keys": [
+        "modules_with_entities",
+        "uem_compliant",
+        "uem_non_compliant",
+        "convergence_ratio",
+        "non_compliant_modules",
+        "uem_keywords_checked"
+      ]
+    },
+    "pillar_5": {
+      "name": "Engineering Cognition",
+      "deliverable_count": 1,
+      "keys": [
+        "total_work_items",
+        "queue_breakdown",
+        "high_priority",
+        "medium_priority",
+        "low_priority",
+        "work_items"
+      ]
+    },
+    "pillar_6": {
+      "name": "Engineering Science",
+      "deliverable_count": 1,
+      "keys": [
+        "experiments_conducted",
+        "experiment_details",
+        "findings",
+        "hypotheses",
+        "unknowns_identified",
+        "unknown_examples",
+        "evidence_collected"
+      ]
+    },
+    "pillar_4": {
+      "name": "Engineering Biology",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "pillar_8": {
+      "name": "Multi-Repository Learning",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "pillar_9": {
+      "name": "Engineering Foundation Corpus",
+      "deliverable_count": 1,
+      "keys": [
+        "total_implementation_cost",
+        "total_maintenance_cost",
+        "total_technical_debt",
+        "total_future_value",
+        "avg_roi",
+        "services"
+      ]
+    },
+    "pillar_10": {
+      "name": "Digital Scientists",
+      "deliverable_count": 1,
+      "keys": [
+        "memory_persisted",
+        "memory_path",
+        "total_historical_iterations",
+        "current_snapshot"
+      ]
+    },
+    "pillar_12": {
+      "name": "Meta-Discovery",
+      "deliverable_count": 1,
+      "keys": [
+        "total_packages",
+        "reusable_services",
+        "packages",
+        "network_topology"
+      ]
+    },
+    "pillar_13": {
+      "name": "Pillar 12",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "pillar_11": {
+      "name": "Autonomous Engineering",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "pillar_14": {
+      "name": "Pillar 13",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

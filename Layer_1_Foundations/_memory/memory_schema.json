@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://schemas/memory/v1",
+  "title": "MemoryEntry",
+  "description": "Base schema for all memory entries in the institutional memory system",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "partition": {
+      "type": "string",
+      "enum": ["semantic", "episodic", "procedural", "decision", "research", "project"]
+    },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "ttl": {
+      "oneOf": [
+        { "type": "string", "pattern": "^P(\\d+[YMWD])+$" },
+        { "type": "null" }
+      ],
+      "description": "ISO 8601 duration or null for permanent"
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "source": {
+      "type": "object",
+      "properties": {
+        "agent_id": { "type": "string" },
+        "workflow_id": { "type": "string" },
+        "external_ref": { "type": "string" }
+      }
+    },
+    "data": { "type": "object", "description": "Partition-specific payload" },
+    "embedding": {
+      "type": "array",
+      "items": { "type": "number" },
+      "description": "Precomputed vector for semantic search"
+    },
+    "previous_version": { "type": "string", "description": "ID of superseded entry" },
+    "signature": { "type": "string", "description": "Content hash for integrity" }
+  },
+  "required": ["id", "partition", "timestamp", "data"]
+}

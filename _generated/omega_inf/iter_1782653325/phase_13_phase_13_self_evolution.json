@@ -1,0 +1,17 @@
+{
+  "health_index": 0.375,
+  "maturity_index": 0.75,
+  "innovation_index": 0.672,
+  "autonomy_index": 0.779,
+  "significance": 0.53,
+  "total_experiments": 5,
+  "total_rewrites": 7,
+  "total_tests_passed": 0,
+  "next_roadmap": [
+    "Run more experiments (current: 5)",
+    "Expand civilization with more contracts",
+    "Expand civilization with more contracts",
+    "Expand civilization with more contracts"
+  ],
+  "should_continue": true
+}

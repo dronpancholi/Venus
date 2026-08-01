@@ -1,0 +1,25 @@
+{
+  "reasoning_applied": [
+    "deduction",
+    "induction",
+    "abduction",
+    "causal",
+    "counterfactual"
+  ],
+  "evidence_sources": 17,
+  "recommendations": [
+    {
+      "reasoning": "abduction",
+      "conclusion": "1 modules affected by duplication",
+      "evidence": "Duplication across modules suggests missing canonical abstraction",
+      "recommendation": "Create shared canonical abstractions for duplicated code"
+    },
+    {
+      "reasoning": "counterfactual",
+      "conclusion": "Removing duplicates could reduce complexity by ~2 points",
+      "evidence": "1 modules involved in duplication, each ~2 complexity points",
+      "recommendation": "Prioritize canonicalization for highest-ROI complexity reduction"
+    }
+  ],
+  "recommendation_count": 2
+}

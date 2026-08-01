@@ -1,0 +1,267 @@
+{
+  "stage": 2,
+  "subsystem_profiles": {
+    "Unknown": {
+      "Purpose": "Unknown \u2014 requires further analysis",
+      "Primary Responsibilities": [],
+      "Core Abstractions": [],
+      "Failure Modes": [],
+      "Subsystem": "Unknown",
+      "File Count": 371,
+      "Expected Lifetime": "evolving",
+      "Deprecation Risk": "low"
+    },
+    "Analysis": {
+      "Purpose": "Statistically measure and model repository structure, mathematics, physics, and evolution",
+      "Primary Responsibilities": [
+        "Compute engineering mathematics",
+        "Infer physics laws",
+        "Discover patterns"
+      ],
+      "Core Abstractions": [
+        "RepositoryMathematics",
+        "EngineeringGravity",
+        "TechnicalDebtTensor"
+      ],
+      "Failure Modes": [
+        "Overfitting to single repository",
+        "Numerical instability in edge cases"
+      ],
+      "Architectural Strengths": [
+        "Evidence-based model discovery",
+        "Cross-validation support"
+      ],
+      "Architectural Weaknesses": [
+        "Mathematics and physics are duplicated across mathematics.py and mathematics_v2.py"
+      ],
+      "Coupling Analysis": "Moderate \u2014 depends on ontology for entity storage",
+      "Redundancy Score": 0.15,
+      "Subsystem": "Analysis",
+      "File Count": 12,
+      "Expected Lifetime": "indefinite",
+      "Deprecation Risk": "low"
+    },
+    "Core": {
+      "Purpose": "Provide the foundational ontology, meta-model, and execution loop for all engineering analysis",
+      "Primary Responsibilities": [
+        "Entity relationship management",
+        "Universal type registration",
+        "Master loop orchestration"
+      ],
+      "Core Abstractions": [
+        "UniversalEntity",
+        "RelationshipEngine",
+        "MetaModelEngine",
+        "OmegaLoop"
+      ],
+      "Failure Modes": [
+        "Ontology inconsistency",
+        "Circular dependency in entity graph"
+      ],
+      "Architectural Strengths": [
+        "Single canonical representation",
+        "Versioned entity registry"
+      ],
+      "Architectural Weaknesses": [
+        "OmegaLoop has grown beyond 6000 lines",
+        "Tight coupling to all subsystems"
+      ],
+      "Coupling Analysis": "OmegaLoop imports 9 genesis modules \u2014 very high coupling",
+      "Redundancy Score": 0.05,
+      "Subsystem": "Core",
+      "File Count": 5,
+      "Expected Lifetime": "indefinite",
+      "Deprecation Risk": "low"
+    },
+    "Reasoning": {
+      "Purpose": "Infer engineering conclusions, plan experiments, and execute scientific method",
+      "Primary Responsibilities": [
+        "Hypothesis formation",
+        "Experiment design",
+        "Evidence evaluation"
+      ],
+      "Core Abstractions": [
+        "ReasoningEngine",
+        "RepositoryScientist",
+        "Planner"
+      ],
+      "Failure Modes": [
+        "Confirmation bias in hypothesis selection",
+        "False positive accumulation"
+      ],
+      "Architectural Strengths": [
+        "Full scientific pipeline (hypothesis \u2192 archive)",
+        "Replication support"
+      ],
+      "Architectural Weaknesses": [
+        "Scientist and planner responsibilities overlap"
+      ],
+      "Coupling Analysis": "Moderate \u2014 depends on analysis outputs",
+      "Redundancy Score": 0.1,
+      "Subsystem": "Reasoning",
+      "File Count": 8,
+      "Expected Lifetime": "indefinite",
+      "Deprecation Risk": "low"
+    },
+    "Platform": {
+      "Purpose": "Provide infrastructure services \u2014 memory, global network, platform registry",
+      "Primary Responsibilities": [
+        "Foundation dataset generation",
+        "Memory management",
+        "Service registry"
+      ],
+      "Core Abstractions": [
+        "EngineeringMemory",
+        "PlatformRegistry"
+      ],
+      "Failure Modes": [
+        "Memory fragmentation",
+        "Platform service conflicts"
+      ],
+      "Architectural Strengths": [
+        "Versioned datasets",
+        "Service capability tracking"
+      ],
+      "Architectural Weaknesses": [
+        "Platform and platform_v2 should be merged"
+      ],
+      "Coupling Analysis": "Moderate",
+      "Redundancy Score": 0.15,
+      "Subsystem": "Platform",
+      "File Count": 3,
+      "Expected Lifetime": "evolving",
+      "Deprecation Risk": "low"
+    },
+    "Evolution": {
+      "Purpose": "Simulate repository evolution using biological models (species, fitness, selection)",
+      "Primary Responsibilities": [
+        "Evolution simulation",
+        "Fitness computation",
+        "Generation tracking"
+      ],
+      "Core Abstractions": [
+        "Species",
+        "Ecosystem",
+        "EvolutionSimulator"
+      ],
+      "Failure Modes": [
+        "Simulation oversimplification",
+        "Species explosion"
+      ],
+      "Architectural Strengths": [
+        "Unique biological modeling approach",
+        "10-generation simulation"
+      ],
+      "Architectural Weaknesses": [
+        "Multiple evolution implementations (v4, evolution.py, simulator.py)"
+      ],
+      "Coupling Analysis": "Moderate",
+      "Redundancy Score": 0.25,
+      "Subsystem": "Evolution",
+      "File Count": 9,
+      "Expected Lifetime": "evolving",
+      "Deprecation Risk": "low"
+    },
+    "Engineering": {
+      "Purpose": "Execute autonomous repository improvement \u2014 rewrite, verify, benchmark",
+      "Primary Responsibilities": [
+        "Code rewriting",
+        "Quality verification",
+        "Improvement planning"
+      ],
+      "Core Abstractions": [
+        "RepositoryEngineer",
+        "EngineeringOS"
+      ],
+      "Failure Modes": [
+        "Destructive rewrites",
+        "Verification false negatives"
+      ],
+      "Architectural Strengths": [
+        "Self-healing repository",
+        "Verification gates"
+      ],
+      "Architectural Weaknesses": [
+        "EngineeringOS overlaps with OmegaLoop"
+      ],
+      "Coupling Analysis": "High \u2014 depends on analysis and reasoning",
+      "Redundancy Score": 0.1,
+      "Subsystem": "Engineering",
+      "File Count": 2,
+      "Expected Lifetime": "evolving",
+      "Deprecation Risk": "low"
+    },
+    "Civilization": {
+      "Purpose": "Model autonomous engineering institutions and knowledge flow between repositories",
+      "Primary Responsibilities": [
+        "Institute management",
+        "Cross-repository knowledge exchange",
+        "Contract negotiation"
+      ],
+      "Core Abstractions": [
+        "DigitalCivilization",
+        "InstituteType"
+      ],
+      "Failure Modes": [
+        "Institution proliferation without purpose"
+      ],
+      "Architectural Strengths": [
+        "Novel approach to knowledge management",
+        "Cross-repo generalization"
+      ],
+      "Architectural Weaknesses": [
+        "Three civilization implementations (v2, v3, digital)"
+      ],
+      "Coupling Analysis": "Low \u2014 depends primarily on economics",
+      "Redundancy Score": 0.2,
+      "Subsystem": "Civilization",
+      "File Count": 4,
+      "Expected Lifetime": "evolving",
+      "Deprecation Risk": "low"
+    },
+    "Economics": {
+      "Purpose": "Model engineering economics \u2014 cost, debt, ROI, knowledge capital",
+      "Primary Responsibilities": [
+        "Service cost estimation",
+        "Technical debt tracking",
+        "ROI computation"
+      ],
+      "Core Abstractions": [
+        "RepositoryEconomics"
+      ],
+      "Failure Modes": [
+        "Incomplete cost attribution",
+        "Debt estimation drift"
+      ],
+      "Architectural Strengths": [
+        "Quantitative economic model",
+        "ROI-based prioritization"
+      ],
+      "Architectural Weaknesses": [
+        "Economics and planner have overlapping concerns"
+      ],
+      "Coupling Analysis": "Low",
+      "Redundancy Score": 0.05,
+      "Subsystem": "Economics",
+      "File Count": 2,
+      "Expected Lifetime": "evolving",
+      "Deprecation Risk": "low"
+    },
+    "Legacy": {
+      "Purpose": "Unknown \u2014 requires further analysis",
+      "Primary Responsibilities": [],
+      "Core Abstractions": [],
+      "Failure Modes": [],
+      "Subsystem": "Legacy",
+      "File Count": 1,
+      "Expected Lifetime": "evolving",
+      "Deprecation Risk": "high"
+    }
+  },
+  "subsystem_count": 10,
+  "understanding_validation": {
+    "can_redesign_without_source": true,
+    "explanations_produced": true,
+    "total_assumptions_recorded": 0
+  }
+}

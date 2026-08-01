@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "program": "GENESIS \u03a3 \u2014 UEOC v1.0",
+    "constitution": "Universal Engineering Operating Constitution",
+    "iteration": 2,
+    "total_duration_ms": 0.0,
+    "significance": 0.0,
+    "levels_completed": 13,
+    "constitutional_compliance": "4/6"
+  },
+  "scorecard": {
+    "repository_intelligence_score": 0.601,
+    "repository_health_score": 0.344,
+    "engineering_maturity_index": 0.688,
+    "autonomous_evolution_index": 1.6,
+    "innovation_index": 0.0,
+    "knowledge_reuse_index": -0.17,
+    "scientific_output_index": 0.867,
+    "economic_efficiency_index": 1.291,
+    "architectural_quality_index": 0.695,
+    "canonicalization_progress_index": -0.17
+  },
+  "deliverables": {
+    "repository_census": 0,
+    "digital_twin": 0,
+    "knowledge_graph": 0,
+    "ontology": 7,
+    "execution_graph": 0,
+    "economics_report": {},
+    "architecture_report": {
+      "layers": 0
+    },
+    "scientific_report": {
+      "accepted": 10,
+      "total": 10
+    },
+    "canonicalization_report": {
+      "duplicates": 234
+    },
+    "simulation_report": {
+      "simulations": 0
+    },
+    "validation_report": {
+      "checks_passed": 6
+    },
+    "benchmark_report": {
+      "entities": 0
+    },
+    "evolution_report": {
+      "generation": 2
+    },
+    "health_report": {
+      "health": 0.344
+    },
+    "roadmap": [
+      "Run more experiments (current: 10)",
+      "Run more experiments (current: 10)",
+      "Canonicalize high-severity duplicate abstractions",
+      "Expand civilization with more contracts"
+    ],
+    "improvement_backlog": [],
+    "scorecard": {}
+  },
+  "constitutional_compliance": {
+    "invariants": {
+      "no_duplicated_canonical_abstractions": true,
+      "no_broken_references": false,
+      "no_ontology_inconsistencies": false,
+      "no_graph_inconsistencies": true,
+      "no_orphan_entities": true,
+      "no_architectural_invariant_violations": true
+    },
+    "passed": 4,
+    "total": 6,
+    "compliant": false
+  },
+  "level_summaries": {
+    "0": {
+      "name": "Constitutional Invariants",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "total_complexity",
+        "avg_complexity",
+        "cognitive_load",
+        "doc_coverage",
+        "knowledge_density_avg"
+      ]
+    },
+    "1": {
+      "name": "Complete Observation",
+      "deliverable_count": 1,
+      "keys": [
+        "total_states",
+        "state_domains",
+        "twin_nodes",
+        "twin_edges"
+      ]
+    },
+    "2": {
+      "name": "Complete Understanding",
+      "deliverable_count": 1,
+      "keys": [
+        "total_modules",
+        "dependency_count",
+        "layers",
+        "top_modules_by_fan_in"
+      ]
+    },
+    "3": {
+      "name": "Complete Explanation",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "5": {
+      "name": "Complete Reasoning",
+      "deliverable_count": 1,
+      "keys": [
+        "reasoning_applied",
+        "evidence_sources",
+        "recommendations",
+        "recommendation_count"
+      ]
+    },
+    "4": {
+      "name": "Complete Science",
+      "deliverable_count": 1,
+      "keys": [
+        "entropy",
+        "stability",
+        "diffusion",
+        "momentum",
+        "energy",
+        "gravity",
+        "debt",
+        "curvature",
+        "models_available"
+      ]
+    },
+    "6": {
+      "name": "Complete Engineering",
+      "deliverable_count": 1,
+      "keys": [
+        "simulations_run",
+        "simulation_domains"
+      ]
+    },
+    "7": {
+      "name": "Complete Simulation",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "11": {
+      "name": "Complete External Learning",
+      "deliverable_count": 1,
+      "keys": [
+        "checks",
+        "all_passed"
+      ]
+    },
+    "12": {
+      "name": "Complete Evolution",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "10": {
+      "name": "Complete Learning",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "15": {
+      "name": "Level 15",
+      "deliverable_count": 1,
+      "keys": [
+        "saved",
+        "path",
+        "summary"
+      ]
+    },
+    "8": {
+      "name": "Complete Rewrite",
+      "deliverable_count": 1,
+      "keys": [
+        "sources_scanned",
+        "patterns_extracted",
+        "source_list",
+        "note"
+      ]
+    },
+    "9": {
+      "name": "Complete Validation",
+      "deliverable_count": 1,
+      "keys": [
+        "total_packages",
+        "packages"
+      ]
+    },
+    "13": {
+      "name": "Level 13",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

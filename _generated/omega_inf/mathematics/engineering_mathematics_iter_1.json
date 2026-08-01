@@ -1,0 +1,51 @@
+{
+  "iteration": 1,
+  "mathematical_models": {
+    "architecture_field_theory": {
+      "equation": "\u03a6 = \u221a(\u03c3\u00b2_imports + \u03c3\u00b2_entities)",
+      "value": 25.1896,
+      "evidence": "Variance of imports=119.28, entities=515.23 over 405 modules",
+      "confidence": 0.5038,
+      "counterexamples": "Uniformly sized modules with near-zero variance",
+      "sensitivity": "\u00b12.519 under 10% perturbation"
+    },
+    "knowledge_topology": {
+      "equation": "\u03ba = mean(docs) / mean(entities)",
+      "value": 0.1503,
+      "evidence": "Mean docs=3.15, mean entities=20.95",
+      "confidence": 0.3006,
+      "counterexamples": "Files with docstrings but no code entities (e.g., __init__.py only)",
+      "sensitivity": "\u00b10.0225 under sampling variation"
+    },
+    "dependency_tensor": {
+      "equation": "T_ij = cov(i, j) / (\u03c3_i \u00b7 \u03c3_j)",
+      "value": 0.0018,
+      "evidence": "Covariance=109.8247, variances=(119.2830, 515.2316)",
+      "confidence": 0.0018,
+      "counterexamples": "Zero-covariance modules with perfectly independent imports and entities",
+      "sensitivity": "\u00b10.0002 under bootstrapping"
+    },
+    "complexity_manifold": {
+      "equation": "M = ln(N) \u00b7 E/I",
+      "value": 11.5281,
+      "evidence": "ln(405)=6.00, E/I ratio=1.9201",
+      "confidence": 0.85,
+      "counterexamples": "Flat directories with low entity-to-import ratio",
+      "sensitivity": "\u00b12.3056 under structural changes"
+    },
+    "engineering_entropy": {
+      "equation": "S = -\u03a3 p_i \u00b7 ln(p_i)",
+      "value": 5.5439,
+      "evidence": "Distribution across 405 modules, max entropy=6.00",
+      "confidence": 0.9234,
+      "counterexamples": "Single-file repositories with zero entropy",
+      "sensitivity": "\u00b10.2772 under uniform redistribution"
+    }
+  },
+  "total_models": 5,
+  "evidence_summary": {
+    "modules_analyzed": 405,
+    "total_imports": 4418,
+    "total_entities": 8483
+  }
+}

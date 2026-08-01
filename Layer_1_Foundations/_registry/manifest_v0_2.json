@@ -1,0 +1,14 @@
+{
+  "version": "V0.2",
+  "name": "V0.2 V0.2_URE",
+  "path": "Layer_2_Core_OS/V0.2_URE",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.2-URE"
+  ],
+  "dependencies": [
+    "V0.11"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "packages_mapped": 3,
+  "dependency_matrix": {
+    "Layer_1_Foundations": [],
+    "generate_usptcros_templates": [],
+    "genesis": [
+      "meta_model",
+      "brain_v4",
+      "laboratory",
+      "repository_engineer",
+      "mathematics",
+      "ued",
+      "omega_loop",
+      "civilization_v3",
+      "knowledge_graph",
+      "ontology",
+      "usir",
+      "reverse_engineer",
+      "project",
+      "planetary_knowledge",
+      "core"
+    ]
+  },
+  "cyclic_dependencies": 0,
+  "cyclic_pairs": [],
+  "redundant_packages": [
+    "Layer_1_Foundations",
+    "generate_usptcros_templates"
+  ],
+  "overlapping_responsibilities": 1,
+  "overlap_details": {
+    "Layer_1_Foundations": [
+      [
+        "genesis",
+        "MarkdownGenerator"
+      ],
+      [
+        "genesis",
+        "SchemaGenerator"
+      ],
+      [
+        "genesis",
+        "SemanticGraph"
+      ]
+    ]
+  }
+}

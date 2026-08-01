@@ -1,0 +1,47 @@
+{
+  "architecture_entropy": 0.7484,
+  "complexity_entropy": 0.5947,
+  "module_stabilities_sample": {
+    "Layer_1_Foundations._compiler.venus_compiler": 0.0,
+    "Layer_1_Foundations._evolution.evolution_agent": 0.0,
+    "Layer_1_Foundations._graph.semantic_graph": 0.0,
+    "Layer_1_Foundations._rule_engine.rule_engine": 0.0,
+    "Layer_1_Foundations._validation.check_naming": 0.0,
+    "Layer_1_Foundations._validation.check_references": 0.0,
+    "Layer_1_Foundations._validation.check_templates": 0.0,
+    "Layer_1_Foundations._validation.generate_catalog": 0.0,
+    "Layer_1_Foundations._validation.validate_schemas": 0.0,
+    "generate_usptcros_templates": 0.0,
+    "genesis": 0.5,
+    "genesis.__main__": 0.0,
+    "genesis.acquisition": 0.7308,
+    "genesis.acquisition.orchestrator": 0.1111,
+    "genesis.acquisition.sources": 0.1053,
+    "genesis.acquisition.sources.adr": 0.2,
+    "genesis.acquisition.sources.cargo": 0.1667,
+    "genesis.acquisition.sources.cncf": 0.125,
+    "genesis.acquisition.sources.cve": 0.1667,
+    "genesis.acquisition.sources.docker": 0.1667
+  },
+  "diffusion_coefficient": 0.0022,
+  "knowledge_velocity": 5e-06,
+  "potential_energy": 6472.0,
+  "debt_tensor": {
+    "complexity_debt": 10.47,
+    "documentation_debt": 0.18,
+    "test_debt": 0.15,
+    "duplication_debt": 0.1,
+    "stability_debt": 0.1
+  },
+  "total_debt": 11.0,
+  "models_available": [
+    "RepositoryEntropy",
+    "RepositoryStability",
+    "KnowledgeDiffusion",
+    "ArchitectureMomentum",
+    "DependencyEnergy",
+    "EngineeringGravity",
+    "TechnicalDebtTensor",
+    "RepositoryCurvature"
+  ]
+}

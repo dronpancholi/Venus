@@ -1,0 +1,48 @@
+{
+  "iteration": 1,
+  "statistical_method": "correlation and ratio-based inference from population measurements",
+  "population_size": 405,
+  "laws": {
+    "architecture_gravity": {
+      "formula": "G = cov(imports, entities) / (std(imports) * std(entities))",
+      "value": 0.4615,
+      "confidence": 0.4615,
+      "evidence": "Computed from 405 modules with 4418 imports, 7125 entities",
+      "counterexamples": "Modules with zero imports but many entities",
+      "validation_history": "Iteration 1"
+    },
+    "knowledge_diffusion": {
+      "formula": "D = mean(doc_count) / mean(entity_count)",
+      "value": 0.0876,
+      "confidence": 0.2876,
+      "evidence": "624 documented entities across 405 modules",
+      "counterexamples": "Modules with docstrings but no entities (__init__ files)",
+      "validation_history": "Iteration 1"
+    },
+    "complexity_curvature": {
+      "formula": "C = mean(entities per module)",
+      "value": 17.5926,
+      "confidence": 0.9,
+      "evidence": "Mean entities per module: 17.59 across 405 modules",
+      "counterexamples": "Large modules with high entity density but low coupling",
+      "validation_history": "Iteration 1"
+    },
+    "execution_momentum": {
+      "formula": "M = async_count / total_functions",
+      "value": 0.0,
+      "confidence": 0.0,
+      "evidence": "0 async functions out of 7125 total",
+      "counterexamples": "IO-bound repos where async provides no benefit",
+      "validation_history": "Iteration 1"
+    },
+    "maintenance_friction": {
+      "formula": "F = mean(docs) / mean(imports)",
+      "value": 0.1412,
+      "confidence": 0.1412,
+      "evidence": "Documentation to import ratio: 0.1412",
+      "counterexamples": "Well-documented projects with many dependencies",
+      "validation_history": "Iteration 1"
+    }
+  },
+  "total_laws": 5
+}

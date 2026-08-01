@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://generated/policy/securityconstitutionrules/v1",
+  "title": "SecurityConstitutionRules",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "policy_type": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string"
+    },
+    "enforcement": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "array"
+    },
+    "applies_to": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "description",
+    "policy_type",
+    "severity",
+    "enforcement",
+    "rules",
+    "applies_to"
+  ]
+}

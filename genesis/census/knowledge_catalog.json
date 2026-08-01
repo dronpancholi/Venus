@@ -1,0 +1,986 @@
+{
+  "genesis.brain": {
+    "path": "genesis/brain/__init__.py",
+    "classes": [
+      "EngineeringBrain"
+    ],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.cognition": {
+    "path": "genesis/brain/cognition/__init__.py",
+    "classes": [
+      "CognitiveArchitecture"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.attention": {
+    "path": "genesis/brain/cognition/attention.py",
+    "classes": [
+      "AttentionFocus",
+      "AttentionMechanism"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.belief": {
+    "path": "genesis/brain/cognition/belief.py",
+    "classes": [
+      "BeliefStatus",
+      "EvidenceKind",
+      "BeliefEvidence",
+      "Belief",
+      "BeliefSystem"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.decision": {
+    "path": "genesis/brain/cognition/decision.py",
+    "classes": [
+      "DecisionMode",
+      "Criterion",
+      "Alternative",
+      "Decision",
+      "DecisionEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.goals": {
+    "path": "genesis/brain/cognition/goals.py",
+    "classes": [
+      "GoalStatus",
+      "GoalPriority",
+      "Goal",
+      "GoalHierarchy"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.memory": {
+    "path": "genesis/brain/cognition/memory.py",
+    "classes": [
+      "WorkingMemorySlot",
+      "EpisodicMemoryEntry",
+      "WorkingMemory",
+      "EpisodicMemory"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.orchestration": {
+    "path": "genesis/brain/cognition/orchestration.py",
+    "classes": [
+      "AgentStatus",
+      "TaskStatus",
+      "CognitiveAgent",
+      "AgentTask",
+      "Orchestrator"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.reasoning": {
+    "path": "genesis/brain/cognition/reasoning.py",
+    "classes": [
+      "ReasoningMode",
+      "CausalLink",
+      "Inference",
+      "ReasoningEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.reflection": {
+    "path": "genesis/brain/cognition/reflection.py",
+    "classes": [
+      "Reflection",
+      "ReflectionEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.cognition.strategy": {
+    "path": "genesis/brain/cognition/strategy.py",
+    "classes": [
+      "Tool",
+      "Strategy",
+      "StrategyEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 81
+  },
+  "genesis.brain.embeddings": {
+    "path": "genesis/brain/embeddings.py",
+    "classes": [
+      "EmbeddingStore"
+    ],
+    "maturity": 0.99,
+    "test_count": 77
+  },
+  "genesis.brain.entity": {
+    "path": "genesis/brain/entity.py",
+    "classes": [
+      "BrainEntityType",
+      "Relationship",
+      "ChangeRecord",
+      "Confidence",
+      "Lineage",
+      "Capability",
+      "Evidence",
+      "RuntimeState",
+      "ResearchState",
+      "EntityEmbedding",
+      "BrainEntity"
+    ],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.graph": {
+    "path": "genesis/brain/graph.py",
+    "classes": [
+      "BrainGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.integration": {
+    "path": "genesis/brain/integration.py",
+    "classes": [
+      "BrainIntegration"
+    ],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain.sync": {
+    "path": "genesis/brain/sync.py",
+    "classes": [
+      "GraphAdapter",
+      "DigitalTwinAdapter",
+      "UIRAdapter",
+      "KnowledgeArtifactAdapter",
+      "FindingAdapter",
+      "VRIPAdapter",
+      "GraphDBAdapter"
+    ],
+    "maturity": 1.0,
+    "test_count": 77
+  },
+  "genesis.brain_v4": {
+    "path": "genesis/brain_v4.py",
+    "classes": [
+      "GoalLevel",
+      "GoalStatus",
+      "Goal",
+      "Plan",
+      "ExecutivePlanner",
+      "StrategicPlanner",
+      "TacticalPlanner",
+      "TaskPlanner",
+      "ConstraintSolver",
+      "UtilityOptimizer",
+      "Belief",
+      "BeliefRevision",
+      "UncertaintyReasoning",
+      "ProbabilisticPlanner",
+      "CausalLink",
+      "CausalInference",
+      "AnalogicalReasoning",
+      "Reflection",
+      "ReflectionEngine",
+      "AttentionFocus",
+      "AttentionSystem",
+      "ExecutiveMemory",
+      "WorldModelSync",
+      "EngineeringBrainV4"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.civilization.knowledge": {
+    "path": "genesis/civilization/knowledge/__init__.py",
+    "classes": [
+      "KnowledgeAuthor",
+      "KnowledgeArtifact",
+      "LineageEdge",
+      "LineageGraph",
+      "KnowledgeBase"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.compiler.codegen.graph_gen": {
+    "path": "genesis/compiler/codegen/graph_gen.py",
+    "classes": [
+      "GraphGenerator"
+    ],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.digital_twin": {
+    "path": "genesis/digital_twin/__init__.py",
+    "classes": [
+      "PlanetaryDigitalTwin"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.analyzers": {
+    "path": "genesis/digital_twin/analyzers/__init__.py",
+    "classes": [],
+    "maturity": 0.0,
+    "test_count": 0
+  },
+  "genesis.digital_twin.analyzers.coupling": {
+    "path": "genesis/digital_twin/analyzers/coupling.py",
+    "classes": [
+      "CouplingAnalyzer"
+    ],
+    "maturity": 0.68,
+    "test_count": 0
+  },
+  "genesis.digital_twin.analyzers.drift": {
+    "path": "genesis/digital_twin/analyzers/drift.py",
+    "classes": [
+      "DriftAnalyzer"
+    ],
+    "maturity": 0.66,
+    "test_count": 0
+  },
+  "genesis.digital_twin.analyzers.evolution": {
+    "path": "genesis/digital_twin/analyzers/evolution.py",
+    "classes": [
+      "EvolutionAnalyzer"
+    ],
+    "maturity": 0.67,
+    "test_count": 0
+  },
+  "genesis.digital_twin.analyzers.smells": {
+    "path": "genesis/digital_twin/analyzers/smells.py",
+    "classes": [
+      "SmellAnalyzer"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.digital_twin.builder": {
+    "path": "genesis/digital_twin/builder.py",
+    "classes": [
+      "DigitalTwinBuilder"
+    ],
+    "maturity": 0.98,
+    "test_count": 20
+  },
+  "genesis.digital_twin.discovery": {
+    "path": "genesis/digital_twin/discovery.py",
+    "classes": [
+      "Initiative",
+      "InitiativeDiscovery"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.evolution": {
+    "path": "genesis/digital_twin/evolution.py",
+    "classes": [
+      "SimulatedChange",
+      "EvolutionEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.extractors": {
+    "path": "genesis/digital_twin/extractors/__init__.py",
+    "classes": [],
+    "maturity": 0.0,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.architecture": {
+    "path": "genesis/digital_twin/extractors/architecture.py",
+    "classes": [
+      "ArchitectureExtractor"
+    ],
+    "maturity": 0.75,
+    "test_count": 12
+  },
+  "genesis.digital_twin.extractors.contracts": {
+    "path": "genesis/digital_twin/extractors/contracts.py",
+    "classes": [
+      "ContractsExtractor"
+    ],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.dependencies": {
+    "path": "genesis/digital_twin/extractors/dependencies.py",
+    "classes": [
+      "DependenciesExtractor"
+    ],
+    "maturity": 0.42,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.events": {
+    "path": "genesis/digital_twin/extractors/events.py",
+    "classes": [
+      "EventsExtractor"
+    ],
+    "maturity": 0.42,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.evolution": {
+    "path": "genesis/digital_twin/extractors/evolution.py",
+    "classes": [
+      "EvolutionExtractor"
+    ],
+    "maturity": 0.39,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.persistence": {
+    "path": "genesis/digital_twin/extractors/persistence.py",
+    "classes": [
+      "PersistenceExtractor"
+    ],
+    "maturity": 0.71,
+    "test_count": 46
+  },
+  "genesis.digital_twin.extractors.semantics": {
+    "path": "genesis/digital_twin/extractors/semantics.py",
+    "classes": [
+      "SemanticsExtractor"
+    ],
+    "maturity": 0.43,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.specs": {
+    "path": "genesis/digital_twin/extractors/specs.py",
+    "classes": [
+      "SpecsExtractor"
+    ],
+    "maturity": 0.44,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.syntax": {
+    "path": "genesis/digital_twin/extractors/syntax.py",
+    "classes": [
+      "SyntaxExtractor"
+    ],
+    "maturity": 0.44,
+    "test_count": 0
+  },
+  "genesis.digital_twin.extractors.tests": {
+    "path": "genesis/digital_twin/extractors/tests.py",
+    "classes": [
+      "TestsExtractor"
+    ],
+    "maturity": 0.41,
+    "test_count": 0
+  },
+  "genesis.digital_twin.hypothesis": {
+    "path": "genesis/digital_twin/hypothesis.py",
+    "classes": [
+      "Hypothesis",
+      "HypothesisEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.metrics": {
+    "path": "genesis/digital_twin/metrics.py",
+    "classes": [
+      "RepositoryMetrics"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.model": {
+    "path": "genesis/digital_twin/model.py",
+    "classes": [
+      "TwinNode",
+      "DigitalTwin"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.predict": {
+    "path": "genesis/digital_twin/predict.py",
+    "classes": [
+      "Prediction",
+      "PredictionEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.reasoning": {
+    "path": "genesis/digital_twin/reasoning.py",
+    "classes": [
+      "Evidence",
+      "Conclusion",
+      "Rule",
+      "ReasoningEngine"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.ris": {
+    "path": "genesis/digital_twin/ris.py",
+    "classes": [
+      "RIScore"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.self_analysis": {
+    "path": "genesis/digital_twin/self_analysis.py",
+    "classes": [
+      "SelfAnalyzer"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.digital_twin.simulator": {
+    "path": "genesis/digital_twin/simulator.py",
+    "classes": [
+      "EvolutionSimulator"
+    ],
+    "maturity": 0.99,
+    "test_count": 20
+  },
+  "genesis.digital_twin.validation": {
+    "path": "genesis/digital_twin/validation.py",
+    "classes": [
+      "EquilibriumSignal",
+      "EquilibriumDetector",
+      "ValidatorGate",
+      "ValidationResult",
+      "ScientificValidator"
+    ],
+    "maturity": 1.0,
+    "test_count": 20
+  },
+  "genesis.execution_graph": {
+    "path": "genesis/execution_graph.py",
+    "classes": [
+      "NodeType",
+      "EdgeType",
+      "NodeStatus",
+      "ExecutionNode",
+      "ExecutionEdge",
+      "ExecutionEvent",
+      "ExecutionTrace",
+      "ExecutionGraph",
+      "ExecutionEngine",
+      "ExecutionGraphMonitor"
+    ],
+    "maturity": 1.0,
+    "test_count": 34
+  },
+  "genesis.graph": {
+    "path": "genesis/graph/__init__.py",
+    "classes": [],
+    "maturity": 0.35,
+    "test_count": 0
+  },
+  "genesis.graph.engine": {
+    "path": "genesis/graph/engine.py",
+    "classes": [
+      "KnowledgeGraphEngine"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.graph_v2": {
+    "path": "genesis/graph_v2/__init__.py",
+    "classes": [],
+    "maturity": 0.1,
+    "test_count": 0
+  },
+  "genesis.graph_v2.analytics": {
+    "path": "genesis/graph_v2/analytics.py",
+    "classes": [
+      "GraphAnalytics"
+    ],
+    "maturity": 0.45,
+    "test_count": 0
+  },
+  "genesis.graph_v2.compression": {
+    "path": "genesis/graph_v2/compression.py",
+    "classes": [
+      "GraphCompression"
+    ],
+    "maturity": 0.42,
+    "test_count": 0
+  },
+  "genesis.graph_v2.core": {
+    "path": "genesis/graph_v2/core.py",
+    "classes": [
+      "LayerType",
+      "GraphNode",
+      "GraphEdge",
+      "GraphSnapshot",
+      "GraphEntity",
+      "GraphLayer",
+      "UnifiedGraph"
+    ],
+    "maturity": 0.45,
+    "test_count": 0
+  },
+  "genesis.graph_v2.federation": {
+    "path": "genesis/graph_v2/federation.py",
+    "classes": [
+      "FederationLink",
+      "GraphFederation"
+    ],
+    "maturity": 0.44,
+    "test_count": 0
+  },
+  "genesis.graph_v2.index": {
+    "path": "genesis/graph_v2/index.py",
+    "classes": [
+      "GraphIndex"
+    ],
+    "maturity": 0.4,
+    "test_count": 0
+  },
+  "genesis.graph_v2.layers": {
+    "path": "genesis/graph_v2/layers.py",
+    "classes": [
+      "StructuralGraph",
+      "SemanticGraph",
+      "CapabilityGraph",
+      "ArchitectureGraph",
+      "RuntimeGraph",
+      "DependencyGraph",
+      "KnowledgeGraph",
+      "MemoryGraph",
+      "EvolutionGraph",
+      "ExperimentGraph",
+      "ResearchGraph",
+      "OrganizationGraph"
+    ],
+    "maturity": 0.2,
+    "test_count": 0
+  },
+  "genesis.graph_v2.partition": {
+    "path": "genesis/graph_v2/partition.py",
+    "classes": [
+      "GraphPartition"
+    ],
+    "maturity": 0.42,
+    "test_count": 0
+  },
+  "genesis.graph_v2.versioning": {
+    "path": "genesis/graph_v2/versioning.py",
+    "classes": [
+      "GraphDiff",
+      "GraphMerge",
+      "GraphVersioning"
+    ],
+    "maturity": 0.45,
+    "test_count": 0
+  },
+  "genesis.graphdb": {
+    "path": "genesis/graphdb/__init__.py",
+    "classes": [
+      "Node",
+      "Edge",
+      "GraphQueryBuilder",
+      "PersistentGraphDB"
+    ],
+    "maturity": 1.0,
+    "test_count": 49
+  },
+  "genesis.hypergraph": {
+    "path": "genesis/hypergraph.py",
+    "classes": [
+      "EdgeType",
+      "HyperedgeType",
+      "HypergraphNode",
+      "HypergraphEdge",
+      "Hyperedge",
+      "Hypergraph",
+      "HypergraphKnowledgeCore"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.intelligence.kgraph": {
+    "path": "genesis/intelligence/kgraph.py",
+    "classes": [
+      "KNode",
+      "KEdge",
+      "KnowledgeGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 15
+  },
+  "genesis.kernel.memory_manager": {
+    "path": "genesis/kernel/memory_manager.py",
+    "classes": [
+      "MemoryManager"
+    ],
+    "maturity": 0.99,
+    "test_count": 159
+  },
+  "genesis.knowledge_graph": {
+    "path": "genesis/knowledge_graph.py",
+    "classes": [
+      "EntityDomain",
+      "GraphType",
+      "KEntity",
+      "KRelation",
+      "KnowledgeGraph",
+      "PlanetaryKnowledgeGraph"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory.mining.subgraph": {
+    "path": "genesis/laboratory/mining/subgraph.py",
+    "classes": [
+      "MinedPattern",
+      "ArchitecturalMotif",
+      "PatternCluster",
+      "FrequentSubgraphMiner",
+      "MotifDetector",
+      "PatternCluster",
+      "PatternEvolution",
+      "PatternEvolutionTracker"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.laboratory.world_graph": {
+    "path": "genesis/laboratory/world_graph.py",
+    "classes": [
+      "WorldNode",
+      "WorldEdge",
+      "WorldGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 60
+  },
+  "genesis.memory": {
+    "path": "genesis/memory/__init__.py",
+    "classes": [],
+    "maturity": 0.35,
+    "test_count": 0
+  },
+  "genesis.memory.consolidation": {
+    "path": "genesis/memory/consolidation.py",
+    "classes": [
+      "MemoryConsolidator",
+      "ForgettingMechanism"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.memory.engine": {
+    "path": "genesis/memory/engine.py",
+    "classes": [
+      "MemoryEngine"
+    ],
+    "maturity": 0.65,
+    "test_count": 0
+  },
+  "genesis.memory.types": {
+    "path": "genesis/memory/types.py",
+    "classes": [
+      "MemoryType",
+      "MemoryEntry",
+      "MemoryQuery",
+      "MemoryResult",
+      "BaseMemory",
+      "EpisodicMemory",
+      "SemanticMemory",
+      "ProceduralMemory",
+      "ArchitecturalMemory",
+      "ResearchMemory",
+      "OrganizationalMemory",
+      "TemporalMemory",
+      "CausalMemory",
+      "ExecutionMemory",
+      "AgentMemory",
+      "WorldMemory",
+      "GraphMemory",
+      "SpecificationMemory",
+      "ConversationMemory",
+      "SimulationMemory",
+      "ReflectionMemory"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.memory_system": {
+    "path": "genesis/memory_system.py",
+    "classes": [
+      "MemoryType",
+      "MemoryEntry",
+      "MemoryStore",
+      "MemoryIndex",
+      "MemoryConsolidator",
+      "ForgettingMechanism",
+      "ContradictionResolver",
+      "UniversalMemorySystem"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.meta.build_graph": {
+    "path": "genesis/meta/build_graph.py",
+    "classes": [
+      "BuildNodeType",
+      "BuildStatus",
+      "BuildNode",
+      "BuildArtifact",
+      "BuildGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.graph": {
+    "path": "genesis/meta/graph.py",
+    "classes": [
+      "WorkspaceDependencyGraph",
+      "WorkspaceCapabilityMap",
+      "WorkspaceGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.meta.twin": {
+    "path": "genesis/meta/twin.py",
+    "classes": [
+      "TwinEntity",
+      "WorkspaceTwin"
+    ],
+    "maturity": 1.0,
+    "test_count": 130
+  },
+  "genesis.metamodel.graph": {
+    "path": "genesis/metamodel/graph.py",
+    "classes": [
+      "Edge",
+      "UnifiedGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 35
+  },
+  "genesis.observatory.graph": {
+    "path": "genesis/observatory/graph.py",
+    "classes": [
+      "ObservedNode",
+      "CrossRepoEdge",
+      "ObservatorySnapshot",
+      "ObservatoryGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 33
+  },
+  "genesis.os.memory_manager": {
+    "path": "genesis/os/memory_manager.py",
+    "classes": [
+      "MemoryEntry",
+      "MemoryManager"
+    ],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.os.task_graph": {
+    "path": "genesis/os/task_graph.py",
+    "classes": [
+      "Task",
+      "PersistentTaskGraph"
+    ],
+    "maturity": 1.0,
+    "test_count": 76
+  },
+  "genesis.planetary_knowledge": {
+    "path": "genesis/planetary_knowledge.py",
+    "classes": [
+      "SourceDomain",
+      "Artifact",
+      "SourceConnector",
+      "PlanetaryKnowledgeEngine"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.repository_graph": {
+    "path": "genesis/repository_graph.py",
+    "classes": [
+      "EngineeringKnowledgeGraph"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_brain_v4": {
+    "path": "genesis/tests/programs/test_brain_v4.py",
+    "classes": [
+      "TestGoal",
+      "TestPlanners",
+      "TestConstraintSolver",
+      "TestUtilityOptimizer",
+      "TestBelief",
+      "TestBeliefRevision",
+      "TestUncertaintyReasoning",
+      "TestProbabilisticPlanner",
+      "TestCausalInference",
+      "TestAnalogicalReasoning",
+      "TestReflectionEngine",
+      "TestAttentionSystem",
+      "TestExecutiveMemory",
+      "TestEngineeringBrainV4"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_hypergraph": {
+    "path": "genesis/tests/programs/test_hypergraph.py",
+    "classes": [
+      "TestHypergraphNode",
+      "TestHypergraphEdge",
+      "TestHyperedge",
+      "TestHypergraph",
+      "TestHypergraphKnowledgeCore"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_knowledge_graph": {
+    "path": "genesis/tests/programs/test_knowledge_graph.py",
+    "classes": [
+      "TestKnowledgeGraph",
+      "TestPlanetaryKnowledgeGraph"
+    ],
+    "maturity": 0.47,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_memory": {
+    "path": "genesis/tests/programs/test_memory.py",
+    "classes": [
+      "TestBaseMemory",
+      "TestEpisodicMemory",
+      "TestSemanticMemory",
+      "TestProceduralMemory",
+      "TestArchitecturalMemory",
+      "TestResearchMemory",
+      "TestOrganizationalMemory",
+      "TestTemporalMemory",
+      "TestCausalMemory",
+      "TestExecutionMemory",
+      "TestAgentMemory",
+      "TestWorldMemory",
+      "TestGraphMemory",
+      "TestSpecificationMemory",
+      "TestConversationMemory",
+      "TestSimulationMemory",
+      "TestReflectionMemory",
+      "TestMemoryConsolidator",
+      "TestForgettingMechanism"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_memory_system": {
+    "path": "genesis/tests/programs/test_memory_system.py",
+    "classes": [
+      "TestMemoryEntry",
+      "TestMemoryStore",
+      "TestMemoryIndex",
+      "TestMemoryConsolidator",
+      "TestForgettingMechanism",
+      "TestContradictionResolver",
+      "TestUniversalMemorySystem"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.programs.test_planetary_knowledge": {
+    "path": "genesis/tests/programs/test_planetary_knowledge.py",
+    "classes": [
+      "TestArtifact",
+      "TestSourceConnector",
+      "TestPlanetaryKnowledgeEngine"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_brain": {
+    "path": "genesis/tests/test_brain.py",
+    "classes": [
+      "TestBrainEntity",
+      "TestBrainGraph",
+      "TestEmbeddingStore",
+      "TestBrainIntegration",
+      "TestEngineeringBrain",
+      "TestSyncAdapters",
+      "TestEdgeCases"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_digital_twin": {
+    "path": "genesis/tests/test_digital_twin.py",
+    "classes": [
+      "TestPlanetaryDigitalTwin"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_execution_graph": {
+    "path": "genesis/tests/test_execution_graph.py",
+    "classes": [
+      "TestExecutionNode",
+      "TestExecutionEdge",
+      "TestExecutionGraph",
+      "TestBuildDefaultExecutionGraph",
+      "TestExecutionTrace",
+      "TestExecutionEngine",
+      "TestExecutionGraphMonitor"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_graphdb": {
+    "path": "genesis/tests/test_graphdb.py",
+    "classes": [
+      "TestNode",
+      "TestEdge",
+      "TestPersistentGraphDB"
+    ],
+    "maturity": 0.5,
+    "test_count": 0
+  },
+  "genesis.tests.test_ucos_graph": {
+    "path": "genesis/tests/test_ucos_graph.py",
+    "classes": [],
+    "maturity": 0.39,
+    "test_count": 0
+  },
+  "genesis.ucos.graph": {
+    "path": "genesis/ucos/graph.py",
+    "classes": [
+      "CapabilityDependencyGraph"
+    ],
+    "maturity": 0.7,
+    "test_count": 0
+  },
+  "genesis.ued.graph": {
+    "path": "genesis/ued/graph.py",
+    "classes": [
+      "GraphNode",
+      "GraphEdge",
+      "GraphStore"
+    ],
+    "maturity": 0.75,
+    "test_count": 149
+  },
+  "genesis.utils.graph_algorithms": {
+    "path": "genesis/utils/graph_algorithms.py",
+    "classes": [],
+    "maturity": 0.6,
+    "test_count": 0
+  }
+}

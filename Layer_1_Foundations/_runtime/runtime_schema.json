@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://schemas/runtime/v1",
+  "title": "VenusRuntimeEntity",
+  "description": "Schema for runtime entities: agents, tools, workflows, pipelines",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "enum": ["planner", "scheduler", "agent", "tool", "workflow", "pipeline", "validator", "memory_service"] },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "status": { "type": "string", "enum": ["idle", "running", "paused", "error", "stopped"] },
+    "capabilities": { "type": "array", "items": { "type": "string" } },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "timeout_ms": { "type": "integer" },
+        "max_retries": { "type": "integer" },
+        "memory_limit_mb": { "type": "integer" },
+        "sandbox_enabled": { "type": "boolean" },
+        "allowed_tools": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "health": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string", "enum": ["healthy", "degraded", "unhealthy"] },
+        "last_heartbeat": { "type": "string", "format": "date-time" },
+        "error_count": { "type": "integer" }
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target": { "type": "string" },
+          "type": { "type": "string", "enum": ["depends_on", "routes_to", "feeds_into"] }
+        }
+      }
+    }
+  },
+  "required": ["id", "type", "name", "status", "capabilities"]
+}

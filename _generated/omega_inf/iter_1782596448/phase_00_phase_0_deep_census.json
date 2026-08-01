@@ -1,0 +1,98 @@
+{
+  "total_files": 415,
+  "total_lines": 93614,
+  "total_classes": 1369,
+  "total_functions": 7150,
+  "total_imports": 2751,
+  "total_complexity": 14574,
+  "avg_complexity": 35.12,
+  "cognitive_load": 7046.5,
+  "doc_coverage": 0.0465,
+  "knowledge_density_avg": 0.078,
+  "role_distribution": {
+    "compiler": 27,
+    "unknown": 152,
+    "graph": 24,
+    "model": 11,
+    "entrypoint": 6,
+    "interface": 2,
+    "intelligence": 20,
+    "infrastructure": 48,
+    "civilization": 15,
+    "core": 7,
+    "test_support": 1,
+    "economics": 4,
+    "runtime": 15,
+    "memory": 7,
+    "test": 72,
+    "utility": 4
+  },
+  "centrality_distribution": {
+    "high": 18,
+    "medium": 119,
+    "low": 142,
+    "none": 0
+  },
+  "top_complex_modules": [
+    {
+      "module": "genesis.reverse_engineer",
+      "complexity": 240,
+      "lines": 911,
+      "role": "unknown"
+    },
+    {
+      "module": "genesis.census",
+      "complexity": 235,
+      "lines": 864,
+      "role": "unknown"
+    },
+    {
+      "module": "genesis.hypergraph",
+      "complexity": 179,
+      "lines": 649,
+      "role": "graph"
+    },
+    {
+      "module": "genesis.omega_loop",
+      "complexity": 166,
+      "lines": 1385,
+      "role": "unknown"
+    },
+    {
+      "module": "genesis.civilization.agents",
+      "complexity": 150,
+      "lines": 896,
+      "role": "civilization"
+    },
+    {
+      "module": "genesis.mathematics",
+      "complexity": 144,
+      "lines": 797,
+      "role": "unknown"
+    },
+    {
+      "module": "genesis.digital_twin.reasoning",
+      "complexity": 107,
+      "lines": 591,
+      "role": "infrastructure"
+    },
+    {
+      "module": "genesis.ontology",
+      "complexity": 105,
+      "lines": 1399,
+      "role": "unknown"
+    },
+    {
+      "module": "Layer_1_Foundations._compiler.venus_compiler",
+      "complexity": 101,
+      "lines": 629,
+      "role": "compiler"
+    },
+    {
+      "module": "genesis.usir.parsers.typescript",
+      "complexity": 96,
+      "lines": 648,
+      "role": "unknown"
+    }
+  ]
+}

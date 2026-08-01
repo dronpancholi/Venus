@@ -1,0 +1,80 @@
+{
+  "iteration": 1,
+  "current_metrics": {
+    "classes": 1358,
+    "functions": 7125,
+    "imports": 4418
+  },
+  "alternatives": [
+    {
+      "name": "Microkernel",
+      "core_size": 452,
+      "plugin_count": 905,
+      "estimated_coupling": 3.25,
+      "risk": "low",
+      "benefit": "isolation, testability"
+    },
+    {
+      "name": "Distributed",
+      "node_count": 40,
+      "service_count": 271,
+      "estimated_latency": "medium",
+      "risk": "high",
+      "benefit": "scalability, fault tolerance"
+    },
+    {
+      "name": "Actor",
+      "actor_count": 1358,
+      "message_types": 3562,
+      "estimated_throughput": "high",
+      "risk": "medium",
+      "benefit": "concurrency, isolation"
+    },
+    {
+      "name": "Reactive",
+      "event_streams": 441,
+      "subscriber_count": 679,
+      "estimated_responsiveness": "high",
+      "risk": "medium",
+      "benefit": "responsiveness, resilience"
+    },
+    {
+      "name": "Dataflow",
+      "pipeline_stages": 271,
+      "data_sources": 883,
+      "estimated_throughput": "very high",
+      "risk": "high",
+      "benefit": "parallelism, streaming"
+    },
+    {
+      "name": "Knowledge-centric",
+      "ontology_size": 1358,
+      "inference_rules": 2375,
+      "estimated_flexibility": "high",
+      "risk": "low",
+      "benefit": "adaptability, reasoning"
+    },
+    {
+      "name": "Event-sourced",
+      "event_count": 7125,
+      "aggregate_root_count": 339,
+      "estimated_auditability": "very high",
+      "risk": "medium",
+      "benefit": "auditability, temporal queries"
+    },
+    {
+      "name": "Hybrid",
+      "combined_patterns": [
+        "Knowledge-centric",
+        "Microkernel",
+        "Event-sourced"
+      ],
+      "estimated_complexity": "high",
+      "risk": "low",
+      "benefit": "best-of-breed flexibility"
+    }
+  ],
+  "architecture_count": 8,
+  "recommended_architecture": "Knowledge-centric",
+  "recommendation_reasoning": "Based on 1358 classes, 7125 functions, 4418 imports"
+}

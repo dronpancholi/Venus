@@ -1,0 +1,306 @@
+{
+  "modules": [
+    {
+      "module": "Layer_1_Foundations._compiler.venus_compiler",
+      "docstring": "\nVENUS COMPILER \u2014 Phase 4\n\nTransforms Venus DSL definitions into all generated artifacts:\n  - Markdo",
+      "class_count": 8,
+      "function_count": 30
+    },
+    {
+      "module": "Layer_1_Foundations._evolution.evolution_agent",
+      "docstring": "\nVENUS SELF-EVOLUTION AGENT \u2014 Phase 9\n\nAutomated structural review, dedup, consolidation, and migrat",
+      "class_count": 1,
+      "function_count": 11
+    },
+    {
+      "module": "Layer_1_Foundations._graph.semantic_graph",
+      "docstring": "\nVENUS SEMANTIC KNOWLEDGE GRAPH \u2014 Phase 6\n\nUpgrades the knowledge graph from file-reference tracking",
+      "class_count": 1,
+      "function_count": 12
+    },
+    {
+      "module": "Layer_1_Foundations._rule_engine.rule_engine",
+      "docstring": "\nVENUS RULE ENGINE \u2014 Phase 5\n\nEvaluates rules against entities and produces validation results.\n\nUsa",
+      "class_count": 1,
+      "function_count": 7
+    },
+    {
+      "module": "Layer_1_Foundations._validation.check_naming",
+      "docstring": "\nVenus Naming Convention Validator.\n\nChecks that all files in the repository conform to Venus naming",
+      "class_count": 0,
+      "function_count": 3
+    },
+    {
+      "module": "Layer_1_Foundations._validation.check_references",
+      "docstring": "\nVenus Cross-Reference Integrity Checker.\n\nScans all markdown files for broken internal links.\n\nUsag",
+      "class_count": 0,
+      "function_count": 1
+    },
+    {
+      "module": "Layer_1_Foundations._validation.check_templates",
+      "docstring": "\nVenus Template Placeholder Checker.\n\nScans template files for placeholder patterns that should not ",
+      "class_count": 0,
+      "function_count": 1
+    },
+    {
+      "module": "Layer_1_Foundations._validation.generate_catalog",
+      "docstring": "\nVenus Catalog & Knowledge Graph Generator.\n\nScans the Venus repository, extracts metadata from dire",
+      "class_count": 0,
+      "function_count": 16
+    },
+    {
+      "module": "Layer_1_Foundations._validation.validate_schemas",
+      "docstring": "\nVenus Schema Validator.\n\nValidates all JSON schema files and checks that artifacts reference\nresolv",
+      "class_count": 0,
+      "function_count": 2
+    },
+    {
+      "module": "generate_usptcros_templates",
+      "docstring": "",
+      "class_count": 0,
+      "function_count": 0
+    },
+    {
+      "module": "genesis",
+      "docstring": "\nGENESIS-I \u2014 VENUS CORE PLATFORM\n\nThe executable heart of Project Venus.\nEvery future OS, Domain Pac",
+      "class_count": 0,
+      "function_count": 0
+    },
+    {
+      "module": "genesis.__main__",
+      "docstring": "Genesis-I \u2014 Venus Core Platform entry point.",
+      "class_count": 0,
+      "function_count": 1
+    },
+    {
+      "module": "genesis.acquisition",
+      "docstring": "\nAcquisition Framework \u2014 planetary knowledge acquisition subsystem.\n\nPhases: collect \u2192 normalize \u2192 v",
+      "class_count": 3,
+      "function_count": 14
+    },
+    {
+      "module": "genesis.acquisition.orchestrator",
+      "docstring": "\nAcquisition Orchestrator \u2014 integrates acquisition pipeline with the Engineering OS.\n\nSchedules peri",
+      "class_count": 1,
+      "function_count": 10
+    },
+    {
+      "module": "genesis.acquisition.sources",
+      "docstring": "\nAcquisition source implementations for VCS, package registries,\nknowledge bases, security databases",
+      "class_count": 0,
+      "function_count": 0
+    },
+    {
+      "module": "genesis.acquisition.sources.adr",
+      "docstring": "ADR source \u2014 Architecture Decision Records from repositories.",
+      "class_count": 1,
+      "function_count": 4
+    },
+    {
+      "module": "genesis.acquisition.sources.cargo",
+      "docstring": "Cargo source \u2014 crates, versions, dependencies.",
+      "class_count": 1,
+      "function_count": 4
+    },
+    {
+      "module": "genesis.acquisition.sources.cncf",
+      "docstring": "CNCF source \u2014 cloud native projects, maturity levels.",
+      "class_count": 1,
+      "function_count": 4
+    },
+    {
+      "module": "genesis.acquisition.sources.cve",
+      "docstring": "CVE source \u2014 vulnerability records, CVSS scores.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.docker",
+      "docstring": "Docker source \u2014 images, tags, metadata.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.github",
+      "docstring": "GitHub source \u2014 repositories, metadata, language stats.",
+      "class_count": 1,
+      "function_count": 5
+    },
+    {
+      "module": "genesis.acquisition.sources.gitlab",
+      "docstring": "GitLab source \u2014 repositories, metadata.",
+      "class_count": 1,
+      "function_count": 5
+    },
+    {
+      "module": "genesis.acquisition.sources.go",
+      "docstring": "Go source \u2014 modules, versions, metadata.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.ietf",
+      "docstring": "IETF source \u2014 standards, drafts, working groups.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.maven",
+      "docstring": "Maven source \u2014 artifacts, metadata.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.nist",
+      "docstring": "NIST source \u2014 frameworks, standards, special publications.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.npm",
+      "docstring": "npm source \u2014 packages, versions, dependencies.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.nuget",
+      "docstring": "NuGet source \u2014 packages, versions, metadata.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.owasp",
+      "docstring": "OWASP source \u2014 security categories, projects, resources.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sourcespi",
+      "docstring": "PyPI source \u2014 packages, releases, metadata.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.rfc",
+      "docstring": "RFC source \u2014 IETF RFC documents, metadata.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.acquisition.sources.w3c",
+      "docstring": "W3C source \u2014 web standards, specifications, recommendations.",
+      "class_count": 1,
+      "function_count": 3
+    },
+    {
+      "module": "genesis.api",
+      "docstring": "Repository API \u2014 REST + GraphQL interface to all Venus capabilities.",
+      "class_count": 0,
+      "function_count": 0
+    },
+    {
+      "module": "genesis.api.router",
+      "docstring": "\nCORE-06: Repository API\n\nExpose Venus as an API. Everything accessible through REST + GraphQL.\n\nCap",
+      "class_count": 3,
+      "function_count": 11
+    },
+    {
+      "module": "genesis.autonomous",
+      "docstring": "",
+      "class_count": 0,
+      "function_count": 0
+    },
+    {
+      "module": "genesis.autonomous.cycle",
+      "docstring": "",
+      "class_count": 4,
+      "function_count": 14
+    },
+    {
+      "module": "genesis.autonomous.orchestrator",
+      "docstring": "",
+      "class_count": 1,
+      "function_count": 22
+    },
+    {
+      "module": "genesis.brain",
+      "docstring": "\nGENESIS-VIII Brain \u2014 Universal Engineering Intelligence Platform V2.\n\nThe Engineering Brain V2 adds",
+      "class_count": 1,
+      "function_count": 27
+    },
+    {
+      "module": "genesis.brain.cognition",
+      "docstring": "\nCognitive Architecture \u2014 unified cognitive system for the Engineering Brain.\n\nCombines belief syste",
+      "class_count": 1,
+      "function_count": 17
+    },
+    {
+      "module": "genesis.brain.cognition.attention",
+      "docstring": "\nAttention Mechanism \u2014 salience-based focus for the cognitive architecture.\n\nDetermines which entiti",
+      "class_count": 2,
+      "function_count": 12
+    },
+    {
+      "module": "genesis.brain.cognition.belief",
+      "docstring": "\nBelief System \u2014 probabilistic belief representation with confidence propagation.\n\nBeliefs are state",
+      "class_count": 5,
+      "function_count": 20
+    },
+    {
+      "module": "genesis.brain.cognition.decision",
+      "docstring": "\nDecision Engine \u2014 multi-criteria decision making with constraint solving and uncertainty.\n\nSupports",
+      "class_count": 5,
+      "function_count": 11
+    },
+    {
+      "module": "genesis.brain.cognition.goals",
+      "docstring": "\nGoal Hierarchy \u2014 hierarchical goal system with decomposition, priority, and dependency tracking.\n\nG",
+      "class_count": 4,
+      "function_count": 18
+    },
+    {
+      "module": "genesis.brain.cognition.memory",
+      "docstring": "\nCognitive Memory \u2014 working memory and episodic memory for the cognitive architecture.\n\nWorking memo",
+      "class_count": 4,
+      "function_count": 25
+    },
+    {
+      "module": "genesis.brain.cognition.orchestration",
+      "docstring": "\nMulti-Agent Orchestration \u2014 coordinate multiple agents for complex tasks.\n\nManages agent lifecycle:",
+      "class_count": 5,
+      "function_count": 18
+    },
+    {
+      "module": "genesis.brain.cognition.reasoning",
+      "docstring": "\nReasoning Engine \u2014 causal, counterfactual, and Bayesian reasoning over the Brain.\n\nEnables:\n- Causa",
+      "class_count": 4,
+      "function_count": 17
+    },
+    {
+      "module": "genesis.brain.cognition.reflection",
+      "docstring": "\nReflection Engine \u2014 self-criticism, pattern detection, and improvement over past decisions.\n\nAnalys",
+      "class_count": 2,
+      "function_count": 8
+    },
+    {
+      "module": "genesis.brain.cognition.strategy",
+      "docstring": "\nStrategy Engine \u2014 tool selection, cost optimization, and strategy planning.\n\nSelects the best tools",
+      "class_count": 3,
+      "function_count": 14
+    },
+    {
+      "module": "genesis.brain.embeddings",
+      "docstring": "\nEmbedding Manager \u2014 Placeholder for all 5 embedding types.\n\nEach entity in the Engineering Brain ca",
+      "class_count": 1,
+      "function_count": 12
+    },
+    {
+      "module": "genesis.brain.entity",
+      "docstring": "\nBrainEntity \u2014 The universal entity in the Engineering Brain.\n\nEvery entity in the platform is repre",
+      "class_count": 11,
+      "function_count": 26
+    }
+  ],
+  "classes": [],
+  "functions": []
+}

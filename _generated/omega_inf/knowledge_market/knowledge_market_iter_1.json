@@ -1,0 +1,117 @@
+{
+  "iteration": 1,
+  "total_assets": 13,
+  "asset_types": {
+    "patterns": 5,
+    "playbooks": 3,
+    "architectures": 5
+  },
+  "assets": [
+    {
+      "asset_type": "pattern",
+      "name": "Transferable Pattern 1",
+      "source": "brain",
+      "confidence": 0.7,
+      "reusability": "cross-language",
+      "dependencies": []
+    },
+    {
+      "asset_type": "pattern",
+      "name": "Transferable Pattern 2",
+      "source": "di",
+      "confidence": 0.7,
+      "reusability": "language-specific",
+      "dependencies": []
+    },
+    {
+      "asset_type": "pattern",
+      "name": "Transferable Pattern 3",
+      "source": "diagnostics",
+      "confidence": 0.7,
+      "reusability": "cross-language",
+      "dependencies": []
+    },
+    {
+      "asset_type": "pattern",
+      "name": "Transferable Pattern 4",
+      "source": "events",
+      "confidence": 0.7,
+      "reusability": "language-specific",
+      "dependencies": []
+    },
+    {
+      "asset_type": "pattern",
+      "name": "Transferable Pattern 5",
+      "source": "graph",
+      "confidence": 0.7,
+      "reusability": "cross-language",
+      "dependencies": []
+    },
+    {
+      "asset_type": "playbook",
+      "name": "utils: doc_coverage=0.875, import_density=1.375",
+      "confidence": 0.8,
+      "reusability": "cross-repository",
+      "migration_strategy": "Incremental adoption",
+      "validation_report": "Pending"
+    },
+    {
+      "asset_type": "playbook",
+      "name": "events: doc_coverage=0.8333, import_density=1.3333",
+      "confidence": 0.8,
+      "reusability": "cross-repository",
+      "migration_strategy": "Incremental adoption",
+      "validation_report": "Pending"
+    },
+    {
+      "asset_type": "playbook",
+      "name": "di: doc_coverage=0.6471, import_density=0.6863",
+      "confidence": 0.8,
+      "reusability": "cross-repository",
+      "migration_strategy": "Incremental adoption",
+      "validation_report": "Pending"
+    },
+    {
+      "asset_type": "architecture",
+      "name": "Microkernel Reference",
+      "confidence": 0.6,
+      "reusability": "architectural-pattern",
+      "migration_strategy": "Gradual migration toward Microkernel",
+      "validation_report": "Simulated across 8 alternatives"
+    },
+    {
+      "asset_type": "architecture",
+      "name": "Layered Reference",
+      "confidence": 0.6,
+      "reusability": "architectural-pattern",
+      "migration_strategy": "Gradual migration toward Layered",
+      "validation_report": "Simulated across 8 alternatives"
+    },
+    {
+      "asset_type": "architecture",
+      "name": "Hexagonal Reference",
+      "confidence": 0.6,
+      "reusability": "architectural-pattern",
+      "migration_strategy": "Gradual migration toward Hexagonal",
+      "validation_report": "Simulated across 8 alternatives"
+    },
+    {
+      "asset_type": "architecture",
+      "name": "Event-driven Reference",
+      "confidence": 0.6,
+      "reusability": "architectural-pattern",
+      "migration_strategy": "Gradual migration toward Event-driven",
+      "validation_report": "Simulated across 8 alternatives"
+    },
+    {
+      "asset_type": "architecture",
+      "name": "Knowledge-centric Reference",
+      "confidence": 0.6,
+      "reusability": "architectural-pattern",
+      "migration_strategy": "Gradual migration toward Knowledge-centric",
+      "validation_report": "Simulated across 8 alternatives"
+    }
+  ],
+  "market_cap_estimate": 130.0,
+  "recommendation": "Publish top 3 assets as reusable packages"
+}

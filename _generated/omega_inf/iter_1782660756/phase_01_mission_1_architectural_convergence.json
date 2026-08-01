@@ -1,0 +1,47 @@
+{
+  "packages_mapped": 3,
+  "dependency_matrix": {
+    "Layer_1_Foundations": [],
+    "generate_usptcros_templates": [],
+    "genesis": [
+      "meta",
+      "capability",
+      "datalake",
+      "cli",
+      "usir",
+      "diagnostics",
+      "project",
+      "marketplace",
+      "ucos",
+      "indexer",
+      "mathematics",
+      "tests",
+      "simulator_v2",
+      "ued",
+      "laboratory"
+    ]
+  },
+  "cyclic_dependencies": 0,
+  "cyclic_pairs": [],
+  "redundant_packages": [
+    "Layer_1_Foundations",
+    "generate_usptcros_templates"
+  ],
+  "overlapping_responsibilities": 1,
+  "overlap_details": {
+    "Layer_1_Foundations": [
+      [
+        "genesis",
+        "MarkdownGenerator"
+      ],
+      [
+        "genesis",
+        "SchemaGenerator"
+      ],
+      [
+        "genesis",
+        "SemanticGraph"
+      ]
+    ]
+  }
+}

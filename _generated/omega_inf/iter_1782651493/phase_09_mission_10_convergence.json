@@ -1,0 +1,11 @@
+{
+  "entropy_change": 0.0,
+  "duplication_reduction": 0.0,
+  "coupling_reduction": 0.0,
+  "cohesion_increase": 0.0,
+  "health_improvement": 0.592,
+  "intelligence_improvement": 2.23,
+  "economic_improvement": 1.4,
+  "converged": false,
+  "iteration": 3
+}

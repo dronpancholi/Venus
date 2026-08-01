@@ -1,0 +1,13 @@
+{
+  "invariants": {
+    "no_duplicated_canonical_abstractions": true,
+    "no_broken_references": false,
+    "no_ontology_inconsistencies": false,
+    "no_graph_inconsistencies": true,
+    "no_orphan_entities": true,
+    "no_architectural_invariant_violations": true
+  },
+  "passed": 4,
+  "total": 6,
+  "compliant": false
+}

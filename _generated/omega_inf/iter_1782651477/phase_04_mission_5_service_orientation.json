@@ -1,0 +1,497 @@
+{
+  "services_mapped": 82,
+  "services": {
+    "__main__": {
+      "modules": 1,
+      "classes": 0,
+      "functions": 1,
+      "exposed_apis": 1
+    },
+    "acquisition": {
+      "modules": 20,
+      "classes": 21,
+      "functions": 82,
+      "exposed_apis": 51
+    },
+    "api": {
+      "modules": 2,
+      "classes": 3,
+      "functions": 11,
+      "exposed_apis": 6
+    },
+    "autonomous": {
+      "modules": 3,
+      "classes": 5,
+      "functions": 36,
+      "exposed_apis": 14
+    },
+    "brain": {
+      "modules": 16,
+      "classes": 57,
+      "functions": 274,
+      "exposed_apis": 213
+    },
+    "brain_v4": {
+      "modules": 1,
+      "classes": 24,
+      "functions": 71,
+      "exposed_apis": 52
+    },
+    "capability": {
+      "modules": 2,
+      "classes": 2,
+      "functions": 19,
+      "exposed_apis": 15
+    },
+    "census": {
+      "modules": 1,
+      "classes": 3,
+      "functions": 33,
+      "exposed_apis": 28
+    },
+    "certification": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 6,
+      "exposed_apis": 4
+    },
+    "civilization": {
+      "modules": 14,
+      "classes": 69,
+      "functions": 278,
+      "exposed_apis": 196
+    },
+    "civilization_v2": {
+      "modules": 1,
+      "classes": 6,
+      "functions": 18,
+      "exposed_apis": 14
+    },
+    "civilization_v3": {
+      "modules": 1,
+      "classes": 4,
+      "functions": 14,
+      "exposed_apis": 10
+    },
+    "cli": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 18,
+      "exposed_apis": 16
+    },
+    "compiler": {
+      "modules": 13,
+      "classes": 15,
+      "functions": 65,
+      "exposed_apis": 35
+    },
+    "config": {
+      "modules": 1,
+      "classes": 1,
+      "functions": 4,
+      "exposed_apis": 3
+    },
+    "core": {
+      "modules": 6,
+      "classes": 31,
+      "functions": 97,
+      "exposed_apis": 71
+    },
+    "datalake": {
+      "modules": 1,
+      "classes": 5,
+      "functions": 45,
+      "exposed_apis": 36
+    },
+    "di": {
+      "modules": 4,
+      "classes": 13,
+      "functions": 51,
+      "exposed_apis": 46
+    },
+    "diagnostics": {
+      "modules": 2,
+      "classes": 2,
+      "functions": 13,
+      "exposed_apis": 3
+    },
+    "digital_civilization": {
+      "modules": 1,
+      "classes": 6,
+      "functions": 19,
+      "exposed_apis": 15
+    },
+    "digital_twin": {
+      "modules": 29,
+      "classes": 39,
+      "functions": 223,
+      "exposed_apis": 75
+    },
+    "discovery": {
+      "modules": 1,
+      "classes": 12,
+      "functions": 27,
+      "exposed_apis": 20
+    },
+    "economics": {
+      "modules": 1,
+      "classes": 3,
+      "functions": 23,
+      "exposed_apis": 21
+    },
+    "engineering_os": {
+      "modules": 1,
+      "classes": 9,
+      "functions": 37,
+      "exposed_apis": 31
+    },
+    "events": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 6,
+      "exposed_apis": 5
+    },
+    "evolution": {
+      "modules": 1,
+      "classes": 7,
+      "functions": 21,
+      "exposed_apis": 16
+    },
+    "evolution_v4": {
+      "modules": 1,
+      "classes": 8,
+      "functions": 32,
+      "exposed_apis": 27
+    },
+    "execution": {
+      "modules": 8,
+      "classes": 20,
+      "functions": 79,
+      "exposed_apis": 65
+    },
+    "execution_graph": {
+      "modules": 1,
+      "classes": 10,
+      "functions": 33,
+      "exposed_apis": 26
+    },
+    "fabric": {
+      "modules": 11,
+      "classes": 31,
+      "functions": 133,
+      "exposed_apis": 108
+    },
+    "genesis_viii": {
+      "modules": 1,
+      "classes": 0,
+      "functions": 0,
+      "exposed_apis": 0
+    },
+    "graph": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 17,
+      "exposed_apis": 14
+    },
+    "graph_v2": {
+      "modules": 9,
+      "classes": 28,
+      "functions": 80,
+      "exposed_apis": 56
+    },
+    "graphdb": {
+      "modules": 1,
+      "classes": 4,
+      "functions": 64,
+      "exposed_apis": 51
+    },
+    "hypergraph": {
+      "modules": 1,
+      "classes": 7,
+      "functions": 46,
+      "exposed_apis": 35
+    },
+    "indexer": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 15,
+      "exposed_apis": 6
+    },
+    "integration": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 13,
+      "exposed_apis": 11
+    },
+    "intelligence": {
+      "modules": 14,
+      "classes": 17,
+      "functions": 96,
+      "exposed_apis": 40
+    },
+    "kernel": {
+      "modules": 18,
+      "classes": 34,
+      "functions": 182,
+      "exposed_apis": 155
+    },
+    "knowledge_graph": {
+      "modules": 1,
+      "classes": 6,
+      "functions": 30,
+      "exposed_apis": 25
+    },
+    "laboratory": {
+      "modules": 10,
+      "classes": 45,
+      "functions": 102,
+      "exposed_apis": 75
+    },
+    "marketplace": {
+      "modules": 1,
+      "classes": 8,
+      "functions": 34,
+      "exposed_apis": 30
+    },
+    "mathematics": {
+      "modules": 1,
+      "classes": 26,
+      "functions": 69,
+      "exposed_apis": 66
+    },
+    "mathematics_v2": {
+      "modules": 1,
+      "classes": 14,
+      "functions": 39,
+      "exposed_apis": 36
+    },
+    "memory": {
+      "modules": 4,
+      "classes": 24,
+      "functions": 74,
+      "exposed_apis": 48
+    },
+    "memory_system": {
+      "modules": 1,
+      "classes": 8,
+      "functions": 41,
+      "exposed_apis": 33
+    },
+    "meta": {
+      "modules": 10,
+      "classes": 29,
+      "functions": 179,
+      "exposed_apis": 154
+    },
+    "meta_model": {
+      "modules": 1,
+      "classes": 11,
+      "functions": 41,
+      "exposed_apis": 31
+    },
+    "metamodel": {
+      "modules": 5,
+      "classes": 9,
+      "functions": 72,
+      "exposed_apis": 60
+    },
+    "observatory": {
+      "modules": 7,
+      "classes": 9,
+      "functions": 53,
+      "exposed_apis": 37
+    },
+    "omega_loop": {
+      "modules": 1,
+      "classes": 2,
+      "functions": 39,
+      "exposed_apis": 3
+    },
+    "ontology": {
+      "modules": 1,
+      "classes": 20,
+      "functions": 101,
+      "exposed_apis": 85
+    },
+    "os": {
+      "modules": 14,
+      "classes": 41,
+      "functions": 240,
+      "exposed_apis": 162
+    },
+    "package": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 7,
+      "exposed_apis": 4
+    },
+    "persistence": {
+      "modules": 3,
+      "classes": 9,
+      "functions": 62,
+      "exposed_apis": 55
+    },
+    "physics": {
+      "modules": 1,
+      "classes": 12,
+      "functions": 17,
+      "exposed_apis": 15
+    },
+    "planetary_knowledge": {
+      "modules": 1,
+      "classes": 4,
+      "functions": 15,
+      "exposed_apis": 12
+    },
+    "planner": {
+      "modules": 1,
+      "classes": 4,
+      "functions": 28,
+      "exposed_apis": 25
+    },
+    "planning": {
+      "modules": 1,
+      "classes": 14,
+      "functions": 41,
+      "exposed_apis": 28
+    },
+    "platform": {
+      "modules": 1,
+      "classes": 1,
+      "functions": 9,
+      "exposed_apis": 5
+    },
+    "platform_v2": {
+      "modules": 1,
+      "classes": 15,
+      "functions": 62,
+      "exposed_apis": 50
+    },
+    "plugin": {
+      "modules": 3,
+      "classes": 4,
+      "functions": 30,
+      "exposed_apis": 23
+    },
+    "project": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 6,
+      "exposed_apis": 4
+    },
+    "reasoning": {
+      "modules": 1,
+      "classes": 3,
+      "functions": 14,
+      "exposed_apis": 3
+    },
+    "repository_economics": {
+      "modules": 1,
+      "classes": 2,
+      "functions": 11,
+      "exposed_apis": 6
+    },
+    "repository_engineer": {
+      "modules": 1,
+      "classes": 4,
+      "functions": 12,
+      "exposed_apis": 7
+    },
+    "repository_graph": {
+      "modules": 1,
+      "classes": 1,
+      "functions": 11,
+      "exposed_apis": 9
+    },
+    "repository_scientist": {
+      "modules": 1,
+      "classes": 3,
+      "functions": 15,
+      "exposed_apis": 7
+    },
+    "reverse_engineer": {
+      "modules": 1,
+      "classes": 6,
+      "functions": 35,
+      "exposed_apis": 22
+    },
+    "runtime": {
+      "modules": 2,
+      "classes": 4,
+      "functions": 18,
+      "exposed_apis": 12
+    },
+    "scientist": {
+      "modules": 1,
+      "classes": 11,
+      "functions": 26,
+      "exposed_apis": 19
+    },
+    "security": {
+      "modules": 2,
+      "classes": 1,
+      "functions": 5,
+      "exposed_apis": 3
+    },
+    "simulator": {
+      "modules": 1,
+      "classes": 12,
+      "functions": 16,
+      "exposed_apis": 11
+    },
+    "simulator_v2": {
+      "modules": 1,
+      "classes": 14,
+      "functions": 16,
+      "exposed_apis": 13
+    },
+    "studio": {
+      "modules": 2,
+      "classes": 2,
+      "functions": 19,
+      "exposed_apis": 17
+    },
+    "temporal": {
+      "modules": 1,
+      "classes": 8,
+      "functions": 45,
+      "exposed_apis": 32
+    },
+    "tests": {
+      "modules": 72,
+      "classes": 376,
+      "functions": 2641,
+      "exposed_apis": 2614
+    },
+    "ucos": {
+      "modules": 13,
+      "classes": 32,
+      "functions": 156,
+      "exposed_apis": 134
+    },
+    "ued": {
+      "modules": 13,
+      "classes": 43,
+      "functions": 274,
+      "exposed_apis": 217
+    },
+    "usir": {
+      "modules": 5,
+      "classes": 9,
+      "functions": 56,
+      "exposed_apis": 32
+    },
+    "utils": {
+      "modules": 4,
+      "classes": 1,
+      "functions": 8,
+      "exposed_apis": 7
+    },
+    "validation": {
+      "modules": 7,
+      "classes": 7,
+      "functions": 26,
+      "exposed_apis": 15
+    }
+  }
+}

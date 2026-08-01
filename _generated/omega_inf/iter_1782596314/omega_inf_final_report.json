@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "program": "GENESIS \u03a9\u03a9\u03a9 \u2014 UEEP v1.0",
+    "iteration": 10,
+    "total_duration_ms": 0.0,
+    "significance": 14.05,
+    "phases_completed": 20
+  },
+  "indices": {
+    "repository_intelligence_score": 4.374,
+    "repository_health_score": 0.344,
+    "engineering_maturity_index": 0.688,
+    "scientific_discovery_index": 1.933,
+    "knowledge_reuse_index": 0.5,
+    "innovation_index": 0.672,
+    "economic_efficiency_index": 19.491,
+    "autonomous_evolution_index": 8.0
+  },
+  "phase_summaries": {
+    "0": {
+      "name": "Deep Repository Observation",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "total_complexity",
+        "avg_complexity",
+        "cognitive_load",
+        "doc_coverage",
+        "knowledge_density_avg"
+      ]
+    },
+    "1": {
+      "name": "Universal Digital Twin",
+      "deliverable_count": 1,
+      "keys": [
+        "total_states",
+        "state_domains",
+        "twin_nodes",
+        "twin_edges"
+      ]
+    },
+    "2": {
+      "name": "Reverse Engineering",
+      "deliverable_count": 1,
+      "keys": [
+        "total_modules",
+        "dependency_count",
+        "layers",
+        "top_modules_by_fan_in"
+      ]
+    },
+    "3": {
+      "name": "Canonicalization",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "4": {
+      "name": "Repository Mathematics",
+      "deliverable_count": 1,
+      "keys": [
+        "entropy",
+        "stability",
+        "diffusion",
+        "momentum",
+        "energy",
+        "gravity",
+        "debt",
+        "curvature",
+        "models_available"
+      ]
+    },
+    "5": {
+      "name": "Scientific Method",
+      "deliverable_count": 1,
+      "keys": [
+        "experiments_conducted",
+        "experiment_details",
+        "findings",
+        "hypotheses",
+        "unknowns_identified",
+        "unknown_examples",
+        "evidence_collected"
+      ]
+    },
+    "6": {
+      "name": "Massive Simulation",
+      "deliverable_count": 1,
+      "keys": [
+        "simulations_run",
+        "simulation_domains"
+      ]
+    },
+    "7": {
+      "name": "Autonomous Rewrite",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "8": {
+      "name": "External Knowledge Acquisition",
+      "deliverable_count": 1,
+      "keys": [
+        "total_institutes",
+        "by_type",
+        "by_status",
+        "total_contracts",
+        "total_reputation_events",
+        "total_relationships",
+        "contracts"
+      ]
+    },
+    "9": {
+      "name": "Cross-Repository Learning",
+      "deliverable_count": 1,
+      "keys": [
+        "total_packages",
+        "packages"
+      ]
+    },
+    "10": {
+      "name": "Engineering Genome",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "11": {
+      "name": "Repository Economics",
+      "deliverable_count": 1,
+      "keys": [
+        "checks",
+        "all_passed"
+      ]
+    },
+    "12": {
+      "name": "Engineering Civilization",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "15": {
+      "name": "Continuous Learning",
+      "deliverable_count": 1,
+      "keys": [
+        "saved",
+        "path",
+        "summary"
+      ]
+    },
+    "17": {
+      "name": "Meta-Evaluation",
+      "deliverable_count": 1,
+      "keys": [
+        "phases_executed",
+        "indices_computed",
+        "metrics_available",
+        "weak_metrics",
+        "calibration",
+        "recommendation"
+      ]
+    },
+    "13": {
+      "name": "Formal Verification",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

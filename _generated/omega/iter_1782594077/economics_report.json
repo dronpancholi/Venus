@@ -1,0 +1,8 @@
+{
+  "technical_debt_lines": 10428,
+  "estimated_cost_per_line": 10.0,
+  "total_estimated_value": 925630,
+  "duplicate_penalty": 5800.0,
+  "knowledge_density": 6.57,
+  "test_coverage_ratio": 0.21
+}

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "233c6aafc23418e8:interface:genesis.civilization.agents.base.ResearchAgent",
+    "type": "interface",
+    "name": "genesis.civilization.agents.base.ResearchAgent",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.civilization.agents.base.ResearchAgent"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.sync",
+      "genesis.civilization",
+      "genesis.civilization.agents",
+      "genesis.civilization.overseer"
+    ],
+    "maturity": 0.7,
+    "risk": 0.26,
+    "health": 0.71,
+    "role": "interface",
+    "metadata": {
+      "classes": [
+        "ResearchFinding",
+        "ResearchQuestion",
+        "AgentMemory",
+        "ResearchAgent"
+      ],
+      "functions": [
+        "to_dict",
+        "from_dict",
+        "finding_count",
+        "active_questions",
+        "average_confidence",
+        "add_finding",
+        "add_question",
+        "to_dict",
+        "__init__",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_cycle",
+        "get_answers_for",
+        "confidence_in",
+        "summary",
+        "to_dict",
+        "_memory_path",
+        "_save_memory",
+        "_load_memory"
+      ],
+      "path": "genesis/civilization/agents/base.py",
+      "package": "genesis.civilization.agents"
+    }
+  },
+  {
+    "id": "4ef1e345e56e0b1d:interface:genesis.compiler.codegen.base.CodeGenerator",
+    "type": "interface",
+    "name": "genesis.compiler.codegen.base.CodeGenerator",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.6,
+    "evidence": [
+      "module:genesis.compiler.codegen.base.CodeGenerator"
+    ],
+    "dependencies": [
+      "genesis.core.uir.CompilationUnit"
+    ],
+    "consumers": [
+      "genesis.compiler.codegen.graph_gen",
+      "genesis.compiler.codegen.markdown_gen",
+      "genesis.compiler.codegen.schema_gen",
+      "genesis.compiler.compiler"
+    ],
+    "maturity": 0.6,
+    "risk": 0.28,
+    "health": 0.64,
+    "role": "interface",
+    "metadata": {
+      "classes": [
+        "CodeGenerator",
+        "CodeGenRegistry"
+      ],
+      "functions": [
+        "__init__",
+        "generate",
+        "__init__",
+        "register",
+        "get",
+        "all",
+        "generate_all"
+      ],
+      "path": "genesis/compiler/codegen/base.py",
+      "package": "genesis.compiler.codegen"
+    }
+  },
+  {
+    "id": "fa5720a4ed179cd5:interface:genesis.compiler.passes.base.CompilerPass",
+    "type": "interface",
+    "name": "genesis.compiler.passes.base.CompilerPass",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.63,
+    "evidence": [
+      "module:genesis.compiler.passes.base.CompilerPass"
+    ],
+    "dependencies": [
+      "genesis.core.uir.CompilationUnit"
+    ],
+    "consumers": [
+      "genesis.compiler.compiler",
+      "genesis.compiler.passes.optimization"
+    ],
+    "maturity": 0.63,
+    "risk": 0.24,
+    "health": 0.67,
+    "role": "interface",
+    "metadata": {
+      "classes": [
+        "CompilerPass",
+        "PassRegistry"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "__repr__",
+        "__init__",
+        "register",
+        "get",
+        "all",
+        "run_sequence"
+      ],
+      "path": "genesis/compiler/passes/base.py",
+      "package": "genesis.compiler.passes"
+    }
+  },
+  {
+    "id": "a962ab8b5f2e6ae3:interface:genesis.os.watchers.BaseWatcher",
+    "type": "interface",
+    "name": "genesis.os.watchers.BaseWatcher",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.os.watchers.BaseWatcher"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.os",
+      "genesis.tests.test_runtime"
+    ],
+    "maturity": 1.0,
+    "risk": 0.1,
+    "health": 0.97,
+    "role": "interface",
+    "metadata": {
+      "classes": [
+        "WatcherEvent",
+        "BaseWatcher",
+        "GitWatcher",
+        "FileWatcher",
+        "ProcessWatcher",
+        "WatcherRegistry"
+      ],
+      "functions": [
+        "to_dict",
+        "__init__",
+        "check",
+        "on",
+        "emit",
+        "tick",
+        "enable",
+        "disable",
+        "is_enabled",
+        "summary",
+        "__init__",
+        "check",
+        "_run",
+        "__init__",
+        "check",
+        "_check_file",
+        "_check_dir",
+        "__init__",
+        "set_threshold",
+        "check",
+        "__init__",
+        "register",
+        "get",
+        "unregister",
+        "all",
+        "names",
+        "tick_all",
+        "recent_events",
+        "summary"
+      ],
+      "path": "genesis/os/watchers.py",
+      "package": "genesis.os"
+    }
+  },
+  {
+    "id": "75f9cf725b237ca2:interface:genesis.persistence.repository.Repository",
+    "type": "interface",
+    "name": "genesis.persistence.repository.Repository",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.persistence.repository.Repository"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.tests.test_phase0"
+    ],
+    "maturity": 1.0,
+    "risk": 0.04,
+    "health": 0.99,
+    "role": "interface",
+    "metadata": {
+      "classes": [
+        "Repository",
+        "InMemoryRepository"
+      ],
+      "functions": [
+        "save",
+        "get",
+        "delete",
+        "find",
+        "count",
+        "all",
+        "__init__",
+        "save",
+        "get",
+        "delete",
+        "find",
+        "count",
+        "all",
+        "clear"
+      ],
+      "path": "genesis/persistence/repository.py",
+      "package": "genesis.persistence"
+    }
+  },
+  {
+    "id": "cf902b3980d21f26:interface:genesis.usir.language.LanguageAdapter",
+    "type": "interface",
+    "name": "genesis.usir.language.LanguageAdapter",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.64,
+    "evidence": [
+      "module:genesis.usir.language.LanguageAdapter"
+    ],
+    "dependencies": [
+      "genesis.usir.USIRGraph"
+    ],
+    "consumers": [
+      "genesis.usir.compiler",
+      "genesis.usir.parsers",
+      "genesis.usir.parsers.typescript"
+    ],
+    "maturity": 0.64,
+    "risk": 0.25,
+    "health": 0.67,
+    "role": "interface",
+    "metadata": {
+      "classes": [
+        "LanguageAdapter"
+      ],
+      "functions": [
+        "language_name",
+        "file_extensions",
+        "can_parse",
+        "parse_file",
+        "parse_files"
+      ],
+      "path": "genesis/usir/language.py",
+      "package": "genesis.usir"
+    }
+  },
+  {
+    "id": "e705876853509da2:interface:genesis.validation.base.BaseValidator",
+    "type": "interface",
+    "name": "genesis.validation.base.BaseValidator",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.66,
+    "evidence": [
+      "module:genesis.validation.base.BaseValidator"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.integration.project31a",
+      "genesis.tests.test_platform",
+      "genesis.validation.engine",
+      "genesis.validation.validators.naming",
+      "genesis.validation.validators.schema",
+      "genesis.validation.validators.structural"
+    ],
+    "maturity": 0.66,
+    "risk": 0.27,
+    "health": 0.68,
+    "role": "interface",
+    "metadata": {
+      "classes": [
+        "ValidationResult",
+        "BaseValidator"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__repr__",
+        "__init__",
+        "validate",
+        "result"
+      ],
+      "path": "genesis/validation/base.py",
+      "package": "genesis.validation"
+    }
+  }
+]

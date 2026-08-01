@@ -1,0 +1,93 @@
+{
+  "stage": 1,
+  "total_files": 3623,
+  "total_lines": 99752,
+  "total_classes": 1450,
+  "total_functions": 7295,
+  "subsystem_counts": {
+    "Unknown": 371,
+    "Analysis": 12,
+    "Core": 5,
+    "Reasoning": 8,
+    "Platform": 3,
+    "Evolution": 9,
+    "Engineering": 2,
+    "Civilization": 4,
+    "Economics": 2,
+    "Legacy": 1,
+    "Generated": 3206
+  },
+  "subsystem_responsibilities": {
+    "Core": "Foundation: ontology, meta-model, reverse engineering, and the master execution loop",
+    "Analysis": "Repository measurement: mathematics, physics, discovery, graph construction, census",
+    "Reasoning": "Inference and planning: reasoning engine, scientist, planner, experimentation",
+    "Civilization": "Autonomous institutions: digital civilization, knowledge markets, planetary networks",
+    "Economics": "Engineering economics: cost modeling, debt tracking, ROI analysis",
+    "Engineering": "Execution engine: autonomous rewrite, improvement, operations",
+    "Evolution": "Simulation and evolution: repository evolution, biological modeling, brain",
+    "Platform": "Infrastructure: platform services, memory systems, global network"
+  },
+  "overlaps_detected": [
+    {
+      "ratio": 14.0,
+      "files": [
+        "generate_usptcros_templates.py",
+        "genesis/tests/test_ucos_planner.py",
+        "genesis/metamodel/registry.py",
+        "genesis/brain/integration.py",
+        "genesis/ued/vector.py"
+      ],
+      "count": 6
+    },
+    {
+      "ratio": 7.0,
+      "files": [
+        "genesis/planner.py",
+        "genesis/intelligence/engine.py",
+        "genesis/observatory/cli.py",
+        "genesis/tests/test_digital_civilization.py",
+        "genesis/plugin/manager.py"
+      ],
+      "count": 11
+    },
+    {
+      "ratio": 8.5,
+      "files": [
+        "genesis/census.py",
+        "genesis/tests/test_distributed.py",
+        "genesis/os/queue.py",
+        "genesis/ued/index.py"
+      ],
+      "count": 4
+    },
+    {
+      "ratio": 5.0,
+      "files": [
+        "genesis/knowledge_graph.py",
+        "genesis/repository_scientist.py",
+        "genesis/temporal/__init__.py",
+        "genesis/core/metadata.py",
+        "genesis/intelligence/census.py"
+      ],
+      "count": 21
+    },
+    {
+      "ratio": 3.0,
+      "files": [
+        "genesis/evolution.py",
+        "genesis/repository_engineer.py",
+        "genesis/civilization_v2.py",
+        "genesis/intelligence/capability.py",
+        "genesis/intelligence/planning.py"
+      ],
+      "count": 31
+    }
+  ],
+  "catalog_count": 3623,
+  "generated_files": 3206,
+  "unresolved_uncertainties": [
+    "Which subsystems are truly authoritative vs which are wrappers?",
+    "Whether legacy modules (genesis_viii, mathematics_v2) still have active consumers",
+    "The exact architectural boundaries between Evolution and Simulator subsystems"
+  ]
+}

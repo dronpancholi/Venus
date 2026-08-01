@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://schemas/risk/register/v1",
+  "title": "RiskRegisterEntry",
+  "description": "Canonical Risk Register entry. Consolidates risk definitions from V0.2 (Risk Register), V0.3 (Failure Prediction), V0.4 (Risk Decision Engine), V0.5 (Threat Model), V0.6 (Commercial Risk), and V0.10 (Risk Quantification).",
+  "type": "object",
+  "allOf": [
+    { "$ref": "venus://schemas/base/entity/v1" }
+  ],
+  "properties": {
+    "risk_id": {
+      "type": "string",
+      "pattern": "^RISK-[0-9]{5}$",
+      "description": "Unique risk identifier."
+    },
+    "category": {
+      "type": "string",
+      "enum": ["technical", "financial", "commercial", "security", "operational", "compliance", "reputational", "personnel", "strategic"],
+      "description": "Risk classification domain."
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Domain-specific subcategory."
+    },
+    "description": {
+      "type": "string",
+      "description": "Clear statement of the risk event."
+    },
+    "cause": {
+      "type": "string",
+      "description": "Root cause or trigger condition."
+    },
+    "impact": {
+      "type": "string",
+      "description": "Description of consequences if realized."
+    },
+    "probability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Likelihood of occurrence (0.0 - 1.0)."
+    },
+    "severity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10,
+      "description": "Impact severity if realized."
+    },
+    "risk_exposure": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10,
+      "description": "Composite risk score = probability * severity."
+    },
+    "detection_readiness": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "How quickly this risk would be detected (0 = undetectable, 1 = immediate)."
+    },
+    "mitigation": {
+      "type": "object",
+      "properties": {
+        "strategy": { "type": "string", "enum": ["avoid", "transfer", "mitigate", "accept"] },
+        "actions": { "type": "array", "items": { "type": "string" } },
+        "owner": { "type": "string" },
+        "deadline": { "type": "string", "format": "date" },
+        "residual_risk": { "type": "number", "minimum": 0, "maximum": 10 }
+      },
+      "required": ["strategy", "actions", "owner"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["identified", "analyzing", "mitigating", "monitoring", "closed", "realized"],
+      "description": "Lifecycle status of the risk entry."
+    },
+    "linked_decision_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "References to DecisionRecords that address this risk."
+    }
+  },
+  "required": ["risk_id", "category", "description", "probability", "severity", "status"]
+}

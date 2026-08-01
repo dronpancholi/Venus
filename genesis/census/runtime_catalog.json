@@ -1,0 +1,532 @@
+{
+  "genesis.fabric": {
+    "path": "genesis/fabric/__init__.py",
+    "classes": [],
+    "consumers": [
+      "genesis.autonomous.orchestrator",
+      "genesis.fabric.kernel",
+      "genesis.platform",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.audit": {
+    "path": "genesis/fabric/audit.py",
+    "classes": [
+      "AuditEntry",
+      "AuditLog"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.bus": {
+    "path": "genesis/fabric/bus.py",
+    "classes": [
+      "MessagePriority",
+      "Message",
+      "TypedChannel",
+      "MessageBus"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.context": {
+    "path": "genesis/fabric/context.py",
+    "classes": [
+      "CorrelationID",
+      "TransactionSpan",
+      "Context"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.contracts": {
+    "path": "genesis/fabric/contracts.py",
+    "classes": [
+      "ContractSeverity",
+      "ContractSchema",
+      "ContractViolation",
+      "EventContract",
+      "ContractRegistry"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.discovery": {
+    "path": "genesis/fabric/discovery.py",
+    "classes": [
+      "ServiceHealth",
+      "ServiceInstance",
+      "ServiceRegistry"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.kernel": {
+    "path": "genesis/fabric/kernel.py",
+    "classes": [
+      "KernelState",
+      "KernelStats",
+      "FabricKernel"
+    ],
+    "consumers": [
+      "genesis.autonomous.orchestrator",
+      "genesis.fabric",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.metrics": {
+    "path": "genesis/fabric/metrics.py",
+    "classes": [
+      "MetricPoint",
+      "FabricMetrics"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.policy": {
+    "path": "genesis/fabric/policy.py",
+    "classes": [
+      "PolicyEffect",
+      "Policy",
+      "PolicyResult",
+      "PolicyEngine"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.scheduler": {
+    "path": "genesis/fabric/scheduler.py",
+    "classes": [
+      "ScheduledTask",
+      "DistributedScheduler"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.fabric.session": {
+    "path": "genesis/fabric/session.py",
+    "classes": [
+      "SessionStage",
+      "SessionStageResult",
+      "EngineeringSession"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.tests.test_genesis_xii"
+    ]
+  },
+  "genesis.kernel": {
+    "path": "genesis/kernel/__init__.py",
+    "classes": [],
+    "consumers": [
+      "genesis.kernel.capability_loader",
+      "genesis.kernel.checkpoint_manager",
+      "genesis.kernel.di_kernel",
+      "genesis.kernel.event_router",
+      "genesis.kernel.execution_manager",
+      "genesis.kernel.health_manager",
+      "genesis.kernel.ipc",
+      "genesis.kernel.kernel",
+      "genesis.kernel.memory_manager",
+      "genesis.kernel.process_manager",
+      "genesis.kernel.recovery_manager",
+      "genesis.kernel.resource_manager",
+      "genesis.kernel.storage_manager",
+      "genesis.kernel.task_scheduler",
+      "genesis.platform",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.capability_loader": {
+    "path": "genesis/kernel/capability_loader.py",
+    "classes": [
+      "CapabilityLoader"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.checkpoint_manager": {
+    "path": "genesis/kernel/checkpoint_manager.py",
+    "classes": [
+      "CheckpointManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.di_kernel": {
+    "path": "genesis/kernel/di_kernel.py",
+    "classes": [
+      "DIKernel"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.capability_loader",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.event_router": {
+    "path": "genesis/kernel/event_router.py",
+    "classes": [
+      "EventRouter"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.execution_manager": {
+    "path": "genesis/kernel/execution_manager.py",
+    "classes": [
+      "ExecutionManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.health_manager": {
+    "path": "genesis/kernel/health_manager.py",
+    "classes": [
+      "HealthManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.ipc": {
+    "path": "genesis/kernel/ipc.py",
+    "classes": [
+      "IPC"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.kernel": {
+    "path": "genesis/kernel/kernel.py",
+    "classes": [
+      "UniversalKernel"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.memory_manager": {
+    "path": "genesis/kernel/memory_manager.py",
+    "classes": [
+      "MemoryManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.plugin_loader": {
+    "path": "genesis/kernel/plugin_loader.py",
+    "classes": [
+      "PluginLoader"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.process_manager": {
+    "path": "genesis/kernel/process_manager.py",
+    "classes": [
+      "ProcessManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.recovery_manager": {
+    "path": "genesis/kernel/recovery_manager.py",
+    "classes": [
+      "RecoveryManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.resource_manager": {
+    "path": "genesis/kernel/resource_manager.py",
+    "classes": [
+      "ResourceManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.security_manager": {
+    "path": "genesis/kernel/security_manager.py",
+    "classes": [
+      "SecurityManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.storage_manager": {
+    "path": "genesis/kernel/storage_manager.py",
+    "classes": [
+      "StorageManager"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.task_scheduler": {
+    "path": "genesis/kernel/task_scheduler.py",
+    "classes": [
+      "TaskScheduler"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.kernel.types": {
+    "path": "genesis/kernel/types.py",
+    "classes": [
+      "ProcessState",
+      "TaskPriority",
+      "TaskState",
+      "MemoryScope",
+      "StorageClass",
+      "EventPriority",
+      "IPCChannelType",
+      "ProcessInfo",
+      "TaskInfo",
+      "MemoryBlock",
+      "StorageVolume",
+      "Checkpoint",
+      "RecoveryPlan",
+      "KernelEvent",
+      "IPCMessage",
+      "ResourceReservation",
+      "DiServiceRegistration",
+      "HealthProbe"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.capability_loader",
+      "genesis.kernel.checkpoint_manager",
+      "genesis.kernel.di_kernel",
+      "genesis.kernel.event_router",
+      "genesis.kernel.execution_manager",
+      "genesis.kernel.health_manager",
+      "genesis.kernel.ipc",
+      "genesis.kernel.kernel",
+      "genesis.kernel.memory_manager",
+      "genesis.kernel.process_manager",
+      "genesis.kernel.recovery_manager",
+      "genesis.kernel.resource_manager",
+      "genesis.kernel.storage_manager",
+      "genesis.kernel.task_scheduler",
+      "genesis.tests.test_kernel"
+    ]
+  },
+  "genesis.os.agent_runtime": {
+    "path": "genesis/os/agent_runtime.py",
+    "classes": [
+      "AgentProcess",
+      "AgentRuntime"
+    ],
+    "consumers": [
+      "genesis.os",
+      "genesis.os.runtime",
+      "genesis.tests.test_os"
+    ]
+  },
+  "genesis.os.runtime": {
+    "path": "genesis/os/runtime.py",
+    "classes": [
+      "RuntimeStatus",
+      "ComponentStatus",
+      "ComponentHealth",
+      "RuntimeMetrics",
+      "AutonomousRuntime"
+    ],
+    "consumers": [
+      "genesis.os",
+      "genesis.tests.test_runtime"
+    ]
+  },
+  "genesis.platform": {
+    "path": "genesis/platform.py",
+    "classes": [
+      "VenusPlatform"
+    ],
+    "consumers": [
+      "genesis.tests.programs.test_platform_v2",
+      "genesis.tests.test_compliance"
+    ]
+  },
+  "genesis.platform_v2": {
+    "path": "genesis/platform_v2.py",
+    "classes": [
+      "ServiceState",
+      "ServiceCategory",
+      "ServiceDefinition",
+      "MetricPoint",
+      "HealthStatus",
+      "ServiceRegistry",
+      "LifecycleManager",
+      "EventRouter",
+      "MetricsManager",
+      "TelemetryManager",
+      "ConfigurationManager",
+      "StateManager",
+      "ResourceScheduler",
+      "RecoveryManager",
+      "PlatformV2"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.programs.test_platform_v2"
+    ]
+  },
+  "genesis.runtime": {
+    "path": "genesis/runtime/__init__.py",
+    "classes": [],
+    "consumers": [
+      "genesis.cli.commands",
+      "genesis.intelligence.metrics",
+      "genesis.platform",
+      "genesis.tests.test_platform"
+    ]
+  },
+  "genesis.runtime.executor": {
+    "path": "genesis/runtime/executor.py",
+    "classes": [
+      "TaskStatus",
+      "Task",
+      "Workflow",
+      "ExecutionEngine"
+    ],
+    "consumers": [
+      "genesis.cli.commands",
+      "genesis.intelligence.metrics",
+      "genesis.platform",
+      "genesis.tests.test_platform"
+    ]
+  },
+  "genesis.tests.programs.test_platform_v2": {
+    "path": "genesis/tests/programs/test_platform_v2.py",
+    "classes": [
+      "TestServiceDefinition",
+      "TestServiceRegistry",
+      "TestLifecycleManager",
+      "TestEventRouter",
+      "TestMetricsManager",
+      "TestTelemetryManager",
+      "TestConfigurationManager",
+      "TestStateManager",
+      "TestResourceScheduler",
+      "TestRecoveryManager",
+      "TestPlatformV2"
+    ],
+    "consumers": []
+  },
+  "genesis.tests.test_kernel": {
+    "path": "genesis/tests/test_kernel.py",
+    "classes": [
+      "TestTypes",
+      "TestProcessManager",
+      "TestTaskScheduler",
+      "TestMemoryManager",
+      "TestStorageManager",
+      "TestCheckpointManager",
+      "TestRecoveryManager",
+      "TestEventRouter",
+      "TestIPC",
+      "TestPluginLoader",
+      "TestDIKernel",
+      "TestCapabilityLoader",
+      "TestResourceManager",
+      "TestExecutionManager",
+      "TestHealthManager",
+      "TestSecurityManager",
+      "TestUniversalKernel"
+    ],
+    "consumers": []
+  },
+  "genesis.tests.test_platform": {
+    "path": "genesis/tests/test_platform.py",
+    "classes": [],
+    "consumers": []
+  },
+  "genesis.tests.test_runtime": {
+    "path": "genesis/tests/test_runtime.py",
+    "classes": [],
+    "consumers": []
+  },
+  "genesis.tests.test_ucos_runtime": {
+    "path": "genesis/tests/test_ucos_runtime.py",
+    "classes": [],
+    "consumers": []
+  },
+  "genesis.ucos.runtime": {
+    "path": "genesis/ucos/runtime.py",
+    "classes": [
+      "ExecutionContext",
+      "CapabilityRuntime"
+    ],
+    "consumers": [
+      "genesis.tests.test_ucos_runtime",
+      "genesis.ucos",
+      "genesis.ucos.ucos"
+    ]
+  }
+}

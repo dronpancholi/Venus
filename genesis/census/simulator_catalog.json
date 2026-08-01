@@ -1,0 +1,1516 @@
+[
+  {
+    "id": "2ec9633b4b22e0da:simulator:genesis.digital_twin",
+    "type": "simulator",
+    "name": "genesis.digital_twin",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin"
+    ],
+    "dependencies": [
+      "genesis.brain.BrainEntity",
+      "genesis.brain.DigitalTwinAdapter",
+      "genesis.brain.EngineeringBrain",
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [
+      "genesis.brain.sync",
+      "genesis.digital_twin.analyzers.coupling",
+      "genesis.digital_twin.analyzers.drift",
+      "genesis.digital_twin.analyzers.evolution",
+      "genesis.digital_twin.analyzers.smells",
+      "genesis.digital_twin.builder",
+      "genesis.digital_twin.discovery",
+      "genesis.digital_twin.evolution",
+      "genesis.digital_twin.extractors.architecture",
+      "genesis.digital_twin.extractors.contracts",
+      "genesis.digital_twin.extractors.dependencies",
+      "genesis.digital_twin.extractors.events",
+      "genesis.digital_twin.extractors.evolution",
+      "genesis.digital_twin.extractors.persistence",
+      "genesis.digital_twin.extractors.semantics",
+      "genesis.digital_twin.extractors.specs",
+      "genesis.digital_twin.extractors.syntax",
+      "genesis.digital_twin.extractors.tests",
+      "genesis.digital_twin.hypothesis",
+      "genesis.digital_twin.metrics",
+      "genesis.digital_twin.predict",
+      "genesis.digital_twin.reasoning",
+      "genesis.digital_twin.ris",
+      "genesis.digital_twin.self_analysis",
+      "genesis.digital_twin.simulator",
+      "genesis.digital_twin.validation",
+      "genesis.intelligence.cli",
+      "genesis.platform",
+      "genesis.tests.test_digital_twin",
+      "genesis.usir.compiler"
+    ],
+    "maturity": 1.0,
+    "risk": 0.32,
+    "health": 0.9,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "PlanetaryDigitalTwin"
+      ],
+      "functions": [
+        "__init__",
+        "brain",
+        "set_brain",
+        "_to_brain_entity",
+        "add_node",
+        "add_edge",
+        "sync_all_to_brain",
+        "summary"
+      ],
+      "path": "genesis/digital_twin/__init__.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "be277a348bc300df:simulator:genesis.digital_twin.analyzers",
+    "type": "simulator",
+    "name": "genesis.digital_twin.analyzers",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.0,
+    "evidence": [
+      "module:genesis.digital_twin.analyzers"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.digital_twin.discovery",
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 0.0,
+    "risk": 0.53,
+    "health": 0.14,
+    "role": "simulator",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/digital_twin/analyzers/__init__.py",
+      "package": "genesis.digital_twin.analyzers"
+    }
+  },
+  {
+    "id": "b3c7118898e1b66f:simulator:genesis.digital_twin.analyzers.coupling",
+    "type": "simulator",
+    "name": "genesis.digital_twin.analyzers.coupling",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.68,
+    "evidence": [
+      "module:genesis.digital_twin.analyzers.coupling"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [],
+    "maturity": 0.68,
+    "risk": 0.19,
+    "health": 0.72,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "CouplingAnalyzer"
+      ],
+      "functions": [
+        "run",
+        "_check_hub_modules",
+        "_check_transitive_coupling",
+        "_check_conceptual_overlap"
+      ],
+      "path": "genesis/digital_twin/analyzers/coupling.py",
+      "package": "genesis.digital_twin.analyzers"
+    }
+  },
+  {
+    "id": "887ea32800e37d99:simulator:genesis.digital_twin.analyzers.drift",
+    "type": "simulator",
+    "name": "genesis.digital_twin.analyzers.drift",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.66,
+    "evidence": [
+      "module:genesis.digital_twin.analyzers.drift"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [],
+    "maturity": 0.66,
+    "risk": 0.2,
+    "health": 0.7,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "DriftAnalyzer"
+      ],
+      "functions": [
+        "run",
+        "_check_unlinked_specs",
+        "_check_untraced_classes",
+        "_check_adr_coverage"
+      ],
+      "path": "genesis/digital_twin/analyzers/drift.py",
+      "package": "genesis.digital_twin.analyzers"
+    }
+  },
+  {
+    "id": "8f386f35e6d16589:simulator:genesis.digital_twin.analyzers.evolution",
+    "type": "simulator",
+    "name": "genesis.digital_twin.analyzers.evolution",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.67,
+    "evidence": [
+      "module:genesis.digital_twin.analyzers.evolution"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [],
+    "maturity": 0.67,
+    "risk": 0.19,
+    "health": 0.71,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "EvolutionAnalyzer"
+      ],
+      "functions": [
+        "run",
+        "_check_volatile_hubs",
+        "_check_knowledge_silos",
+        "_check_high_churn"
+      ],
+      "path": "genesis/digital_twin/analyzers/evolution.py",
+      "package": "genesis.digital_twin.analyzers"
+    }
+  },
+  {
+    "id": "1713c66430112116:simulator:genesis.digital_twin.analyzers.smells",
+    "type": "simulator",
+    "name": "genesis.digital_twin.analyzers.smells",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.digital_twin.analyzers.smells"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [],
+    "maturity": 0.7,
+    "risk": 0.19,
+    "health": 0.73,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SmellAnalyzer"
+      ],
+      "functions": [
+        "run",
+        "_check_name_duplication",
+        "_check_god_classes",
+        "_check_circular_edges",
+        "_check_layer_violations",
+        "_check_orphaned_nodes",
+        "_check_unverified_contracts"
+      ],
+      "path": "genesis/digital_twin/analyzers/smells.py",
+      "package": "genesis.digital_twin.analyzers"
+    }
+  },
+  {
+    "id": "3774ac7d25d3ad80:simulator:genesis.digital_twin.builder",
+    "type": "simulator",
+    "name": "genesis.digital_twin.builder",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.98,
+    "evidence": [
+      "module:genesis.digital_twin.builder"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.extractors.ArchitectureExtractor",
+      "genesis.digital_twin.extractors.ContractsExtractor",
+      "genesis.digital_twin.extractors.DependenciesExtractor",
+      "genesis.digital_twin.extractors.EventsExtractor",
+      "genesis.digital_twin.extractors.EvolutionExtractor",
+      "genesis.digital_twin.extractors.PersistenceExtractor",
+      "genesis.digital_twin.extractors.SemanticsExtractor",
+      "genesis.digital_twin.extractors.SpecsExtractor",
+      "genesis.digital_twin.extractors.SyntaxExtractor",
+      "genesis.digital_twin.extractors.TestsExtractor",
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli",
+      "genesis.tests.test_digital_twin"
+    ],
+    "maturity": 0.98,
+    "risk": 0.22,
+    "health": 0.92,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "DigitalTwinBuilder"
+      ],
+      "functions": [
+        "__init__",
+        "build",
+        "_compute_cross_refs"
+      ],
+      "path": "genesis/digital_twin/builder.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "d0ee98b0357e2aa0:simulator:genesis.digital_twin.discovery",
+    "type": "simulator",
+    "name": "genesis.digital_twin.discovery",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.discovery"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.analyzers.CouplingAnalyzer",
+      "genesis.digital_twin.analyzers.DriftAnalyzer",
+      "genesis.digital_twin.analyzers.EvolutionAnalyzer",
+      "genesis.digital_twin.analyzers.SmellAnalyzer",
+      "genesis.digital_twin.metrics.RepositoryMetrics",
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.14,
+    "health": 0.96,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "Initiative",
+        "InitiativeDiscovery"
+      ],
+      "functions": [
+        "__init__",
+        "compute_value",
+        "__init__",
+        "discover_all",
+        "_group_by_priority",
+        "_strategic_initiatives"
+      ],
+      "path": "genesis/digital_twin/discovery.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "6d65420462ab0568:simulator:genesis.digital_twin.evolution",
+    "type": "simulator",
+    "name": "genesis.digital_twin.evolution",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.evolution"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.hypothesis.Hypothesis",
+      "genesis.digital_twin.metrics.RepositoryMetrics",
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.digital_twin.validation",
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.11,
+    "health": 0.97,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SimulatedChange",
+        "EvolutionEngine"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__init__",
+        "baseline_metrics",
+        "evaluate",
+        "evolve",
+        "generate_evolution_report",
+        "_apply_hypothesis"
+      ],
+      "path": "genesis/digital_twin/evolution.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "d257a1978ce777ef:simulator:genesis.digital_twin.extractors",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.0,
+    "evidence": [
+      "module:genesis.digital_twin.extractors"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.digital_twin.builder"
+    ],
+    "maturity": 0.0,
+    "risk": 0.52,
+    "health": 0.14,
+    "role": "simulator",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/digital_twin/extractors/__init__.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "e26d2ce181f95de7:simulator:genesis.digital_twin.extractors.architecture",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.architecture",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.75,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.architecture"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.75,
+    "risk": 0.18,
+    "health": 0.77,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "ArchitectureExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_path_segments",
+        "_assign_layer",
+        "_assign_role",
+        "_assign_pattern"
+      ],
+      "path": "genesis/digital_twin/extractors/architecture.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "aeb18094a4293019:simulator:genesis.digital_twin.extractors.contracts",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.contracts",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.4,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.contracts"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.4,
+    "risk": 0.34,
+    "health": 0.48,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "ContractsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_extract_class_contracts"
+      ],
+      "path": "genesis/digital_twin/extractors/contracts.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "cc77c407ee6d37fb:simulator:genesis.digital_twin.extractors.dependencies",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.dependencies",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.42,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.dependencies"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.42,
+    "risk": 0.33,
+    "health": 0.49,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "DependenciesExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run"
+      ],
+      "path": "genesis/digital_twin/extractors/dependencies.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "0602b62b028fec2d:simulator:genesis.digital_twin.extractors.events",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.events",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.42,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.events"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.42,
+    "risk": 0.33,
+    "health": 0.49,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "EventsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_check_event_class",
+        "_check_event_function"
+      ],
+      "path": "genesis/digital_twin/extractors/events.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "1d18031a943fa389:simulator:genesis.digital_twin.extractors.evolution",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.evolution",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.39,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.evolution"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.39,
+    "risk": 0.34,
+    "health": 0.47,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "EvolutionExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "_git",
+        "run"
+      ],
+      "path": "genesis/digital_twin/extractors/evolution.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "642004b39e0481eb:simulator:genesis.digital_twin.extractors.persistence",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.persistence",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.71,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.persistence"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.71,
+    "risk": 0.19,
+    "health": 0.74,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "PersistenceExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_check_store_class",
+        "_wire_store_usages"
+      ],
+      "path": "genesis/digital_twin/extractors/persistence.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "fec922691609769d:simulator:genesis.digital_twin.extractors.semantics",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.semantics",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.43,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.semantics"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.43,
+    "risk": 0.33,
+    "health": 0.5,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SemanticsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_enrich_from_docstring",
+        "_infer_purpose",
+        "_infer_tags"
+      ],
+      "path": "genesis/digital_twin/extractors/semantics.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "244fdcabdc140459:simulator:genesis.digital_twin.extractors.specs",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.specs",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.specs"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.44,
+    "risk": 0.33,
+    "health": 0.51,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SpecsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "link_nodes_to_specs"
+      ],
+      "path": "genesis/digital_twin/extractors/specs.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "7b8903ae2d16e5a4:simulator:genesis.digital_twin.extractors.syntax",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.syntax",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.syntax"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.44,
+    "risk": 0.33,
+    "health": 0.51,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SyntaxExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_add_class",
+        "_add_function",
+        "_extract_source"
+      ],
+      "path": "genesis/digital_twin/extractors/syntax.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "9151c36c999008a1:simulator:genesis.digital_twin.extractors.tests",
+    "type": "simulator",
+    "name": "genesis.digital_twin.extractors.tests",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.41,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.tests"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.41,
+    "risk": 0.34,
+    "health": 0.48,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "TestsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run"
+      ],
+      "path": "genesis/digital_twin/extractors/tests.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "db47750d12d7c49a:simulator:genesis.digital_twin.hypothesis",
+    "type": "simulator",
+    "name": "genesis.digital_twin.hypothesis",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.hypothesis"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [
+      "genesis.digital_twin.evolution",
+      "genesis.digital_twin.validation",
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.16,
+    "health": 0.95,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "Hypothesis",
+        "HypothesisEngine"
+      ],
+      "functions": [
+        "__init__",
+        "roe",
+        "to_dict",
+        "__init__",
+        "generate",
+        "_from_duplications",
+        "_from_layer_violations",
+        "_from_hubs",
+        "_from_unimplemented_specs",
+        "_from_unverified_contracts",
+        "_from_metric_gaps",
+        "_from_extractor_gaps",
+        "_from_conceptual_overlap"
+      ],
+      "path": "genesis/digital_twin/hypothesis.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "dc946a0a71a16573:simulator:genesis.digital_twin.metrics",
+    "type": "simulator",
+    "name": "genesis.digital_twin.metrics",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.metrics"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.digital_twin.discovery",
+      "genesis.digital_twin.evolution",
+      "genesis.digital_twin.simulator",
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.12,
+    "health": 0.96,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "RepositoryMetrics"
+      ],
+      "functions": [
+        "compute",
+        "_entropy",
+        "_info_density",
+        "_dependency_centrality",
+        "_knowledge_centrality",
+        "_evolution_velocity",
+        "_maintainability",
+        "_spec_completeness",
+        "_stability",
+        "_volatility",
+        "_cohesion",
+        "_complexity_tensor",
+        "_graph_diameter",
+        "_fractal_score",
+        "_dup_index",
+        "_contract_coverage",
+        "_capability_maturity",
+        "_intelligence_score",
+        "_leverage_score"
+      ],
+      "path": "genesis/digital_twin/metrics.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "58634f88f15384b6:simulator:genesis.digital_twin.model",
+    "type": "simulator",
+    "name": "genesis.digital_twin.model",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.model"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.brain.sync",
+      "genesis.digital_twin",
+      "genesis.digital_twin.analyzers.coupling",
+      "genesis.digital_twin.analyzers.drift",
+      "genesis.digital_twin.analyzers.evolution",
+      "genesis.digital_twin.analyzers.smells",
+      "genesis.digital_twin.builder",
+      "genesis.digital_twin.discovery",
+      "genesis.digital_twin.evolution",
+      "genesis.digital_twin.extractors.architecture",
+      "genesis.digital_twin.extractors.contracts",
+      "genesis.digital_twin.extractors.dependencies",
+      "genesis.digital_twin.extractors.events",
+      "genesis.digital_twin.extractors.evolution",
+      "genesis.digital_twin.extractors.persistence",
+      "genesis.digital_twin.extractors.semantics",
+      "genesis.digital_twin.extractors.specs",
+      "genesis.digital_twin.extractors.syntax",
+      "genesis.digital_twin.extractors.tests",
+      "genesis.digital_twin.hypothesis",
+      "genesis.digital_twin.metrics",
+      "genesis.digital_twin.predict",
+      "genesis.digital_twin.reasoning",
+      "genesis.digital_twin.ris",
+      "genesis.digital_twin.self_analysis",
+      "genesis.digital_twin.simulator",
+      "genesis.digital_twin.validation",
+      "genesis.usir.compiler"
+    ],
+    "maturity": 1.0,
+    "risk": 0.34,
+    "health": 0.9,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "TwinNode",
+        "DigitalTwin"
+      ],
+      "functions": [
+        "add_edge",
+        "add_cross_ref",
+        "to_dict",
+        "from_dict",
+        "__hash__",
+        "__init__",
+        "_update_index",
+        "add_node",
+        "get_node",
+        "find_nodes",
+        "nodes",
+        "node_count",
+        "count_by_kind",
+        "add_edge",
+        "find_edges",
+        "edges_from",
+        "edge_count",
+        "to_dict",
+        "from_dict",
+        "save",
+        "load",
+        "summary"
+      ],
+      "path": "genesis/digital_twin/model.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "d49c2c752fa0cc37:simulator:genesis.digital_twin.predict",
+    "type": "simulator",
+    "name": "genesis.digital_twin.predict",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.predict"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.08,
+    "health": 0.98,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "Prediction",
+        "PredictionEngine"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__init__",
+        "predict_all",
+        "_predict_coupling_growth",
+        "_predict_spec_drift",
+        "_predict_hub_instability",
+        "_predict_layer_erosion",
+        "_predict_complexity_growth",
+        "_predict_test_debt",
+        "_predict_duplication_spread"
+      ],
+      "path": "genesis/digital_twin/predict.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "89396f5812d43375:simulator:genesis.digital_twin.reasoning",
+    "type": "simulator",
+    "name": "genesis.digital_twin.reasoning",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.reasoning"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.15,
+    "health": 0.96,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "Evidence",
+        "Conclusion",
+        "Rule",
+        "ReasoningEngine"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__init__",
+        "to_dict",
+        "__init__",
+        "__init__",
+        "reason_all",
+        "deduce",
+        "induce",
+        "explain",
+        "counterfactual",
+        "_infer_role",
+        "_deduce_roles",
+        "_deduce_layer_compliance",
+        "_deduce_spec_coverage",
+        "_deduce_event_consistency",
+        "_induce_duplication_patterns",
+        "_induce_missing_abstractions",
+        "_abduce_best_explanations",
+        "_explain_architectural_intent"
+      ],
+      "path": "genesis/digital_twin/reasoning.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "485cd6e9f00c63a1:simulator:genesis.digital_twin.ris",
+    "type": "simulator",
+    "name": "genesis.digital_twin.ris",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.ris"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.07,
+    "health": 0.98,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "RIScore"
+      ],
+      "functions": [
+        "__init__",
+        "compute",
+        "_understanding",
+        "_reasoning",
+        "_prediction",
+        "_simulation",
+        "_validation",
+        "_autonomy",
+        "_learning",
+        "_reuse",
+        "_knowledge",
+        "_architecture",
+        "_compiler",
+        "_runtime",
+        "_graph",
+        "_memory",
+        "_evolution",
+        "_platform",
+        "_observation",
+        "_hypothesis",
+        "_testing",
+        "_documentation",
+        "_self_improvement"
+      ],
+      "path": "genesis/digital_twin/ris.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "c289faafbac40554:simulator:genesis.digital_twin.self_analysis",
+    "type": "simulator",
+    "name": "genesis.digital_twin.self_analysis",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.self_analysis"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.06,
+    "health": 0.98,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SelfAnalyzer"
+      ],
+      "functions": [
+        "__init__",
+        "analyze",
+        "_missing_dimensions",
+        "_low_coverage_extractors",
+        "_missing_self_tests",
+        "_twin_coverage_gaps"
+      ],
+      "path": "genesis/digital_twin/self_analysis.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "51b2ecb467ff9a6f:simulator:genesis.digital_twin.simulator",
+    "type": "simulator",
+    "name": "genesis.digital_twin.simulator",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.99,
+    "evidence": [
+      "module:genesis.digital_twin.simulator"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.metrics.RepositoryMetrics",
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.99,
+    "risk": 0.07,
+    "health": 0.97,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "EvolutionSimulator"
+      ],
+      "functions": [
+        "__init__",
+        "baseline_metrics",
+        "simulate_add_module",
+        "simulate_remove_module",
+        "simulate_add_dependency",
+        "simulate_remove_dependency",
+        "_evaluate",
+        "best_candidate",
+        "auto_rollback"
+      ],
+      "path": "genesis/digital_twin/simulator.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "2eb3967b983f382c:simulator:genesis.digital_twin.validation",
+    "type": "simulator",
+    "name": "genesis.digital_twin.validation",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.digital_twin.validation"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.evolution.EvolutionEngine",
+      "genesis.digital_twin.hypothesis.Hypothesis",
+      "genesis.digital_twin.model.DigitalTwin"
+    ],
+    "consumers": [
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.11,
+    "health": 0.97,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "EquilibriumSignal",
+        "EquilibriumDetector",
+        "ValidatorGate",
+        "ValidationResult",
+        "ScientificValidator"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__init__",
+        "analyze",
+        "_check_hypothesis_stagnation",
+        "_check_metric_plateau",
+        "_challenge_assumptions",
+        "__init__",
+        "to_dict",
+        "__init__",
+        "to_dict",
+        "__init__",
+        "validate",
+        "_gate_mathematical",
+        "_gate_simulation",
+        "_gate_empirical",
+        "_gate_architectural",
+        "_gate_repository",
+        "_gate_historical"
+      ],
+      "path": "genesis/digital_twin/validation.py",
+      "package": "genesis.digital_twin"
+    }
+  },
+  {
+    "id": "a02d41c3dd37a8f7:simulator:genesis.meta.twin",
+    "type": "simulator",
+    "name": "genesis.meta.twin",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.meta.twin"
+    ],
+    "dependencies": [
+      "genesis.meta.graph.WorkspaceGraph",
+      "genesis.meta.irep.WorkspaceIR",
+      "genesis.meta.irep.WorkspaceIRNode",
+      "genesis.meta.workspace.Repository",
+      "genesis.meta.workspace.RepositoryType",
+      "genesis.meta.workspace.Workspace",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.autonomous.orchestrator",
+      "genesis.meta",
+      "genesis.meta.meta_compiler",
+      "genesis.tests.test_meta"
+    ],
+    "maturity": 1.0,
+    "risk": 0.2,
+    "health": 0.94,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "TwinEntity",
+        "WorkspaceTwin"
+      ],
+      "functions": [
+        "__post_init__",
+        "__init__",
+        "workspace",
+        "attach_ir",
+        "attach_graph",
+        "build_entities",
+        "update_repo",
+        "get_entity",
+        "find_by_repo",
+        "snapshot",
+        "aggregate_health",
+        "compare",
+        "summary"
+      ],
+      "path": "genesis/meta/twin.py",
+      "package": "genesis.meta"
+    }
+  },
+  {
+    "id": "0af34eb0a6bb979f:simulator:genesis.simulator",
+    "type": "simulator",
+    "name": "genesis.simulator",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.simulator"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.programs.test_simulator",
+      "genesis.tests.programs.test_simulator_v2"
+    ],
+    "maturity": 0.7,
+    "risk": 0.27,
+    "health": 0.71,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SimulationScope",
+        "SimulationInput",
+        "SimulationResult",
+        "SimulationRun",
+        "ArchitectureSimulator",
+        "MigrationSimulator",
+        "PerformanceSimulator",
+        "TestFailureSimulator",
+        "CostSimulator",
+        "MaintainabilitySimulator",
+        "SecuritySimulator",
+        "SimulatorEngine"
+      ],
+      "functions": [
+        "__post_init__",
+        "predict",
+        "_risk_factors",
+        "_recommendations",
+        "simulate_migration",
+        "predict_performance",
+        "simulate",
+        "simulate",
+        "simulate",
+        "simulate",
+        "__init__",
+        "simulate",
+        "_simulate_scope",
+        "get_run",
+        "all_runs",
+        "summary"
+      ],
+      "path": "genesis/simulator.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "b4e54acdb7877be1:simulator:genesis.simulator_v2",
+    "type": "simulator",
+    "name": "genesis.simulator_v2",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.simulator_v2"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.programs.test_simulator_v2"
+    ],
+    "maturity": 0.7,
+    "risk": 0.25,
+    "health": 0.71,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "SimulationDomain",
+        "SimulationConfig",
+        "SimulationPrediction",
+        "BaseSimulator",
+        "MigrationSimulator",
+        "DecompositionSimulator",
+        "APISimulator",
+        "PerformanceSimulator",
+        "ResilienceSimulator",
+        "SecuritySimulator",
+        "CostSimulator",
+        "MaintainabilitySimulator",
+        "EffortSimulator",
+        "SimulatorEngineV2"
+      ],
+      "functions": [
+        "__post_init__",
+        "__init__",
+        "mc_sample",
+        "confidence_interval",
+        "simulate",
+        "simulate",
+        "simulate",
+        "simulate",
+        "simulate",
+        "simulate",
+        "simulate",
+        "simulate",
+        "simulate",
+        "__init__",
+        "simulate_all",
+        "summary"
+      ],
+      "path": "genesis/simulator_v2.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "3b6e119de547f47a:simulator:genesis.tests.programs.test_simulator",
+    "type": "simulator",
+    "name": "genesis.tests.programs.test_simulator",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.47,
+    "evidence": [
+      "module:genesis.tests.programs.test_simulator"
+    ],
+    "dependencies": [
+      "genesis.simulator.ArchitectureSimulator",
+      "genesis.simulator.CostSimulator",
+      "genesis.simulator.MaintainabilitySimulator",
+      "genesis.simulator.MigrationSimulator",
+      "genesis.simulator.PerformanceSimulator",
+      "genesis.simulator.SecuritySimulator",
+      "genesis.simulator.SimulationInput",
+      "genesis.simulator.SimulationRun",
+      "genesis.simulator.SimulationScope",
+      "genesis.simulator.SimulatorEngine",
+      "genesis.simulator.TestFailureSimulator"
+    ],
+    "consumers": [],
+    "maturity": 0.47,
+    "risk": 0.44,
+    "health": 0.5,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "TestArchitectureSimulator",
+        "TestMigrationSimulator",
+        "TestPerformanceSimulator",
+        "TestTestFailureSimulator",
+        "TestCostSimulator",
+        "TestMaintainabilitySimulator",
+        "TestSecuritySimulator",
+        "TestSimulatorEngine"
+      ],
+      "functions": [
+        "test_predict",
+        "test_simulate_migration",
+        "test_predict_performance",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate_all_scopes",
+        "test_get_run",
+        "test_summary"
+      ],
+      "path": "genesis/tests/programs/test_simulator.py",
+      "package": "genesis.tests.programs"
+    }
+  },
+  {
+    "id": "505361b3b1bfce3c:simulator:genesis.tests.programs.test_simulator_v2",
+    "type": "simulator",
+    "name": "genesis.tests.programs.test_simulator_v2",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.programs.test_simulator_v2"
+    ],
+    "dependencies": [
+      "genesis.simulator_v2.APISimulator",
+      "genesis.simulator_v2.BaseSimulator",
+      "genesis.simulator_v2.CostSimulator",
+      "genesis.simulator_v2.DecompositionSimulator",
+      "genesis.simulator_v2.EffortSimulator",
+      "genesis.simulator_v2.MaintainabilitySimulator",
+      "genesis.simulator_v2.MigrationSimulator",
+      "genesis.simulator_v2.PerformanceSimulator",
+      "genesis.simulator_v2.ResilienceSimulator",
+      "genesis.simulator_v2.SecuritySimulator",
+      "genesis.simulator_v2.SimulationConfig",
+      "genesis.simulator_v2.SimulationDomain",
+      "genesis.simulator_v2.SimulationPrediction",
+      "genesis.simulator_v2.SimulatorEngineV2"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.48,
+    "health": 0.51,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "TestSimulationConfig",
+        "TestBaseSimulator",
+        "TestMigrationSimulator",
+        "TestDecompositionSimulator",
+        "TestAPISimulator",
+        "TestPerformanceSimulator",
+        "TestResilienceSimulator",
+        "TestSecuritySimulator",
+        "TestCostSimulator",
+        "TestMaintainabilitySimulator",
+        "TestEffortSimulator",
+        "TestSimulatorEngineV2"
+      ],
+      "functions": [
+        "test_defaults",
+        "test_custom",
+        "setup_method",
+        "test_mc_sample",
+        "test_confidence_interval",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate",
+        "test_low_coverage",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate",
+        "test_simulate",
+        "setup_method",
+        "test_simulate_all",
+        "test_simulate_all_all_domains",
+        "test_summary"
+      ],
+      "path": "genesis/tests/programs/test_simulator_v2.py",
+      "package": "genesis.tests.programs"
+    }
+  },
+  {
+    "id": "a32d23f93c200cbf:simulator:genesis.tests.test_digital_twin",
+    "type": "simulator",
+    "name": "genesis.tests.test_digital_twin",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.test_digital_twin"
+    ],
+    "dependencies": [
+      "genesis.brain.EngineeringBrain",
+      "genesis.digital_twin.DigitalTwin",
+      "genesis.digital_twin.PlanetaryDigitalTwin",
+      "genesis.digital_twin.TwinNode",
+      "genesis.digital_twin.builder.DigitalTwinBuilder"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.36,
+    "health": 0.54,
+    "role": "simulator",
+    "metadata": {
+      "classes": [
+        "TestPlanetaryDigitalTwin"
+      ],
+      "functions": [
+        "brain",
+        "test_create_without_brain",
+        "test_create_with_brain",
+        "test_set_brain",
+        "test_add_node_syncs_to_brain",
+        "test_add_node_syncs_additional_metadata",
+        "test_add_twice_updates_existing",
+        "test_add_edge_syncs_to_brain",
+        "test_sync_all_to_brain",
+        "test_sync_all_to_brain_no_brain",
+        "test_summary_with_brain",
+        "test_summary_without_brain",
+        "test_find_nodes_works",
+        "test_count_by_kind",
+        "test_serialization_roundtrip",
+        "test_brain_integrated_with_builder",
+        "test_nodes_property",
+        "test_get_node",
+        "test_edges_from",
+        "test_edges_from_no_node"
+      ],
+      "path": "genesis/tests/test_digital_twin.py",
+      "package": "genesis.tests"
+    }
+  }
+]

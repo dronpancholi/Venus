@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "check": "no_circular_dependencies",
+      "passed": true,
+      "violations": 0,
+      "details": []
+    },
+    {
+      "check": "test_naming_convention",
+      "passed": true,
+      "violations": 0
+    },
+    {
+      "check": "type_hint_coverage",
+      "passed": true,
+      "coverage": 0.725
+    }
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "5e46b4101a7b2053:documentation:.pytest_cache/README.md",
+    "type": "documentation",
+    "name": ".pytest_cache/README.md",
+    "owner": "knowledge_institute",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:.pytest_cache/README.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "documentation",
+    "metadata": {
+      "path": ".pytest_cache/README.md"
+    }
+  }
+]

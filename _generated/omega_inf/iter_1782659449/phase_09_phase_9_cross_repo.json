@@ -1,0 +1,85 @@
+{
+  "total_packages": 83,
+  "packages": {
+    "tests": {
+      "modules": 72,
+      "classes": 376
+    },
+    "digital_twin": {
+      "modules": 29,
+      "classes": 39
+    },
+    "acquisition": {
+      "modules": 20,
+      "classes": 21
+    },
+    "kernel": {
+      "modules": 18,
+      "classes": 34
+    },
+    "brain": {
+      "modules": 16,
+      "classes": 57
+    },
+    "civilization": {
+      "modules": 14,
+      "classes": 69
+    },
+    "intelligence": {
+      "modules": 14,
+      "classes": 17
+    },
+    "os": {
+      "modules": 14,
+      "classes": 41
+    },
+    "compiler": {
+      "modules": 13,
+      "classes": 15
+    },
+    "ucos": {
+      "modules": 13,
+      "classes": 32
+    },
+    "ued": {
+      "modules": 13,
+      "classes": 43
+    },
+    "fabric": {
+      "modules": 11,
+      "classes": 31
+    },
+    "laboratory": {
+      "modules": 10,
+      "classes": 45
+    },
+    "meta": {
+      "modules": 10,
+      "classes": 29
+    },
+    "Layer_1_Foundations": {
+      "modules": 9,
+      "classes": 11
+    },
+    "graph_v2": {
+      "modules": 9,
+      "classes": 28
+    },
+    "execution": {
+      "modules": 8,
+      "classes": 20
+    },
+    "observatory": {
+      "modules": 7,
+      "classes": 9
+    },
+    "validation": {
+      "modules": 7,
+      "classes": 7
+    },
+    "core": {
+      "modules": 6,
+      "classes": 31
+    }
+  }
+}

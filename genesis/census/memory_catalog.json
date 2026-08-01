@@ -1,0 +1,657 @@
+[
+  {
+    "id": "eb8c39b7e037ff8c:memory:genesis.brain.cognition.memory",
+    "type": "memory",
+    "name": "genesis.brain.cognition.memory",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.memory"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.08,
+    "health": 0.98,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "WorkingMemorySlot",
+        "EpisodicMemoryEntry",
+        "WorkingMemory",
+        "EpisodicMemory"
+      ],
+      "functions": [
+        "__post_init__",
+        "__post_init__",
+        "__init__",
+        "size",
+        "capacity",
+        "utilization",
+        "store",
+        "get",
+        "retrieve",
+        "focus",
+        "update_salience",
+        "decay_all",
+        "clear",
+        "_evict_if_needed",
+        "summary",
+        "__init__",
+        "entry_count",
+        "record",
+        "recent",
+        "by_type",
+        "by_entity",
+        "search",
+        "replay",
+        "_rebuild_indexes",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/memory.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "e8344285f5c9da76:memory:genesis.kernel.memory_manager",
+    "type": "memory",
+    "name": "genesis.kernel.memory_manager",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.99,
+    "evidence": [
+      "module:genesis.kernel.memory_manager"
+    ],
+    "dependencies": [
+      "genesis.kernel.types.MemoryBlock",
+      "genesis.kernel.types.MemoryScope"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ],
+    "maturity": 0.99,
+    "risk": 0.1,
+    "health": 0.96,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "MemoryManager"
+      ],
+      "functions": [
+        "__init__",
+        "used_bytes",
+        "available_bytes",
+        "utilization",
+        "allocate",
+        "free",
+        "free_all",
+        "get_block",
+        "blocks_for",
+        "compact",
+        "summary"
+      ],
+      "path": "genesis/kernel/memory_manager.py",
+      "package": "genesis.kernel"
+    }
+  },
+  {
+    "id": "0898301ca7ae0dfe:memory:genesis.memory",
+    "type": "memory",
+    "name": "genesis.memory",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.memory"
+    ],
+    "dependencies": [
+      "genesis.memory.consolidation.ForgettingMechanism",
+      "genesis.memory.consolidation.MemoryConsolidator",
+      "genesis.memory.engine.MemoryEngine",
+      "genesis.memory.types.AgentMemory",
+      "genesis.memory.types.ArchitecturalMemory",
+      "genesis.memory.types.CausalMemory",
+      "genesis.memory.types.ConversationMemory",
+      "genesis.memory.types.EpisodicMemory",
+      "genesis.memory.types.ExecutionMemory",
+      "genesis.memory.types.GraphMemory",
+      "genesis.memory.types.MemoryEntry",
+      "genesis.memory.types.MemoryQuery",
+      "genesis.memory.types.MemoryResult",
+      "genesis.memory.types.MemoryType",
+      "genesis.memory.types.OrganizationalMemory",
+      "genesis.memory.types.ProceduralMemory",
+      "genesis.memory.types.ReflectionMemory",
+      "genesis.memory.types.ResearchMemory",
+      "genesis.memory.types.SemanticMemory",
+      "genesis.memory.types.SimulationMemory",
+      "genesis.memory.types.SpecificationMemory",
+      "genesis.memory.types.TemporalMemory",
+      "genesis.memory.types.WorldMemory"
+    ],
+    "consumers": [
+      "genesis.intelligence.metrics",
+      "genesis.memory.consolidation",
+      "genesis.platform",
+      "genesis.tests.programs.test_memory",
+      "genesis.tests.programs.test_memory_system",
+      "genesis.tests.test_stubs"
+    ],
+    "maturity": 0.35,
+    "risk": 0.63,
+    "health": 0.36,
+    "role": "memory",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/memory/__init__.py",
+      "package": "genesis.memory"
+    }
+  },
+  {
+    "id": "694f87c2f14ccd31:memory:genesis.memory.consolidation",
+    "type": "memory",
+    "name": "genesis.memory.consolidation",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.memory.consolidation"
+    ],
+    "dependencies": [
+      "genesis.memory.types.BaseMemory",
+      "genesis.memory.types.MemoryEntry",
+      "genesis.memory.types.MemoryQuery"
+    ],
+    "consumers": [
+      "genesis.memory",
+      "genesis.platform",
+      "genesis.tests.programs.test_memory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.26,
+    "health": 0.71,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "MemoryConsolidator",
+        "ForgettingMechanism"
+      ],
+      "functions": [
+        "__init__",
+        "deduplicate",
+        "consolidate",
+        "propagate_confidence",
+        "compute_provenance",
+        "detect_contradictions",
+        "compress",
+        "_is_duplicate",
+        "_merge",
+        "_canonical_key",
+        "__init__",
+        "apply_decay",
+        "boost_by_access"
+      ],
+      "path": "genesis/memory/consolidation.py",
+      "package": "genesis.memory"
+    }
+  },
+  {
+    "id": "057aaf9cae455f24:memory:genesis.memory.engine",
+    "type": "memory",
+    "name": "genesis.memory.engine",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.65,
+    "evidence": [
+      "module:genesis.memory.engine"
+    ],
+    "dependencies": [
+      "genesis.events.bus.EventBus",
+      "genesis.persistence.MemoryStore"
+    ],
+    "consumers": [
+      "genesis.intelligence.metrics",
+      "genesis.memory",
+      "genesis.platform",
+      "genesis.tests.test_stubs"
+    ],
+    "maturity": 0.65,
+    "risk": 0.28,
+    "health": 0.67,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "MemoryEngine"
+      ],
+      "functions": [
+        "__init__",
+        "_emit",
+        "store",
+        "recall",
+        "forget",
+        "list_namespace"
+      ],
+      "path": "genesis/memory/engine.py",
+      "package": "genesis.memory"
+    }
+  },
+  {
+    "id": "b778697e84d24104:memory:genesis.memory.types",
+    "type": "memory",
+    "name": "genesis.memory.types",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.memory.types"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.memory",
+      "genesis.memory.consolidation",
+      "genesis.platform",
+      "genesis.tests.programs.test_memory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.3,
+    "health": 0.7,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "MemoryType",
+        "MemoryEntry",
+        "MemoryQuery",
+        "MemoryResult",
+        "BaseMemory",
+        "EpisodicMemory",
+        "SemanticMemory",
+        "ProceduralMemory",
+        "ArchitecturalMemory",
+        "ResearchMemory",
+        "OrganizationalMemory",
+        "TemporalMemory",
+        "CausalMemory",
+        "ExecutionMemory",
+        "AgentMemory",
+        "WorldMemory",
+        "GraphMemory",
+        "SpecificationMemory",
+        "ConversationMemory",
+        "SimulationMemory",
+        "ReflectionMemory"
+      ],
+      "functions": [
+        "__post_init__",
+        "access",
+        "relevance",
+        "__init__",
+        "entry_count",
+        "memory_type",
+        "store",
+        "recall",
+        "get",
+        "query",
+        "all_entries",
+        "forget",
+        "clear",
+        "_evict",
+        "summary",
+        "__init__",
+        "record_sequence",
+        "get_sequence",
+        "recent",
+        "__init__",
+        "find_by_relation",
+        "__init__",
+        "store_procedure",
+        "get_steps",
+        "__init__",
+        "record_decision",
+        "__init__",
+        "record_hypothesis",
+        "__init__",
+        "register_team",
+        "__init__",
+        "at_time",
+        "between",
+        "__init__",
+        "record_cause_effect",
+        "causes_of",
+        "effects_of",
+        "__init__",
+        "record_execution",
+        "__init__",
+        "record_state",
+        "__init__",
+        "update_entity",
+        "__init__",
+        "store_node",
+        "store_edge",
+        "__init__",
+        "store_spec",
+        "__init__",
+        "record_message",
+        "get_thread",
+        "__init__",
+        "record_simulation",
+        "__init__",
+        "record_reflection"
+      ],
+      "path": "genesis/memory/types.py",
+      "package": "genesis.memory"
+    }
+  },
+  {
+    "id": "d292d6ce774ae211:memory:genesis.memory_system",
+    "type": "memory",
+    "name": "genesis.memory_system",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.memory_system"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.programs.test_memory_system"
+    ],
+    "maturity": 0.7,
+    "risk": 0.27,
+    "health": 0.71,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "MemoryType",
+        "MemoryEntry",
+        "MemoryStore",
+        "MemoryIndex",
+        "MemoryConsolidator",
+        "ForgettingMechanism",
+        "ContradictionResolver",
+        "UniversalMemorySystem"
+      ],
+      "functions": [
+        "__post_init__",
+        "access",
+        "relevance",
+        "expired",
+        "__init__",
+        "memory_type",
+        "entry_count",
+        "store",
+        "get",
+        "recall",
+        "forget",
+        "query",
+        "temporal_query",
+        "similarity_search",
+        "all_entries",
+        "clear",
+        "_evict",
+        "_cosine_similarity",
+        "__init__",
+        "index_entry",
+        "search",
+        "__init__",
+        "add_rule",
+        "consolidate",
+        "deduplicate",
+        "propagate_confidence",
+        "__init__",
+        "apply",
+        "boost",
+        "detect",
+        "resolve",
+        "__init__",
+        "stores",
+        "store",
+        "recall",
+        "get",
+        "query",
+        "search",
+        "consolidate",
+        "detect_contradictions",
+        "summary"
+      ],
+      "path": "genesis/memory_system.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "954bd971fa9c2062:memory:genesis.os.memory_manager",
+    "type": "memory",
+    "name": "genesis.os.memory_manager",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.os.memory_manager"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.os",
+      "genesis.os.runtime",
+      "genesis.tests.test_os"
+    ],
+    "maturity": 1.0,
+    "risk": 0.09,
+    "health": 0.97,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "MemoryEntry",
+        "MemoryManager"
+      ],
+      "functions": [
+        "__init__",
+        "store",
+        "get",
+        "search",
+        "forget",
+        "tier_count",
+        "clear_tier",
+        "clear_all",
+        "_remove",
+        "_is_expired",
+        "_promote_if_frequent",
+        "summary",
+        "_state_path",
+        "_save",
+        "_load"
+      ],
+      "path": "genesis/os/memory_manager.py",
+      "package": "genesis.os"
+    }
+  },
+  {
+    "id": "ef72701b57849573:memory:genesis.tests.programs.test_memory",
+    "type": "memory",
+    "name": "genesis.tests.programs.test_memory",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.programs.test_memory"
+    ],
+    "dependencies": [
+      "genesis.memory.consolidation.ForgettingMechanism",
+      "genesis.memory.consolidation.MemoryConsolidator",
+      "genesis.memory.types.AgentMemory",
+      "genesis.memory.types.ArchitecturalMemory",
+      "genesis.memory.types.BaseMemory",
+      "genesis.memory.types.CausalMemory",
+      "genesis.memory.types.ConversationMemory",
+      "genesis.memory.types.EpisodicMemory",
+      "genesis.memory.types.ExecutionMemory",
+      "genesis.memory.types.GraphMemory",
+      "genesis.memory.types.MemoryEntry",
+      "genesis.memory.types.MemoryQuery",
+      "genesis.memory.types.MemoryType",
+      "genesis.memory.types.OrganizationalMemory",
+      "genesis.memory.types.ProceduralMemory",
+      "genesis.memory.types.ReflectionMemory",
+      "genesis.memory.types.ResearchMemory",
+      "genesis.memory.types.SemanticMemory",
+      "genesis.memory.types.SimulationMemory",
+      "genesis.memory.types.SpecificationMemory",
+      "genesis.memory.types.TemporalMemory",
+      "genesis.memory.types.WorldMemory"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.58,
+    "health": 0.48,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "TestBaseMemory",
+        "TestEpisodicMemory",
+        "TestSemanticMemory",
+        "TestProceduralMemory",
+        "TestArchitecturalMemory",
+        "TestResearchMemory",
+        "TestOrganizationalMemory",
+        "TestTemporalMemory",
+        "TestCausalMemory",
+        "TestExecutionMemory",
+        "TestAgentMemory",
+        "TestWorldMemory",
+        "TestGraphMemory",
+        "TestSpecificationMemory",
+        "TestConversationMemory",
+        "TestSimulationMemory",
+        "TestReflectionMemory",
+        "TestMemoryConsolidator",
+        "TestForgettingMechanism"
+      ],
+      "functions": [
+        "test_store_and_recall",
+        "test_query_by_tag",
+        "test_forget",
+        "test_relevance",
+        "test_recent",
+        "test_sequence",
+        "test_find_by_relation",
+        "test_store_procedure",
+        "test_record_decision",
+        "test_hypothesis",
+        "test_team",
+        "test_between",
+        "test_cause_effect",
+        "test_record_execution",
+        "test_record_state",
+        "test_update_entity",
+        "test_store_node_edge",
+        "test_store_spec",
+        "test_thread",
+        "test_record_simulation",
+        "test_record_reflection",
+        "test_deduplicate",
+        "test_detect_contradictions",
+        "test_compress",
+        "test_apply_decay",
+        "test_boost_by_access"
+      ],
+      "path": "genesis/tests/programs/test_memory.py",
+      "package": "genesis.tests.programs"
+    }
+  },
+  {
+    "id": "f2431fb6455dd4dd:memory:genesis.tests.programs.test_memory_system",
+    "type": "memory",
+    "name": "genesis.tests.programs.test_memory_system",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.programs.test_memory_system"
+    ],
+    "dependencies": [
+      "genesis.memory_system.ContradictionResolver",
+      "genesis.memory_system.ForgettingMechanism",
+      "genesis.memory_system.MemoryConsolidator",
+      "genesis.memory_system.MemoryEntry",
+      "genesis.memory_system.MemoryIndex",
+      "genesis.memory_system.MemoryStore",
+      "genesis.memory_system.MemoryType",
+      "genesis.memory_system.UniversalMemorySystem"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.42,
+    "health": 0.52,
+    "role": "memory",
+    "metadata": {
+      "classes": [
+        "TestMemoryEntry",
+        "TestMemoryStore",
+        "TestMemoryIndex",
+        "TestMemoryConsolidator",
+        "TestForgettingMechanism",
+        "TestContradictionResolver",
+        "TestUniversalMemorySystem"
+      ],
+      "functions": [
+        "test_create_minimal",
+        "test_access",
+        "test_relevance",
+        "test_expired",
+        "setup_method",
+        "test_store_and_get",
+        "test_recall",
+        "test_forget",
+        "test_query_by_key",
+        "test_query_by_tags",
+        "test_query_by_source",
+        "test_query_by_confidence",
+        "test_temporal_query",
+        "test_similarity_search",
+        "test_eviction",
+        "test_clear",
+        "test_all_entries",
+        "setup_method",
+        "test_index_and_search",
+        "test_search_by_type",
+        "test_search_empty",
+        "test_deduplicate",
+        "test_propagate_confidence",
+        "test_consolidate_with_rules",
+        "setup_method",
+        "test_apply_decays_confidence",
+        "test_apply_forgets_low_importance",
+        "test_boost",
+        "test_detect",
+        "test_resolve",
+        "test_resolve_nonexistent",
+        "setup_method",
+        "test_store_and_recall",
+        "test_store_and_get",
+        "test_query_within_type",
+        "test_query_across_types",
+        "test_search",
+        "test_consolidate",
+        "test_detect_contradictions",
+        "test_all_stores_created",
+        "test_summary",
+        "rule"
+      ],
+      "path": "genesis/tests/programs/test_memory_system.py",
+      "package": "genesis.tests.programs"
+    }
+  }
+]

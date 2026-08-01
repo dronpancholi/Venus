@@ -1,0 +1,23 @@
+{
+  "canonical_entities": 7,
+  "engine_relationships": 6222,
+  "entity_type_diversity": 1,
+  "id_pattern_usage": 133,
+  "id_pattern_modules": [
+    "Layer_1_Foundations._validation.generate_catalog",
+    "genesis.acquisition",
+    "genesis.acquisition.orchestrator",
+    "genesis.autonomous.cycle",
+    "genesis.brain",
+    "genesis.brain.cognition.attention",
+    "genesis.brain.cognition.belief",
+    "genesis.brain.cognition.decision",
+    "genesis.brain.cognition.goals",
+    "genesis.brain.cognition.memory",
+    "genesis.brain.cognition.orchestration",
+    "genesis.brain.cognition.reasoning",
+    "genesis.brain.cognition.reflection",
+    "genesis.brain.cognition.strategy",
+    "genesis.brain.graph"
+  ]
+}

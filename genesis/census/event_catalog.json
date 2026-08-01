@@ -1,0 +1,224 @@
+[
+  {
+    "id": "89c28f6fd06f715c:event:genesis.digital_twin.extractors.events",
+    "type": "event",
+    "name": "genesis.digital_twin.extractors.events",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.42,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.events"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.42,
+    "risk": 0.33,
+    "health": 0.49,
+    "role": "event",
+    "metadata": {
+      "classes": [
+        "EventsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_check_event_class",
+        "_check_event_function"
+      ],
+      "path": "genesis/digital_twin/extractors/events.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "d6eaf7d685c310d2:event:genesis.events",
+    "type": "event",
+    "name": "genesis.events",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.events"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.capability.registry",
+      "genesis.certification.engine",
+      "genesis.compiler.compiler",
+      "genesis.di.bootstrap",
+      "genesis.diagnostics.diagnostics",
+      "genesis.graph.engine",
+      "genesis.indexer.indexer",
+      "genesis.memory.engine",
+      "genesis.package.manager",
+      "genesis.platform",
+      "genesis.plugin.manager",
+      "genesis.project.manager",
+      "genesis.runtime.executor",
+      "genesis.security.validator",
+      "genesis.tests.test_brain",
+      "genesis.tests.test_phase0",
+      "genesis.tests.test_stubs"
+    ],
+    "maturity": 0.35,
+    "risk": 0.58,
+    "health": 0.37,
+    "role": "event",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/events/__init__.py",
+      "package": "genesis.events"
+    }
+  },
+  {
+    "id": "d7e1af0e3ed59f8b:event:genesis.events.bus",
+    "type": "event",
+    "name": "genesis.events.bus",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.68,
+    "evidence": [
+      "module:genesis.events.bus"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.capability.registry",
+      "genesis.certification.engine",
+      "genesis.compiler.compiler",
+      "genesis.di.bootstrap",
+      "genesis.diagnostics.diagnostics",
+      "genesis.graph.engine",
+      "genesis.indexer.indexer",
+      "genesis.memory.engine",
+      "genesis.package.manager",
+      "genesis.platform",
+      "genesis.plugin.manager",
+      "genesis.project.manager",
+      "genesis.runtime.executor",
+      "genesis.security.validator",
+      "genesis.tests.test_brain",
+      "genesis.tests.test_phase0",
+      "genesis.tests.test_stubs"
+    ],
+    "maturity": 0.68,
+    "risk": 0.43,
+    "health": 0.65,
+    "role": "event",
+    "metadata": {
+      "classes": [
+        "EventBus"
+      ],
+      "functions": [
+        "__init__",
+        "subscribe",
+        "emit",
+        "unsubscribe",
+        "subscriber_count",
+        "clear"
+      ],
+      "path": "genesis/events/bus.py",
+      "package": "genesis.events"
+    }
+  },
+  {
+    "id": "ebc254704bb724a1:event:genesis.fabric.bus",
+    "type": "event",
+    "name": "genesis.fabric.bus",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.45,
+    "evidence": [
+      "module:genesis.fabric.bus"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.fabric",
+      "genesis.fabric.kernel",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.45,
+    "risk": 0.37,
+    "health": 0.5,
+    "role": "event",
+    "metadata": {
+      "classes": [
+        "MessagePriority",
+        "Message",
+        "TypedChannel",
+        "MessageBus"
+      ],
+      "functions": [
+        "__post_init__",
+        "expired",
+        "__init__",
+        "subscribe",
+        "unsubscribe",
+        "publish",
+        "subscriber_count",
+        "__init__",
+        "_channel",
+        "subscribe",
+        "unsubscribe",
+        "publish",
+        "_drain",
+        "_match_pattern",
+        "start",
+        "stop",
+        "message_count",
+        "dropped_count",
+        "channel_count",
+        "summary"
+      ],
+      "path": "genesis/fabric/bus.py",
+      "package": "genesis.fabric"
+    }
+  },
+  {
+    "id": "11d2c2b45a199c9b:event:genesis.kernel.event_router",
+    "type": "event",
+    "name": "genesis.kernel.event_router",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.99,
+    "evidence": [
+      "module:genesis.kernel.event_router"
+    ],
+    "dependencies": [
+      "genesis.kernel.types.EventPriority",
+      "genesis.kernel.types.KernelEvent"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ],
+    "maturity": 0.99,
+    "risk": 0.1,
+    "health": 0.96,
+    "role": "event",
+    "metadata": {
+      "classes": [
+        "EventRouter"
+      ],
+      "functions": [
+        "__init__",
+        "add_filter",
+        "subscribe",
+        "unsubscribe",
+        "publish",
+        "publish_from",
+        "recent_events",
+        "events_by_type",
+        "subscriber_count",
+        "summary"
+      ],
+      "path": "genesis/kernel/event_router.py",
+      "package": "genesis.kernel"
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "total_modules": 415,
+  "dependency_count": 1051,
+  "layers": {
+    "0": 4,
+    "1": 6,
+    "2": 42,
+    "3": 287,
+    "4": 4,
+    "5": 72
+  },
+  "top_modules_by_fan_in": [
+    [
+      "genesis.utils.identity",
+      113
+    ],
+    [
+      "genesis.digital_twin.model",
+      28
+    ],
+    [
+      "genesis.metamodel.entity",
+      26
+    ],
+    [
+      "genesis.ucos.capability",
+      26
+    ],
+    [
+      "genesis.ontology",
+      21
+    ],
+    [
+      "genesis.acquisition",
+      19
+    ],
+    [
+      "genesis.events.bus",
+      17
+    ],
+    [
+      "genesis.kernel.types",
+      16
+    ],
+    [
+      "genesis.brain",
+      14
+    ],
+    [
+      "genesis.persistence",
+      14
+    ]
+  ]
+}

@@ -1,0 +1,2042 @@
+[
+  {
+    "id": "d373fa67bf5bbce5:specification:GENESIS_OMEGA_SPECIFICATION.md",
+    "type": "specification",
+    "name": "GENESIS_OMEGA_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:GENESIS_OMEGA_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "GENESIS_OMEGA_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "65d25e4b842d05ea:specification:Layer_1_Foundations/_compiler/COMPILER_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_1_Foundations/_compiler/COMPILER_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_1_Foundations/_compiler/COMPILER_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_1_Foundations/_compiler/COMPILER_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "8a0b40660da1e5e9:specification:Layer_1_Foundations/_dsl/DSL_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_1_Foundations/_dsl/DSL_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_1_Foundations/_dsl/DSL_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_1_Foundations/_dsl/DSL_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "59b391f653658c60:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/API_SECURITY_GATEWAY_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/API_SECURITY_GATEWAY_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/API_SECURITY_GATEWAY_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/API_SECURITY_GATEWAY_SPEC.md"
+    }
+  },
+  {
+    "id": "2f06a205c228e13a:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/ATTACK_SURFACE_MAPPING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/ATTACK_SURFACE_MAPPING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/ATTACK_SURFACE_MAPPING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/ATTACK_SURFACE_MAPPING_SPEC.md"
+    }
+  },
+  {
+    "id": "886a55e252f70fbb:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CICD_PIPELINE_HARDENING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CICD_PIPELINE_HARDENING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CICD_PIPELINE_HARDENING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CICD_PIPELINE_HARDENING_SPEC.md"
+    }
+  },
+  {
+    "id": "decf19a15b39f732:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CONTAINER_SANDBOX_GVISOR_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CONTAINER_SANDBOX_GVISOR_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CONTAINER_SANDBOX_GVISOR_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/CONTAINER_SANDBOX_GVISOR_SPEC.md"
+    }
+  },
+  {
+    "id": "96d6e6e0bdd429d0:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DESKTOP_APP_SANDBOX_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DESKTOP_APP_SANDBOX_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DESKTOP_APP_SANDBOX_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DESKTOP_APP_SANDBOX_SPEC.md"
+    }
+  },
+  {
+    "id": "e1a91b160ca36bc2:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DIRECTORY_SYNCHRONIZATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DIRECTORY_SYNCHRONIZATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DIRECTORY_SYNCHRONIZATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DIRECTORY_SYNCHRONIZATION_SPEC.md"
+    }
+  },
+  {
+    "id": "d7c611bbb86b51eb:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DPIA_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DPIA_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DPIA_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/DPIA_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "69978c22ee260f27:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/HSM_INTEGRATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/HSM_INTEGRATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/HSM_INTEGRATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/HSM_INTEGRATION_SPEC.md"
+    }
+  },
+  {
+    "id": "f17762696ec3a226:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/JWT_TOKEN_VALIDATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/JWT_TOKEN_VALIDATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/JWT_TOKEN_VALIDATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/JWT_TOKEN_VALIDATION_SPEC.md"
+    }
+  },
+  {
+    "id": "8e3dd75681754f06:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/KUBERNETES_NETWORK_POLICY_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/KUBERNETES_NETWORK_POLICY_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/KUBERNETES_NETWORK_POLICY_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/KUBERNETES_NETWORK_POLICY_SPEC.md"
+    }
+  },
+  {
+    "id": "3095885adc3b6979:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/MEMORY_DUMP_FORENSIC_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/MEMORY_DUMP_FORENSIC_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/MEMORY_DUMP_FORENSIC_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/MEMORY_DUMP_FORENSIC_SPEC.md"
+    }
+  },
+  {
+    "id": "851cdef016c9b49b:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/NETWORK_TRAFFIC_CAPTURE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/NETWORK_TRAFFIC_CAPTURE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/NETWORK_TRAFFIC_CAPTURE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/NETWORK_TRAFFIC_CAPTURE_SPEC.md"
+    }
+  },
+  {
+    "id": "05dbb17f79707801:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/OAUTH_DESIGN_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/OAUTH_DESIGN_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/OAUTH_DESIGN_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/OAUTH_DESIGN_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "49ddfae6d2babe4e:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PKI_ARCHITECTURE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PKI_ARCHITECTURE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PKI_ARCHITECTURE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PKI_ARCHITECTURE_SPEC.md"
+    }
+  },
+  {
+    "id": "a5d30757c1d65978:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PRIVILEGED_ACCESS_MANAGEMENT_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PRIVILEGED_ACCESS_MANAGEMENT_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PRIVILEGED_ACCESS_MANAGEMENT_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/PRIVILEGED_ACCESS_MANAGEMENT_SPEC.md"
+    }
+  },
+  {
+    "id": "b8c80faa51deb39f:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_POISONING_DETECTION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_POISONING_DETECTION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_POISONING_DETECTION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_POISONING_DETECTION_SPEC.md"
+    }
+  },
+  {
+    "id": "83597bb8ec90ff37:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_SOURCE_GROUNDING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_SOURCE_GROUNDING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_SOURCE_GROUNDING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/RAG_SOURCE_GROUNDING_SPEC.md"
+    }
+  },
+  {
+    "id": "85dc691a94d7cf91:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SBOM_LIFECYCLE_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SBOM_LIFECYCLE_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SBOM_LIFECYCLE_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SBOM_LIFECYCLE_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "f8a80b47f767eb79:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SERVICE_AUTHORIZATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SERVICE_AUTHORIZATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SERVICE_AUTHORIZATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/SERVICE_AUTHORIZATION_SPEC.md"
+    }
+  },
+  {
+    "id": "2f6b98c6a17289a6:specification:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/WAF_RULE_ENFORCEMENT_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/WAF_RULE_ENFORCEMENT_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/WAF_RULE_ENFORCEMENT_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.10_USPTCROS/usptcros_templates/WAF_RULE_ENFORCEMENT_SPEC.md"
+    }
+  },
+  {
+    "id": "cbf0117c415be0ef:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_004_TEAM_CHARTER_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_004_TEAM_CHARTER_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_004_TEAM_CHARTER_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_004_TEAM_CHARTER_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "e9d6941ecb61781d:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_015_INTERVIEW_RUBRIC_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_015_INTERVIEW_RUBRIC_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_015_INTERVIEW_RUBRIC_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_015_INTERVIEW_RUBRIC_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "ba59df2207f4639d:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_022_ESCALATION_PATHWAY_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_022_ESCALATION_PATHWAY_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_022_ESCALATION_PATHWAY_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_022_ESCALATION_PATHWAY_SPEC.md"
+    }
+  },
+  {
+    "id": "2219438d057da881:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_033_INDEMNIFICATION_AGREEMENT_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_033_INDEMNIFICATION_AGREEMENT_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_033_INDEMNIFICATION_AGREEMENT_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_033_INDEMNIFICATION_AGREEMENT_SPEC.md"
+    }
+  },
+  {
+    "id": "df0c28c6f5e94ad0:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_038_RATING_AGENCY_DISCLOSURE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_038_RATING_AGENCY_DISCLOSURE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_038_RATING_AGENCY_DISCLOSURE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_038_RATING_AGENCY_DISCLOSURE_SPEC.md"
+    }
+  },
+  {
+    "id": "a84da01451ef066f:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_044_CPO_PRODUCT_ROADMAP_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_044_CPO_PRODUCT_ROADMAP_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_044_CPO_PRODUCT_ROADMAP_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_044_CPO_PRODUCT_ROADMAP_SPEC.md"
+    }
+  },
+  {
+    "id": "257064fb9037d98e:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_062_CTO_CAPABILITY_MAP_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_062_CTO_CAPABILITY_MAP_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_062_CTO_CAPABILITY_MAP_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_062_CTO_CAPABILITY_MAP_SPEC.md"
+    }
+  },
+  {
+    "id": "64c397958682c3e6:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_068_COO_FACILITIES_OPTIMIZATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_068_COO_FACILITIES_OPTIMIZATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_068_COO_FACILITIES_OPTIMIZATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_068_COO_FACILITIES_OPTIMIZATION_SPEC.md"
+    }
+  },
+  {
+    "id": "6aaf9426f2f64868:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_073_CHRO_SUCCESSION_PLANNING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_073_CHRO_SUCCESSION_PLANNING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_073_CHRO_SUCCESSION_PLANNING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_073_CHRO_SUCCESSION_PLANNING_SPEC.md"
+    }
+  },
+  {
+    "id": "27966f8d5f9c987d:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_085_DEPENDENCY_MAPPING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_085_DEPENDENCY_MAPPING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_085_DEPENDENCY_MAPPING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_085_DEPENDENCY_MAPPING_SPEC.md"
+    }
+  },
+  {
+    "id": "9829e5a6211fdfcc:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_107_PORTFOLIO_REBALANCING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_107_PORTFOLIO_REBALANCING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_107_PORTFOLIO_REBALANCING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_107_PORTFOLIO_REBALANCING_SPEC.md"
+    }
+  },
+  {
+    "id": "a39439e598f64e65:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_119_RISK_RESPONSE_PLAYBOOK_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_119_RISK_RESPONSE_PLAYBOOK_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_119_RISK_RESPONSE_PLAYBOOK_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_119_RISK_RESPONSE_PLAYBOOK_SPEC.md"
+    }
+  },
+  {
+    "id": "24c5995fd5428159:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_134_CAREER_LADDER_OPERATIONS_SPECIALIST.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_134_CAREER_LADDER_OPERATIONS_SPECIALIST.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_134_CAREER_LADDER_OPERATIONS_SPECIALIST.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_134_CAREER_LADDER_OPERATIONS_SPECIALIST.md"
+    }
+  },
+  {
+    "id": "e77368f719faa692:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_146_DEI_METRICS_DASHBOARD_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_146_DEI_METRICS_DASHBOARD_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_146_DEI_METRICS_DASHBOARD_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_146_DEI_METRICS_DASHBOARD_SPEC.md"
+    }
+  },
+  {
+    "id": "88f1e49ab2ff537e:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_162_VALUE_STREAM_MAP_VSM_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_162_VALUE_STREAM_MAP_VSM_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_162_VALUE_STREAM_MAP_VSM_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_162_VALUE_STREAM_MAP_VSM_SPEC.md"
+    }
+  },
+  {
+    "id": "6e9477d695b3b0e9:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_163_BPMN_WORKFLOW_DESIGN_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_163_BPMN_WORKFLOW_DESIGN_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_163_BPMN_WORKFLOW_DESIGN_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_163_BPMN_WORKFLOW_DESIGN_SPEC.md"
+    }
+  },
+  {
+    "id": "758ac1e9f300bee4:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_170_DPMO_CALCULATION_ENGINE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_170_DPMO_CALCULATION_ENGINE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_170_DPMO_CALCULATION_ENGINE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_170_DPMO_CALCULATION_ENGINE_SPEC.md"
+    }
+  },
+  {
+    "id": "ea3a1b27d2f3c0ab:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_175_POKA_YOKE_ERROR_PROOFING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_175_POKA_YOKE_ERROR_PROOFING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_175_POKA_YOKE_ERROR_PROOFING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_175_POKA_YOKE_ERROR_PROOFING_SPEC.md"
+    }
+  },
+  {
+    "id": "d8a4b06d8a091d53:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_187_WORKFLOW_AUTOMATION_ENGINE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_187_WORKFLOW_AUTOMATION_ENGINE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_187_WORKFLOW_AUTOMATION_ENGINE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_187_WORKFLOW_AUTOMATION_ENGINE_SPEC.md"
+    }
+  },
+  {
+    "id": "c7619960191f3757:specification:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_205_PROCUREMENT_SLA_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_205_PROCUREMENT_SLA_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_205_PROCUREMENT_SLA_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.11_UEAOGOS/ueaogos_templates/TEMPLATE_205_PROCUREMENT_SLA_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "c58c3ac736b63840:specification:Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/AI_ARCHITECTURE_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/AI_ARCHITECTURE_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/AI_ARCHITECTURE_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/AI_ARCHITECTURE_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "cc33ab33c76b49df:specification:Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/DATA_FLOW_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/DATA_FLOW_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/DATA_FLOW_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.5_USTAIE/ustaie_templates/DATA_FLOW_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "a42a1e4b0ab6900a:specification:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/AI_CONVERSATIONAL_UX_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/AI_CONVERSATIONAL_UX_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/AI_CONVERSATIONAL_UX_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/AI_CONVERSATIONAL_UX_SPEC.md"
+    }
+  },
+  {
+    "id": "209f0fac30533c27:specification:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/FEATURE_LIFECYCLE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/FEATURE_LIFECYCLE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/FEATURE_LIFECYCLE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/FEATURE_LIFECYCLE_SPEC.md"
+    }
+  },
+  {
+    "id": "c9cc1012ba0dade3:specification:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/LOCALIZATION_RTL_GLOBAL_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/LOCALIZATION_RTL_GLOBAL_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/LOCALIZATION_RTL_GLOBAL_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/LOCALIZATION_RTL_GLOBAL_SPEC.md"
+    }
+  },
+  {
+    "id": "097f60cb51183a7d:specification:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NAVIGATION_TAXONOMY_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NAVIGATION_TAXONOMY_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NAVIGATION_TAXONOMY_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NAVIGATION_TAXONOMY_SPEC.md"
+    }
+  },
+  {
+    "id": "331eb09aad3bfa77:specification:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NORTH_STAR_METRIC_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NORTH_STAR_METRIC_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NORTH_STAR_METRIC_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/NORTH_STAR_METRIC_SPEC.md"
+    }
+  },
+  {
+    "id": "05fbfeae273bbf87:specification:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/RESPONSIVE_CROSS_PLATFORM_MOBILE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/RESPONSIVE_CROSS_PLATFORM_MOBILE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/RESPONSIVE_CROSS_PLATFORM_MOBILE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/RESPONSIVE_CROSS_PLATFORM_MOBILE_SPEC.md"
+    }
+  },
+  {
+    "id": "561f0b9471c5e096:specification:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/TASK_FLOW_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/TASK_FLOW_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/TASK_FLOW_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.7_UPUXIOS/upuxios_templates/TASK_FLOW_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "792fef9cc3d9fb2f:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AGENT_WORKFLOW_ORCHESTRATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AGENT_WORKFLOW_ORCHESTRATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AGENT_WORKFLOW_ORCHESTRATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AGENT_WORKFLOW_ORCHESTRATION_SPEC.md"
+    }
+  },
+  {
+    "id": "c9d695f1c4ccc7f1:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_SAFETY_GUARDRAILS_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_SAFETY_GUARDRAILS_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_SAFETY_GUARDRAILS_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_SAFETY_GUARDRAILS_SPEC.md"
+    }
+  },
+  {
+    "id": "2a6e070b932d628f:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_TAXONOMY_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_TAXONOMY_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_TAXONOMY_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/AI_TAXONOMY_SPEC.md"
+    }
+  },
+  {
+    "id": "8fa00f7db1e13b36:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/DYNAMIC_MODEL_ROUTING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/DYNAMIC_MODEL_ROUTING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/DYNAMIC_MODEL_ROUTING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/DYNAMIC_MODEL_ROUTING_SPEC.md"
+    }
+  },
+  {
+    "id": "4b402f0d0f94c9ba:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MCP_SERVER_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MCP_SERVER_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MCP_SERVER_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MCP_SERVER_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "ca7cdce446a3b81d:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MEMORY_PRUNING_RETRIEVAL_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MEMORY_PRUNING_RETRIEVAL_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MEMORY_PRUNING_RETRIEVAL_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MEMORY_PRUNING_RETRIEVAL_SPEC.md"
+    }
+  },
+  {
+    "id": "9129dfcf6f98eb53:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MULTI_AGENT_ORCHESTRATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MULTI_AGENT_ORCHESTRATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MULTI_AGENT_ORCHESTRATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/MULTI_AGENT_ORCHESTRATION_SPEC.md"
+    }
+  },
+  {
+    "id": "443ff81c057e9812:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_CITATIONS_GROUNDING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_CITATIONS_GROUNDING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_CITATIONS_GROUNDING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_CITATIONS_GROUNDING_SPEC.md"
+    }
+  },
+  {
+    "id": "0829af8188170530:specification:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_INDEXING_RETRIEVAL_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_INDEXING_RETRIEVAL_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_INDEXING_RETRIEVAL_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.8_UAIEOS/uaieos_templates/RAG_INDEXING_RETRIEVAL_SPEC.md"
+    }
+  },
+  {
+    "id": "92d26df171f9fe48:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CDN_SSL_TERMINATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CDN_SSL_TERMINATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CDN_SSL_TERMINATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CDN_SSL_TERMINATION_SPEC.md"
+    }
+  },
+  {
+    "id": "227e4819066ae2b9:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CLASS_DIAGRAM_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CLASS_DIAGRAM_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CLASS_DIAGRAM_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CLASS_DIAGRAM_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "fd223d7ca7e0d7a7:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONSENSUS_PROTOCOL_RAFT_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONSENSUS_PROTOCOL_RAFT_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONSENSUS_PROTOCOL_RAFT_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONSENSUS_PROTOCOL_RAFT_SPEC.md"
+    }
+  },
+  {
+    "id": "f9a8913a9208ee05:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONTEXT_MAP_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONTEXT_MAP_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONTEXT_MAP_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/CONTEXT_MAP_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "879cff76da743297:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATABASE_SHARDING_REPLICATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATABASE_SHARDING_REPLICATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATABASE_SHARDING_REPLICATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATABASE_SHARDING_REPLICATION_SPEC.md"
+    }
+  },
+  {
+    "id": "44de77e37dff6f37:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_FLOW_DIAGRAM_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_FLOW_DIAGRAM_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_FLOW_DIAGRAM_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_FLOW_DIAGRAM_SPEC.md"
+    }
+  },
+  {
+    "id": "2e7ec3343a2bbfc5:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_SEEDING_MASKING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_SEEDING_MASKING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_SEEDING_MASKING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_SEEDING_MASKING_SPEC.md"
+    }
+  },
+  {
+    "id": "5cb7d4f5fdd7c537:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_WAREHOUSE_ETL_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_WAREHOUSE_ETL_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_WAREHOUSE_ETL_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DATA_WAREHOUSE_ETL_SPEC.md"
+    }
+  },
+  {
+    "id": "19158364666d6824:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DISTRIBUTED_LOCKING_REDLOCK_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DISTRIBUTED_LOCKING_REDLOCK_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DISTRIBUTED_LOCKING_REDLOCK_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DISTRIBUTED_LOCKING_REDLOCK_SPEC.md"
+    }
+  },
+  {
+    "id": "3bd3b1e0f767f972:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOCKER_COMPOSE_DEVELOPMENT_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOCKER_COMPOSE_DEVELOPMENT_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOCKER_COMPOSE_DEVELOPMENT_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOCKER_COMPOSE_DEVELOPMENT_SPEC.md"
+    }
+  },
+  {
+    "id": "fb2315e1918fa511:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOMAIN_MODEL_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOMAIN_MODEL_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOMAIN_MODEL_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/DOMAIN_MODEL_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "c3172d9a0cafe8f6:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/END_TO_END_PLAYWRIGHT_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/END_TO_END_PLAYWRIGHT_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/END_TO_END_PLAYWRIGHT_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/END_TO_END_PLAYWRIGHT_SPEC.md"
+    }
+  },
+  {
+    "id": "71d01b00d009ab35:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/ENTITY_RELATIONSHIP_DIAGRAM_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/ENTITY_RELATIONSHIP_DIAGRAM_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/ENTITY_RELATIONSHIP_DIAGRAM_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/ENTITY_RELATIONSHIP_DIAGRAM_SPEC.md"
+    }
+  },
+  {
+    "id": "eb74ec030fce8e1b:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/EVENT_CATALOG_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/EVENT_CATALOG_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/EVENT_CATALOG_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/EVENT_CATALOG_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "ef7169785885e9ee:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/FUNCTIONAL_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/FUNCTIONAL_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/FUNCTIONAL_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/FUNCTIONAL_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "180d40d0ba331537:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/GRAPHQL_SCHEMA_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/GRAPHQL_SCHEMA_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/GRAPHQL_SCHEMA_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/GRAPHQL_SCHEMA_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "57c9125690304a96:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/HEXAGONAL_PORTS_ADAPTERS_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/HEXAGONAL_PORTS_ADAPTERS_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/HEXAGONAL_PORTS_ADAPTERS_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/HEXAGONAL_PORTS_ADAPTERS_SPEC.md"
+    }
+  },
+  {
+    "id": "d69b17baf1273384:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/IAM_ROLES_POLICIES_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/IAM_ROLES_POLICIES_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/IAM_ROLES_POLICIES_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/IAM_ROLES_POLICIES_SPEC.md"
+    }
+  },
+  {
+    "id": "02f424a4fd3f1349:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/INTEGRATION_TEST_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/INTEGRATION_TEST_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/INTEGRATION_TEST_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/INTEGRATION_TEST_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "521c7ae0cb0ac42c:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_AUTOSCALING_HPA_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_AUTOSCALING_HPA_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_AUTOSCALING_HPA_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_AUTOSCALING_HPA_SPEC.md"
+    }
+  },
+  {
+    "id": "f0648ad1284f428d:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_INGRESS_ROUTE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_INGRESS_ROUTE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_INGRESS_ROUTE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/KUBERNETES_INGRESS_ROUTE_SPEC.md"
+    }
+  },
+  {
+    "id": "22274be82cbd0a8b:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MOCK_DOUBLE_SERVICE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MOCK_DOUBLE_SERVICE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MOCK_DOUBLE_SERVICE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MOCK_DOUBLE_SERVICE_SPEC.md"
+    }
+  },
+  {
+    "id": "241f6394de08dac1:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MUTATION_TESTING_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MUTATION_TESTING_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MUTATION_TESTING_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/MUTATION_TESTING_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "70e56ec8eabd199e:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/NON_FUNCTIONAL_REQUIREMENTS_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/NON_FUNCTIONAL_REQUIREMENTS_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/NON_FUNCTIONAL_REQUIREMENTS_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/NON_FUNCTIONAL_REQUIREMENTS_SPEC.md"
+    }
+  },
+  {
+    "id": "0abbb9d85bc710df:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/OPENAPI_3_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/OPENAPI_3_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/OPENAPI_3_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/OPENAPI_3_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "ccdf963fd42bcd3c:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/RATE_LIMITER_SLIDING_WINDOW_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/RATE_LIMITER_SLIDING_WINDOW_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/RATE_LIMITER_SLIDING_WINDOW_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/RATE_LIMITER_SLIDING_WINDOW_SPEC.md"
+    }
+  },
+  {
+    "id": "4e17e035f370c86b:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/REGRESSION_TEST_SUITE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/REGRESSION_TEST_SUITE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/REGRESSION_TEST_SUITE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/REGRESSION_TEST_SUITE_SPEC.md"
+    }
+  },
+  {
+    "id": "fc91862130dc8aa5:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SECURITY_PENETRATION_TEST_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SECURITY_PENETRATION_TEST_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SECURITY_PENETRATION_TEST_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SECURITY_PENETRATION_TEST_SPEC.md"
+    }
+  },
+  {
+    "id": "2508db21ac8213a5:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SEQUENCE_DIAGRAM_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SEQUENCE_DIAGRAM_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SEQUENCE_DIAGRAM_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SEQUENCE_DIAGRAM_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "25e0b01909af6916:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SLO_SLI_PROSPECTUS.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SLO_SLI_PROSPECTUS.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SLO_SLI_PROSPECTUS.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SLO_SLI_PROSPECTUS.md"
+    }
+  },
+  {
+    "id": "9b6d0f2654c8120c:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SOCI_IMAGE_LAZY_LOADING_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SOCI_IMAGE_LAZY_LOADING_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SOCI_IMAGE_LAZY_LOADING_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SOCI_IMAGE_LAZY_LOADING_SPEC.md"
+    }
+  },
+  {
+    "id": "ebeb6b3fc223e167:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SRS_SOFTWARE_REQUIREMENTS_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SRS_SOFTWARE_REQUIREMENTS_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SRS_SOFTWARE_REQUIREMENTS_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SRS_SOFTWARE_REQUIREMENTS_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "0172cf38a9b5213d:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATE_DIAGRAM_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATE_DIAGRAM_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATE_DIAGRAM_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATE_DIAGRAM_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "5179d08358f12520:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATIC_ANALYSIS_SONARQUBE_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATIC_ANALYSIS_SONARQUBE_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATIC_ANALYSIS_SONARQUBE_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/STATIC_ANALYSIS_SONARQUBE_SPEC.md"
+    }
+  },
+  {
+    "id": "40c91dd3274db266:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SYSTEM_INTERFACE_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SYSTEM_INTERFACE_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SYSTEM_INTERFACE_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/SYSTEM_INTERFACE_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "840fe630b30320c1:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/UNIT_TEST_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/UNIT_TEST_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/UNIT_TEST_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/UNIT_TEST_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "5facd725c3d9b458:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USER_CATALOG_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USER_CATALOG_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USER_CATALOG_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USER_CATALOG_SPEC.md"
+    }
+  },
+  {
+    "id": "6cd969530173e1b9:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USE_CASE_SPECIFICATION.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USE_CASE_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USE_CASE_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/USE_CASE_SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "398949d40424513d:specification:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/WEBHOOK_INTEGRATION_SPEC.md",
+    "type": "specification",
+    "name": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/WEBHOOK_INTEGRATION_SPEC.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/WEBHOOK_INTEGRATION_SPEC.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "Layer_2_Core_OS/V0.9_USEDPOS/usedpos_templates/WEBHOOK_INTEGRATION_SPEC.md"
+    }
+  },
+  {
+    "id": "5379467f495630e9:specification:genesis/SPECIFICATION.md",
+    "type": "specification",
+    "name": "genesis/SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:genesis/SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "genesis/SPECIFICATION.md"
+    }
+  },
+  {
+    "id": "7b96888f6a8e6a10:specification:genesis/VENUS_PLATFORM_SPECIFICATION.md",
+    "type": "specification",
+    "name": "genesis/VENUS_PLATFORM_SPECIFICATION.md",
+    "owner": "architecture_council",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "path:genesis/VENUS_PLATFORM_SPECIFICATION.md"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 1.0,
+    "risk": 0.0,
+    "health": 1.0,
+    "role": "specification",
+    "metadata": {
+      "path": "genesis/VENUS_PLATFORM_SPECIFICATION.md"
+    }
+  }
+]

@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "program": "GENESIS \u03a9\u221e\u221e",
+    "iteration": 1,
+    "total_duration_ms": 1979.02,
+    "significance": 0.53,
+    "phases_completed": 14
+  },
+  "indices": {
+    "repository_health": 0.241,
+    "maturity_index": 0.482,
+    "engineering_intelligence_score": 0.478,
+    "civilization_index": 0.9444444444444444,
+    "innovation_index": 0.672,
+    "autonomy_index": 0.779
+  },
+  "phase_summaries": {
+    "0": {
+      "name": "Deep Repository Census",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "total_complexity",
+        "avg_complexity",
+        "cognitive_load",
+        "doc_coverage",
+        "knowledge_density_avg"
+      ]
+    },
+    "1": {
+      "name": "Digital Twin Regeneration",
+      "deliverable_count": 1,
+      "keys": [
+        "total_states",
+        "state_domains",
+        "twin_nodes",
+        "twin_edges"
+      ]
+    },
+    "2": {
+      "name": "Repository Reverse Engineering",
+      "deliverable_count": 1,
+      "keys": [
+        "total_modules",
+        "dependency_count",
+        "layers",
+        "top_modules_by_fan_in"
+      ]
+    },
+    "3": {
+      "name": "Canonicalization",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "4": {
+      "name": "Repository Mathematics",
+      "deliverable_count": 1,
+      "keys": [
+        "architecture_entropy",
+        "complexity_entropy",
+        "module_stabilities_sample",
+        "diffusion_coefficient",
+        "knowledge_velocity",
+        "potential_energy",
+        "debt_tensor",
+        "total_debt",
+        "models_available"
+      ]
+    },
+    "5": {
+      "name": "Engineering Science",
+      "deliverable_count": 1,
+      "keys": [
+        "experiments_conducted",
+        "experiment_details",
+        "unknowns_identified",
+        "unknown_examples",
+        "hypotheses_generated"
+      ]
+    },
+    "6": {
+      "name": "Simulation Universe",
+      "deliverable_count": 1,
+      "keys": [
+        "simulations_run",
+        "simulation_domains"
+      ]
+    },
+    "7": {
+      "name": "Repository Rewrite",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "8": {
+      "name": "Knowledge Civilization",
+      "deliverable_count": 1,
+      "keys": [
+        "total_institutes",
+        "by_type",
+        "by_status",
+        "total_contracts",
+        "total_reputation_events",
+        "total_relationships",
+        "contracts"
+      ]
+    },
+    "9": {
+      "name": "Cross Repository Intelligence",
+      "deliverable_count": 1,
+      "keys": [
+        "total_packages",
+        "packages"
+      ]
+    },
+    "10": {
+      "name": "Autonomous Improvement",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "11": {
+      "name": "Formal Verification",
+      "deliverable_count": 1,
+      "keys": [
+        "checks",
+        "all_passed"
+      ]
+    },
+    "12": {
+      "name": "Performance Laboratory",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "13": {
+      "name": "Self Evolution",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

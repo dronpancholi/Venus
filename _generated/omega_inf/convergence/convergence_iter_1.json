@@ -1,0 +1,106 @@
+{
+  "iteration": 1,
+  "convergence_index": 0.657,
+  "dimensions": {
+    "repository_health": {
+      "score": 0.345,
+      "target": 1.0,
+      "gap": 0.655
+    },
+    "architecture_simplicity": {
+      "score": 0.58,
+      "target": 1.0,
+      "gap": 0.42
+    },
+    "knowledge_density": {
+      "score": 0.935,
+      "target": 20.0,
+      "gap": 0.065
+    },
+    "canonicalization": {
+      "score": 1.0,
+      "target": 1.0,
+      "gap": 0.0
+    },
+    "scientific_validity": {
+      "score": 0.5,
+      "target": 1.0,
+      "gap": 0.5
+    },
+    "prediction_accuracy": {
+      "score": 0.5,
+      "target": 1.0,
+      "gap": 0.5
+    },
+    "engineering_roi": {
+      "score": 1.0,
+      "target": 1.0,
+      "gap": 0.0
+    },
+    "cross_repo_generalization": {
+      "score": 0.188,
+      "target": 1.0,
+      "gap": 0.812
+    },
+    "maintainability": {
+      "score": 0.526,
+      "target": 1.0,
+      "gap": 0.474
+    },
+    "operational_performance": {
+      "score": 1.0,
+      "target": 1.0,
+      "gap": 0.0
+    }
+  },
+  "bottlenecks": [
+    "cross_repo_generalization: gap=0.812 (score=0.188)",
+    "repository_health: gap=0.655 (score=0.345)",
+    "scientific_validity: gap=0.5 (score=0.5)"
+  ],
+  "sorted_by_gap": [
+    [
+      "cross_repo_generalization",
+      0.812
+    ],
+    [
+      "repository_health",
+      0.655
+    ],
+    [
+      "scientific_validity",
+      0.5
+    ],
+    [
+      "prediction_accuracy",
+      0.5
+    ],
+    [
+      "maintainability",
+      0.474
+    ],
+    [
+      "architecture_simplicity",
+      0.42
+    ],
+    [
+      "knowledge_density",
+      0.065
+    ],
+    [
+      "canonicalization",
+      0.0
+    ],
+    [
+      "engineering_roi",
+      0.0
+    ],
+    [
+      "operational_performance",
+      0.0
+    ]
+  ],
+  "recommendations": [
+    "Focus on: cross_repo_generalization: gap=0.812 (score=0.188); repository_health: gap=0.655 (score=0.345); scientific_validity: gap=0.5 (score=0.5)"
+  ]
+}

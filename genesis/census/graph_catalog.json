@@ -1,0 +1,1910 @@
+[
+  {
+    "id": "6853559f269a80cc:graph:genesis.brain.graph",
+    "type": "graph",
+    "name": "genesis.brain.graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.graph"
+    ],
+    "dependencies": [
+      "genesis.brain.entity.BrainEntity",
+      "genesis.brain.entity.BrainEntityType",
+      "genesis.brain.entity.Confidence",
+      "genesis.brain.entity.Evidence",
+      "genesis.brain.entity.Relationship",
+      "genesis.graphdb.Edge",
+      "genesis.graphdb.Node",
+      "genesis.graphdb.PersistentGraphDB",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain",
+      "genesis.brain.integration"
+    ],
+    "maturity": 1.0,
+    "risk": 0.21,
+    "health": 0.94,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "BrainGraph"
+      ],
+      "functions": [
+        "__init__",
+        "db",
+        "entity_count",
+        "relationship_count",
+        "register",
+        "get",
+        "find_by_source",
+        "find_by_type",
+        "find_by_label",
+        "all_entities",
+        "remove",
+        "relate",
+        "get_relationships",
+        "get_neighbors",
+        "count_by_type",
+        "summary",
+        "_index",
+        "_save_to_graphdb",
+        "_entity_from_node"
+      ],
+      "path": "genesis/brain/graph.py",
+      "package": "genesis.brain"
+    }
+  },
+  {
+    "id": "582f51743f3a433e:graph:genesis.compiler.codegen.graph_gen",
+    "type": "graph",
+    "name": "genesis.compiler.codegen.graph_gen",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.66,
+    "evidence": [
+      "module:genesis.compiler.codegen.graph_gen"
+    ],
+    "dependencies": [
+      "genesis.compiler.codegen.base.CodeGenerator",
+      "genesis.core.uir.CompilationUnit"
+    ],
+    "consumers": [
+      "genesis.compiler.compiler"
+    ],
+    "maturity": 0.66,
+    "risk": 0.23,
+    "health": 0.69,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "GraphGenerator"
+      ],
+      "functions": [
+        "__init__",
+        "generate",
+        "_to_cypher"
+      ],
+      "path": "genesis/compiler/codegen/graph_gen.py",
+      "package": "genesis.compiler.codegen"
+    }
+  },
+  {
+    "id": "447600e27e7c29b3:graph:genesis.execution_graph",
+    "type": "graph",
+    "name": "genesis.execution_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.execution_graph"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.test_execution_graph"
+    ],
+    "maturity": 1.0,
+    "risk": 0.11,
+    "health": 0.97,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "NodeType",
+        "EdgeType",
+        "NodeStatus",
+        "ExecutionNode",
+        "ExecutionEdge",
+        "ExecutionEvent",
+        "ExecutionTrace",
+        "ExecutionGraph",
+        "ExecutionEngine",
+        "ExecutionGraphMonitor"
+      ],
+      "functions": [
+        "build_default_execution_graph",
+        "to_dict",
+        "to_dict",
+        "__post_init__",
+        "__post_init__",
+        "duration",
+        "set_node_status",
+        "to_dict",
+        "__init__",
+        "add_node",
+        "add_edge",
+        "connect",
+        "get_node",
+        "get_edges",
+        "successors",
+        "predecessors",
+        "topological_order",
+        "to_dict",
+        "save",
+        "__init__",
+        "on_event",
+        "_emit",
+        "execute",
+        "current_trace",
+        "__init__",
+        "_on_event",
+        "record_trace",
+        "recent_traces",
+        "latest_trace",
+        "total_executions",
+        "average_duration",
+        "node_failure_count",
+        "summary"
+      ],
+      "path": "genesis/execution_graph.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "99640932a2049fc5:graph:genesis.graph",
+    "type": "graph",
+    "name": "genesis.graph",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.graph"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.autonomous.orchestrator",
+      "genesis.brain",
+      "genesis.brain.graph",
+      "genesis.civilization.knowledge",
+      "genesis.cli.commands",
+      "genesis.diagnostics.diagnostics",
+      "genesis.graph_v2",
+      "genesis.graph_v2.compression",
+      "genesis.graph_v2.federation",
+      "genesis.graph_v2.index",
+      "genesis.graph_v2.layers",
+      "genesis.graph_v2.partition",
+      "genesis.graph_v2.versioning",
+      "genesis.integration.project31a",
+      "genesis.intelligence.metrics",
+      "genesis.platform",
+      "genesis.repository_graph",
+      "genesis.studio.backend",
+      "genesis.tests.test_brain",
+      "genesis.tests.test_genesis_xii",
+      "genesis.tests.test_graphdb",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.35,
+    "risk": 0.63,
+    "health": 0.36,
+    "role": "graph",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/graph/__init__.py",
+      "package": "genesis.graph"
+    }
+  },
+  {
+    "id": "6ba617c4182a6003:graph:genesis.graph.engine",
+    "type": "graph",
+    "name": "genesis.graph.engine",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.graph.engine"
+    ],
+    "dependencies": [
+      "genesis.core.uir.UIREdge",
+      "genesis.core.uir.UIRGraph",
+      "genesis.core.uir.UIRNode",
+      "genesis.events.bus.EventBus",
+      "genesis.persistence.KnowledgeStore",
+      "genesis.utils.graph_algorithms.find_cycles"
+    ],
+    "consumers": [
+      "genesis.cli.commands",
+      "genesis.diagnostics.diagnostics",
+      "genesis.integration.project31a",
+      "genesis.intelligence.metrics",
+      "genesis.platform",
+      "genesis.studio.backend",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.7,
+    "risk": 0.4,
+    "health": 0.67,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "KnowledgeGraphEngine"
+      ],
+      "functions": [
+        "__init__",
+        "_restore_from_store",
+        "_emit",
+        "add_node",
+        "add_edge",
+        "get_node",
+        "find_nodes",
+        "find_neighbors",
+        "count_by_type",
+        "detect_orphans",
+        "detect_circular_dependencies",
+        "export_cypher",
+        "export_graphml",
+        "load_from_dict",
+        "summary",
+        "save",
+        "load"
+      ],
+      "path": "genesis/graph/engine.py",
+      "package": "genesis.graph"
+    }
+  },
+  {
+    "id": "7aa6368fa044b9c1:graph:genesis.graph_v2",
+    "type": "graph",
+    "name": "genesis.graph_v2",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.1,
+    "evidence": [
+      "module:genesis.graph_v2"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.analytics.GraphAnalytics",
+      "genesis.graph_v2.compression.GraphCompression",
+      "genesis.graph_v2.core.GraphEdge",
+      "genesis.graph_v2.core.GraphEntity",
+      "genesis.graph_v2.core.GraphLayer",
+      "genesis.graph_v2.core.GraphNode",
+      "genesis.graph_v2.core.GraphSnapshot",
+      "genesis.graph_v2.core.LayerType",
+      "genesis.graph_v2.core.UnifiedGraph",
+      "genesis.graph_v2.federation.GraphFederation",
+      "genesis.graph_v2.index.GraphIndex",
+      "genesis.graph_v2.layers.ArchitectureGraph",
+      "genesis.graph_v2.layers.CapabilityGraph",
+      "genesis.graph_v2.layers.DependencyGraph",
+      "genesis.graph_v2.layers.EvolutionGraph",
+      "genesis.graph_v2.layers.ExperimentGraph",
+      "genesis.graph_v2.layers.KnowledgeGraph",
+      "genesis.graph_v2.layers.MemoryGraph",
+      "genesis.graph_v2.layers.OrganizationGraph",
+      "genesis.graph_v2.layers.ResearchGraph",
+      "genesis.graph_v2.layers.RuntimeGraph",
+      "genesis.graph_v2.layers.SemanticGraph",
+      "genesis.graph_v2.layers.StructuralGraph",
+      "genesis.graph_v2.partition.GraphPartition",
+      "genesis.graph_v2.versioning.GraphDiff",
+      "genesis.graph_v2.versioning.GraphMerge",
+      "genesis.graph_v2.versioning.GraphVersioning"
+    ],
+    "consumers": [
+      "genesis.autonomous.orchestrator",
+      "genesis.graph_v2.compression",
+      "genesis.graph_v2.federation",
+      "genesis.graph_v2.index",
+      "genesis.graph_v2.layers",
+      "genesis.graph_v2.partition",
+      "genesis.graph_v2.versioning",
+      "genesis.platform",
+      "genesis.repository_graph",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.1,
+    "risk": 0.76,
+    "health": 0.14,
+    "role": "graph",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/graph_v2/__init__.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "11d8442bc08b271d:graph:genesis.graph_v2.analytics",
+    "type": "graph",
+    "name": "genesis.graph_v2.analytics",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.45,
+    "evidence": [
+      "module:genesis.graph_v2.analytics"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.graph_v2",
+      "genesis.repository_graph",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.45,
+    "risk": 0.34,
+    "health": 0.51,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "GraphAnalytics"
+      ],
+      "functions": [
+        "degree_centrality",
+        "betweenness_centrality",
+        "clustering_coefficient",
+        "_has_edge",
+        "density",
+        "component_analysis",
+        "summary"
+      ],
+      "path": "genesis/graph_v2/analytics.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "eba4ed60a8eb48e5:graph:genesis.graph_v2.compression",
+    "type": "graph",
+    "name": "genesis.graph_v2.compression",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.42,
+    "evidence": [
+      "module:genesis.graph_v2.compression"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.core.GraphEdge",
+      "genesis.graph_v2.core.GraphLayer",
+      "genesis.graph_v2.core.GraphNode",
+      "genesis.graph_v2.core.LayerType"
+    ],
+    "consumers": [
+      "genesis.graph_v2",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.42,
+    "risk": 0.39,
+    "health": 0.48,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "GraphCompression"
+      ],
+      "functions": [
+        "serialize_layer",
+        "deserialize_layer",
+        "compression_ratio",
+        "strip_properties"
+      ],
+      "path": "genesis/graph_v2/compression.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "1e036db9260cf92b:graph:genesis.graph_v2.core",
+    "type": "graph",
+    "name": "genesis.graph_v2.core",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.45,
+    "evidence": [
+      "module:genesis.graph_v2.core"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.autonomous.orchestrator",
+      "genesis.graph_v2",
+      "genesis.graph_v2.compression",
+      "genesis.graph_v2.federation",
+      "genesis.graph_v2.index",
+      "genesis.graph_v2.layers",
+      "genesis.graph_v2.partition",
+      "genesis.graph_v2.versioning",
+      "genesis.repository_graph",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.45,
+    "risk": 0.49,
+    "health": 0.47,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "LayerType",
+        "GraphNode",
+        "GraphEdge",
+        "GraphSnapshot",
+        "GraphEntity",
+        "GraphLayer",
+        "UnifiedGraph"
+      ],
+      "functions": [
+        "__post_init__",
+        "has_label",
+        "__post_init__",
+        "__post_init__",
+        "__init__",
+        "__init__",
+        "add_node",
+        "get_node",
+        "remove_node",
+        "add_edge",
+        "get_edge",
+        "remove_edge",
+        "find_nodes_by_label",
+        "find_nodes",
+        "neighbors",
+        "node_count",
+        "edge_count",
+        "snapshot",
+        "summary",
+        "__init__",
+        "create_layer",
+        "get_layer",
+        "remove_layer",
+        "list_layers",
+        "layer_count",
+        "snapshot",
+        "summary"
+      ],
+      "path": "genesis/graph_v2/core.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "feb9da1404ff9d18:graph:genesis.graph_v2.federation",
+    "type": "graph",
+    "name": "genesis.graph_v2.federation",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.graph_v2.federation"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.core.GraphLayer",
+      "genesis.graph_v2.core.UnifiedGraph"
+    ],
+    "consumers": [
+      "genesis.graph_v2",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.44,
+    "risk": 0.36,
+    "health": 0.5,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "FederationLink",
+        "GraphFederation"
+      ],
+      "functions": [
+        "__init__",
+        "__init__",
+        "register",
+        "unregister",
+        "link",
+        "sync",
+        "federated_graph",
+        "summary"
+      ],
+      "path": "genesis/graph_v2/federation.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "4944d5daf83e24ae:graph:genesis.graph_v2.index",
+    "type": "graph",
+    "name": "genesis.graph_v2.index",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.4,
+    "evidence": [
+      "module:genesis.graph_v2.index"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.core.GraphLayer"
+    ],
+    "consumers": [
+      "genesis.graph_v2",
+      "genesis.repository_graph",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.4,
+    "risk": 0.37,
+    "health": 0.47,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "GraphIndex"
+      ],
+      "functions": [
+        "__init__",
+        "index_layer",
+        "find_by_type",
+        "find_by_label",
+        "find_by_property",
+        "search",
+        "clear",
+        "summary"
+      ],
+      "path": "genesis/graph_v2/index.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "3380e62fa40b81f6:graph:genesis.graph_v2.layers",
+    "type": "graph",
+    "name": "genesis.graph_v2.layers",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.2,
+    "evidence": [
+      "module:genesis.graph_v2.layers"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.core.GraphEdge",
+      "genesis.graph_v2.core.GraphLayer",
+      "genesis.graph_v2.core.GraphNode",
+      "genesis.graph_v2.core.LayerType"
+    ],
+    "consumers": [
+      "genesis.graph_v2",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.2,
+    "risk": 0.5,
+    "health": 0.29,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "StructuralGraph",
+        "SemanticGraph",
+        "CapabilityGraph",
+        "ArchitectureGraph",
+        "RuntimeGraph",
+        "DependencyGraph",
+        "KnowledgeGraph",
+        "MemoryGraph",
+        "EvolutionGraph",
+        "ExperimentGraph",
+        "ResearchGraph",
+        "OrganizationGraph"
+      ],
+      "functions": [
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__"
+      ],
+      "path": "genesis/graph_v2/layers.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "51dcabcc62fece32:graph:genesis.graph_v2.partition",
+    "type": "graph",
+    "name": "genesis.graph_v2.partition",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.42,
+    "evidence": [
+      "module:genesis.graph_v2.partition"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.core.GraphEdge",
+      "genesis.graph_v2.core.GraphLayer",
+      "genesis.graph_v2.core.GraphNode",
+      "genesis.graph_v2.core.LayerType",
+      "genesis.graph_v2.core.UnifiedGraph"
+    ],
+    "consumers": [
+      "genesis.graph_v2",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.42,
+    "risk": 0.41,
+    "health": 0.47,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "GraphPartition"
+      ],
+      "functions": [
+        "by_label",
+        "by_type",
+        "random_shard",
+        "summary"
+      ],
+      "path": "genesis/graph_v2/partition.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "dfa4fb9c910bb1e6:graph:genesis.graph_v2.versioning",
+    "type": "graph",
+    "name": "genesis.graph_v2.versioning",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.45,
+    "evidence": [
+      "module:genesis.graph_v2.versioning"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.core.GraphEdge",
+      "genesis.graph_v2.core.GraphLayer",
+      "genesis.graph_v2.core.GraphNode",
+      "genesis.graph_v2.core.GraphSnapshot",
+      "genesis.graph_v2.core.UnifiedGraph",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.graph_v2",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.45,
+    "risk": 0.42,
+    "health": 0.49,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "GraphDiff",
+        "GraphMerge",
+        "GraphVersioning"
+      ],
+      "functions": [
+        "total_changes",
+        "summary",
+        "__init__",
+        "merge_layers",
+        "conflicts",
+        "__init__",
+        "snapshot_layer",
+        "diff",
+        "list_versions",
+        "summary"
+      ],
+      "path": "genesis/graph_v2/versioning.py",
+      "package": "genesis.graph_v2"
+    }
+  },
+  {
+    "id": "f0e5107ca3b22639:graph:genesis.graphdb",
+    "type": "graph",
+    "name": "genesis.graphdb",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.graphdb"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain",
+      "genesis.brain.graph",
+      "genesis.civilization.knowledge",
+      "genesis.tests.test_brain",
+      "genesis.tests.test_graphdb"
+    ],
+    "maturity": 1.0,
+    "risk": 0.24,
+    "health": 0.93,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "Node",
+        "Edge",
+        "GraphQueryBuilder",
+        "PersistentGraphDB"
+      ],
+      "functions": [
+        "__post_init__",
+        "to_dict",
+        "to_json",
+        "from_dict",
+        "__post_init__",
+        "to_dict",
+        "to_json",
+        "from_dict",
+        "__init__",
+        "of_type",
+        "named",
+        "with_tag",
+        "with_confidence",
+        "from_source",
+        "created_between",
+        "limit",
+        "offset",
+        "order_by",
+        "search",
+        "execute",
+        "first",
+        "count",
+        "exists",
+        "neighbors",
+        "bfs",
+        "__init__",
+        "_connect",
+        "_init_schema",
+        "conn",
+        "add_node",
+        "add_node_bulk",
+        "get_node",
+        "delete_node",
+        "node_count",
+        "_query_nodes",
+        "_search_nodes",
+        "add_edge",
+        "add_edge_bulk",
+        "get_edge",
+        "get_edges",
+        "delete_edge",
+        "edge_count",
+        "neighbors",
+        "_traverse_neighbors",
+        "bfs",
+        "_bfs",
+        "_get_connections",
+        "query",
+        "degree_centrality",
+        "clustering_coefficient",
+        "density",
+        "node_type_distribution",
+        "relation_distribution",
+        "source_distribution",
+        "statistics",
+        "export_json",
+        "export_csv",
+        "export_gexf",
+        "load_from_unified_graph",
+        "close",
+        "reconnect",
+        "vacuum",
+        "_row_to_node",
+        "_row_to_edge"
+      ],
+      "path": "genesis/graphdb/__init__.py",
+      "package": "genesis.graphdb"
+    }
+  },
+  {
+    "id": "bae0be2eaecc92ec:graph:genesis.hypergraph",
+    "type": "graph",
+    "name": "genesis.hypergraph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.hypergraph"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain_v4",
+      "genesis.platform",
+      "genesis.tests.programs.test_hypergraph"
+    ],
+    "maturity": 0.7,
+    "risk": 0.32,
+    "health": 0.69,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "EdgeType",
+        "HyperedgeType",
+        "HypergraphNode",
+        "HypergraphEdge",
+        "Hyperedge",
+        "Hypergraph",
+        "HypergraphKnowledgeCore"
+      ],
+      "functions": [
+        "__post_init__",
+        "__hash__",
+        "__eq__",
+        "__post_init__",
+        "__hash__",
+        "__eq__",
+        "__post_init__",
+        "__hash__",
+        "__init__",
+        "add_node",
+        "get_node",
+        "find_nodes",
+        "remove_node",
+        "update_node",
+        "node_count",
+        "add_edge",
+        "get_edge",
+        "find_edges",
+        "remove_edge",
+        "relate",
+        "edge_count",
+        "add_hyperedge",
+        "get_hyperedge",
+        "find_hyperedges",
+        "hyperedge_count",
+        "neighbors",
+        "path",
+        "subgraph",
+        "connected_components",
+        "degree_centrality",
+        "betweenness_centrality",
+        "clustering_coefficient",
+        "detect_communities",
+        "influence_propagation",
+        "anomaly_scores",
+        "graph_embeddings",
+        "pattern_match",
+        "to_dict",
+        "summary",
+        "__init__",
+        "graph",
+        "add_inference_rule",
+        "infer_edges",
+        "similarity_search",
+        "_cosine_similarity",
+        "summary"
+      ],
+      "path": "genesis/hypergraph.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "fc8c324bc3625b97:graph:genesis.intelligence.kgraph",
+    "type": "graph",
+    "name": "genesis.intelligence.kgraph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.intelligence.kgraph"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.brain.sync",
+      "genesis.intelligence",
+      "genesis.intelligence.cli"
+    ],
+    "maturity": 1.0,
+    "risk": 0.07,
+    "health": 0.98,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "KNode",
+        "KEdge",
+        "KnowledgeGraph"
+      ],
+      "functions": [
+        "__init__",
+        "to_dict",
+        "__init__",
+        "to_dict",
+        "__init__",
+        "add_node",
+        "add_edge",
+        "get_node",
+        "find_nodes",
+        "find_edges",
+        "neighbors",
+        "count_by_kind",
+        "count_edges_by_kind",
+        "summary",
+        "to_dict",
+        "from_dict"
+      ],
+      "path": "genesis/intelligence/kgraph.py",
+      "package": "genesis.intelligence"
+    }
+  },
+  {
+    "id": "88097d80324916c3:graph:genesis.knowledge_graph",
+    "type": "graph",
+    "name": "genesis.knowledge_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.knowledge_graph"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.programs.test_knowledge_graph"
+    ],
+    "maturity": 0.7,
+    "risk": 0.25,
+    "health": 0.71,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "EntityDomain",
+        "GraphType",
+        "KEntity",
+        "KRelation",
+        "KnowledgeGraph",
+        "PlanetaryKnowledgeGraph"
+      ],
+      "functions": [
+        "__post_init__",
+        "__post_init__",
+        "__init__",
+        "entity_count",
+        "relation_count",
+        "add_entity",
+        "add_relation",
+        "relate",
+        "get_entity",
+        "find_entities",
+        "neighbors_of",
+        "subgraph",
+        "global_graph",
+        "graph_for_domain",
+        "query",
+        "summary",
+        "__init__",
+        "global_graph",
+        "semantic_graph",
+        "temporal_graph",
+        "lineage_graph",
+        "causal_graph",
+        "evolution_graph",
+        "ingest_entity",
+        "ingest_relation",
+        "ingest_repository",
+        "ingest_package",
+        "ingest_cve",
+        "_find_or_create_entity",
+        "summary"
+      ],
+      "path": "genesis/knowledge_graph.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "85c36add655949e4:graph:genesis.laboratory.mining.subgraph",
+    "type": "graph",
+    "name": "genesis.laboratory.mining.subgraph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.laboratory.mining.subgraph"
+    ],
+    "dependencies": [
+      "genesis.laboratory.genome.model.GenomeGene",
+      "genesis.laboratory.genome.model.SoftwareGenome"
+    ],
+    "consumers": [
+      "genesis.laboratory",
+      "genesis.laboratory.cli",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 0.7,
+    "risk": 0.28,
+    "health": 0.71,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "MinedPattern",
+        "ArchitecturalMotif",
+        "PatternCluster",
+        "FrequentSubgraphMiner",
+        "MotifDetector",
+        "PatternCluster",
+        "PatternEvolution",
+        "PatternEvolutionTracker"
+      ],
+      "functions": [
+        "mine",
+        "_find_gene",
+        "detect",
+        "_is_subsequence",
+        "cross_repo_motifs",
+        "cluster_patterns",
+        "_pattern_similarity",
+        "track"
+      ],
+      "path": "genesis/laboratory/mining/subgraph.py",
+      "package": "genesis.laboratory.mining"
+    }
+  },
+  {
+    "id": "9fdf3314e0c20287:graph:genesis.laboratory.world_graph",
+    "type": "graph",
+    "name": "genesis.laboratory.world_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.laboratory.world_graph"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.laboratory.cli",
+      "genesis.tests.test_laboratory"
+    ],
+    "maturity": 1.0,
+    "risk": 0.06,
+    "health": 0.98,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "WorldNode",
+        "WorldEdge",
+        "WorldGraph"
+      ],
+      "functions": [
+        "to_dict",
+        "to_dict",
+        "__init__",
+        "add_node",
+        "add_edge",
+        "add_repository_graph",
+        "add_architecture_node",
+        "add_knowledge_node",
+        "add_genome_node",
+        "find_by_type",
+        "find_edges",
+        "neighbors",
+        "merge_genome",
+        "save",
+        "load",
+        "summary"
+      ],
+      "path": "genesis/laboratory/world_graph.py",
+      "package": "genesis.laboratory"
+    }
+  },
+  {
+    "id": "f95a9c0e0faafca8:graph:genesis.meta.build_graph",
+    "type": "graph",
+    "name": "genesis.meta.build_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.meta.build_graph"
+    ],
+    "dependencies": [
+      "genesis.meta.workspace.Repository",
+      "genesis.meta.workspace.Workspace",
+      "genesis.utils.graph_algorithms.find_cycles",
+      "genesis.utils.graph_algorithms.topological_sort",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.meta",
+      "genesis.meta.meta_compiler",
+      "genesis.tests.test_meta"
+    ],
+    "maturity": 1.0,
+    "risk": 0.16,
+    "health": 0.95,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "BuildNodeType",
+        "BuildStatus",
+        "BuildNode",
+        "BuildArtifact",
+        "BuildGraph"
+      ],
+      "functions": [
+        "__post_init__",
+        "__post_init__",
+        "__init__",
+        "add_node",
+        "remove_node",
+        "get_node",
+        "nodes_by_type",
+        "nodes_for_repo",
+        "execution_order",
+        "build",
+        "build_all",
+        "add_artifact",
+        "get_artifact",
+        "artifacts_for_build",
+        "failed_nodes",
+        "completed_nodes",
+        "critical_path",
+        "_depth",
+        "summary"
+      ],
+      "path": "genesis/meta/build_graph.py",
+      "package": "genesis.meta"
+    }
+  },
+  {
+    "id": "408569ad736206f5:graph:genesis.meta.graph",
+    "type": "graph",
+    "name": "genesis.meta.graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.meta.graph"
+    ],
+    "dependencies": [
+      "genesis.meta.workspace.Repository",
+      "genesis.meta.workspace.Workspace",
+      "genesis.utils.graph_algorithms.find_cycles",
+      "genesis.utils.graph_algorithms.topological_sort"
+    ],
+    "consumers": [
+      "genesis.meta",
+      "genesis.meta.meta_compiler",
+      "genesis.meta.optimization",
+      "genesis.meta.twin",
+      "genesis.tests.test_meta"
+    ],
+    "maturity": 1.0,
+    "risk": 0.17,
+    "health": 0.95,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "WorkspaceDependencyGraph",
+        "WorkspaceCapabilityMap",
+        "WorkspaceGraph"
+      ],
+      "functions": [
+        "__init__",
+        "_rebuild",
+        "edges",
+        "has_cycles",
+        "cycles",
+        "topological_order",
+        "fan_in",
+        "fan_out",
+        "dependency_depth",
+        "transitive_dependencies",
+        "leaf_repositories",
+        "root_repositories",
+        "upstream",
+        "downstream",
+        "summary",
+        "__init__",
+        "providers_of",
+        "consumers_of",
+        "all_capabilities",
+        "unresolved_consumers",
+        "orphan_providers",
+        "coverage",
+        "__init__",
+        "summary",
+        "depth",
+        "walk",
+        "walk"
+      ],
+      "path": "genesis/meta/graph.py",
+      "package": "genesis.meta"
+    }
+  },
+  {
+    "id": "011f592956183dca:graph:genesis.metamodel.graph",
+    "type": "graph",
+    "name": "genesis.metamodel.graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.metamodel.graph"
+    ],
+    "dependencies": [
+      "genesis.metamodel.entity.EntityMetadata",
+      "genesis.metamodel.entity.EntityRelation",
+      "genesis.metamodel.entity.EntityType",
+      "genesis.metamodel.entity.UnifiedEntity",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.datalake",
+      "genesis.metamodel",
+      "genesis.metamodel.query",
+      "genesis.tests.test_acquisition",
+      "genesis.tests.test_datalake"
+    ],
+    "maturity": 1.0,
+    "risk": 0.21,
+    "health": 0.94,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "Edge",
+        "UnifiedGraph"
+      ],
+      "functions": [
+        "to_dict",
+        "from_dict",
+        "__init__",
+        "add_entity",
+        "get_entity",
+        "remove_entity",
+        "entity_count",
+        "count_by_type",
+        "find_by_type",
+        "find_by_name",
+        "find_by_attr",
+        "find",
+        "type_counts",
+        "add_edge",
+        "edges_for",
+        "edges_between",
+        "neighbors",
+        "subgraph",
+        "detect_pattern",
+        "merge",
+        "filter",
+        "clear",
+        "summary",
+        "_top_relations",
+        "to_dict",
+        "to_json",
+        "from_dict",
+        "save",
+        "load"
+      ],
+      "path": "genesis/metamodel/graph.py",
+      "package": "genesis.metamodel"
+    }
+  },
+  {
+    "id": "3dd1992131178103:graph:genesis.observatory.graph",
+    "type": "graph",
+    "name": "genesis.observatory.graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.observatory.graph"
+    ],
+    "dependencies": [
+      "genesis.usir.USIRGraph"
+    ],
+    "consumers": [
+      "genesis.civilization.search",
+      "genesis.observatory",
+      "genesis.tests.test_observatory"
+    ],
+    "maturity": 1.0,
+    "risk": 0.11,
+    "health": 0.97,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "ObservedNode",
+        "CrossRepoEdge",
+        "ObservatorySnapshot",
+        "ObservatoryGraph"
+      ],
+      "functions": [
+        "__init__",
+        "add_repo_graph",
+        "add_cross_repo_edge",
+        "find_by_name",
+        "find_by_kind",
+        "find_by_repo",
+        "find_by_language",
+        "find_similar",
+        "common_patterns",
+        "cross_repo_dependencies",
+        "summary",
+        "save",
+        "load",
+        "snapshot"
+      ],
+      "path": "genesis/observatory/graph.py",
+      "package": "genesis.observatory"
+    }
+  },
+  {
+    "id": "72fbac45798bb94f:graph:genesis.os.task_graph",
+    "type": "graph",
+    "name": "genesis.os.task_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.os.task_graph"
+    ],
+    "dependencies": [
+      "genesis.utils.graph_algorithms.find_cycles",
+      "genesis.utils.graph_algorithms.topological_sort",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.os",
+      "genesis.os.runtime",
+      "genesis.tests.test_os"
+    ],
+    "maturity": 1.0,
+    "risk": 0.12,
+    "health": 0.96,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "Task",
+        "PersistentTaskGraph"
+      ],
+      "functions": [
+        "duration",
+        "__init__",
+        "add_task",
+        "add_dependency",
+        "get_task",
+        "update_task",
+        "ready_tasks",
+        "blocked_tasks",
+        "execution_order",
+        "detect_cycles",
+        "subgraph",
+        "task_count",
+        "summary",
+        "_state_path",
+        "_save",
+        "_load"
+      ],
+      "path": "genesis/os/task_graph.py",
+      "package": "genesis.os"
+    }
+  },
+  {
+    "id": "d4aa238c304fd0e1:graph:genesis.repository_graph",
+    "type": "graph",
+    "name": "genesis.repository_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.repository_graph"
+    ],
+    "dependencies": [
+      "genesis.graph_v2.analytics.GraphAnalytics",
+      "genesis.graph_v2.core.GraphEdge",
+      "genesis.graph_v2.core.GraphLayer",
+      "genesis.graph_v2.core.GraphNode",
+      "genesis.graph_v2.core.LayerType",
+      "genesis.graph_v2.core.UnifiedGraph",
+      "genesis.graph_v2.index.GraphIndex"
+    ],
+    "consumers": [],
+    "maturity": 0.7,
+    "risk": 0.3,
+    "health": 0.7,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "EngineeringKnowledgeGraph"
+      ],
+      "functions": [
+        "_load_catalog",
+        "__init__",
+        "build",
+        "graph",
+        "index",
+        "query",
+        "find_module",
+        "find_by_type",
+        "find_by_label",
+        "top_modules",
+        "summary"
+      ],
+      "path": "genesis/repository_graph.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "ad01be7f06467135:graph:genesis.tests.programs.test_hypergraph",
+    "type": "graph",
+    "name": "genesis.tests.programs.test_hypergraph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.programs.test_hypergraph"
+    ],
+    "dependencies": [
+      "genesis.hypergraph.EdgeType",
+      "genesis.hypergraph.Hyperedge",
+      "genesis.hypergraph.HyperedgeType",
+      "genesis.hypergraph.Hypergraph",
+      "genesis.hypergraph.HypergraphEdge",
+      "genesis.hypergraph.HypergraphKnowledgeCore",
+      "genesis.hypergraph.HypergraphNode"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.42,
+    "health": 0.52,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "TestHypergraphNode",
+        "TestHypergraphEdge",
+        "TestHyperedge",
+        "TestHypergraph",
+        "TestHypergraphKnowledgeCore"
+      ],
+      "functions": [
+        "test_create_minimal",
+        "test_create_with_fields",
+        "test_hash_and_eq",
+        "test_create_minimal",
+        "test_create_with_fields",
+        "test_create",
+        "test_hash",
+        "setup_method",
+        "test_add_and_get_node",
+        "test_get_nonexistent_node",
+        "test_find_nodes_by_type",
+        "test_find_nodes_by_tag",
+        "test_find_nodes_by_label",
+        "test_find_nodes_by_properties",
+        "test_remove_node",
+        "test_remove_node_cleans_edges",
+        "test_update_node",
+        "test_add_and_get_edge",
+        "test_find_edges_by_relation",
+        "test_find_edges_by_source_target",
+        "test_remove_edge",
+        "test_relate_nonexistent_nodes",
+        "test_add_and_find_hyperedge",
+        "test_neighbors_outgoing",
+        "test_neighbors_incoming",
+        "test_path_finding",
+        "test_path_no_route",
+        "test_path_nonexistent",
+        "test_subgraph",
+        "test_connected_components",
+        "test_degree_centrality",
+        "test_betweenness_centrality",
+        "test_clustering_coefficient",
+        "test_community_detection",
+        "test_influence_propagation",
+        "test_anomaly_scores",
+        "test_graph_embeddings",
+        "test_pattern_match",
+        "test_to_dict",
+        "test_summary",
+        "setup_method",
+        "test_graph_access",
+        "test_add_inference_rule",
+        "test_infer_edges",
+        "test_similarity_search",
+        "test_cosine_similarity",
+        "test_summary"
+      ],
+      "path": "genesis/tests/programs/test_hypergraph.py",
+      "package": "genesis.tests.programs"
+    }
+  },
+  {
+    "id": "78051a881972e4f9:graph:genesis.tests.programs.test_knowledge_graph",
+    "type": "graph",
+    "name": "genesis.tests.programs.test_knowledge_graph",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.47,
+    "evidence": [
+      "module:genesis.tests.programs.test_knowledge_graph"
+    ],
+    "dependencies": [
+      "genesis.knowledge_graph.EntityDomain",
+      "genesis.knowledge_graph.GraphType",
+      "genesis.knowledge_graph.KEntity",
+      "genesis.knowledge_graph.KRelation",
+      "genesis.knowledge_graph.KnowledgeGraph",
+      "genesis.knowledge_graph.PlanetaryKnowledgeGraph"
+    ],
+    "consumers": [],
+    "maturity": 0.47,
+    "risk": 0.37,
+    "health": 0.52,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "TestKnowledgeGraph",
+        "TestPlanetaryKnowledgeGraph"
+      ],
+      "functions": [
+        "test_add_entity",
+        "test_add_relation",
+        "test_find_entities",
+        "test_neighbors_of",
+        "test_subgraph",
+        "test_query",
+        "test_global_graph",
+        "test_ingest_repository",
+        "test_ingest_package",
+        "test_ingest_cve",
+        "test_multiple_graphs",
+        "test_summary"
+      ],
+      "path": "genesis/tests/programs/test_knowledge_graph.py",
+      "package": "genesis.tests.programs"
+    }
+  },
+  {
+    "id": "e37209ea3e7a6381:graph:genesis.tests.test_execution_graph",
+    "type": "graph",
+    "name": "genesis.tests.test_execution_graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.test_execution_graph"
+    ],
+    "dependencies": [
+      "genesis.execution_graph.EdgeType",
+      "genesis.execution_graph.ExecutionEdge",
+      "genesis.execution_graph.ExecutionEngine",
+      "genesis.execution_graph.ExecutionGraph",
+      "genesis.execution_graph.ExecutionGraphMonitor",
+      "genesis.execution_graph.ExecutionNode",
+      "genesis.execution_graph.ExecutionTrace",
+      "genesis.execution_graph.NodeStatus",
+      "genesis.execution_graph.NodeType",
+      "genesis.execution_graph.build_default_execution_graph"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.44,
+    "health": 0.52,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "TestExecutionNode",
+        "TestExecutionEdge",
+        "TestExecutionGraph",
+        "TestBuildDefaultExecutionGraph",
+        "TestExecutionTrace",
+        "TestExecutionEngine",
+        "TestExecutionGraphMonitor"
+      ],
+      "functions": [
+        "test_create",
+        "test_to_dict",
+        "test_create",
+        "test_to_dict",
+        "test_add_and_get_node",
+        "test_add_edge_validates_nodes",
+        "test_add_edge_invalid_raises",
+        "test_connect",
+        "test_successors",
+        "test_predecessors",
+        "test_topological_order",
+        "test_edge_filtering",
+        "test_to_dict",
+        "test_save_and_load",
+        "test_all_nodes_present",
+        "test_boot_to_shutdown_path",
+        "test_feedback_loops",
+        "test_create",
+        "test_duration_zero_if_not_completed",
+        "test_to_dict",
+        "test_execute_full_graph",
+        "test_execute_mid_graph",
+        "test_current_trace",
+        "test_monitor_recent_traces",
+        "test_latest_trace",
+        "test_average_duration",
+        "test_summary"
+      ],
+      "path": "genesis/tests/test_execution_graph.py",
+      "package": "genesis.tests"
+    }
+  },
+  {
+    "id": "4b92693a334901ee:graph:genesis.tests.test_graphdb",
+    "type": "graph",
+    "name": "genesis.tests.test_graphdb",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.test_graphdb"
+    ],
+    "dependencies": [
+      "genesis.graphdb.Edge",
+      "genesis.graphdb.GraphQueryBuilder",
+      "genesis.graphdb.Node",
+      "genesis.graphdb.PersistentGraphDB"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.39,
+    "health": 0.53,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "TestNode",
+        "TestEdge",
+        "TestPersistentGraphDB"
+      ],
+      "functions": [
+        "test_defaults",
+        "test_auto_uid",
+        "test_custom_uid",
+        "test_to_dict",
+        "test_from_dict_roundtrip",
+        "test_to_json",
+        "test_defaults",
+        "test_custom_id",
+        "test_to_dict",
+        "test_from_dict_roundtrip",
+        "test_init",
+        "test_add_and_get_node",
+        "test_add_node_with_attributes",
+        "test_delete_node",
+        "test_add_and_get_edge",
+        "test_get_edges_by_source",
+        "test_delete_edge",
+        "test_bulk_node_insert",
+        "test_bulk_edge_insert",
+        "test_query_nodes",
+        "test_query_by_name",
+        "test_query_by_tag",
+        "test_query_builder_fluent",
+        "test_query_builder_first",
+        "test_query_builder_exists",
+        "test_neighbors",
+        "test_neighbors_depth",
+        "test_bfs",
+        "test_bfs_all_paths",
+        "test_degree_centrality",
+        "test_clustering_coefficient",
+        "test_density",
+        "test_statistics",
+        "test_node_type_distribution",
+        "test_relation_distribution",
+        "test_export_json",
+        "test_export_csv",
+        "test_export_gexf",
+        "test_reconnect",
+        "test_vacuum",
+        "test_close",
+        "test_compressed_export",
+        "test_large_bulk_insert",
+        "test_persistence_across_instances",
+        "test_query_with_limit_offset",
+        "test_query_with_source"
+      ],
+      "path": "genesis/tests/test_graphdb.py",
+      "package": "genesis.tests"
+    }
+  },
+  {
+    "id": "579019d3801178ac:graph:genesis.tests.test_ucos_graph",
+    "type": "graph",
+    "name": "genesis.tests.test_ucos_graph",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.39,
+    "evidence": [
+      "module:genesis.tests.test_ucos_graph"
+    ],
+    "dependencies": [
+      "genesis.ucos.capability.Capability",
+      "genesis.ucos.capability.CapabilityDefinition",
+      "genesis.ucos.graph.CapabilityDependencyGraph",
+      "genesis.ucos.registry.CapabilityRegistry"
+    ],
+    "consumers": [],
+    "maturity": 0.39,
+    "risk": 0.38,
+    "health": 0.46,
+    "role": "graph",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "graph",
+        "test_no_cycles",
+        "test_cycle_detection",
+        "test_topsort",
+        "test_fan_in_fan_out",
+        "test_degree",
+        "test_dependency_depth",
+        "test_critical_path",
+        "test_dependency_subgraph",
+        "test_consumer_subgraph",
+        "test_orphans",
+        "test_layer_assignment",
+        "test_summary"
+      ],
+      "path": "genesis/tests/test_ucos_graph.py",
+      "package": "genesis.tests"
+    }
+  },
+  {
+    "id": "52501089f1ba1de0:graph:genesis.ucos.graph",
+    "type": "graph",
+    "name": "genesis.ucos.graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.ucos.graph"
+    ],
+    "dependencies": [
+      "genesis.ucos.capability.Capability",
+      "genesis.ucos.capability.CapabilityState",
+      "genesis.utils.graph_algorithms.find_cycles",
+      "genesis.utils.graph_algorithms.topological_sort"
+    ],
+    "consumers": [
+      "genesis.tests.test_ucos_graph",
+      "genesis.ucos",
+      "genesis.ucos.ucos"
+    ],
+    "maturity": 0.7,
+    "risk": 0.28,
+    "health": 0.71,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "CapabilityDependencyGraph"
+      ],
+      "functions": [
+        "__init__",
+        "_build_edges",
+        "_build_adjacency",
+        "cycles",
+        "has_cycles",
+        "topsort",
+        "fan_in",
+        "fan_out",
+        "degree",
+        "dependency_depth",
+        "critical_path",
+        "dependency_subgraph",
+        "consumer_subgraph",
+        "orphan_capabilities",
+        "layer_assignment",
+        "summary",
+        "depth"
+      ],
+      "path": "genesis/ucos/graph.py",
+      "package": "genesis.ucos"
+    }
+  },
+  {
+    "id": "de9a73dddeb306a7:graph:genesis.ued.graph",
+    "type": "graph",
+    "name": "genesis.ued.graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.75,
+    "evidence": [
+      "module:genesis.ued.graph"
+    ],
+    "dependencies": [
+      "genesis.ued.types.Query",
+      "genesis.ued.types.QueryResult",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.tests.test_ued",
+      "genesis.ued",
+      "genesis.ued.database"
+    ],
+    "maturity": 0.75,
+    "risk": 0.25,
+    "health": 0.75,
+    "role": "graph",
+    "metadata": {
+      "classes": [
+        "GraphNode",
+        "GraphEdge",
+        "GraphStore"
+      ],
+      "functions": [
+        "__init__",
+        "has_label",
+        "__init__",
+        "__init__",
+        "add_node",
+        "get_node",
+        "delete_node",
+        "add_edge",
+        "get_edge",
+        "delete_edge",
+        "find_nodes_by_label",
+        "find_nodes",
+        "neighbors",
+        "bfs",
+        "dfs",
+        "shortest_path",
+        "find_paths",
+        "node_count",
+        "edge_count",
+        "summary",
+        "_dfs",
+        "_dfs_paths"
+      ],
+      "path": "genesis/ued/graph.py",
+      "package": "genesis.ued"
+    }
+  },
+  {
+    "id": "7cbb067966b49a94:graph:genesis.utils.graph_algorithms",
+    "type": "graph",
+    "name": "genesis.utils.graph_algorithms",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.6,
+    "evidence": [
+      "module:genesis.utils.graph_algorithms"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.capability.registry",
+      "genesis.civilization.formal",
+      "genesis.core.uir",
+      "genesis.execution.workflow",
+      "genesis.graph.engine",
+      "genesis.meta.build_graph",
+      "genesis.meta.graph",
+      "genesis.os.task_graph",
+      "genesis.runtime.executor",
+      "genesis.tests.test_architecture",
+      "genesis.tests.test_phase0",
+      "genesis.ucos.graph"
+    ],
+    "maturity": 0.6,
+    "risk": 0.41,
+    "health": 0.6,
+    "role": "graph",
+    "metadata": {
+      "classes": [],
+      "functions": [
+        "topological_sort",
+        "find_cycles",
+        "subgraph",
+        "_dfs"
+      ],
+      "path": "genesis/utils/graph_algorithms.py",
+      "package": "genesis.utils"
+    }
+  }
+]

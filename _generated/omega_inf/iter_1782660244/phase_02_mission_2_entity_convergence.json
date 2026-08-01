@@ -1,0 +1,16 @@
+{
+  "modules_with_entities": 0,
+  "uem_compliant": 0,
+  "uem_non_compliant": 0,
+  "convergence_ratio": 0.0,
+  "non_compliant_modules": [],
+  "uem_keywords_checked": [
+    "generate_id",
+    "UniversalEntity",
+    "EntityCategory",
+    "URelType",
+    "canonical_registry",
+    "URelationship",
+    "RelationshipEngine"
+  ]
+}

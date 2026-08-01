@@ -1,0 +1,47 @@
+{
+  "total_institutes": 17,
+  "by_type": {
+    "university": 1,
+    "laboratory": 1,
+    "company": 1,
+    "standards_body": 0,
+    "market": 1,
+    "foundation": 1,
+    "review_board": 1,
+    "architecture_council": 1,
+    "certification_authority": 1,
+    "research_journal": 1,
+    "innovation_center": 1,
+    "economics_council": 1,
+    "knowledge_exchange": 1,
+    "open_source_foundation": 1,
+    "government": 1,
+    "patent_office": 1,
+    "engineering_economy": 1,
+    "scientific_community": 1
+  },
+  "by_status": {
+    "proposed": 0,
+    "chartered": 0,
+    "active": 17,
+    "dormant": 0,
+    "dissolved": 0
+  },
+  "total_contracts": 0,
+  "total_reputation_events": 0,
+  "total_relationships": 16,
+  "contracts": [
+    {
+      "name": "Research Grant",
+      "producer": "cdf9f20a5f86",
+      "consumer": "88b5f109d27f",
+      "value": 100.0
+    },
+    {
+      "name": "Standards Compliance",
+      "producer": "e5d1d707a939",
+      "consumer": "dc5a12d88d8b",
+      "value": 50.0
+    }
+  ]
+}

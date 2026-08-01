@@ -1,0 +1,121 @@
+{
+  "domains_mapped": {
+    "digital_twin": 33,
+    "knowledge_graph": 38,
+    "ontology": 4,
+    "planner": 10,
+    "execution": 18,
+    "economics": 4,
+    "memory": 10,
+    "research": 6,
+    "experiments": 1,
+    "architecture": 12,
+    "documentation": 2
+  },
+  "domain_module_lists": {
+    "digital_twin": [
+      "genesis.digital_civilization",
+      "genesis.digital_twin",
+      "genesis.digital_twin.analyzers",
+      "genesis.digital_twin.analyzers.coupling",
+      "genesis.digital_twin.analyzers.drift",
+      "genesis.digital_twin.analyzers.evolution",
+      "genesis.digital_twin.analyzers.smells",
+      "genesis.digital_twin.builder",
+      "genesis.digital_twin.discovery",
+      "genesis.digital_twin.evolution"
+    ],
+    "knowledge_graph": [
+      "Layer_1_Foundations._graph.semantic_graph",
+      "genesis.brain.graph",
+      "genesis.civilization.knowledge",
+      "genesis.compiler.codegen.graph_gen",
+      "genesis.execution_graph",
+      "genesis.graph",
+      "genesis.graph.engine",
+      "genesis.graph_v2",
+      "genesis.graph_v2.analytics",
+      "genesis.graph_v2.compression"
+    ],
+    "ontology": [
+      "genesis.brain.entity",
+      "genesis.metamodel.entity",
+      "genesis.ontology",
+      "genesis.utils.identity"
+    ],
+    "planner": [
+      "genesis.intelligence.planning",
+      "genesis.os.planner",
+      "genesis.planetary_knowledge",
+      "genesis.planner",
+      "genesis.planning",
+      "genesis.tests.programs.test_planetary_knowledge",
+      "genesis.tests.test_planner",
+      "genesis.tests.test_planning",
+      "genesis.tests.test_ucos_planner",
+      "genesis.ucos.planner"
+    ],
+    "execution": [
+      "genesis.execution",
+      "genesis.execution.actors",
+      "genesis.execution.engine",
+      "genesis.execution.jobs",
+      "genesis.execution.pipeline",
+      "genesis.execution.retry",
+      "genesis.execution.tasks",
+      "genesis.execution.workflow",
+      "genesis.execution_graph",
+      "genesis.kernel.execution_manager"
+    ],
+    "economics": [
+      "genesis.economics",
+      "genesis.repository_economics",
+      "genesis.tests.test_economics",
+      "genesis.tests.test_repository_economics"
+    ],
+    "memory": [
+      "genesis.brain.cognition.memory",
+      "genesis.kernel.memory_manager",
+      "genesis.memory",
+      "genesis.memory.consolidation",
+      "genesis.memory.engine",
+      "genesis.memory.types",
+      "genesis.memory_system",
+      "genesis.os.memory_manager",
+      "genesis.tests.programs.test_memory",
+      "genesis.tests.programs.test_memory_system"
+    ],
+    "research": [
+      "genesis.civilization.research",
+      "genesis.laboratory.experiment",
+      "genesis.repository_scientist",
+      "genesis.scientist",
+      "genesis.tests.programs.test_scientist",
+      "genesis.tests.test_repository_scientist"
+    ],
+    "experiments": [
+      "genesis.laboratory.experiment"
+    ],
+    "architecture": [
+      "Layer_1_Foundations._compiler.venus_compiler",
+      "Layer_1_Foundations._evolution.evolution_agent",
+      "Layer_1_Foundations._graph.semantic_graph",
+      "Layer_1_Foundations._rule_engine.rule_engine",
+      "Layer_1_Foundations._validation.check_naming",
+      "Layer_1_Foundations._validation.check_references",
+      "Layer_1_Foundations._validation.check_templates",
+      "Layer_1_Foundations._validation.generate_catalog",
+      "Layer_1_Foundations._validation.validate_schemas",
+      "genesis.digital_twin.extractors.architecture"
+    ],
+    "documentation": [
+      "genesis.acquisition.sources.docker",
+      "genesis.compiler.codegen.markdown_gen"
+    ]
+  },
+  "graph_relationship_types": 0,
+  "graph_relationship_list": [],
+  "convergence_status": "unified graph spans all domains",
+  "total_domains": 11,
+  "domains_with_coverage": 11
+}

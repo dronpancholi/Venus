@@ -1,0 +1,30 @@
+{
+  "stage_count": 25,
+  "stages": [
+    "observe",
+    "digital_twin",
+    "census",
+    "canonical_audit",
+    "ontology_sync",
+    "schema_validation",
+    "knowledge_graph",
+    "semantic_analysis",
+    "dependency_analysis",
+    "execution_analysis",
+    "economic_analysis",
+    "architecture_analysis",
+    "scientific_analysis",
+    "temporal_analysis",
+    "prediction",
+    "hypothesis",
+    "experiment",
+    "simulation",
+    "verification",
+    "rewrite",
+    "testing",
+    "benchmarking",
+    "docs",
+    "learning",
+    "evolution"
+  ]
+}

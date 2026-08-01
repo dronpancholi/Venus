@@ -1,0 +1,28 @@
+{
+  "entry_points": [
+    "Layer_1_Foundations._compiler.venus_compiler",
+    "Layer_1_Foundations._graph.semantic_graph",
+    "Layer_1_Foundations._rule_engine.rule_engine",
+    "Layer_1_Foundations._validation.check_naming",
+    "Layer_1_Foundations._validation.check_references",
+    "Layer_1_Foundations._validation.check_templates",
+    "Layer_1_Foundations._validation.generate_catalog",
+    "Layer_1_Foundations._validation.validate_schemas",
+    "genesis.__main__",
+    "genesis.census",
+    "genesis.civilization.physics.MaintenanceMomentum",
+    "genesis.cli.commands.CLI",
+    "genesis.intelligence.cli",
+    "genesis.knowledge_graph.EntityDomain",
+    "genesis.marketplace.EconomyDomain",
+    "genesis.physics.MaintainabilityDynamics",
+    "genesis.planetary_knowledge.SourceDomain",
+    "genesis.platform",
+    "genesis.simulator.MaintainabilitySimulator",
+    "genesis.simulator_v2.SimulationDomain",
+    "genesis.simulator_v2.MaintainabilitySimulator",
+    "genesis.tests.programs.test_physics.TestMaintainabilityDynamics",
+    "genesis.tests.programs.test_simulator.TestMaintainabilitySimulator",
+    "genesis.tests.programs.test_simulator_v2.TestMaintainabilitySimulator"
+  ]
+}

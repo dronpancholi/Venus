@@ -1,0 +1,9 @@
+[console_scripts]
+genesis = genesis.__main__:main
+genesis-desktop = genesis.__main__:main
+genesis-doctor = genesis.__main__:main
+genesis-server = genesis.__main__:main
+genesis-terminal = genesis.__main__:main
+
+[gui_scripts]
+genesis-desktop = genesis.__main__:main

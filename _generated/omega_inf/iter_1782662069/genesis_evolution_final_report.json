@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "program": "GENESIS EVOLUTION \u2014 UEECG",
+    "iteration": 1,
+    "total_duration_ms": 36027.84,
+    "significance": 0.53,
+    "workstreams_completed": 9,
+    "convergence_index": 0.495
+  },
+  "scorecard": {
+    "repository_intelligence_score": 0.612,
+    "repository_health_score": 0.593,
+    "engineering_maturity_index": 1.0,
+    "autonomous_evolution_index": 0.8,
+    "innovation_index": 0.472,
+    "knowledge_reuse_index": 0.5,
+    "scientific_output_index": 0.733,
+    "economic_efficiency_index": 0.728,
+    "architectural_quality_index": 0.687,
+    "canonicalization_progress_index": 0.5,
+    "convergence_index": 0.495,
+    "external_precision": 0.5,
+    "external_recall": 0.188,
+    "external_f1_score": 0.273,
+    "external_languages_supported": 6,
+    "performance_memory_mb": 5.6,
+    "performance_latency_ms": 0.0,
+    "benchmark_coverage": "3/9",
+    "coupling_score": 4.76,
+    "refactoring_opportunities": 41
+  },
+  "deliverables": {
+    "self_model_classes": 1358,
+    "self_model_subsystems": 48,
+    "math_models": 5,
+    "physics_laws": 5,
+    "biology_species": 107,
+    "cognition_functions": 10,
+    "universe_entities": 7740,
+    "foundation_entities": 2153,
+    "digital_scientists": 18,
+    "recursive_futures": 12,
+    "benchmarks_established": 3,
+    "benchmark_total": 9,
+    "refactoring_opportunities": 41,
+    "coupling_score": 4.76,
+    "external_languages": 6,
+    "external_precision": 0.5,
+    "duplicates_found": 0
+  },
+  "program_summaries": {
+    "workstream_4": {
+      "name": "Scientific Validation",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "workstream_6": {
+      "name": "Benchmark Suite",
+      "deliverable_count": 1,
+      "keys": [
+        "reasoning_applied",
+        "evidence_sources",
+        "recommendations",
+        "recommendation_count"
+      ]
+    },
+    "workstream_1": {
+      "name": "Complete Repository Audit",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "test_files",
+        "source_files",
+        "module_names",
+        "dependency_pairs"
+      ]
+    },
+    "workstream_2": {
+      "name": "Convergence",
+      "deliverable_count": 1,
+      "keys": [
+        "packages_mapped",
+        "dependency_matrix",
+        "cyclic_dependencies",
+        "cyclic_pairs",
+        "redundant_packages",
+        "overlapping_responsibilities",
+        "overlap_details"
+      ]
+    },
+    "workstream_3": {
+      "name": "Performance",
+      "deliverable_count": 1,
+      "keys": [
+        "modules_with_entities",
+        "uem_compliant",
+        "uem_non_compliant",
+        "convergence_ratio",
+        "non_compliant_modules",
+        "uem_keywords_checked"
+      ]
+    },
+    "workstream_5": {
+      "name": "External Validation",
+      "deliverable_count": 1,
+      "keys": [
+        "total_work_items",
+        "queue_breakdown",
+        "high_priority",
+        "medium_priority",
+        "low_priority",
+        "work_items"
+      ]
+    },
+    "workstream_9": {
+      "name": "Continuous Refactoring",
+      "deliverable_count": 1,
+      "keys": [
+        "total_implementation_cost",
+        "total_maintenance_cost",
+        "total_technical_debt",
+        "total_future_value",
+        "avg_roi",
+        "services"
+      ]
+    },
+    "workstream_10": {
+      "name": "Workstream 9",
+      "deliverable_count": 1,
+      "keys": [
+        "memory_persisted",
+        "memory_path",
+        "total_historical_iterations",
+        "current_snapshot"
+      ]
+    },
+    "workstream_12": {
+      "name": "Workstream 11",
+      "deliverable_count": 1,
+      "keys": [
+        "total_packages",
+        "reusable_services",
+        "packages",
+        "network_topology"
+      ]
+    },
+    "workstream_13": {
+      "name": "Workstream 12",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "workstream_8": {
+      "name": "Self-Improvement",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "workstream_11": {
+      "name": "Workstream 10",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "workstream_14": {
+      "name": "Workstream 13",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

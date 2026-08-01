@@ -1,0 +1,166 @@
+[
+  {
+    "id": "22e70946d9eb423a:plugin:genesis.kernel.plugin_loader",
+    "type": "plugin",
+    "name": "genesis.kernel.plugin_loader",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.99,
+    "evidence": [
+      "module:genesis.kernel.plugin_loader"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.kernel",
+      "genesis.kernel.kernel",
+      "genesis.tests.test_kernel"
+    ],
+    "maturity": 0.99,
+    "risk": 0.08,
+    "health": 0.97,
+    "role": "plugin",
+    "metadata": {
+      "classes": [
+        "PluginLoader"
+      ],
+      "functions": [
+        "__init__",
+        "load_module",
+        "load_directory",
+        "register_hook",
+        "trigger_hook",
+        "get_plugin",
+        "loaded_plugins",
+        "unload",
+        "summary"
+      ],
+      "path": "genesis/kernel/plugin_loader.py",
+      "package": "genesis.kernel"
+    }
+  },
+  {
+    "id": "464cd6df328d4a48:plugin:genesis.plugin",
+    "type": "plugin",
+    "name": "genesis.plugin",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.35,
+    "evidence": [
+      "module:genesis.plugin"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.package.manager",
+      "genesis.platform",
+      "genesis.plugin.manager",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.35,
+    "risk": 0.39,
+    "health": 0.43,
+    "role": "plugin",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/plugin/__init__.py",
+      "package": "genesis.plugin"
+    }
+  },
+  {
+    "id": "eac1906972544bdd:plugin:genesis.plugin.manager",
+    "type": "plugin",
+    "name": "genesis.plugin.manager",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.plugin.manager"
+    ],
+    "dependencies": [
+      "genesis.core.exceptions.PluginError",
+      "genesis.events.bus.EventBus",
+      "genesis.plugin.manifest.PluginManifest"
+    ],
+    "consumers": [
+      "genesis.package.manager",
+      "genesis.platform",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.7,
+    "risk": 0.28,
+    "health": 0.71,
+    "role": "plugin",
+    "metadata": {
+      "classes": [
+        "PluginInstance",
+        "Sandbox",
+        "PluginManager"
+      ],
+      "functions": [
+        "__init__",
+        "activate",
+        "deactivate",
+        "get_handler",
+        "__repr__",
+        "__init__",
+        "validate_module",
+        "__init__",
+        "_emit",
+        "register_plugin",
+        "load_from_dir",
+        "_load_plugin",
+        "activate",
+        "deactivate",
+        "activate_all",
+        "get",
+        "all",
+        "trigger_hook",
+        "hot_reload",
+        "validate_all",
+        "to_dict"
+      ],
+      "path": "genesis/plugin/manager.py",
+      "package": "genesis.plugin"
+    }
+  },
+  {
+    "id": "16f714bb0452cb17:plugin:genesis.plugin.manifest",
+    "type": "plugin",
+    "name": "genesis.plugin.manifest",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.plugin.manifest"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.plugin.manager",
+      "genesis.tests.test_platform"
+    ],
+    "maturity": 0.7,
+    "risk": 0.2,
+    "health": 0.73,
+    "role": "plugin",
+    "metadata": {
+      "classes": [
+        "PluginManifest"
+      ],
+      "functions": [
+        "__init__",
+        "add_dependency",
+        "add_hook",
+        "add_command",
+        "validate",
+        "to_dict",
+        "to_yaml",
+        "from_dict",
+        "load"
+      ],
+      "path": "genesis/plugin/manifest.py",
+      "package": "genesis.plugin"
+    }
+  }
+]

@@ -1,0 +1,454 @@
+{
+  "total": 390,
+  "with_tests": 139,
+  "with_docstrings": 330,
+  "with_type_hints": 283,
+  "with_exports": 37,
+  "avg_maturity": 0.679,
+  "avg_test_count": 27.5,
+  "by_maturity": {
+    "high": 201,
+    "medium": 144,
+    "low": 45
+  },
+  "by_package": {
+    "genesis": {
+      "modules": 29,
+      "lines": 10827,
+      "tests": 167,
+      "avg_maturity": 0.71
+    },
+    "genesis.acquisition": {
+      "modules": 2,
+      "lines": 293,
+      "tests": 138,
+      "avg_maturity": 1.0
+    },
+    "genesis.acquisition.sources": {
+      "modules": 18,
+      "lines": 1233,
+      "tests": 0,
+      "avg_maturity": 0.64
+    },
+    "genesis.api": {
+      "modules": 2,
+      "lines": 197,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.autonomous": {
+      "modules": 3,
+      "lines": 330,
+      "tests": 0,
+      "avg_maturity": 0.33
+    },
+    "genesis.brain": {
+      "modules": 6,
+      "lines": 1634,
+      "tests": 462,
+      "avg_maturity": 1.0
+    },
+    "genesis.brain.cognition": {
+      "modules": 10,
+      "lines": 2450,
+      "tests": 810,
+      "avg_maturity": 1.0
+    },
+    "genesis.capability": {
+      "modules": 2,
+      "lines": 276,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.certification": {
+      "modules": 2,
+      "lines": 65,
+      "tests": 0,
+      "avg_maturity": 0.33
+    },
+    "genesis.civilization": {
+      "modules": 2,
+      "lines": 281,
+      "tests": 120,
+      "avg_maturity": 0.79
+    },
+    "genesis.civilization.agents": {
+      "modules": 2,
+      "lines": 1121,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.formal": {
+      "modules": 1,
+      "lines": 328,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.institute": {
+      "modules": 1,
+      "lines": 489,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.knowledge": {
+      "modules": 1,
+      "lines": 523,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.learning": {
+      "modules": 1,
+      "lines": 252,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.physics": {
+      "modules": 1,
+      "lines": 373,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.publications": {
+      "modules": 1,
+      "lines": 395,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.research": {
+      "modules": 1,
+      "lines": 285,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.review": {
+      "modules": 1,
+      "lines": 405,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.search": {
+      "modules": 1,
+      "lines": 275,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.civilization.world_model": {
+      "modules": 1,
+      "lines": 499,
+      "tests": 38,
+      "avg_maturity": 1.0
+    },
+    "genesis.cli": {
+      "modules": 2,
+      "lines": 270,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.compiler": {
+      "modules": 5,
+      "lines": 586,
+      "tests": 0,
+      "avg_maturity": 0.62
+    },
+    "genesis.compiler.codegen": {
+      "modules": 5,
+      "lines": 241,
+      "tests": 0,
+      "avg_maturity": 0.58
+    },
+    "genesis.compiler.passes": {
+      "modules": 3,
+      "lines": 123,
+      "tests": 0,
+      "avg_maturity": 0.54
+    },
+    "genesis.config": {
+      "modules": 1,
+      "lines": 46,
+      "tests": 0,
+      "avg_maturity": 0.64
+    },
+    "genesis.core": {
+      "modules": 6,
+      "lines": 1011,
+      "tests": 0,
+      "avg_maturity": 0.62
+    },
+    "genesis.datalake": {
+      "modules": 1,
+      "lines": 493,
+      "tests": 43,
+      "avg_maturity": 1.0
+    },
+    "genesis.di": {
+      "modules": 4,
+      "lines": 525,
+      "tests": 0,
+      "avg_maturity": 0.58
+    },
+    "genesis.diagnostics": {
+      "modules": 2,
+      "lines": 243,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.digital_twin": {
+      "modules": 13,
+      "lines": 3338,
+      "tests": 260,
+      "avg_maturity": 1.0
+    },
+    "genesis.digital_twin.analyzers": {
+      "modules": 5,
+      "lines": 389,
+      "tests": 0,
+      "avg_maturity": 0.54
+    },
+    "genesis.digital_twin.extractors": {
+      "modules": 11,
+      "lines": 879,
+      "tests": 58,
+      "avg_maturity": 0.44
+    },
+    "genesis.events": {
+      "modules": 2,
+      "lines": 104,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.execution": {
+      "modules": 8,
+      "lines": 848,
+      "tests": 0,
+      "avg_maturity": 0.4
+    },
+    "genesis.fabric": {
+      "modules": 11,
+      "lines": 1322,
+      "tests": 159,
+      "avg_maturity": 0.44
+    },
+    "genesis.graph": {
+      "modules": 2,
+      "lines": 312,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.graph_v2": {
+      "modules": 9,
+      "lines": 972,
+      "tests": 0,
+      "avg_maturity": 0.37
+    },
+    "genesis.graphdb": {
+      "modules": 1,
+      "lines": 836,
+      "tests": 49,
+      "avg_maturity": 1.0
+    },
+    "genesis.indexer": {
+      "modules": 2,
+      "lines": 277,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.integration": {
+      "modules": 2,
+      "lines": 246,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.intelligence": {
+      "modules": 14,
+      "lines": 2111,
+      "tests": 237,
+      "avg_maturity": 0.97
+    },
+    "genesis.kernel": {
+      "modules": 18,
+      "lines": 2126,
+      "tests": 2862,
+      "avg_maturity": 0.97
+    },
+    "genesis.laboratory": {
+      "modules": 5,
+      "lines": 976,
+      "tests": 300,
+      "avg_maturity": 0.89
+    },
+    "genesis.laboratory.extraction": {
+      "modules": 1,
+      "lines": 523,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.laboratory.genome": {
+      "modules": 3,
+      "lines": 858,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.laboratory.mining": {
+      "modules": 1,
+      "lines": 330,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.marketplace": {
+      "modules": 1,
+      "lines": 609,
+      "tests": 50,
+      "avg_maturity": 1.0
+    },
+    "genesis.memory": {
+      "modules": 4,
+      "lines": 713,
+      "tests": 0,
+      "avg_maturity": 0.6
+    },
+    "genesis.meta": {
+      "modules": 10,
+      "lines": 1805,
+      "tests": 1300,
+      "avg_maturity": 0.97
+    },
+    "genesis.metamodel": {
+      "modules": 5,
+      "lines": 1206,
+      "tests": 175,
+      "avg_maturity": 0.93
+    },
+    "genesis.observatory": {
+      "modules": 5,
+      "lines": 985,
+      "tests": 165,
+      "avg_maturity": 0.89
+    },
+    "genesis.observatory.sources": {
+      "modules": 2,
+      "lines": 135,
+      "tests": 0,
+      "avg_maturity": 0.66
+    },
+    "genesis.os": {
+      "modules": 13,
+      "lines": 2621,
+      "tests": 908,
+      "avg_maturity": 0.98
+    },
+    "genesis.os.distributed": {
+      "modules": 1,
+      "lines": 499,
+      "tests": 57,
+      "avg_maturity": 1.0
+    },
+    "genesis.package": {
+      "modules": 2,
+      "lines": 65,
+      "tests": 0,
+      "avg_maturity": 0.33
+    },
+    "genesis.persistence": {
+      "modules": 3,
+      "lines": 746,
+      "tests": 138,
+      "avg_maturity": 0.88
+    },
+    "genesis.planning": {
+      "modules": 1,
+      "lines": 622,
+      "tests": 42,
+      "avg_maturity": 1.0
+    },
+    "genesis.plugin": {
+      "modules": 3,
+      "lines": 368,
+      "tests": 0,
+      "avg_maturity": 0.58
+    },
+    "genesis.project": {
+      "modules": 2,
+      "lines": 64,
+      "tests": 0,
+      "avg_maturity": 0.33
+    },
+    "genesis.runtime": {
+      "modules": 2,
+      "lines": 273,
+      "tests": 86,
+      "avg_maturity": 0.82
+    },
+    "genesis.security": {
+      "modules": 2,
+      "lines": 64,
+      "tests": 0,
+      "avg_maturity": 0.33
+    },
+    "genesis.studio": {
+      "modules": 2,
+      "lines": 139,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.temporal": {
+      "modules": 1,
+      "lines": 547,
+      "tests": 26,
+      "avg_maturity": 1.0
+    },
+    "genesis.tests": {
+      "modules": 45,
+      "lines": 16956,
+      "tests": 0,
+      "avg_maturity": 0.46
+    },
+    "genesis.tests.programs": {
+      "modules": 19,
+      "lines": 3736,
+      "tests": 0,
+      "avg_maturity": 0.49
+    },
+    "genesis.ucos": {
+      "modules": 13,
+      "lines": 1984,
+      "tests": 122,
+      "avg_maturity": 0.74
+    },
+    "genesis.ued": {
+      "modules": 13,
+      "lines": 2605,
+      "tests": 1937,
+      "avg_maturity": 0.72
+    },
+    "genesis.usir": {
+      "modules": 3,
+      "lines": 420,
+      "tests": 0,
+      "avg_maturity": 0.68
+    },
+    "genesis.usir.parsers": {
+      "modules": 2,
+      "lines": 1031,
+      "tests": 0,
+      "avg_maturity": 0.7
+    },
+    "genesis.utils": {
+      "modules": 4,
+      "lines": 265,
+      "tests": 0,
+      "avg_maturity": 0.52
+    },
+    "genesis.validation": {
+      "modules": 3,
+      "lines": 178,
+      "tests": 0,
+      "avg_maturity": 0.56
+    },
+    "genesis.validation.validators": {
+      "modules": 4,
+      "lines": 169,
+      "tests": 0,
+      "avg_maturity": 0.56
+    }
+  }
+}

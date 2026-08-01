@@ -1,0 +1,95 @@
+{
+  "iteration": 1,
+  "biology": {
+    "species": 107,
+    "families": 47,
+    "mutation_rate": 0.0862
+  },
+  "simulation": {
+    "generations": 10,
+    "history": [
+      {
+        "generation": 1,
+        "population": 54,
+        "mutations": 4,
+        "extinctions": 4,
+        "speciations": 7,
+        "fitness": 0.9149
+      },
+      {
+        "generation": 2,
+        "population": 61,
+        "mutations": 4,
+        "extinctions": 5,
+        "speciations": 8,
+        "fitness": 0.9074
+      },
+      {
+        "generation": 3,
+        "population": 69,
+        "mutations": 5,
+        "extinctions": 6,
+        "speciations": 9,
+        "fitness": 0.9016
+      },
+      {
+        "generation": 4,
+        "population": 78,
+        "mutations": 5,
+        "extinctions": 6,
+        "speciations": 10,
+        "fitness": 0.913
+      },
+      {
+        "generation": 5,
+        "population": 88,
+        "mutations": 6,
+        "extinctions": 7,
+        "speciations": 11,
+        "fitness": 0.9103
+      },
+      {
+        "generation": 6,
+        "population": 100,
+        "mutations": 7,
+        "extinctions": 8,
+        "speciations": 13,
+        "fitness": 0.9091
+      },
+      {
+        "generation": 7,
+        "population": 113,
+        "mutations": 8,
+        "extinctions": 10,
+        "speciations": 15,
+        "fitness": 0.9
+      },
+      {
+        "generation": 8,
+        "population": 127,
+        "mutations": 9,
+        "extinctions": 11,
+        "speciations": 16,
+        "fitness": 0.9027
+      },
+      {
+        "generation": 9,
+        "population": 144,
+        "mutations": 10,
+        "extinctions": 12,
+        "speciations": 19,
+        "fitness": 0.9055
+      },
+      {
+        "generation": 10,
+        "population": 163,
+        "mutations": 12,
+        "extinctions": 14,
+        "speciations": 21,
+        "fitness": 0.9028
+      }
+    ],
+    "final_population": 163,
+    "final_fitness": 0.9028
+  }
+}

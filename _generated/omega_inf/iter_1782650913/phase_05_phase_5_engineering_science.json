@@ -1,0 +1,82 @@
+{
+  "experiments_conducted": 5,
+  "experiment_details": [
+    {
+      "experiment": "canonicalization_audit",
+      "hypothesis": "Modules with duplicate abstractions have 0.0x the average complexity (evidence from Phase 0 census)",
+      "confidence": 0.95,
+      "status": "completed",
+      "evidence_count": 1,
+      "duration_ms": 0.02
+    },
+    {
+      "experiment": "dependency_analysis",
+      "hypothesis": "Repository coupling energy (debt=0.0) correlates with architecture entropy",
+      "confidence": 0.9,
+      "status": "completed",
+      "evidence_count": 1,
+      "duration_ms": 1.72
+    },
+    {
+      "experiment": "risk_assessment",
+      "hypothesis": "Modules with high centrality (>5 dependents) carry 0.0x higher complexity",
+      "confidence": 0.85,
+      "status": "completed",
+      "evidence_count": 1,
+      "duration_ms": 1.28
+    },
+    {
+      "experiment": "health_check",
+      "hypothesis": "Repository health is a weighted function of test coverage, documentation density, and canonicalizati",
+      "confidence": 0.9,
+      "status": "completed",
+      "evidence_count": 1,
+      "duration_ms": 0.91
+    },
+    {
+      "experiment": "type_inventory",
+      "hypothesis": "Only 7 canonical types registered vs 6260 relationships \u2014 gap indicates missed canonicalization oppo",
+      "confidence": 1.0,
+      "status": "completed",
+      "evidence_count": 1,
+      "duration_ms": 0.84
+    }
+  ],
+  "findings": {
+    "accepted": 5,
+    "rejected": 0,
+    "inconclusive": 0,
+    "acceptance_rate": 1.0
+  },
+  "hypotheses": [
+    "Modules with duplicate abstractions have 0.0x the average complexity (evidence from Phase 0 census)",
+    "Repository coupling energy (debt=0.0) correlates with architecture entropy",
+    "Modules with high centrality (>5 dependents) carry 0.0x higher complexity",
+    "Repository health is a weighted function of test coverage, documentation density, and canonicalizati",
+    "Only 7 canonical types registered vs 6260 relationships \u2014 gap indicates missed canonicalization oppo"
+  ],
+  "unknowns_identified": 112,
+  "unknown_examples": [
+    "argparse",
+    "hashlib",
+    "json",
+    "os",
+    "re",
+    "sys",
+    "datetime",
+    "pathlib",
+    "typing",
+    "collections",
+    "difflib",
+    "uuid",
+    "__future__",
+    "time",
+    "dataclasses",
+    "genesis.acquisition.sources.pypi",
+    "urllib.request",
+    "urllib.parse",
+    "router",
+    "enum"
+  ],
+  "evidence_collected": 5
+}

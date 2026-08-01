@@ -1,0 +1,19 @@
+{
+  "iteration": 1,
+  "novelty_score": 0.76,
+  "novelty_raw": 760,
+  "false_positive_rate": 0.6667,
+  "prediction_accuracy": 0.3333,
+  "knowledge_growth_index": 93.16,
+  "engineering_impact_index": 95.0,
+  "redesign_suggestions": [
+    "High false positive rate: tighten hypothesis acceptance criteria"
+  ],
+  "suggestion_count": 1,
+  "self_review": {
+    "reasoning_data_available": false,
+    "science_data_available": true,
+    "physics_laws_available": true,
+    "biology_data_available": true
+  }
+}

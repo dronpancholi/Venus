@@ -1,0 +1,800 @@
+{
+  "genesis.acquisition.sources": {
+    "path": "genesis/acquisition/sources/__init__.py",
+    "exports": [
+      "GitHubSource",
+      "GitLabSource",
+      "NPMSource",
+      "PyPISource",
+      "CargoSource",
+      "MavenSource",
+      "NuGetSource",
+      "GoSource",
+      "DockerSource",
+      "RFCSource",
+      "CVESource",
+      "NISTSource",
+      "CNCFSource",
+      "OWASPSource",
+      "IETFSource",
+      "W3CSource",
+      "ADRSource"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.api": {
+    "path": "genesis/api/__init__.py",
+    "exports": [
+      "APIRouter"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.autonomous": {
+    "path": "genesis/autonomous/__init__.py",
+    "exports": [
+      "AutonomousEngine",
+      "CycleStage",
+      "CycleResult",
+      "EngineeringOrchestrator"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.1
+  },
+  "genesis.brain": {
+    "path": "genesis/brain/__init__.py",
+    "exports": [
+      "EngineeringBrain",
+      "BrainEntity",
+      "BrainEntityType",
+      "Relationship",
+      "Confidence",
+      "Lineage",
+      "Capability",
+      "Evidence",
+      "RuntimeState",
+      "ResearchState",
+      "EntityEmbedding",
+      "ChangeRecord",
+      "BrainGraph",
+      "EmbeddingStore",
+      "BrainIntegration",
+      "DigitalTwinAdapter",
+      "UIRAdapter",
+      "KnowledgeArtifactAdapter",
+      "FindingAdapter",
+      "VRIPAdapter",
+      "GraphDBAdapter",
+      "get_adapter",
+      "register_adapter",
+      "CognitiveArchitecture",
+      "BeliefSystem",
+      "Belief",
+      "BeliefEvidence",
+      "BeliefStatus",
+      "EvidenceKind",
+      "GoalHierarchy",
+      "Goal",
+      "GoalStatus",
+      "GoalPriority",
+      "ReasoningEngine",
+      "CausalLink",
+      "Inference",
+      "ReasoningMode",
+      "WorkingMemory",
+      "EpisodicMemory",
+      "AttentionMechanism",
+      "AttentionFocus",
+      "ReflectionEngine",
+      "Reflection",
+      "StrategyEngine",
+      "Tool",
+      "Strategy",
+      "DecisionEngine",
+      "Alternative",
+      "Decision",
+      "Criterion",
+      "DecisionMode",
+      "Orchestrator",
+      "CognitiveAgent",
+      "AgentTask"
+    ],
+    "classes": [
+      "EngineeringBrain"
+    ],
+    "functions": [
+      "__init__",
+      "graph",
+      "embeddings",
+      "integration",
+      "cognition",
+      "entity",
+      "register",
+      "get",
+      "find_by_type",
+      "find_by_label",
+      "find_by_source",
+      "remove",
+      "all_entities",
+      "relate",
+      "neighbors",
+      "relationships",
+      "sync_digital_twin",
+      "sync_uir_graph",
+      "sync_knowledge_base",
+      "sync_vrip_kg",
+      "sync_graphdb",
+      "sync_civilization",
+      "store_embedding",
+      "get_embedding",
+      "start_integration",
+      "stop_integration",
+      "summary"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.brain.cognition": {
+    "path": "genesis/brain/cognition/__init__.py",
+    "exports": [
+      "CognitiveArchitecture",
+      "BeliefSystem",
+      "Belief",
+      "BeliefEvidence",
+      "BeliefStatus",
+      "EvidenceKind",
+      "GoalHierarchy",
+      "Goal",
+      "GoalStatus",
+      "GoalPriority",
+      "ReasoningEngine",
+      "CausalLink",
+      "Inference",
+      "ReasoningMode",
+      "WorkingMemory",
+      "EpisodicMemory",
+      "WorkingMemorySlot",
+      "EpisodicMemoryEntry",
+      "AttentionMechanism",
+      "AttentionFocus",
+      "ReflectionEngine",
+      "Reflection",
+      "StrategyEngine",
+      "Tool",
+      "Strategy",
+      "DecisionEngine",
+      "Alternative",
+      "Decision",
+      "Criterion",
+      "DecisionMode",
+      "Orchestrator",
+      "CognitiveAgent",
+      "AgentTask",
+      "AgentStatus",
+      "TaskStatus"
+    ],
+    "classes": [
+      "CognitiveArchitecture"
+    ],
+    "functions": [
+      "__init__",
+      "beliefs",
+      "goals",
+      "reasoning",
+      "memory_working",
+      "memory_episodic",
+      "attention",
+      "reflection",
+      "strategy",
+      "decision",
+      "orchestrator",
+      "observe",
+      "think",
+      "reflect",
+      "decide",
+      "tick",
+      "summary"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.capability": {
+    "path": "genesis/capability/__init__.py",
+    "exports": [
+      "CapabilityRegistry",
+      "CapabilityDefinition"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.cli": {
+    "path": "genesis/cli/__init__.py",
+    "exports": [
+      "CLI"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.compiler": {
+    "path": "genesis/compiler/__init__.py",
+    "exports": [
+      "Compiler",
+      "ASTNode",
+      "AST",
+      "Parser",
+      "UIRBuilder"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.compiler.codegen": {
+    "path": "genesis/compiler/codegen/__init__.py",
+    "exports": [
+      "CodeGenerator",
+      "CodeGenRegistry",
+      "MarkdownGenerator",
+      "SchemaGenerator",
+      "GraphGenerator"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.compiler.passes": {
+    "path": "genesis/compiler/passes/__init__.py",
+    "exports": [
+      "CompilerPass",
+      "PassRegistry",
+      "DeadCodeEliminationPass",
+      "DependencyPruningPass",
+      "MetadataNormalizationPass"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.core": {
+    "path": "genesis/core/__init__.py",
+    "exports": [
+      "BaseEntity",
+      "BaseCapability",
+      "BaseArtifact",
+      "UIRNode",
+      "UIRGraph",
+      "CompilationUnit",
+      "DependencyGraph",
+      "CapabilityGraph",
+      "ValidationGraph",
+      "ExecutionGraph",
+      "MetadataGraph",
+      "SemanticType",
+      "TypeRegistry",
+      "TypeConstraint",
+      "MetadataEngine",
+      "MetadataRecord",
+      "GenesisError",
+      "ValidationError",
+      "CompilationError",
+      "PluginError",
+      "CapabilityError",
+      "GraphError",
+      "MetadataError",
+      "IndexerError",
+      "RuntimeError"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.di": {
+    "path": "genesis/di/__init__.py",
+    "exports": [
+      "bootstrap",
+      "wire_domain_services",
+      "ServiceProvider",
+      "CheckpointService",
+      "CompilerService",
+      "ConfigService",
+      "DiagnosticsService",
+      "EventBus",
+      "ExecutionService",
+      "GraphService",
+      "MetadataService",
+      "PluginService",
+      "CapabilityService",
+      "ValidationService"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.38
+  },
+  "genesis.diagnostics": {
+    "path": "genesis/diagnostics/__init__.py",
+    "exports": [
+      "Diagnostics"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.digital_twin": {
+    "path": "genesis/digital_twin/__init__.py",
+    "exports": [
+      "PlanetaryDigitalTwin",
+      "DigitalTwin",
+      "TwinNode"
+    ],
+    "classes": [
+      "PlanetaryDigitalTwin"
+    ],
+    "functions": [
+      "__init__",
+      "brain",
+      "set_brain",
+      "_to_brain_entity",
+      "add_node",
+      "add_edge",
+      "sync_all_to_brain",
+      "summary"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.events": {
+    "path": "genesis/events/__init__.py",
+    "exports": [
+      "EventBus"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.execution": {
+    "path": "genesis/execution/__init__.py",
+    "exports": [
+      "ExecutionEngine",
+      "WorkflowEngine",
+      "WorkflowDAG",
+      "WorkflowNode",
+      "TaskExecutor",
+      "Task",
+      "ActorEngine",
+      "Actor",
+      "PipelineEngine",
+      "PipelineStage",
+      "JobManager",
+      "LongRunningJob",
+      "RetryPolicy",
+      "CompensationEngine"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.1
+  },
+  "genesis.fabric": {
+    "path": "genesis/fabric/__init__.py",
+    "exports": [
+      "FabricKernel",
+      "MessageBus",
+      "TypedChannel",
+      "Message",
+      "EventContract",
+      "ContractSchema",
+      "ContractViolation",
+      "Context",
+      "CorrelationID",
+      "TransactionSpan",
+      "ServiceRegistry",
+      "ServiceInstance",
+      "ServiceHealth",
+      "DistributedScheduler",
+      "ScheduledTask",
+      "PolicyEngine",
+      "Policy",
+      "PolicyResult",
+      "FabricMetrics",
+      "MetricPoint",
+      "AuditLog",
+      "AuditEntry",
+      "EngineeringSession",
+      "SessionStage"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.1
+  },
+  "genesis.genesis_viii": {
+    "path": "genesis/genesis_viii.py",
+    "exports": [
+      "ArchitectureAlgebra",
+      "ArchitectureElement",
+      "CapabilityVector",
+      "TopologicalSpace",
+      "GraphCalculus",
+      "KnowledgeEntropy",
+      "DecisionTheory",
+      "Optimization",
+      "NetworkScience",
+      "InformationTheory",
+      "CategoryTheory",
+      "CategoryObject",
+      "CategoryMorphism",
+      "ConstraintSatisfaction",
+      "Constraint"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.graph": {
+    "path": "genesis/graph/__init__.py",
+    "exports": [
+      "KnowledgeGraphEngine"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.graph_v2": {
+    "path": "genesis/graph_v2/__init__.py",
+    "exports": [
+      "GraphLayer",
+      "GraphNode",
+      "GraphEdge",
+      "GraphEntity",
+      "LayerType",
+      "UnifiedGraph",
+      "GraphSnapshot",
+      "StructuralGraph",
+      "SemanticGraph",
+      "CapabilityGraph",
+      "ArchitectureGraph",
+      "RuntimeGraph",
+      "DependencyGraph",
+      "KnowledgeGraph",
+      "MemoryGraph",
+      "EvolutionGraph",
+      "ExperimentGraph",
+      "ResearchGraph",
+      "OrganizationGraph",
+      "GraphVersioning",
+      "GraphDiff",
+      "GraphMerge",
+      "GraphAnalytics",
+      "GraphIndex",
+      "GraphPartition",
+      "GraphFederation",
+      "GraphCompression"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.1
+  },
+  "genesis.indexer": {
+    "path": "genesis/indexer/__init__.py",
+    "exports": [
+      "RepositoryIndexer"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.integration": {
+    "path": "genesis/integration/__init__.py",
+    "exports": [
+      "Project31AIntegration"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.intelligence": {
+    "path": "genesis/intelligence/__init__.py",
+    "exports": [
+      "IntelligenceService",
+      "RepositoryIntelligence",
+      "KnowledgeGraph",
+      "MetricsCollector",
+      "GapDetector",
+      "StrategicPlanner"
+    ],
+    "classes": [
+      "IntelligenceService"
+    ],
+    "functions": [
+      "__init__",
+      "brain",
+      "engine",
+      "kg",
+      "run_all",
+      "_sync_results",
+      "summary",
+      "report"
+    ],
+    "maturity": 1.0
+  },
+  "genesis.kernel": {
+    "path": "genesis/kernel/__init__.py",
+    "exports": [
+      "UniversalKernel",
+      "ProcessManager",
+      "TaskScheduler",
+      "MemoryManager",
+      "StorageManager",
+      "CheckpointManager",
+      "RecoveryManager",
+      "EventRouter",
+      "IPC",
+      "PluginLoader",
+      "CapabilityLoader",
+      "DIKernel",
+      "ResourceManager",
+      "ExecutionManager",
+      "HealthManager",
+      "SecurityManager",
+      "ProcessInfo",
+      "ProcessState",
+      "TaskInfo",
+      "TaskPriority",
+      "TaskState",
+      "MemoryBlock",
+      "MemoryScope",
+      "StorageVolume",
+      "StorageClass",
+      "Checkpoint",
+      "RecoveryPlan",
+      "KernelEvent",
+      "IPCMessage",
+      "ResourceReservation",
+      "HealthProbe",
+      "DiServiceRegistration"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.69
+  },
+  "genesis.memory": {
+    "path": "genesis/memory/__init__.py",
+    "exports": [
+      "MemoryEngine",
+      "MemoryType",
+      "MemoryEntry",
+      "MemoryQuery",
+      "MemoryResult",
+      "EpisodicMemory",
+      "SemanticMemory",
+      "ProceduralMemory",
+      "ArchitecturalMemory",
+      "ResearchMemory",
+      "OrganizationalMemory",
+      "TemporalMemory",
+      "CausalMemory",
+      "ExecutionMemory",
+      "AgentMemory",
+      "WorldMemory",
+      "GraphMemory",
+      "SpecificationMemory",
+      "ConversationMemory",
+      "SimulationMemory",
+      "ReflectionMemory",
+      "MemoryConsolidator",
+      "ForgettingMechanism"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.meta": {
+    "path": "genesis/meta/__init__.py",
+    "exports": [
+      "MetaCompiler",
+      "Workspace",
+      "Repository",
+      "WorkspaceManifest",
+      "WorkspaceIR",
+      "WorkspaceIRNode",
+      "IRBuilder",
+      "WorkspaceDependencyGraph",
+      "WorkspaceCapabilityMap",
+      "WorkspaceGraph",
+      "SymbolResolver",
+      "CapabilityLinker",
+      "RepositoryFederation",
+      "WorkspaceOptimizer",
+      "BuildGraph",
+      "BuildNode",
+      "WorkspaceTwin"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.65
+  },
+  "genesis.metamodel": {
+    "path": "genesis/metamodel/__init__.py",
+    "exports": [
+      "UnifiedEntity",
+      "EntityType",
+      "EntityRelation",
+      "EntityMetadata",
+      "UnifiedGraph",
+      "EntityTypeRegistry",
+      "EntityQuery",
+      "QueryResult"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.65
+  },
+  "genesis.os": {
+    "path": "genesis/os/__init__.py",
+    "exports": [
+      "PersistentScheduler",
+      "PersistentPlanner",
+      "PersistentTaskGraph",
+      "DistributedQueue",
+      "AgentRuntime",
+      "ResourceAllocator",
+      "MemoryManager",
+      "CheckpointManager",
+      "RecoveryManager",
+      "ObservationManager",
+      "AutonomousRuntime",
+      "RuntimeStatus",
+      "ComponentStatus",
+      "GitWatcher",
+      "FileWatcher",
+      "ProcessWatcher",
+      "WatcherRegistry",
+      "WatcherEvent",
+      "BaseWatcher"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.69
+  },
+  "genesis.persistence": {
+    "path": "genesis/persistence/__init__.py",
+    "exports": [
+      "Repository",
+      "InMemoryRepository",
+      "SQLiteStore",
+      "MetadataStore",
+      "KnowledgeStore",
+      "HistoryStore",
+      "ArtifactStore",
+      "CheckpointStore",
+      "MemoryStore"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.65
+  },
+  "genesis.plugin": {
+    "path": "genesis/plugin/__init__.py",
+    "exports": [
+      "PluginManager",
+      "PluginManifest"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.runtime": {
+    "path": "genesis/runtime/__init__.py",
+    "exports": [
+      "ExecutionEngine",
+      "Task",
+      "Workflow"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.65
+  },
+  "genesis.studio": {
+    "path": "genesis/studio/__init__.py",
+    "exports": [
+      "StudioBackend"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.ucos": {
+    "path": "genesis/ucos/__init__.py",
+    "exports": [
+      "Capability",
+      "CapabilityDefinition",
+      "CapabilityCategory",
+      "CapabilityState",
+      "CapabilityContract",
+      "CapabilityVersion",
+      "CapabilityHealth",
+      "CapabilityPermission",
+      "CapabilityRegistry",
+      "CapabilityResolver",
+      "CapabilityPlanner",
+      "CapabilityLifecycleManager",
+      "CapabilityDependencyGraph",
+      "CapabilityNegotiator",
+      "CapabilityMarketplace",
+      "CapabilityValidator",
+      "CapabilityRuntime",
+      "CapabilityMetrics",
+      "UCOS"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.39
+  },
+  "genesis.ued": {
+    "path": "genesis/ued/__init__.py",
+    "exports": [
+      "Database",
+      "CollectionType",
+      "StorageConfig",
+      "IsolationLevel",
+      "Query",
+      "QueryResult",
+      "ShardKey",
+      "DocumentStore",
+      "MetadataStore",
+      "VersionStore",
+      "GraphStore",
+      "VectorStore",
+      "TimeSeriesStore",
+      "EventStore",
+      "ObjectStore",
+      "SnapshotStore",
+      "ArchiveStore",
+      "StorageEngine",
+      "CacheManager",
+      "BTreeIndex",
+      "HashIndex",
+      "VectorIndex",
+      "InvertedIndex",
+      "QueryPlanner",
+      "ShardManager"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.4
+  },
+  "genesis.utils": {
+    "path": "genesis/utils/__init__.py",
+    "exports": [
+      "topological_sort",
+      "find_cycles",
+      "subgraph",
+      "Serializable",
+      "generate_id"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.validation": {
+    "path": "genesis/validation/__init__.py",
+    "exports": [
+      "ValidationEngine",
+      "ValidationResult"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  },
+  "genesis.validation.validators": {
+    "path": "genesis/validation/validators/__init__.py",
+    "exports": [
+      "SchemaValidator",
+      "NamingValidator",
+      "StructuralValidator"
+    ],
+    "classes": [],
+    "functions": [],
+    "maturity": 0.35
+  }
+}

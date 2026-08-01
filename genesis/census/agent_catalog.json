@@ -1,0 +1,2157 @@
+[
+  {
+    "id": "7643fb6494c3419b:agent:genesis.acquisition.orchestrator",
+    "type": "agent",
+    "name": "genesis.acquisition.orchestrator",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.acquisition.orchestrator"
+    ],
+    "dependencies": [
+      "genesis.acquisition.AcquisitionPipeline",
+      "genesis.acquisition.AcquisitionSource",
+      "genesis.acquisition.sources.ADRSource",
+      "genesis.acquisition.sources.CNCFSource",
+      "genesis.acquisition.sources.CVESource",
+      "genesis.acquisition.sources.CargoSource",
+      "genesis.acquisition.sources.DockerSource",
+      "genesis.acquisition.sources.GitHubSource",
+      "genesis.acquisition.sources.GitLabSource",
+      "genesis.acquisition.sources.GoSource",
+      "genesis.acquisition.sources.IETFSource",
+      "genesis.acquisition.sources.MavenSource",
+      "genesis.acquisition.sources.NISTSource",
+      "genesis.acquisition.sources.NPMSource",
+      "genesis.acquisition.sources.NuGetSource",
+      "genesis.acquisition.sources.OWASPSource",
+      "genesis.acquisition.sources.PyPISource",
+      "genesis.acquisition.sources.RFCSource",
+      "genesis.acquisition.sources.W3CSource",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.tests.test_acquisition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.32,
+    "health": 0.9,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "AcquisitionOrchestrator"
+      ],
+      "functions": [
+        "__init__",
+        "register_all_sources",
+        "run_once",
+        "_update_stats",
+        "run_all",
+        "get_last_run",
+        "get_stats",
+        "summary",
+        "_save_state",
+        "load_state"
+      ],
+      "path": "genesis/acquisition/orchestrator.py",
+      "package": "genesis.acquisition"
+    }
+  },
+  {
+    "id": "4cfc0a88ab95b457:agent:genesis.autonomous",
+    "type": "agent",
+    "name": "genesis.autonomous",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.1,
+    "evidence": [
+      "module:genesis.autonomous"
+    ],
+    "dependencies": [
+      "genesis.autonomous.cycle.AutonomousEngine",
+      "genesis.autonomous.cycle.CycleResult",
+      "genesis.autonomous.cycle.CycleStage",
+      "genesis.autonomous.orchestrator.EngineeringOrchestrator"
+    ],
+    "consumers": [
+      "genesis.autonomous.orchestrator",
+      "genesis.platform",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.1,
+    "risk": 0.56,
+    "health": 0.2,
+    "role": "agent",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/autonomous/__init__.py",
+      "package": "genesis.autonomous"
+    }
+  },
+  {
+    "id": "005ef88195f144bb:agent:genesis.autonomous.cycle",
+    "type": "agent",
+    "name": "genesis.autonomous.cycle",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.45,
+    "evidence": [
+      "module:genesis.autonomous.cycle"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.autonomous",
+      "genesis.autonomous.orchestrator",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.45,
+    "risk": 0.37,
+    "health": 0.5,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "CycleStage",
+        "CycleResult",
+        "CycleRun",
+        "AutonomousEngine"
+      ],
+      "functions": [
+        "duration_ms",
+        "success",
+        "__post_init__",
+        "duration_ms",
+        "all_success",
+        "__init__",
+        "register",
+        "run",
+        "run_continuous",
+        "stop",
+        "_compute_metrics",
+        "history",
+        "last_run",
+        "summary"
+      ],
+      "path": "genesis/autonomous/cycle.py",
+      "package": "genesis.autonomous"
+    }
+  },
+  {
+    "id": "0ef474ad2ad6a84c:agent:genesis.autonomous.orchestrator",
+    "type": "agent",
+    "name": "genesis.autonomous.orchestrator",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.45,
+    "evidence": [
+      "module:genesis.autonomous.orchestrator"
+    ],
+    "dependencies": [
+      "genesis.autonomous.cycle.AutonomousEngine",
+      "genesis.autonomous.cycle.CYCLE_ORDER",
+      "genesis.autonomous.cycle.CycleRun",
+      "genesis.autonomous.cycle.CycleStage",
+      "genesis.execution.engine.ExecutionEngine",
+      "genesis.fabric.kernel.FabricKernel",
+      "genesis.graph_v2.core.LayerType",
+      "genesis.graph_v2.core.UnifiedGraph",
+      "genesis.meta.twin.WorkspaceTwin",
+      "genesis.ued.database.Database"
+    ],
+    "consumers": [
+      "genesis.autonomous",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.45,
+    "risk": 0.48,
+    "health": 0.47,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "EngineeringOrchestrator"
+      ],
+      "functions": [
+        "__init__",
+        "_register_default_handlers",
+        "_observe",
+        "_acquire",
+        "_compile",
+        "_build_ir",
+        "_build_twin",
+        "_update_graph",
+        "_update_brain",
+        "_reason",
+        "_hypothesis",
+        "_plan",
+        "_simulate",
+        "_generate_patch",
+        "_run_tests",
+        "_benchmark",
+        "_validate",
+        "_publish",
+        "_learn",
+        "run_cycle",
+        "engine",
+        "summary"
+      ],
+      "path": "genesis/autonomous/orchestrator.py",
+      "package": "genesis.autonomous"
+    }
+  },
+  {
+    "id": "aeb6a741594f221e:agent:genesis.brain",
+    "type": "agent",
+    "name": "genesis.brain",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain"
+    ],
+    "dependencies": [
+      "genesis.brain.cognition.AgentTask",
+      "genesis.brain.cognition.Alternative",
+      "genesis.brain.cognition.AttentionFocus",
+      "genesis.brain.cognition.AttentionMechanism",
+      "genesis.brain.cognition.Belief",
+      "genesis.brain.cognition.BeliefEvidence",
+      "genesis.brain.cognition.BeliefStatus",
+      "genesis.brain.cognition.BeliefSystem",
+      "genesis.brain.cognition.CausalLink",
+      "genesis.brain.cognition.CognitiveAgent",
+      "genesis.brain.cognition.CognitiveArchitecture",
+      "genesis.brain.cognition.Criterion",
+      "genesis.brain.cognition.Decision",
+      "genesis.brain.cognition.DecisionEngine",
+      "genesis.brain.cognition.DecisionMode",
+      "genesis.brain.cognition.EpisodicMemory",
+      "genesis.brain.cognition.EvidenceKind",
+      "genesis.brain.cognition.Goal",
+      "genesis.brain.cognition.GoalHierarchy",
+      "genesis.brain.cognition.GoalPriority",
+      "genesis.brain.cognition.GoalStatus",
+      "genesis.brain.cognition.Inference",
+      "genesis.brain.cognition.Orchestrator",
+      "genesis.brain.cognition.ReasoningEngine",
+      "genesis.brain.cognition.ReasoningMode",
+      "genesis.brain.cognition.Reflection",
+      "genesis.brain.cognition.ReflectionEngine",
+      "genesis.brain.cognition.Strategy",
+      "genesis.brain.cognition.StrategyEngine",
+      "genesis.brain.cognition.Tool",
+      "genesis.brain.cognition.WorkingMemory",
+      "genesis.brain.embeddings.EmbeddingStore",
+      "genesis.brain.entity.BrainEntity",
+      "genesis.brain.entity.BrainEntityType",
+      "genesis.brain.entity.Capability",
+      "genesis.brain.entity.ChangeRecord",
+      "genesis.brain.entity.Confidence",
+      "genesis.brain.entity.EntityEmbedding",
+      "genesis.brain.entity.Evidence",
+      "genesis.brain.entity.Lineage",
+      "genesis.brain.entity.Relationship",
+      "genesis.brain.entity.ResearchState",
+      "genesis.brain.entity.RuntimeState",
+      "genesis.brain.graph.BrainGraph",
+      "genesis.brain.integration.BrainIntegration",
+      "genesis.brain.sync.ADAPTERS",
+      "genesis.brain.sync.DigitalTwinAdapter",
+      "genesis.brain.sync.FindingAdapter",
+      "genesis.brain.sync.GraphDBAdapter",
+      "genesis.brain.sync.KnowledgeArtifactAdapter",
+      "genesis.brain.sync.UIRAdapter",
+      "genesis.brain.sync.VRIPAdapter",
+      "genesis.brain.sync.get_adapter",
+      "genesis.brain.sync.register_adapter",
+      "genesis.graphdb.PersistentGraphDB",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition",
+      "genesis.brain.embeddings",
+      "genesis.brain.graph",
+      "genesis.brain.integration",
+      "genesis.brain.sync",
+      "genesis.civilization.world_model",
+      "genesis.digital_twin",
+      "genesis.intelligence",
+      "genesis.marketplace",
+      "genesis.os.runtime",
+      "genesis.planning",
+      "genesis.platform",
+      "genesis.tests.programs.test_brain_v4",
+      "genesis.tests.test_brain",
+      "genesis.tests.test_cognition",
+      "genesis.tests.test_digital_twin",
+      "genesis.tests.test_intelligence",
+      "genesis.tests.test_marketplace",
+      "genesis.tests.test_planning",
+      "genesis.tests.test_world_model"
+    ],
+    "maturity": 1.0,
+    "risk": 0.34,
+    "health": 0.9,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "EngineeringBrain"
+      ],
+      "functions": [
+        "__init__",
+        "graph",
+        "embeddings",
+        "integration",
+        "cognition",
+        "entity",
+        "register",
+        "get",
+        "find_by_type",
+        "find_by_label",
+        "find_by_source",
+        "remove",
+        "all_entities",
+        "relate",
+        "neighbors",
+        "relationships",
+        "sync_digital_twin",
+        "sync_uir_graph",
+        "sync_knowledge_base",
+        "sync_vrip_kg",
+        "sync_graphdb",
+        "sync_civilization",
+        "store_embedding",
+        "get_embedding",
+        "start_integration",
+        "stop_integration",
+        "summary"
+      ],
+      "path": "genesis/brain/__init__.py",
+      "package": "genesis.brain"
+    }
+  },
+  {
+    "id": "a876852fc52255cc:agent:genesis.brain.cognition",
+    "type": "agent",
+    "name": "genesis.brain.cognition",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition"
+    ],
+    "dependencies": [
+      "genesis.brain.cognition.attention.AttentionFocus",
+      "genesis.brain.cognition.attention.AttentionMechanism",
+      "genesis.brain.cognition.belief.Belief",
+      "genesis.brain.cognition.belief.BeliefEvidence",
+      "genesis.brain.cognition.belief.BeliefStatus",
+      "genesis.brain.cognition.belief.BeliefSystem",
+      "genesis.brain.cognition.belief.EvidenceKind",
+      "genesis.brain.cognition.decision.Alternative",
+      "genesis.brain.cognition.decision.Criterion",
+      "genesis.brain.cognition.decision.Decision",
+      "genesis.brain.cognition.decision.DecisionEngine",
+      "genesis.brain.cognition.decision.DecisionMode",
+      "genesis.brain.cognition.goals.Goal",
+      "genesis.brain.cognition.goals.GoalHierarchy",
+      "genesis.brain.cognition.goals.GoalPriority",
+      "genesis.brain.cognition.goals.GoalStatus",
+      "genesis.brain.cognition.memory.EpisodicMemory",
+      "genesis.brain.cognition.memory.EpisodicMemoryEntry",
+      "genesis.brain.cognition.memory.WorkingMemory",
+      "genesis.brain.cognition.memory.WorkingMemorySlot",
+      "genesis.brain.cognition.orchestration.AgentStatus",
+      "genesis.brain.cognition.orchestration.AgentTask",
+      "genesis.brain.cognition.orchestration.CognitiveAgent",
+      "genesis.brain.cognition.orchestration.Orchestrator",
+      "genesis.brain.cognition.orchestration.TaskStatus",
+      "genesis.brain.cognition.reasoning.CausalLink",
+      "genesis.brain.cognition.reasoning.Inference",
+      "genesis.brain.cognition.reasoning.ReasoningEngine",
+      "genesis.brain.cognition.reasoning.ReasoningMode",
+      "genesis.brain.cognition.reflection.Reflection",
+      "genesis.brain.cognition.reflection.ReflectionEngine",
+      "genesis.brain.cognition.strategy.Strategy",
+      "genesis.brain.cognition.strategy.StrategyEngine",
+      "genesis.brain.cognition.strategy.Tool"
+    ],
+    "consumers": [
+      "genesis.brain",
+      "genesis.tests.test_cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.33,
+    "health": 0.9,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "CognitiveArchitecture"
+      ],
+      "functions": [
+        "__init__",
+        "beliefs",
+        "goals",
+        "reasoning",
+        "memory_working",
+        "memory_episodic",
+        "attention",
+        "reflection",
+        "strategy",
+        "decision",
+        "orchestrator",
+        "observe",
+        "think",
+        "reflect",
+        "decide",
+        "tick",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/__init__.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "5bf463b346bf551e:agent:genesis.brain.cognition.attention",
+    "type": "agent",
+    "name": "genesis.brain.cognition.attention",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.attention"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.06,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "AttentionFocus",
+        "AttentionMechanism"
+      ],
+      "functions": [
+        "__post_init__",
+        "is_expired",
+        "__init__",
+        "current_focus",
+        "primary_focus",
+        "bottom_up",
+        "top_down",
+        "_add_focus",
+        "surprise",
+        "orient",
+        "decay",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/attention.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "524509ffb3dc6c15:agent:genesis.brain.cognition.belief",
+    "type": "agent",
+    "name": "genesis.brain.cognition.belief",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.belief"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.09,
+    "health": 0.97,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "BeliefStatus",
+        "EvidenceKind",
+        "BeliefEvidence",
+        "Belief",
+        "BeliefSystem"
+      ],
+      "functions": [
+        "__post_init__",
+        "impact",
+        "__post_init__",
+        "add_evidence",
+        "_recompute_confidence",
+        "decay",
+        "to_dict",
+        "__init__",
+        "belief_count",
+        "believe",
+        "get",
+        "find",
+        "relate",
+        "_status_from_confidence",
+        "_propagate_confidence",
+        "detect_contradictions",
+        "resolve_contradiction",
+        "decay_all",
+        "prune",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/belief.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "b822e368a3d1587e:agent:genesis.brain.cognition.decision",
+    "type": "agent",
+    "name": "genesis.brain.cognition.decision",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.decision"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.07,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "DecisionMode",
+        "Criterion",
+        "Alternative",
+        "Decision",
+        "DecisionEngine"
+      ],
+      "functions": [
+        "__post_init__",
+        "__post_init__",
+        "__init__",
+        "register_criterion",
+        "add_hard_constraint",
+        "add_soft_constraint",
+        "evaluate",
+        "_compute_score",
+        "sensitivity_analysis",
+        "priority_order",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/decision.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "153ab0ef7d113ee5:agent:genesis.brain.cognition.goals",
+    "type": "agent",
+    "name": "genesis.brain.cognition.goals",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.goals"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.08,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "GoalStatus",
+        "GoalPriority",
+        "Goal",
+        "GoalHierarchy"
+      ],
+      "functions": [
+        "__post_init__",
+        "is_blocked",
+        "is_complete",
+        "remaining_effort",
+        "to_dict",
+        "__init__",
+        "goal_count",
+        "create_goal",
+        "get",
+        "find",
+        "update_progress",
+        "_rollup_progress",
+        "decompose",
+        "_update_blocked_status",
+        "priorities",
+        "get_chain",
+        "_reindex",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/goals.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "badb7e8ae9109387:agent:genesis.brain.cognition.memory",
+    "type": "agent",
+    "name": "genesis.brain.cognition.memory",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.memory"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.08,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "WorkingMemorySlot",
+        "EpisodicMemoryEntry",
+        "WorkingMemory",
+        "EpisodicMemory"
+      ],
+      "functions": [
+        "__post_init__",
+        "__post_init__",
+        "__init__",
+        "size",
+        "capacity",
+        "utilization",
+        "store",
+        "get",
+        "retrieve",
+        "focus",
+        "update_salience",
+        "decay_all",
+        "clear",
+        "_evict_if_needed",
+        "summary",
+        "__init__",
+        "entry_count",
+        "record",
+        "recent",
+        "by_type",
+        "by_entity",
+        "search",
+        "replay",
+        "_rebuild_indexes",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/memory.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "1bbd6d147c511782:agent:genesis.brain.cognition.orchestration",
+    "type": "agent",
+    "name": "genesis.brain.cognition.orchestration",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.orchestration"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.08,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "AgentStatus",
+        "TaskStatus",
+        "CognitiveAgent",
+        "AgentTask",
+        "Orchestrator"
+      ],
+      "functions": [
+        "__post_init__",
+        "is_available",
+        "to_dict",
+        "__post_init__",
+        "duration",
+        "__init__",
+        "agent_count",
+        "task_count",
+        "register_agent",
+        "find_agents",
+        "assign_task",
+        "decompose_task",
+        "complete_task",
+        "fail_task",
+        "_check_parent_completion",
+        "on_complete",
+        "get_agent_tree",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/orchestration.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "3cebb17a68208ac7:agent:genesis.brain.cognition.reasoning",
+    "type": "agent",
+    "name": "genesis.brain.cognition.reasoning",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.reasoning"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.07,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "ReasoningMode",
+        "CausalLink",
+        "Inference",
+        "ReasoningEngine"
+      ],
+      "functions": [
+        "__post_init__",
+        "to_dict",
+        "__init__",
+        "inference_count",
+        "causal_link_count",
+        "add_causal_link",
+        "infer_causes",
+        "infer_effects",
+        "causal_chain",
+        "counterfactual",
+        "bayesian_update",
+        "bayesian_network",
+        "add_rule",
+        "deduce",
+        "analogical_transfer",
+        "summary",
+        "_trace"
+      ],
+      "path": "genesis/brain/cognition/reasoning.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "a3512b048073433b:agent:genesis.brain.cognition.reflection",
+    "type": "agent",
+    "name": "genesis.brain.cognition.reflection",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.reflection"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.06,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "Reflection",
+        "ReflectionEngine"
+      ],
+      "functions": [
+        "__post_init__",
+        "to_dict",
+        "__init__",
+        "reflection_count",
+        "analyze_decisions",
+        "self_criticize",
+        "generate_recommendations",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/reflection.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "6256cc3cfdf4e0e1:agent:genesis.brain.cognition.strategy",
+    "type": "agent",
+    "name": "genesis.brain.cognition.strategy",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.cognition.strategy"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.cognition"
+    ],
+    "maturity": 1.0,
+    "risk": 0.07,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "Tool",
+        "Strategy",
+        "StrategyEngine"
+      ],
+      "functions": [
+        "__post_init__",
+        "expected_value",
+        "__post_init__",
+        "score",
+        "__init__",
+        "register_tool",
+        "find_tools",
+        "select_tool",
+        "_record_usage",
+        "generate_strategies",
+        "_combine_strategies",
+        "best_strategy",
+        "update_success_rate",
+        "summary"
+      ],
+      "path": "genesis/brain/cognition/strategy.py",
+      "package": "genesis.brain.cognition"
+    }
+  },
+  {
+    "id": "09dc458f33824d38:agent:genesis.brain.embeddings",
+    "type": "agent",
+    "name": "genesis.brain.embeddings",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.99,
+    "evidence": [
+      "module:genesis.brain.embeddings"
+    ],
+    "dependencies": [
+      "genesis.brain.entity.EntityEmbedding"
+    ],
+    "consumers": [
+      "genesis.brain"
+    ],
+    "maturity": 0.99,
+    "risk": 0.05,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "EmbeddingStore"
+      ],
+      "functions": [
+        "__init__",
+        "_file_for",
+        "_load_all",
+        "_save_kind",
+        "store",
+        "get",
+        "has",
+        "delete",
+        "delete_all",
+        "all_for_kind",
+        "count",
+        "summary"
+      ],
+      "path": "genesis/brain/embeddings.py",
+      "package": "genesis.brain"
+    }
+  },
+  {
+    "id": "9fb71660f7baccbb:agent:genesis.brain.entity",
+    "type": "agent",
+    "name": "genesis.brain.entity",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.entity"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.brain",
+      "genesis.brain.embeddings",
+      "genesis.brain.graph",
+      "genesis.brain.integration",
+      "genesis.brain.sync",
+      "genesis.tests.test_brain"
+    ],
+    "maturity": 1.0,
+    "risk": 0.17,
+    "health": 0.95,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "BrainEntityType",
+        "Relationship",
+        "ChangeRecord",
+        "Confidence",
+        "Lineage",
+        "Capability",
+        "Evidence",
+        "RuntimeState",
+        "ResearchState",
+        "EntityEmbedding",
+        "BrainEntity"
+      ],
+      "functions": [
+        "has_value",
+        "__post_init__",
+        "to_dict",
+        "from_dict",
+        "to_dict",
+        "to_dict",
+        "from_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "to_dict",
+        "__post_init__",
+        "to_dict",
+        "__post_init__",
+        "type_label",
+        "add_relationship",
+        "find_relationships",
+        "record_change",
+        "set_embedding",
+        "get_embedding",
+        "has_embedding",
+        "to_dict",
+        "from_dict",
+        "__hash__",
+        "__repr__"
+      ],
+      "path": "genesis/brain/entity.py",
+      "package": "genesis.brain"
+    }
+  },
+  {
+    "id": "2963823df0d140ff:agent:genesis.brain.graph",
+    "type": "agent",
+    "name": "genesis.brain.graph",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.graph"
+    ],
+    "dependencies": [
+      "genesis.brain.entity.BrainEntity",
+      "genesis.brain.entity.BrainEntityType",
+      "genesis.brain.entity.Confidence",
+      "genesis.brain.entity.Evidence",
+      "genesis.brain.entity.Relationship",
+      "genesis.graphdb.Edge",
+      "genesis.graphdb.Node",
+      "genesis.graphdb.PersistentGraphDB",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain",
+      "genesis.brain.integration"
+    ],
+    "maturity": 1.0,
+    "risk": 0.21,
+    "health": 0.94,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "BrainGraph"
+      ],
+      "functions": [
+        "__init__",
+        "db",
+        "entity_count",
+        "relationship_count",
+        "register",
+        "get",
+        "find_by_source",
+        "find_by_type",
+        "find_by_label",
+        "all_entities",
+        "remove",
+        "relate",
+        "get_relationships",
+        "get_neighbors",
+        "count_by_type",
+        "summary",
+        "_index",
+        "_save_to_graphdb",
+        "_entity_from_node"
+      ],
+      "path": "genesis/brain/graph.py",
+      "package": "genesis.brain"
+    }
+  },
+  {
+    "id": "60d14e041e78f438:agent:genesis.brain.integration",
+    "type": "agent",
+    "name": "genesis.brain.integration",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.integration"
+    ],
+    "dependencies": [
+      "genesis.brain.entity.BrainEntity",
+      "genesis.brain.entity.BrainEntityType",
+      "genesis.brain.graph.BrainGraph",
+      "genesis.brain.sync.ADAPTERS",
+      "genesis.brain.sync.get_adapter",
+      "genesis.brain.sync.register_adapter"
+    ],
+    "consumers": [
+      "genesis.brain"
+    ],
+    "maturity": 1.0,
+    "risk": 0.14,
+    "health": 0.96,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "BrainIntegration"
+      ],
+      "functions": [
+        "__init__",
+        "start",
+        "stop",
+        "register_adapter",
+        "sync_adapter",
+        "register_entity",
+        "_on_knowledge_node_created",
+        "_on_knowledge_edge_created",
+        "_on_knowledge_graph_loaded",
+        "_on_memory_stored",
+        "_on_platform_boot",
+        "_on_platform_shutdown",
+        "_on_entity_created",
+        "summary"
+      ],
+      "path": "genesis/brain/integration.py",
+      "package": "genesis.brain"
+    }
+  },
+  {
+    "id": "5b5000c9c8917cc1:agent:genesis.brain.sync",
+    "type": "agent",
+    "name": "genesis.brain.sync",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.brain.sync"
+    ],
+    "dependencies": [
+      "genesis.brain.entity.BrainEntity",
+      "genesis.brain.entity.BrainEntityType",
+      "genesis.brain.entity.Capability",
+      "genesis.brain.entity.Confidence",
+      "genesis.brain.entity.Evidence",
+      "genesis.brain.entity.Lineage",
+      "genesis.brain.entity.Relationship",
+      "genesis.brain.entity.ResearchState",
+      "genesis.brain.entity.RuntimeState",
+      "genesis.civilization.agents.base.ResearchFinding",
+      "genesis.civilization.knowledge.KnowledgeArtifact",
+      "genesis.core.uir.UIRNode",
+      "genesis.digital_twin.model.TwinNode",
+      "genesis.intelligence.kgraph.KnowledgeGraph"
+    ],
+    "consumers": [
+      "genesis.brain",
+      "genesis.brain.integration",
+      "genesis.tests.test_brain"
+    ],
+    "maturity": 1.0,
+    "risk": 0.3,
+    "health": 0.91,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "GraphAdapter",
+        "DigitalTwinAdapter",
+        "UIRAdapter",
+        "KnowledgeArtifactAdapter",
+        "FindingAdapter",
+        "VRIPAdapter",
+        "GraphDBAdapter"
+      ],
+      "functions": [
+        "get_adapter",
+        "register_adapter",
+        "to_entity",
+        "from_entity",
+        "extract_entities",
+        "to_entity",
+        "extract_entities",
+        "to_entity",
+        "extract_entities",
+        "to_entity",
+        "from_entity",
+        "to_entity",
+        "to_entity",
+        "extract_entities",
+        "to_entity",
+        "extract_entities"
+      ],
+      "path": "genesis/brain/sync.py",
+      "package": "genesis.brain"
+    }
+  },
+  {
+    "id": "8653a6f633091fcc:agent:genesis.brain_v4",
+    "type": "agent",
+    "name": "genesis.brain_v4",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.brain_v4"
+    ],
+    "dependencies": [
+      "genesis.hypergraph.EdgeType",
+      "genesis.hypergraph.Hypergraph",
+      "genesis.hypergraph.HypergraphEdge",
+      "genesis.hypergraph.HypergraphNode",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.platform",
+      "genesis.tests.programs.test_brain_v4"
+    ],
+    "maturity": 0.7,
+    "risk": 0.36,
+    "health": 0.68,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "GoalLevel",
+        "GoalStatus",
+        "Goal",
+        "Plan",
+        "ExecutivePlanner",
+        "StrategicPlanner",
+        "TacticalPlanner",
+        "TaskPlanner",
+        "ConstraintSolver",
+        "UtilityOptimizer",
+        "Belief",
+        "BeliefRevision",
+        "UncertaintyReasoning",
+        "ProbabilisticPlanner",
+        "CausalLink",
+        "CausalInference",
+        "AnalogicalReasoning",
+        "Reflection",
+        "ReflectionEngine",
+        "AttentionFocus",
+        "AttentionSystem",
+        "ExecutiveMemory",
+        "WorldModelSync",
+        "EngineeringBrainV4"
+      ],
+      "functions": [
+        "__post_init__",
+        "__post_init__",
+        "__init__",
+        "formulate_goals",
+        "prioritize_goals",
+        "plan",
+        "decompose",
+        "create_tasks",
+        "__init__",
+        "add_constraint",
+        "solve",
+        "expected_utility",
+        "max_expected_utility",
+        "regret",
+        "__post_init__",
+        "evidence_ratio",
+        "__init__",
+        "adopt",
+        "contract",
+        "revise",
+        "expand",
+        "add_entailment",
+        "propagate",
+        "contradictions",
+        "bayesian_update",
+        "dempster_shafer",
+        "kullback_leibler",
+        "__init__",
+        "add_outcome_model",
+        "expected_value",
+        "__post_init__",
+        "__init__",
+        "add_link",
+        "do_intervention",
+        "counterfactual",
+        "causal_chain",
+        "__init__",
+        "add_case",
+        "find_analogies",
+        "transfer_solution",
+        "_feature_similarity",
+        "__post_init__",
+        "__init__",
+        "analyze_outcome",
+        "self_criticize",
+        "generate_recommendations",
+        "_analyze",
+        "__post_init__",
+        "age",
+        "__init__",
+        "focus",
+        "primary",
+        "tick",
+        "summary",
+        "__init__",
+        "remember",
+        "recall",
+        "recent",
+        "__init__",
+        "sync_hypergraph",
+        "last_sync_time",
+        "__init__",
+        "create_goal",
+        "get_goal",
+        "goals_by_level",
+        "goal_tree",
+        "update_goal_progress",
+        "formulate_plan",
+        "reason",
+        "reflect",
+        "summary"
+      ],
+      "path": "genesis/brain_v4.py",
+      "package": "genesis"
+    }
+  },
+  {
+    "id": "9525114e34e93967:agent:genesis.civilization.agents",
+    "type": "agent",
+    "name": "genesis.civilization.agents",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.civilization.agents"
+    ],
+    "dependencies": [
+      "genesis.civilization.agents.base.ResearchAgent",
+      "genesis.civilization.agents.base.ResearchFinding",
+      "genesis.civilization.agents.base.ResearchQuestion",
+      "genesis.usir.core.NodeKind",
+      "genesis.usir.core.USIRNode",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.sync",
+      "genesis.civilization",
+      "genesis.civilization.overseer"
+    ],
+    "maturity": 0.7,
+    "risk": 0.44,
+    "health": 0.66,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "ArchitectureScientist",
+        "SecurityScientist",
+        "LanguageScientist",
+        "RuntimeScientist",
+        "TestingScientist",
+        "EconomicsScientist",
+        "SystemsScientist",
+        "CompilerScientist",
+        "DatabaseScientist",
+        "NetworkingScientist",
+        "DistributedSystemsScientist",
+        "FormalMethodsScientist"
+      ],
+      "functions": [
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "_find_hubs",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "_scan_secrets",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "_language_distribution",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_domain",
+        "investigate",
+        "generate_questions"
+      ],
+      "path": "genesis/civilization/agents/__init__.py",
+      "package": "genesis.civilization.agents"
+    }
+  },
+  {
+    "id": "0144c1251e6bae03:agent:genesis.civilization.agents.base",
+    "type": "agent",
+    "name": "genesis.civilization.agents.base",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.7,
+    "evidence": [
+      "module:genesis.civilization.agents.base"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.brain.sync",
+      "genesis.civilization",
+      "genesis.civilization.agents",
+      "genesis.civilization.overseer"
+    ],
+    "maturity": 0.7,
+    "risk": 0.26,
+    "health": 0.71,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "ResearchFinding",
+        "ResearchQuestion",
+        "AgentMemory",
+        "ResearchAgent"
+      ],
+      "functions": [
+        "to_dict",
+        "from_dict",
+        "finding_count",
+        "active_questions",
+        "average_confidence",
+        "add_finding",
+        "add_question",
+        "to_dict",
+        "__init__",
+        "research_domain",
+        "investigate",
+        "generate_questions",
+        "research_cycle",
+        "get_answers_for",
+        "confidence_in",
+        "summary",
+        "to_dict",
+        "_memory_path",
+        "_save_memory",
+        "_load_memory"
+      ],
+      "path": "genesis/civilization/agents/base.py",
+      "package": "genesis.civilization.agents"
+    }
+  },
+  {
+    "id": "02673f4bc8cf5f95:agent:genesis.digital_twin.extractors",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.0,
+    "evidence": [
+      "module:genesis.digital_twin.extractors"
+    ],
+    "dependencies": [],
+    "consumers": [
+      "genesis.digital_twin.builder"
+    ],
+    "maturity": 0.0,
+    "risk": 0.52,
+    "health": 0.14,
+    "role": "agent",
+    "metadata": {
+      "classes": [],
+      "functions": [],
+      "path": "genesis/digital_twin/extractors/__init__.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "a82bc4583e81e828:agent:genesis.digital_twin.extractors.architecture",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.architecture",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.75,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.architecture"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.75,
+    "risk": 0.18,
+    "health": 0.77,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "ArchitectureExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_path_segments",
+        "_assign_layer",
+        "_assign_role",
+        "_assign_pattern"
+      ],
+      "path": "genesis/digital_twin/extractors/architecture.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "f49e9a0a0ead2856:agent:genesis.digital_twin.extractors.contracts",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.contracts",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.4,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.contracts"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.4,
+    "risk": 0.34,
+    "health": 0.48,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "ContractsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_extract_class_contracts"
+      ],
+      "path": "genesis/digital_twin/extractors/contracts.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "8a4ace235c7bb2c6:agent:genesis.digital_twin.extractors.dependencies",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.dependencies",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.42,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.dependencies"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.42,
+    "risk": 0.33,
+    "health": 0.49,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "DependenciesExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run"
+      ],
+      "path": "genesis/digital_twin/extractors/dependencies.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "eacbed28d90afa64:agent:genesis.digital_twin.extractors.events",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.events",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.42,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.events"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.42,
+    "risk": 0.33,
+    "health": 0.49,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "EventsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_check_event_class",
+        "_check_event_function"
+      ],
+      "path": "genesis/digital_twin/extractors/events.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "dcd7688d7bca3f24:agent:genesis.digital_twin.extractors.evolution",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.evolution",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.39,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.evolution"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.39,
+    "risk": 0.34,
+    "health": 0.47,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "EvolutionExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "_git",
+        "run"
+      ],
+      "path": "genesis/digital_twin/extractors/evolution.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "0af96cccb89aab5f:agent:genesis.digital_twin.extractors.persistence",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.persistence",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.71,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.persistence"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.71,
+    "risk": 0.19,
+    "health": 0.74,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "PersistenceExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_check_store_class",
+        "_wire_store_usages"
+      ],
+      "path": "genesis/digital_twin/extractors/persistence.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "d97fd99e7814cda4:agent:genesis.digital_twin.extractors.semantics",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.semantics",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.43,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.semantics"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.43,
+    "risk": 0.33,
+    "health": 0.5,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "SemanticsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_enrich_from_docstring",
+        "_infer_purpose",
+        "_infer_tags"
+      ],
+      "path": "genesis/digital_twin/extractors/semantics.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "26d8e419282e186a:agent:genesis.digital_twin.extractors.specs",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.specs",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.specs"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.44,
+    "risk": 0.33,
+    "health": 0.51,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "SpecsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "link_nodes_to_specs"
+      ],
+      "path": "genesis/digital_twin/extractors/specs.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "7475b48439502565:agent:genesis.digital_twin.extractors.syntax",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.syntax",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.syntax"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.44,
+    "risk": 0.33,
+    "health": 0.51,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "SyntaxExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_add_class",
+        "_add_function",
+        "_extract_source"
+      ],
+      "path": "genesis/digital_twin/extractors/syntax.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "7d06fdfebe30da9f:agent:genesis.digital_twin.extractors.tests",
+    "type": "agent",
+    "name": "genesis.digital_twin.extractors.tests",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.41,
+    "evidence": [
+      "module:genesis.digital_twin.extractors.tests"
+    ],
+    "dependencies": [
+      "genesis.digital_twin.model.DigitalTwin",
+      "genesis.digital_twin.model.TwinNode"
+    ],
+    "consumers": [],
+    "maturity": 0.41,
+    "risk": 0.34,
+    "health": 0.48,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "TestsExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run"
+      ],
+      "path": "genesis/digital_twin/extractors/tests.py",
+      "package": "genesis.digital_twin.extractors"
+    }
+  },
+  {
+    "id": "811e6458c7ca0aef:agent:genesis.execution.actors",
+    "type": "agent",
+    "name": "genesis.execution.actors",
+    "owner": "",
+    "lifecycle": "created",
+    "confidence": 0.44,
+    "evidence": [
+      "module:genesis.execution.actors"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.execution",
+      "genesis.execution.engine",
+      "genesis.tests.test_genesis_xii"
+    ],
+    "maturity": 0.44,
+    "risk": 0.36,
+    "health": 0.5,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "ActorState",
+        "Actor",
+        "ActorEngine"
+      ],
+      "functions": [
+        "__post_init__",
+        "send",
+        "process_next",
+        "__init__",
+        "spawn",
+        "send",
+        "process",
+        "process_all",
+        "broadcast",
+        "stop",
+        "summary"
+      ],
+      "path": "genesis/execution/actors.py",
+      "package": "genesis.execution"
+    }
+  },
+  {
+    "id": "ee695ecaf7fd5c3a:agent:genesis.intelligence.extractor",
+    "type": "agent",
+    "name": "genesis.intelligence.extractor",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.96,
+    "evidence": [
+      "module:genesis.intelligence.extractor"
+    ],
+    "dependencies": [],
+    "consumers": [],
+    "maturity": 0.96,
+    "risk": 0.03,
+    "health": 0.96,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "SemanticExtractor"
+      ],
+      "functions": [
+        "__init__",
+        "run",
+        "_extract_module",
+        "_extract_markdown",
+        "summary"
+      ],
+      "path": "genesis/intelligence/extractor.py",
+      "package": "genesis.intelligence"
+    }
+  },
+  {
+    "id": "f53f57fc7f7cd389:agent:genesis.os.agent_runtime",
+    "type": "agent",
+    "name": "genesis.os.agent_runtime",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 1.0,
+    "evidence": [
+      "module:genesis.os.agent_runtime"
+    ],
+    "dependencies": [
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [
+      "genesis.os",
+      "genesis.os.runtime",
+      "genesis.tests.test_os"
+    ],
+    "maturity": 1.0,
+    "risk": 0.08,
+    "health": 0.98,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "AgentProcess",
+        "AgentRuntime"
+      ],
+      "functions": [
+        "__init__",
+        "register_agent_type",
+        "start_agent",
+        "stop_agent",
+        "get_process",
+        "update_metrics",
+        "set_status",
+        "running_agents",
+        "failed_agents",
+        "restart_failed",
+        "summary",
+        "_state_path",
+        "_save",
+        "_load"
+      ],
+      "path": "genesis/os/agent_runtime.py",
+      "package": "genesis.os"
+    }
+  },
+  {
+    "id": "e7f49a6796cff5f6:agent:genesis.tests.programs.test_brain_v4",
+    "type": "agent",
+    "name": "genesis.tests.programs.test_brain_v4",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.programs.test_brain_v4"
+    ],
+    "dependencies": [
+      "genesis.brain_v4.AnalogicalReasoning",
+      "genesis.brain_v4.AttentionFocus",
+      "genesis.brain_v4.AttentionSystem",
+      "genesis.brain_v4.Belief",
+      "genesis.brain_v4.BeliefRevision",
+      "genesis.brain_v4.CausalInference",
+      "genesis.brain_v4.CausalLink",
+      "genesis.brain_v4.ConstraintSolver",
+      "genesis.brain_v4.EngineeringBrainV4",
+      "genesis.brain_v4.ExecutiveMemory",
+      "genesis.brain_v4.ExecutivePlanner",
+      "genesis.brain_v4.Goal",
+      "genesis.brain_v4.GoalLevel",
+      "genesis.brain_v4.GoalStatus",
+      "genesis.brain_v4.Plan",
+      "genesis.brain_v4.ProbabilisticPlanner",
+      "genesis.brain_v4.Reflection",
+      "genesis.brain_v4.ReflectionEngine",
+      "genesis.brain_v4.StrategicPlanner",
+      "genesis.brain_v4.TacticalPlanner",
+      "genesis.brain_v4.TaskPlanner",
+      "genesis.brain_v4.UncertaintyReasoning",
+      "genesis.brain_v4.UtilityOptimizer",
+      "genesis.brain_v4.WorldModelSync"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.61,
+    "health": 0.47,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "TestGoal",
+        "TestPlanners",
+        "TestConstraintSolver",
+        "TestUtilityOptimizer",
+        "TestBelief",
+        "TestBeliefRevision",
+        "TestUncertaintyReasoning",
+        "TestProbabilisticPlanner",
+        "TestCausalInference",
+        "TestAnalogicalReasoning",
+        "TestReflectionEngine",
+        "TestAttentionSystem",
+        "TestExecutiveMemory",
+        "TestEngineeringBrainV4"
+      ],
+      "functions": [
+        "test_create_minimal",
+        "test_create_with_fields",
+        "test_executive_formulate",
+        "test_executive_prioritize",
+        "test_strategic_plan",
+        "test_tactical_decompose",
+        "test_task_create",
+        "setup_method",
+        "test_solve_empty",
+        "test_solve_basic",
+        "test_solve_with_condition",
+        "test_expected_utility",
+        "test_max_expected_utility",
+        "test_max_no_options",
+        "test_regret",
+        "test_create_minimal",
+        "test_evidence_ratio",
+        "setup_method",
+        "test_adopt_and_contract",
+        "test_revise",
+        "test_expand",
+        "test_add_entailment_and_propagate",
+        "test_contradictions",
+        "test_bayesian_update",
+        "test_bayesian_update_edge",
+        "test_dempster_shafer",
+        "test_kl_divergence",
+        "setup_method",
+        "test_add_outcome_model",
+        "test_expected_value",
+        "setup_method",
+        "test_add_link",
+        "test_do_intervention",
+        "test_counterfactual",
+        "test_causal_chain",
+        "setup_method",
+        "test_add_case",
+        "test_find_analogies",
+        "test_transfer_solution",
+        "test_transfer_no_match",
+        "setup_method",
+        "test_analyze_outcome_success",
+        "test_analyze_outcome_failure",
+        "test_self_criticize",
+        "test_generate_recommendations",
+        "setup_method",
+        "test_focus",
+        "test_focus_capacity",
+        "test_primary_returns_highest_salience",
+        "test_tick_removes_low_salience",
+        "test_summary",
+        "setup_method",
+        "test_remember_and_recall",
+        "test_recall_nonexistent",
+        "test_capacity",
+        "test_recent",
+        "setup_method",
+        "test_create_goal",
+        "test_create_goal_with_parent",
+        "test_goals_by_level",
+        "test_goal_tree",
+        "test_goal_tree_nonexistent",
+        "test_update_goal_progress",
+        "test_update_goal_completion",
+        "test_formulate_plan",
+        "test_formulate_plan_nonexistent",
+        "test_reason",
+        "test_reflect",
+        "test_summary",
+        "util"
+      ],
+      "path": "genesis/tests/programs/test_brain_v4.py",
+      "package": "genesis.tests.programs"
+    }
+  },
+  {
+    "id": "d510084248a0ab12:agent:genesis.tests.test_brain",
+    "type": "agent",
+    "name": "genesis.tests.test_brain",
+    "owner": "",
+    "lifecycle": "active",
+    "confidence": 0.5,
+    "evidence": [
+      "module:genesis.tests.test_brain"
+    ],
+    "dependencies": [
+      "genesis.brain.BrainEntity",
+      "genesis.brain.BrainEntityType",
+      "genesis.brain.BrainGraph",
+      "genesis.brain.BrainIntegration",
+      "genesis.brain.Capability",
+      "genesis.brain.ChangeRecord",
+      "genesis.brain.Confidence",
+      "genesis.brain.DigitalTwinAdapter",
+      "genesis.brain.EmbeddingStore",
+      "genesis.brain.EngineeringBrain",
+      "genesis.brain.EntityEmbedding",
+      "genesis.brain.Evidence",
+      "genesis.brain.FindingAdapter",
+      "genesis.brain.GraphDBAdapter",
+      "genesis.brain.KnowledgeArtifactAdapter",
+      "genesis.brain.Lineage",
+      "genesis.brain.Relationship",
+      "genesis.brain.ResearchState",
+      "genesis.brain.RuntimeState",
+      "genesis.brain.UIRAdapter",
+      "genesis.brain.entity.Relationship",
+      "genesis.brain.sync.ADAPTERS",
+      "genesis.brain.sync.get_adapter",
+      "genesis.events.bus.EventBus",
+      "genesis.graphdb.Edge",
+      "genesis.graphdb.Node",
+      "genesis.graphdb.PersistentGraphDB",
+      "genesis.utils.identity.generate_id"
+    ],
+    "consumers": [],
+    "maturity": 0.5,
+    "risk": 0.67,
+    "health": 0.45,
+    "role": "agent",
+    "metadata": {
+      "classes": [
+        "TestBrainEntity",
+        "TestBrainGraph",
+        "TestEmbeddingStore",
+        "TestBrainIntegration",
+        "TestEngineeringBrain",
+        "TestSyncAdapters",
+        "TestEdgeCases"
+      ],
+      "functions": [
+        "test_create_minimal",
+        "test_create_with_fields",
+        "test_type_label",
+        "test_relationship_management",
+        "test_history_tracking",
+        "test_embedding_management",
+        "test_serialization_roundtrip",
+        "test_from_dict_restores_confidence",
+        "test_from_dict_restores_lineage",
+        "test_hash",
+        "test_repr",
+        "test_brain_entity_types",
+        "test_confidence_defaults",
+        "test_confidence_roundtrip",
+        "test_relationship_to_dict",
+        "test_relationship_from_dict",
+        "test_capability_defaults",
+        "test_evidence_defaults",
+        "test_runtime_state_defaults",
+        "test_research_state_defaults",
+        "test_change_record_to_dict",
+        "test_entity_embedding_post_init",
+        "test_entity_embedding_to_dict_truncates",
+        "graph",
+        "test_register_and_get",
+        "test_register_updates_existing",
+        "test_register_with_generated_id",
+        "test_get_nonexistent",
+        "test_find_by_type",
+        "test_find_by_label",
+        "test_find_by_source",
+        "test_relate_entities",
+        "test_relate_nonexistent",
+        "test_get_neighbors",
+        "test_remove_entity",
+        "test_remove_nonexistent",
+        "test_summary",
+        "test_all_entities",
+        "store",
+        "test_store_and_get",
+        "test_has_embedding",
+        "test_delete_embedding",
+        "test_delete_all",
+        "test_all_for_kind",
+        "test_summary",
+        "test_persistence",
+        "test_invalid_kind",
+        "brain",
+        "bus",
+        "test_start_stop",
+        "test_on_knowledge_node_created",
+        "test_on_knowledge_edge_created",
+        "test_on_platform_boot_shutdown",
+        "test_register_entity",
+        "test_event_bus_auto_registration",
+        "brain",
+        "test_create_entity",
+        "test_register_and_retrieve",
+        "test_find_methods",
+        "test_relate_and_neighbors",
+        "test_embedding_storage",
+        "test_remove_entity",
+        "test_summary",
+        "test_integration_lifecycle",
+        "test_facade_start_stop",
+        "graph",
+        "test_adapter_registry",
+        "test_graphdb_adapter_roundtrip",
+        "test_empty_adapter_extract",
+        "test_entity_very_long_description",
+        "test_entity_no_brain_id",
+        "test_relationship_empty_target",
+        "test_embedding_truncation_in_to_dict",
+        "test_multiple_edit_updates_version",
+        "test_embedding_store_persists_across_graph_close",
+        "test_brain_graph_source_index_multiple"
+      ],
+      "path": "genesis/tests/test_brain.py",
+      "package": "genesis.tests"
+    }
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://schemas/decision/record/v1",
+  "title": "DecisionRecord",
+  "description": "Canonical Decision Record schema. Consolidates Decision Intake Records (V0.4), ADRs (V0.4/V0.5/V0.9), and all decision artifacts across Venus.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "venus://schemas/base/entity/v1" }
+  ],
+  "properties": {
+    "decision_type": {
+      "type": "string",
+      "enum": ["strategic", "architectural", "infrastructure", "ai_model", "security", "financial", "legal", "operational", "product"],
+      "description": "Classification of the decision per UDIOS taxonomy."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "under_review", "approved", "rejected", "deprecated", "superseded"],
+      "description": "Lifecycle state of the decision."
+    },
+    "context": {
+      "type": "object",
+      "properties": {
+        "problem_statement": { "type": "string" },
+        "constraints": { "type": "array", "items": { "type": "string" } },
+        "assumptions": { "type": "array", "items": { "type": "string" } },
+        "trigger": { "type": "string", "description": "What prompted this decision." }
+      },
+      "required": ["problem_statement"]
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "pros": { "type": "array", "items": { "type": "string" } },
+          "cons": { "type": "array", "items": { "type": "string" } },
+          "evidence_quality_score": { "type": "number", "minimum": 0, "maximum": 100 },
+          "estimated_cost": { "type": "string" },
+          "risk_level": { "type": "string", "enum": ["low", "medium", "high", "critical"] }
+        },
+        "required": ["name", "description"]
+      }
+    },
+    "selected_option": {
+      "type": "string",
+      "description": "Name of the selected option."
+    },
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Aggregated confidence from Module 22 evaluation."
+    },
+    "consequences": {
+      "type": "object",
+      "properties": {
+        "positive": { "type": "array", "items": { "type": "string" } },
+        "negative": { "type": "array", "items": { "type": "string" } },
+        "risks": { "type": "array", "items": { "$ref": "venus://schemas/risk/register/v1" } }
+      }
+    },
+    "approval_chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "reviewer": { "type": "string" },
+          "decision": { "type": "string", "enum": ["approved", "rejected", "abstained"] },
+          "timestamp": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "audit_trail": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event": { "type": "string" },
+          "actor": { "type": "string" },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "delta": { "type": "string" }
+        },
+        "required": ["event", "actor", "timestamp"]
+      }
+    },
+    "post_review": {
+      "type": "object",
+      "properties": {
+        "outcome": { "type": "string", "enum": ["success", "neutral", "failure"] },
+        "lesson": { "type": "string" },
+        "linked_incident_id": { "type": "string" }
+      }
+    }
+  },
+  "required": ["decision_type", "status", "context", "options"]
+}

@@ -1,0 +1,210 @@
+{
+  "iteration": 0,
+  "meta": {
+    "total_subsystems": 48,
+    "total_modules": 405,
+    "total_lines": 91686,
+    "total_classes": 1358,
+    "total_functions": 7111,
+    "total_planners": 26,
+    "total_engines": 97,
+    "total_scientists_impl": 16,
+    "self_model_complete": true
+  },
+  "subsystems": {
+    "acquisition": {
+      "files": 20
+    },
+    "api": {
+      "files": 2
+    },
+    "autonomous": {
+      "files": 3
+    },
+    "brain": {
+      "files": 16
+    },
+    "capability": {
+      "files": 2
+    },
+    "certification": {
+      "files": 2
+    },
+    "civilization": {
+      "files": 14
+    },
+    "cli": {
+      "files": 2
+    },
+    "compiler": {
+      "files": 13
+    },
+    "config": {
+      "files": 1
+    },
+    "core": {
+      "files": 6
+    },
+    "datalake": {
+      "files": 1
+    },
+    "di": {
+      "files": 4
+    },
+    "diagnostics": {
+      "files": 2
+    },
+    "digital_twin": {
+      "files": 29
+    },
+    "events": {
+      "files": 2
+    },
+    "execution": {
+      "files": 8
+    },
+    "fabric": {
+      "files": 11
+    },
+    "genesis": {
+      "files": 36
+    },
+    "graph": {
+      "files": 2
+    },
+    "graph_v2": {
+      "files": 9
+    },
+    "graphdb": {
+      "files": 1
+    },
+    "indexer": {
+      "files": 2
+    },
+    "integration": {
+      "files": 2
+    },
+    "intelligence": {
+      "files": 14
+    },
+    "kernel": {
+      "files": 18
+    },
+    "laboratory": {
+      "files": 10
+    },
+    "marketplace": {
+      "files": 1
+    },
+    "memory": {
+      "files": 4
+    },
+    "meta": {
+      "files": 10
+    },
+    "metamodel": {
+      "files": 5
+    },
+    "observatory": {
+      "files": 7
+    },
+    "os": {
+      "files": 14
+    },
+    "package": {
+      "files": 2
+    },
+    "persistence": {
+      "files": 3
+    },
+    "planning": {
+      "files": 1
+    },
+    "plugin": {
+      "files": 3
+    },
+    "project": {
+      "files": 2
+    },
+    "runtime": {
+      "files": 2
+    },
+    "security": {
+      "files": 2
+    },
+    "studio": {
+      "files": 2
+    },
+    "temporal": {
+      "files": 1
+    },
+    "tests": {
+      "files": 72
+    },
+    "ucos": {
+      "files": 13
+    },
+    "ued": {
+      "files": 13
+    },
+    "usir": {
+      "files": 5
+    },
+    "utils": {
+      "files": 4
+    },
+    "validation": {
+      "files": 7
+    }
+  },
+  "subsystem_names": [
+    "acquisition",
+    "api",
+    "autonomous",
+    "brain",
+    "capability",
+    "certification",
+    "civilization",
+    "cli",
+    "compiler",
+    "config",
+    "core",
+    "datalake",
+    "di",
+    "diagnostics",
+    "digital_twin",
+    "events",
+    "execution",
+    "fabric",
+    "genesis",
+    "graph",
+    "graph_v2",
+    "graphdb",
+    "indexer",
+    "integration",
+    "intelligence",
+    "kernel",
+    "laboratory",
+    "marketplace",
+    "memory",
+    "meta",
+    "metamodel",
+    "observatory",
+    "os",
+    "package",
+    "persistence",
+    "planning",
+    "plugin",
+    "project",
+    "runtime",
+    "security",
+    "studio",
+    "temporal",
+    "tests",
+    "ucos",
+    "ued",
+    "usir",
+    "utils",
+    "validation"
+  ]
+}

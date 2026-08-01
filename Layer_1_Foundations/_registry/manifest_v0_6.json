@@ -1,0 +1,14 @@
+{
+  "version": "V0.6",
+  "name": "V0.6 V0.6_UEEPCIOS",
+  "path": "Layer_2_Core_OS/V0.6_UEEPCIOS",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.6-UEEPCIOS"
+  ],
+  "dependencies": [
+    "V0.5"
+  ]
+}

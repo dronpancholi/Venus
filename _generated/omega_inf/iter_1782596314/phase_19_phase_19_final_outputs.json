@@ -1,0 +1,14 @@
+{
+  "indices": {
+    "repository_intelligence_score": 4.374,
+    "repository_health_score": 0.344,
+    "engineering_maturity_index": 0.688,
+    "scientific_discovery_index": 1.933,
+    "knowledge_reuse_index": 0.5,
+    "innovation_index": 0.672,
+    "economic_efficiency_index": 19.491,
+    "autonomous_evolution_index": 8.0
+  },
+  "deliverable_count": 19,
+  "report_path": "/Users/dronpancholi/Developer/01_Strategic/Venus/_generated/omega_inf/iter_1782596314/omega_inf_final_report.json"
+}

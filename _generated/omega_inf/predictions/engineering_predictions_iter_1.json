@@ -1,0 +1,52 @@
+{
+  "iteration": 1,
+  "repository_fingerprint": {
+    "files": 415,
+    "lines": 98160,
+    "classes": 1443,
+    "functions": 7257
+  },
+  "predictions": {
+    "architecture_erosion": {
+      "risk": 0.252,
+      "metric": "5.03 methods/class",
+      "threshold": ">20 methods/class = high erosion risk",
+      "recommendation": "Architecture stable"
+    },
+    "technical_debt_growth": {
+      "risk": 0.341,
+      "metric": "236.5 avg lines/file",
+      "threshold": ">300 avg lines = high debt risk",
+      "recommendation": "Refactor large files"
+    },
+    "bug_density": {
+      "risk": 0.7393,
+      "metric": "0.7393 bugs/line (estimated)",
+      "threshold": ">0.5 bugs/line = high density",
+      "recommendation": "Review complex functions"
+    },
+    "performance_regression": {
+      "risk": 0.0,
+      "metric": "0ms latency",
+      "threshold": ">30000ms = regression risk",
+      "recommendation": "Performance stable"
+    },
+    "dependency_risk": {
+      "risk": 0.0,
+      "metric": "0 dependencies",
+      "threshold": ">5000 deps = high coupling risk",
+      "recommendation": "Dependency graph healthy"
+    },
+    "maintenance_cost": {
+      "estimated_effort_hours": 4908.0,
+      "risk": 0.491,
+      "recommendation": "Estimated 4908.0 hours for full refactor"
+    },
+    "documentation_decay": {
+      "risk": 1.0,
+      "metric": "0.0 reproducibility",
+      "recommendation": "Improve documentation coverage"
+    }
+  },
+  "overall_risk_profile": 0.389
+}

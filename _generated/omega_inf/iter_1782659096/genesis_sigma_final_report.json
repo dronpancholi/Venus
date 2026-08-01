@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "program": "GENESIS \u221e\u221e \u2014 UEIP",
+    "iteration": 1,
+    "total_duration_ms": 23136.25,
+    "significance": 0.53,
+    "domains_completed": 13
+  },
+  "scorecard": {
+    "repository_intelligence_score": 0.548,
+    "repository_health_score": 0.344,
+    "engineering_maturity_index": 0.688,
+    "autonomous_evolution_index": 0.8,
+    "innovation_index": 0.472,
+    "knowledge_reuse_index": 0.415,
+    "scientific_output_index": 0.733,
+    "economic_efficiency_index": 0.591,
+    "architectural_quality_index": 0.519,
+    "canonicalization_progress_index": 0.415
+  },
+  "deliverables": {
+    "observation_baseline": 415,
+    "understanding_domains": 0,
+    "reasoning_recommendations": 0,
+    "science_experiments": 5,
+    "engineering_work_items": 244,
+    "synthesis_canonicalization": 0,
+    "execution_checks_passed": 3,
+    "economics_report": {
+      "total_implementation_cost": 134123.0,
+      "total_maintenance_cost": 26828.0,
+      "total_technical_debt": 512202.0,
+      "total_future_value": 268246.0,
+      "avg_roi": 1.0,
+      "services": {
+        "tests": {
+          "modules": 72,
+          "lines": 22528,
+          "classes": 376,
+          "functions": 2641,
+          "implementation_cost": 33792.0,
+          "maintenance_cost": 6758.0,
+          "technical_debt": 423526.0,
+          "future_value": 67584.0,
+          "expected_roi": 1.0,
+          "risk_factor": 6.267
+        },
+        "civilization": {
+          "modules": 14,
+          "lines": 5226,
+          "classes": 69,
+          "functions": 278,
+          "implementation_cost": 7839.0,
+          "maintenance_cost": 1568.0,
+          "technical_debt": 18030.0,
+          "future_value": 15678.0,
+          "expected_roi": 1.0,
+          "risk_factor": 1.15
+        },
+        "digital_twin": {
+          "modules": 29,
+          "lines": 4606,
+          "classes": 39,
+          "functions": 223,
+          "implementation_cost": 6909.0,
+          "maintenance_cost": 1382.0,
+          "technical_debt": 8982.0,
+          "future_value": 13818.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.65
+        },
+        "brain": {
+          "modules": 16,
+          "lines": 4084,
+          "classes": 57,
+          "functions": 274,
+          "implementation_cost": 6126.0,
+          "maintenance_cost": 1225.0,
+          "technical_debt": 11639.0,
+          "future_value": 12252.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.95
+        },
+        "os": {
+          "modules": 14,
+          "lines": 3120,
+          "classes": 41,
+          "functions": 240,
+          "implementation_cost": 4680.0,
+          "maintenance_cost": 936.0,
+          "technical_debt": 6396.0,
+          "future_value": 9360.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.683
+        },
+        "laboratory": {
+          "modules": 10,
+          "lines": 2687,
+          "classes": 45,
+          "functions": 102,
+          "implementation_cost": 4030.0,
+          "maintenance_cost": 806.0,
+          "technical_debt": 6046.0,
+          "future_value": 8060.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.75
+        },
+        "omega_loop": {
+          "modules": 1,
+          "lines": 2674,
+          "classes": 2,
+          "functions": 49,
+          "implementation_cost": 4011.0,
+          "maintenance_cost": 802.0,
+          "technical_debt": 267.0,
+          "future_value": 8022.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.033
+        },
+        "ued": {
+          "modules": 13,
+          "lines": 2605,
+          "classes": 43,
+          "functions": 274,
+          "implementation_cost": 3908.0,
+          "maintenance_cost": 782.0,
+          "technical_debt": 5601.0,
+          "future_value": 7816.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.717
+        },
+        "kernel": {
+          "modules": 18,
+          "lines": 2126,
+          "classes": 34,
+          "functions": 182,
+          "implementation_cost": 3189.0,
+          "maintenance_cost": 638.0,
+          "technical_debt": 3614.0,
+          "future_value": 6378.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.567
+        },
+        "intelligence": {
+          "modules": 14,
+          "lines": 2111,
+          "classes": 17,
+          "functions": 96,
+          "implementation_cost": 3166.0,
+          "maintenance_cost": 633.0,
+          "technical_debt": 1794.0,
+          "future_value": 6332.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.283
+        },
+        "ucos": {
+          "modules": 13,
+          "lines": 1984,
+          "classes": 32,
+          "functions": 156,
+          "implementation_cost": 2976.0,
+          "maintenance_cost": 595.0,
+          "technical_debt": 3174.0,
+          "future_value": 5952.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.533
+        },
+        "meta": {
+          "modules": 10,
+          "lines": 1805,
+          "classes": 29,
+          "functions": 179,
+          "implementation_cost": 2708.0,
+          "maintenance_cost": 542.0,
+          "technical_debt": 2617.0,
+          "future_value": 5416.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.483
+        },
+        "acquisition": {
+          "modules": 20,
+          "lines": 1526,
+          "classes": 21,
+          "functions": 82,
+          "implementation_cost": 2289.0,
+          "maintenance_cost": 458.0,
+          "technical_debt": 1602.0,
+          "future_value": 4578.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.35
+        },
+        "usir": {
+          "modules": 5,
+          "lines": 1451,
+          "classes": 9,
+          "functions": 56,
+          "implementation_cost": 2176.0,
+          "maintenance_cost": 435.0,
+          "technical_debt": 653.0,
+          "future_value": 4352.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.15
+        },
+        "ontology": {
+          "modules": 1,
+          "lines": 1399,
+          "classes": 20,
+          "functions": 101,
+          "implementation_cost": 2098.0,
+          "maintenance_cost": 420.0,
+          "technical_debt": 1399.0,
+          "future_value": 4196.0,
+          "expected_roi": 1.0,
+          "risk_factor": 0.333
+        }
+      }
+    },
+    "memory_iterations": 7,
+    "global_network_services": 2,
+    "foundation_entities": 2152,
+    "foundation_embedding_dim": 500,
+    "foundation_supervised_pairs": 12545
+  },
+  "domain_summaries": {
+    "domain_I": {
+      "name": "Complete Engineering Observation",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "test_files",
+        "source_files",
+        "module_names",
+        "dependency_pairs"
+      ]
+    },
+    "domain_II": {
+      "name": "Engineering Digital Twin",
+      "deliverable_count": 1,
+      "keys": [
+        "packages_mapped",
+        "dependency_matrix",
+        "cyclic_dependencies",
+        "cyclic_pairs",
+        "redundant_packages",
+        "overlapping_responsibilities",
+        "overlap_details"
+      ]
+    },
+    "domain_III": {
+      "name": "Engineering Knowledge Fabric",
+      "deliverable_count": 1,
+      "keys": [
+        "modules_with_entities",
+        "uem_compliant",
+        "uem_non_compliant",
+        "convergence_ratio",
+        "non_compliant_modules",
+        "uem_keywords_checked"
+      ]
+    },
+    "domain_V": {
+      "name": "Engineering Science Platform",
+      "deliverable_count": 1,
+      "keys": [
+        "total_work_items",
+        "queue_breakdown",
+        "high_priority",
+        "medium_priority",
+        "low_priority",
+        "work_items"
+      ]
+    },
+    "domain_VI": {
+      "name": "Autonomous Engineering Laboratory",
+      "deliverable_count": 1,
+      "keys": [
+        "experiments_conducted",
+        "experiment_details",
+        "findings",
+        "hypotheses",
+        "unknowns_identified",
+        "unknown_examples",
+        "evidence_collected"
+      ]
+    },
+    "domain_IV": {
+      "name": "Engineering Reasoning Engine",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "domain_VIII": {
+      "name": "Cross-Repository Intelligence",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "domain_XII": {
+      "name": "Engineering Network",
+      "deliverable_count": 1,
+      "keys": [
+        "total_packages",
+        "reusable_services",
+        "packages",
+        "network_topology"
+      ]
+    },
+    "domain_XIII": {
+      "name": "Foundation Model Preparation",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    },
+    "domain_IX": {
+      "name": "Engineering Civilization",
+      "deliverable_count": 1,
+      "keys": [
+        "total_implementation_cost",
+        "total_maintenance_cost",
+        "total_technical_debt",
+        "total_future_value",
+        "avg_roi",
+        "services"
+      ]
+    },
+    "domain_X": {
+      "name": "Engineering Memory",
+      "deliverable_count": 1,
+      "keys": [
+        "memory_persisted",
+        "memory_path",
+        "total_historical_iterations",
+        "current_snapshot"
+      ]
+    },
+    "domain_XI": {
+      "name": "Self-Hosting",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "domain_?": {
+      "name": "Domain 13",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    }
+  }
+}

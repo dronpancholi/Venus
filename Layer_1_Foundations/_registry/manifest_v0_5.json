@@ -1,0 +1,14 @@
+{
+  "version": "V0.5",
+  "name": "V0.5 V0.5_USTAIE",
+  "path": "Layer_2_Core_OS/V0.5_USTAIE",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.5-USTAIE"
+  ],
+  "dependencies": [
+    "V0.4"
+  ]
+}

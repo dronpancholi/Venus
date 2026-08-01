@@ -1,0 +1,13 @@
+{
+  "simulations_run": 63,
+  "simulation_domains": [
+    "architecture_changes",
+    "dependency_removal",
+    "package_merges",
+    "runtime_failures",
+    "memory_corruption",
+    "agent_failures",
+    "economic_shocks",
+    "knowledge_loss"
+  ]
+}

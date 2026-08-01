@@ -1,0 +1,14 @@
+{
+  "version": "V0.11",
+  "name": "V0.11 V0.11_UEAOGOS",
+  "path": "Layer_2_Core_OS/V0.11_UEAOGOS",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.11-UEAOGOS"
+  ],
+  "dependencies": [
+    "V0.10"
+  ]
+}

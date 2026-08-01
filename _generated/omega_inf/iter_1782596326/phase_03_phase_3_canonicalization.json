@@ -1,0 +1,157 @@
+{
+  "canonical_types_registered": 7,
+  "total_duplicates": 117,
+  "high_severity": 1,
+  "medium_severity": 21,
+  "low_severity": 95,
+  "duplicate_examples": [
+    {
+      "name": "AgentMemory",
+      "locations": [
+        "genesis.civilization.agents.base",
+        "genesis.memory.types"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "ArchitectureAlgebra",
+      "locations": [
+        "genesis.mathematics",
+        "genesis.mathematics_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "AttentionFocus",
+      "locations": [
+        "genesis.brain.cognition.attention",
+        "genesis.brain_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Belief",
+      "locations": [
+        "genesis.brain.cognition.belief",
+        "genesis.brain_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Capability",
+      "locations": [
+        "genesis.brain.entity",
+        "genesis.ucos.capability"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityDefinition",
+      "locations": [
+        "genesis.capability.registry",
+        "genesis.ucos.capability"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityGraph",
+      "locations": [
+        "genesis.core.uir",
+        "genesis.graph_v2.layers"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityRegistry",
+      "locations": [
+        "genesis.capability.registry",
+        "genesis.ucos.registry"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CapabilityVector",
+      "locations": [
+        "genesis.mathematics",
+        "genesis.mathematics_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CategoryTheory",
+      "locations": [
+        "genesis.mathematics",
+        "genesis.mathematics_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CausalLink",
+      "locations": [
+        "genesis.brain.cognition.reasoning",
+        "genesis.brain_v4"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "Checkpoint",
+      "locations": [
+        "genesis.kernel.types",
+        "genesis.os.checkpoint"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "CheckpointManager",
+      "locations": [
+        "genesis.engineering_os",
+        "genesis.kernel.checkpoint_manager",
+        "genesis.os.checkpoint"
+      ],
+      "count": 3,
+      "severity": "medium"
+    },
+    {
+      "name": "CostSimulator",
+      "locations": [
+        "genesis.simulator",
+        "genesis.simulator_v2"
+      ],
+      "count": 2,
+      "severity": "low"
+    },
+    {
+      "name": "DependencyEnergy",
+      "locations": [
+        "genesis.mathematics",
+        "genesis.physics"
+      ],
+      "count": 2,
+      "severity": "low"
+    }
+  ],
+  "merge_candidates": [
+    {
+      "target": "Observation",
+      "from": [
+        "genesis.civilization.world_model",
+        "genesis.discovery",
+        "genesis.os.observation",
+        "genesis.scientist"
+      ],
+      "effort": 8
+    }
+  ]
+}

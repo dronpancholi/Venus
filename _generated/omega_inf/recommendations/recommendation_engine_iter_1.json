@@ -1,0 +1,48 @@
+{
+  "iteration": 1,
+  "recommendation_count": 4,
+  "recommendations": [
+    {
+      "target": "Technical Debt Growth",
+      "expected_benefit": "Reduce technical debt growth risk from 0.341 to <0.3",
+      "roi": 65.9,
+      "confidence": 0.83,
+      "risk": 0.341,
+      "rollback_plan": "Revert changes to technical debt growth if risk increases",
+      "historical_precedent": "Observed in 0 pattern discoveries",
+      "cross_repo_evidence": "Validated across 48 simulated repos"
+    },
+    {
+      "target": "Bug Density",
+      "expected_benefit": "Reduce bug density risk from 0.7393 to <0.3",
+      "roi": 26.1,
+      "confidence": 0.63,
+      "risk": 0.7393,
+      "rollback_plan": "Revert changes to bug density if risk increases",
+      "historical_precedent": "Observed in 0 pattern discoveries",
+      "cross_repo_evidence": "Validated across 48 simulated repos"
+    },
+    {
+      "target": "Maintenance Cost",
+      "expected_benefit": "Reduce maintenance cost risk from 0.491 to <0.3",
+      "roi": 50.9,
+      "confidence": 0.754,
+      "risk": 0.491,
+      "rollback_plan": "Revert changes to maintenance cost if risk increases",
+      "historical_precedent": "Observed in 0 pattern discoveries",
+      "cross_repo_evidence": "Validated across 48 simulated repos"
+    },
+    {
+      "target": "Documentation Decay",
+      "expected_benefit": "Reduce documentation decay risk from 1.0 to <0.3",
+      "roi": 0.0,
+      "confidence": 0.5,
+      "risk": 1.0,
+      "rollback_plan": "Revert changes to documentation decay if risk increases",
+      "historical_precedent": "Observed in 0 pattern discoveries",
+      "cross_repo_evidence": "Validated across 48 simulated repos"
+    }
+  ],
+  "average_roi": 35.7,
+  "average_confidence": 0.678
+}

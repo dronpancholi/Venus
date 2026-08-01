@@ -1,0 +1,14 @@
+{
+  "version": "V0.7",
+  "name": "V0.7 V0.7_UPUXIOS",
+  "path": "Layer_2_Core_OS/V0.7_UPUXIOS",
+  "description": "",
+  "capabilities": [],
+  "constraints": [],
+  "components": [
+    "VENUS-V0.7-UPUXIOS"
+  ],
+  "dependencies": [
+    "V0.6"
+  ]
+}

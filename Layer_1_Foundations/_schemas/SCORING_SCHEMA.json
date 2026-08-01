@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "venus://schemas/scoring/v1",
+  "title": "VenusScorecard",
+  "description": "Canonical scoring and confidence schema. Consolidates scoring systems across all layers: URQS (V0.5 Constitution), MCI (V0.4 Module 01), Decision Confidence (V0.4 Module 22), Evidence Quality (V0.4 Module 05), and all OS-specific scorecards.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "venus://schemas/base/entity/v1" }
+  ],
+  "properties": {
+    "scorecard_id": {
+      "type": "string",
+      "pattern": "^SCORE-[0-9]{6}$"
+    },
+    "score_type": {
+      "type": "string",
+      "enum": ["urqs", "confidence", "evidence_quality", "mci", "security", "performance", "compliance", "resilience", "composite"],
+      "description": "The scoring methodology used."
+    },
+    "domain": {
+      "type": "string",
+      "description": "The Venus OS domain this score applies to."
+    },
+    "components": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "value": { "type": "number" },
+          "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+          "source": { "type": "string" },
+          "timestamp": { "type": "string", "format": "date-time" }
+        },
+        "required": ["value", "weight"]
+      }
+    },
+    "aggregate_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Weighted composite score."
+    },
+    "thresholds": {
+      "type": "object",
+      "properties": {
+        "passing": { "type": "number" },
+        "warning": { "type": "number" },
+        "failing": { "type": "number" }
+      }
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["pass", "conditional_pass", "fail", "insufficient_data"]
+    },
+    "evaluation_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check": { "type": "string" },
+          "score": { "type": "number" },
+          "verdict": { "type": "string" },
+          "detail": { "type": "string" }
+        },
+        "required": ["check", "score", "verdict"]
+      }
+    }
+  },
+  "required": ["scorecard_id", "score_type", "domain", "aggregate_score", "verdict"]
+}

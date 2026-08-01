@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "program": "PROJECT SINGULARITY \u2014 AEEC",
+    "iteration": 1,
+    "total_duration_ms": 33681.08,
+    "significance": 0.53,
+    "tiers_completed": 13
+  },
+  "scorecard": {
+    "repository_intelligence_score": 0.549,
+    "repository_health_score": 0.345,
+    "engineering_maturity_index": 0.69,
+    "autonomous_evolution_index": 0.8,
+    "innovation_index": 0.472,
+    "knowledge_reuse_index": 0.415,
+    "scientific_output_index": 0.733,
+    "economic_efficiency_index": 0.591,
+    "architectural_quality_index": 0.52,
+    "canonicalization_progress_index": 0.415
+  },
+  "deliverables": {
+    "constitution_challenges": 6,
+    "self_model_classes": 1358,
+    "self_model_subsystems": 1,
+    "self_critique_edges": 5,
+    "self_critique_disagreements": 3,
+    "competing_architectures": 8,
+    "recommended_architecture": "Knowledge-centric",
+    "physics_laws": 5,
+    "biology_species": 107,
+    "evolution_generations": 10,
+    "evolution_final_fitness": 0.9028,
+    "universe_entities": 7732,
+    "scientific_hypotheses": 3,
+    "foundation_entities": 2153,
+    "digital_scientists": 18,
+    "roadmap_initiatives": 5,
+    "roadmap_effort_days": 95,
+    "research_external_repos": 48,
+    "research_reproducibility": 1.0
+  },
+  "tier_summaries": {
+    "tier_0": {
+      "name": "Meta-Constitution",
+      "deliverable_count": 1,
+      "keys": [
+        "total_files",
+        "total_lines",
+        "total_classes",
+        "total_functions",
+        "total_imports",
+        "test_files",
+        "source_files",
+        "module_names",
+        "dependency_pairs"
+      ]
+    },
+    "tier_1": {
+      "name": "Complete Self-Model",
+      "deliverable_count": 1,
+      "keys": [
+        "packages_mapped",
+        "dependency_matrix",
+        "cyclic_dependencies",
+        "cyclic_pairs",
+        "redundant_packages",
+        "overlapping_responsibilities",
+        "overlap_details"
+      ]
+    },
+    "tier_2": {
+      "name": "Self-Critique",
+      "deliverable_count": 1,
+      "keys": [
+        "modules_with_entities",
+        "uem_compliant",
+        "uem_non_compliant",
+        "convergence_ratio",
+        "non_compliant_modules",
+        "uem_keywords_checked"
+      ]
+    },
+    "tier_4": {
+      "name": "Engineering Discovery",
+      "deliverable_count": 1,
+      "keys": [
+        "total_work_items",
+        "queue_breakdown",
+        "high_priority",
+        "medium_priority",
+        "low_priority",
+        "work_items"
+      ]
+    },
+    "tier_5": {
+      "name": "Repository Evolution",
+      "deliverable_count": 1,
+      "keys": [
+        "reasoning_applied",
+        "evidence_sources",
+        "recommendations",
+        "recommendation_count"
+      ]
+    },
+    "tier_3": {
+      "name": "Competing Architectures",
+      "deliverable_count": 1,
+      "keys": [
+        "canonical_types_registered",
+        "total_duplicates",
+        "high_severity",
+        "medium_severity",
+        "low_severity",
+        "duplicate_examples",
+        "merge_candidates"
+      ]
+    },
+    "tier_7": {
+      "name": "Engineering Science",
+      "deliverable_count": 1,
+      "keys": [
+        "rewrites_executed",
+        "cumulative_rewrites"
+      ]
+    },
+    "tier_8": {
+      "name": "Engineering Execution",
+      "deliverable_count": 1,
+      "keys": [
+        "sources_scanned",
+        "patterns_extracted",
+        "source_list",
+        "note"
+      ]
+    },
+    "tier_10": {
+      "name": "Self-Evolution",
+      "deliverable_count": 1,
+      "keys": [
+        "improvements_proposed",
+        "improvements",
+        "ranked_roadmap"
+      ]
+    },
+    "tier_13": {
+      "name": "Tier 13",
+      "deliverable_count": 1,
+      "keys": [
+        "health_index",
+        "maturity_index",
+        "innovation_index",
+        "autonomy_index",
+        "significance",
+        "total_experiments",
+        "total_rewrites",
+        "total_tests_passed",
+        "next_roadmap",
+        "should_continue"
+      ]
+    },
+    "tier_9": {
+      "name": "Engineering Foundation Model",
+      "deliverable_count": 1,
+      "keys": [
+        "memory_persisted",
+        "memory_path",
+        "total_historical_iterations",
+        "current_snapshot"
+      ]
+    },
+    "tier_11": {
+      "name": "Autonomous Roadmap",
+      "deliverable_count": 1,
+      "keys": [
+        "total_packages",
+        "reusable_services",
+        "packages",
+        "network_topology"
+      ]
+    },
+    "tier_12": {
+      "name": "Open Engineering Research",
+      "deliverable_count": 1,
+      "keys": [
+        "engine_relationships",
+        "engine_entities",
+        "relationship_types",
+        "scan_duration_ms"
+      ]
+    }
+  }
+}

@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genesis"
+version = "1.0.0"
+description = "Genesis — Engineering Computing Platform"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Proprietary"}
+authors = [
+    {name = "Venus Research"},
+]
+keywords = ["engineering", "platform", "os", "agents"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+]
+
+dependencies = [
+    "rich>=13",
+    "textual>=8",
+]
+
+[project.optional-dependencies]
+desktop = [
+    "textual>=8",
+]
+server = [
+    "fastapi>=0.100",
+    "uvicorn>=0.20",
+    "websockets>=10",
+]
+watch = [
+    "watchdog>=4",
+]
+dev = [
+    "watchdog>=4",
+]
+all = [
+    "rich>=13",
+    "textual>=8",
+    "fastapi>=0.100",
+    "uvicorn>=0.20",
+    "websockets>=10",
+    "watchdog>=4",
+]
+
+[project.urls]
+Homepage = "https://github.com/venus/genesis"
+Documentation = "https://genesis.dev"
+
+[project.scripts]
+genesis = "genesis.__main__:main"
+genesis-desktop = "genesis.__main__:main"
+genesis-server = "genesis.__main__:main"
+genesis-terminal = "genesis.__main__:main"
+genesis-doctor = "genesis.__main__:main"
+
+[project.gui-scripts]
+genesis-desktop = "genesis.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["genesis", "genesis.*"]
+exclude = ["genesis.tests", "genesis.tests.*"]
+
+[tool.setuptools.package-data]
+genesis = ["py.typed"]
